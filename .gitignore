@@ -1,0 +1,15 @@
+node_modules/
+build/
+views/bundle*
+/.vs/
+tags
+cscope.out
+cscope.in.out
+cscope.po.out
+*.csproj.user
+.*.swp
+.*.swo
+.*.swa
+npm-debug.log
+package-lock.json
+.env
