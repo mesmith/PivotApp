@@ -1,0 +1,19 @@
+LBTESTCD,LBCOMPARISON,ARM_1,ARM_SUBJECT_COUNT_1,EVENTS_1,SUBJECTS_1,SUBJECT_PERCENT_1,ARM_2,ARM_SUBJECT_COUNT_2,EVENTS_2,SUBJECTS_2,SUBJECT_PERCENT_2
+"ALP","10 X ULN","Pioglitazone 30mg QD + Sulfonylurea as OBT",351,0,0,0,"Pioglitazone 45mg QD + Sulfonylurea as OBT",351,0,0,0
+"ALP","2 X ULN","Pioglitazone 30mg QD + Sulfonylurea as OBT",351,0,0,0,"Pioglitazone 45mg QD + Sulfonylurea as OBT",351,12,2,0.57
+"ALP","20 X ULN","Pioglitazone 30mg QD + Sulfonylurea as OBT",351,0,0,0,"Pioglitazone 45mg QD + Sulfonylurea as OBT",351,0,0,0
+"ALP","3 X ULN","Pioglitazone 30mg QD + Sulfonylurea as OBT",351,0,0,0,"Pioglitazone 45mg QD + Sulfonylurea as OBT",351,8,1,0.28
+"ALP","5 X ULN","Pioglitazone 30mg QD + Sulfonylurea as OBT",351,0,0,0,"Pioglitazone 45mg QD + Sulfonylurea as OBT",351,0,0,0
+"ALT","10 X ULN","Pioglitazone 30mg QD + Sulfonylurea as OBT",351,2,1,0.28,"Pioglitazone 45mg QD + Sulfonylurea as OBT",351,0,0,0
+"ALT","2 X ULN","Pioglitazone 30mg QD + Sulfonylurea as OBT",351,34,10,2.85,"Pioglitazone 45mg QD + Sulfonylurea as OBT",351,20,4,1.14
+"ALT","20 X ULN","Pioglitazone 30mg QD + Sulfonylurea as OBT",351,0,0,0,"Pioglitazone 45mg QD + Sulfonylurea as OBT",351,0,0,0
+"ALT","3 X ULN","Pioglitazone 30mg QD + Sulfonylurea as OBT",351,8,3,0.85,"Pioglitazone 45mg QD + Sulfonylurea as OBT",351,0,0,0
+"ALT","5 X ULN","Pioglitazone 30mg QD + Sulfonylurea as OBT",351,6,2,0.57,"Pioglitazone 45mg QD + Sulfonylurea as OBT",351,0,0,0
+"AST","10 X ULN","Pioglitazone 30mg QD + Sulfonylurea as OBT",351,0,0,0,"Pioglitazone 45mg QD + Sulfonylurea as OBT",351,0,0,0
+"AST","2 X ULN","Pioglitazone 30mg QD + Sulfonylurea as OBT",351,12,5,1.42,"Pioglitazone 45mg QD + Sulfonylurea as OBT",351,18,6,1.71
+"AST","20 X ULN","Pioglitazone 30mg QD + Sulfonylurea as OBT",351,0,0,0,"Pioglitazone 45mg QD + Sulfonylurea as OBT",351,0,0,0
+"AST","3 X ULN","Pioglitazone 30mg QD + Sulfonylurea as OBT",351,2,1,0.28,"Pioglitazone 45mg QD + Sulfonylurea as OBT",351,4,2,0.57
+"AST","5 X ULN","Pioglitazone 30mg QD + Sulfonylurea as OBT",351,0,0,0,"Pioglitazone 45mg QD + Sulfonylurea as OBT",351,0,0,0
+"TB","1.5 X ULN","Pioglitazone 30mg QD + Sulfonylurea as OBT",351,4,1,0.28,"Pioglitazone 45mg QD + Sulfonylurea as OBT",351,18,5,1.42
+"TB","2 X ULN","Pioglitazone 30mg QD + Sulfonylurea as OBT",351,0,0,0,"Pioglitazone 45mg QD + Sulfonylurea as OBT",351,0,0,0
+"TB","3 X ULN","Pioglitazone 30mg QD + Sulfonylurea as OBT",351,0,0,0,"Pioglitazone 45mg QD + Sulfonylurea as OBT",351,0,0,0

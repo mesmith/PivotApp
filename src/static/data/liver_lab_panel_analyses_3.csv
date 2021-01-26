@@ -1,0 +1,21 @@
+LBTESTCD,LBMAXRANGE,ARM_1,ARM_SUBJECT_COUNT_1,BL_LT_2_SC_1,BL_BT_2_5_SC_1,BL_BT_5_10_SC_1,BL_BT_10_20_SC_1,BL_GE_20_SC_1,ARM_2,ARM_SUBJECT_COUNT_2,BL_LT_2_SC_2,BL_BT_2_5_SC_2,BL_BT_5_10_SC_2,BL_BT_10_20_SC_2,BL_GE_20_SC_2
+"ALP","MAX_BT_10_20","Pioglitazone 30mg QD + Sulfonylurea as OBT",351,0,0,0,0,0,"Pioglitazone 45mg QD + Sulfonylurea as OBT",351,0,0,0,0,0
+"ALP","MAX_BT_2_5","Pioglitazone 30mg QD + Sulfonylurea as OBT",351,0,0,0,0,0,"Pioglitazone 45mg QD + Sulfonylurea as OBT",351,0,2,0,0,0
+"ALP","MAX_BT_5_10","Pioglitazone 30mg QD + Sulfonylurea as OBT",351,0,0,0,0,0,"Pioglitazone 45mg QD + Sulfonylurea as OBT",351,0,0,0,0,0
+"ALP","MAX_GE_20","Pioglitazone 30mg QD + Sulfonylurea as OBT",351,0,0,0,0,0,"Pioglitazone 45mg QD + Sulfonylurea as OBT",351,0,0,0,0,0
+"ALP","MAX_LT_2","Pioglitazone 30mg QD + Sulfonylurea as OBT",351,351,0,0,0,0,"Pioglitazone 45mg QD + Sulfonylurea as OBT",351,349,0,0,0,0
+"ALT","MAX_BT_10_20","Pioglitazone 30mg QD + Sulfonylurea as OBT",351,1,0,0,0,0,"Pioglitazone 45mg QD + Sulfonylurea as OBT",351,0,0,0,0,0
+"ALT","MAX_BT_2_5","Pioglitazone 30mg QD + Sulfonylurea as OBT",351,2,3,0,0,0,"Pioglitazone 45mg QD + Sulfonylurea as OBT",351,2,1,0,0,0
+"ALT","MAX_BT_5_10","Pioglitazone 30mg QD + Sulfonylurea as OBT",351,1,0,0,0,0,"Pioglitazone 45mg QD + Sulfonylurea as OBT",351,0,0,0,0,0
+"ALT","MAX_GE_20","Pioglitazone 30mg QD + Sulfonylurea as OBT",351,0,0,0,0,0,"Pioglitazone 45mg QD + Sulfonylurea as OBT",351,0,0,0,0,0
+"ALT","MAX_LT_2","Pioglitazone 30mg QD + Sulfonylurea as OBT",351,341,3,0,0,0,"Pioglitazone 45mg QD + Sulfonylurea as OBT",351,347,1,0,0,0
+"AST","MAX_BT_10_20","Pioglitazone 30mg QD + Sulfonylurea as OBT",351,0,0,0,0,0,"Pioglitazone 45mg QD + Sulfonylurea as OBT",351,0,0,0,0,0
+"AST","MAX_BT_2_5","Pioglitazone 30mg QD + Sulfonylurea as OBT",351,3,1,0,0,0,"Pioglitazone 45mg QD + Sulfonylurea as OBT",351,4,0,0,0,0
+"AST","MAX_BT_5_10","Pioglitazone 30mg QD + Sulfonylurea as OBT",351,0,0,0,0,0,"Pioglitazone 45mg QD + Sulfonylurea as OBT",351,0,0,0,0,0
+"AST","MAX_GE_20","Pioglitazone 30mg QD + Sulfonylurea as OBT",351,0,0,0,0,0,"Pioglitazone 45mg QD + Sulfonylurea as OBT",351,0,0,0,0,0
+"AST","MAX_LT_2","Pioglitazone 30mg QD + Sulfonylurea as OBT",351,346,1,0,0,0,"Pioglitazone 45mg QD + Sulfonylurea as OBT",351,345,2,0,0,0
+"BILI","MAX_BT_10_20","Pioglitazone 30mg QD + Sulfonylurea as OBT",351,0,0,0,0,0,"Pioglitazone 45mg QD + Sulfonylurea as OBT",351,0,0,0,0,0
+"BILI","MAX_BT_2_5","Pioglitazone 30mg QD + Sulfonylurea as OBT",351,0,0,0,0,0,"Pioglitazone 45mg QD + Sulfonylurea as OBT",351,0,0,0,0,0
+"BILI","MAX_BT_5_10","Pioglitazone 30mg QD + Sulfonylurea as OBT",351,0,0,0,0,0,"Pioglitazone 45mg QD + Sulfonylurea as OBT",351,0,0,0,0,0
+"BILI","MAX_GE_20","Pioglitazone 30mg QD + Sulfonylurea as OBT",351,0,0,0,0,0,"Pioglitazone 45mg QD + Sulfonylurea as OBT",351,0,0,0,0,0
+"BILI","MAX_LT_2","Pioglitazone 30mg QD + Sulfonylurea as OBT",351,351,0,0,0,0,"Pioglitazone 45mg QD + Sulfonylurea as OBT",351,351,0,0,0,0

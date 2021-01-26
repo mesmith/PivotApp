@@ -1,0 +1,10 @@
+LBCOMPARISON,ARM_1,ARM_SUBJECT_COUNT_1,EVENTS_1,SUBJECTS_1,ARM_2,ARM_SUBJECT_COUNT_2,EVENTS_2,SUBJECTS_2
+"ALT or AST >= 3 X ULN, TB >= 1.5 X ULN & ALP > normal","Pioglitazone 30mg QD + Sulfonylurea as OBT",351,0,0,"Pioglitazone 45mg QD + Sulfonylurea as OBT",351,0,3
+"ALT or AST >= 3 X ULN, TB >= 1.5 X ULN & ALP missing","Pioglitazone 30mg QD + Sulfonylurea as OBT",351,0,0,"Pioglitazone 45mg QD + Sulfonylurea as OBT",351,0,4
+"ALT or AST >= 3 X ULN, TB >= 1.5 X ULN & ALP normal","Pioglitazone 30mg QD + Sulfonylurea as OBT",351,0,0,"Pioglitazone 45mg QD + Sulfonylurea as OBT",351,0,0
+"ALT or AST >= 3 X ULN, TB >= 2 X ULN & ALP > normal","Pioglitazone 30mg QD + Sulfonylurea as OBT",351,0,0,"Pioglitazone 45mg QD + Sulfonylurea as OBT",351,0,0
+"ALT or AST >= 3 X ULN, TB >= 2 X ULN & ALP missing","Pioglitazone 30mg QD + Sulfonylurea as OBT",351,0,0,"Pioglitazone 45mg QD + Sulfonylurea as OBT",351,0,0
+"ALT or AST >= 3 X ULN, TB >= 2 X ULN & ALP normal","Pioglitazone 30mg QD + Sulfonylurea as OBT",351,0,0,"Pioglitazone 45mg QD + Sulfonylurea as OBT",351,0,0
+"ALT or AST >= 5 X ULN, TB >= 3 X ULN & ALP > normal","Pioglitazone 30mg QD + Sulfonylurea as OBT",351,0,0,"Pioglitazone 45mg QD + Sulfonylurea as OBT",351,0,0
+"ALT or AST >= 5 X ULN, TB >= 3 X ULN & ALP missing","Pioglitazone 30mg QD + Sulfonylurea as OBT",351,0,0,"Pioglitazone 45mg QD + Sulfonylurea as OBT",351,0,0
+"ALT or AST >= 5 X ULN, TB >= 3 X ULN & ALP normal","Pioglitazone 30mg QD + Sulfonylurea as OBT",351,0,0,"Pioglitazone 45mg QD + Sulfonylurea as OBT",351,0,0

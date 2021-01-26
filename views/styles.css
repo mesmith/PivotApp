@@ -19,12 +19,12 @@ div {
 .all {
   margin-top: -50px;
 }
-.top {
+.pivot-app-container {
   clear: both;
   min-width: 2000px;
   padding-top: 0;
 }
-.summary-container {
+.facet-container {
   position: absolute;
   top: 80px;
   left: 950px;
@@ -172,7 +172,8 @@ div {
   float: right;
   margin-top: -40px;
 }
-.control-form {
+.control-container-form {
+  clear: both;
   width: 1050px;
   max-width: 1050px;
   min-height: 400px; // so tooltips don't cause flicker
@@ -187,6 +188,12 @@ div {
 .control select,
 .control input {
   cursor: pointer;
+}
+.control select {
+  max-width: 200px;
+}
+.view-control {
+  margin-left: 70px;
 }
 .select-1 {
   width: 380px;

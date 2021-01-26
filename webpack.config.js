@@ -5,9 +5,9 @@ const commitDate = require('child_process')
   .execSync('date')
   .toString();
 
-const BUILD_DIR = path.resolve(__dirname, './views');
+const BUILD_DIR = path.resolve(__dirname, './lib');
 const DIST_DIR = path.resolve(__dirname, './dist');
-const APP_DIR = path.resolve(__dirname, 'js-react');
+const APP_DIR = path.resolve(__dirname, 'src');
 
 // reduce env to envKeys object
 const env = dotenv.config().parsed;
@@ -17,7 +17,7 @@ const envKeys = env? Object.keys(env).reduce((prev, next) => {
 }, {}) : {};
 
 module.exports = {
-  entry: APP_DIR + '/main.js',
+  entry: APP_DIR + '/components/Pivot/main.js',
   output: {
     path: BUILD_DIR,
     filename: 'bundle.js'
@@ -45,7 +45,15 @@ module.exports = {
       {
         test: /\.css$/,
         use: ['style-loader', 'css-loader']
-      }
+      },
+      {
+        test: /\.(png|jpe?g|gif)$/i,
+        use: [
+          {
+            loader: 'file-loader',
+          },
+        ],
+      },
     ]
   },
   resolve: {
@@ -58,7 +66,8 @@ module.exports = {
     disableHostCheck: true,
 
     publicPath: '/',
-    contentBase: 'views',
+    // contentBase: 'views',
+    contentBase: 'lib',
     watchContentBase: true,
 
     host: '0.0.0.0',

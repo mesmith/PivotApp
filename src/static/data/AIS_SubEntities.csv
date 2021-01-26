@@ -1,0 +1,1049 @@
+ID,Name,Exchange,Ticker,Curr Cost,Curr FV,Last Cost,Last FV,Invest Date,Industry,Description
+1001A001,Net Power Light (Wickr),,,"12,744,079","16,386,552","11,891,630","14,898,428",,,
+1001P001,Cake Financial Corp,,,"4,150,000","153,051","4,150,000","153,051",,Media,Social Investment Advice
+1001P002,Cleversafe,,,"6,027,873","63,510,049","6,027,873","63,510,049",,Information Technology,Dispersed Data
+1001P003,Crowdcast,,,"4,000,000","600,000","4,000,000","600,000",,Software,Enterprise Forecasting
+1001P004,Datahooks,,,"250,000",,"250,000",,,Information Technology,Data Analysis Apps
+1001P005,Funtini,,,"7,813,705",,"7,813,705",,,Media,Ipad Games
+1001P006,Glam Media,,,"4,275,565",,"4,275,565",,,Media,Vertical Media
+1001P007,Gowalla,,,"2,837,765","1,743,757","2,837,766","1,249,366",,Software,Location Based Service
+1001P008,Hidden City Games,,,"391,569",,"391,569",,,Media,Collectible Games
+1001P009,Moonshoot,,,"7,796,018",,"7,796,018",,,Software,Language Learning
+1001P010,Ness Computing,,,"5,612,073","3,003,273","5,612,073","3,003,273",,Information Technology,Recommendation Engine
+1001P011,Netwitness,,,"5,075,798","37,999,660","5,075,798","37,999,660",,Information Technology,Network Security
+1001P012,Ribbit,,,"4,498,822","24,914,037","4,498,822","24,914,037",,Software,Voice Services Platform
+1001P013,Socialcam,,,"595,242","15,847,957","595,242","15,847,957",,Media,Mobile Social Video
+1001P014,TopSchool,,,"6,092,421",4,"6,092,421",4,,Software,SaaS Services for Schools
+1001P015,Twitch Interactive,,,"8,674,516","166,188,020","8,674,516","166,188,020",,Media,Live Internet Broadcasting
+1001P016,Redux,,,"4,683,157","149,822","4,683,157","149,822",,Media,Online Media Discovery
+1001P017,Zephyr,,,"6,985,793","8,886,149","6,985,793","8,886,370",,Software,Defense Technology
+1002A001,Aerospike (CitrusLeaf),,,"7,817,808","12,556,234","7,817,808","12,556,234",01/11/2011,Information Technology,Database
+1002A002,iControl,,,"5,881,747","6,874,099","5,881,747","6,944,099",05/11/2011,Information Technology,Mobile asset security
+1002A003,Jetlore,,,"2,779,146","3,947,322","2,734,105","4,805,494",07/11/2011,Media,Social search
+1002A004,Lookingglass Cyber Sol.,,,"9,656,503","20,246,262","9,656,503","16,581,709",01/12/2012,Information Technology,Security information delivery
+1002A005,Motive Medical (newMentor),,,"3,623,868","922,522","3,614,535","1,213,643",05/10/2010,Information Technology,Health/IT informational services
+1002A006,Phizzle,,,"4,379,419","2,201,400","4,369,419","4,836,707",07/11/2011,Media,On premise fan engagement
+1002A007,WaveConnex (Keyssa),,,"13,320,752","28,591,570","13,320,752","28,609,428",07/11/2011,Technology Hardware,Wireless electronic connectors
+1002P001,Copilot Labs,,,"1,246,982","2,490,104","1,246,982","2,490,104",06/11/2018,Software,Retail Analytics
+1002P002,Centripetal Networks,,,"5,500,000","1,500,000","5,500,000","3,281,876",09/11/2011,Software,Line-speed deep packet inspection
+1002P003,Elastic Intelligence,,,"4,202,214","3,411,318","4,202,214","3,411,318",10/10/2018,Business Services,Business Intelligence Services
+1002P004,Framehawk,,,"7,235,778","7,332,569","7,235,778","7,332,569",,Software,Web Presence software
+1002P005,FunSockets (Veritcal Up-Kicker),,,"3,738,875",,"3,738,875",,02/11/2018,Media,HTML 5 game platform
+1002P006,Global Education Learning,,,"5,169,811","5,329,549","5,169,811","5,329,549",03/12/2018,Media,Early education products
+1002P007,Gridspeak,,,"5,968,086",0,"5,968,086","75,000",04/10/2010,Information Technology,Analytical trading
+1002P008,Handybook (Exec),,,"50,323","50,323","50,323","50,323",03/12/2018,Consumer,Personal services dispatcher
+1002P009,Kidlandia,,,"2,693,796",,"2,693,796",,,Media,Personalized children's media
+1002P010,Next Big Sound,,,"300,000","2,242,058","300,000","2,242,058",02/10/2018,Software,Music industry analytics
+1002P011,Resilient Network Systems,,,"7,050,349",0,"7,050,349",0,10/10/2010,Information Technology,Trust services
+1002P012,Ruckus Media Group,,,"5,837,481",,"5,837,481",,,Media,Digital educational books
+1002P013,Toopher,,,"1,105,000","2,634,907","1,105,000","2,634,907",11/12/2018,Security,Online Fraud ID Protection
+1002P014,Viggle (Draft Day Fantasy Sports),,,"3,999,883",70,"3,999,883",770,04/10/2010,Media,Digital Media
+1002P015,WifiSLAM,,,"53,610","113,459","53,610","113,459",,Software,Indoor location services
+1003A001,Cipher Online Media,,,"2,375,000",0,"1,800,000","4,227,097",03/15/2015,,Specialized Media Company
+1003A002,DeviceAuthority,,,"4,512,924","2,098,870","3,787,501","3,626,442",12/13/2013,,Automated device authentication
+1003A003,Digilens,,,"9,125,176","23,053,733","9,125,176","10,607,889",05/15/2015,,
+1003A004,GameClosure (Weeby),,,"3,009,453","3,009,453","3,009,453","3,009,453",06/01/2016,,
+1003A005,GfyCat,,,"4,000,000","4,000,000","4,000,000","4,000,000",06/15/2015,,
+1003A006,Hover,,,"8,815,086","16,067,518","8,681,072","14,636,172",07/01/2015,,
+1003A007,Karmic Labs,,,"7,000,000","7,000,000","5,000,000","5,000,000",09/01/2016,,
+1003A008,Loanhero,,,"4,150,000","4,150,000","4,150,000","4,150,000",12/15/2015,,
+1003A009,Mixed Dimensions,,,"3,140,686","2,491,474","1,850,860","3,751,080",01/15/2015,,
+1003A010,New Matter Inc.,,,"9,607,520",0,"8,257,520","3,124,057",05/14/2014,,3D printer manufacturer
+1003A011,Niantic,,,"10,016,395","78,071,845","3,000,000","57,142,800",01/16/2016,,
+1003A012,Pavlov,,,"100,000","100,000","100,000","100,000",03/16/2016,,
+1003A013,Phase Four,,,"5,936,488","6,916,656","5,936,488","6,916,656",12/15/2015,,
+1003A014,Red Balloon Security,,,"1,138,740","1,423,406","1,000,000","1,000,000",11/01/2015,,
+1003A015,RemedyHealth,,,"250,000","250,000","250,000","250,000",06/01/2016,,
+1003A016,Sapho,,,"7,374,832","12,180,777","7,374,832","12,180,777",04/15/2015,,
+1003A017,Ubixi,,,"3,000,000","3,000,000","3,000,000","3,000,000",11/16/2016,,
+1003A018,Wickr,,,"8,558,958","17,803,125","6,212,560","13,753,429",11/13/2013,,Secure communications platform
+1003P001,Avni Networks,,,"1,545,000","120,926","1,545,000",0,11/14/2014,,Enterprise network services
+1003P002,Cayuga Networks,,,"1,300,000",,"1,300,000",,,,Application Security Technology
+1003P003,Junyo,,,"500,000",,"500,000",,06/15/2018,,
+1003P004,Kiswe Mobile,,,"700,002","1,600,002","700,002","1,600,002",08/14/2018,,Mobile sports
+1003P005,Matter.io,,,"500,001","198,933","500,001","198,933",09/15/2018,,3D Printing
+1003P006,New Gadget,,,"950,000",,"950,000",,03/14/2018,,Stealth concept
+1003P007,Trnio,,,"255,000",,"255,000",,03/15/2018,,3D Scanning
+1004A001,"Ascent Technologies, Inc.",,,"3,999,995","3,999,995","3,999,995",0,03/01/2018,Services,
+1004A002,"Crunchy Data Solutions, Inc.",,,"4,000,000","4,000,000","4,000,000",0,03/01/2018,Services,
+1004A003,"Drop Kitchen, Inc.",,,"3,000,000","3,000,000","3,000,000",0,12/01/2017,Software,
+1004A004,"Ursa Major Technologies, Inc.",,,"5,000,000","5,000,000","5,000,000",0,11/01/2017,Software,
+1004A005,"RunSafe Security, Inc.",,,"1,717,794","1,717,794","1,717,794",0,03/01/2018,Software,
+1004A006,Theorix Corporation,,,"500,000","500,000","500,000",0,02/01/2018,"Tech, Media & Telecom",
+1005A001,Affinity Networks,,,"255,277","555,833","255,277","555,833",01/14/2018,,
+1005A002,Battlefy,,,"83,827","167,374","108,827","118,105",01/15/2018,,
+1005A003,Bitium,,,"179,167","210,784","179,167","210,784",02/14/2018,,
+1005A004,Club W,,,"25,764","38,747","25,764","38,747",09/14/2018,,
+1005A005,Clutter,,,"219,215","6,151,238","219,215","6,151,238",02/14/2018,,
+1005A006,DSTLD (Denim.LA),,,"142,862","259,328","142,862","248,955",11/13/2018,,
+1005A007,Fama,,,"240,510","1,420,606","240,510","889,583",,,
+1005A008,Fanduel (AlphaDraft),,,"352,263","1,523,432","352,263","1,523,432",02/15/2018,,
+1005A009,FloQast,,,"152,915","650,651","152,915","650,651",06/15/2018,,
+1005A010,Gear Frontier,,,"50,000",0,"50,000","50,000",06/15/2018,,
+1005A011,Gem,,,"254,720","1,726,367","254,720","1,610,300",02/14/2018,,
+1005A012,HelloTech,,,"359,349","1,419,220","359,349","1,419,220",12/14/2018,,
+1005A013,HypeVR,,,"250,000","250,000","250,000","250,000",,,
+1005A014,Iconery,,,"256,800","303,343","256,800","345,208",05/15/2018,,
+1005A015,Little Labs,,,"355,112","1,242,393","355,112","1,242,393",11/14/2018,,
+1005A016,Mover.io,,,"29,348","29,670","25,000","25,000",02/15/2018,,
+1005A017,Raur (TJS 3),,,"200,000","531,840","200,000","200,000",09/14/2018,,
+1005A018,Repost Network,,,"150,000","150,000","150,000","150,000",,,
+1005A019,Rock You,,,"150,000","168,448","150,000","168,448",,,
+1005A020,Sensay,,,"269,517","1,422,447","269,517","1,422,447",12/14/2018,,
+1005A021,The Bouqs Company,,,"50,000","60,830","50,000","60,830",12/15/2018,,
+1005A022,The Kive Company,,,"12,500","12,500","12,500","12,500",02/14/2018,,
+1005A023,Translation Exchange,,,"353,861","697,213","353,861","697,213",08/14/2018,,
+1005A024,Tribe,,,"65,000","65,000","65,000","65,000",,,
+1005P001,Clear Path,,,0,"69,034",0,"25,962",09/14/2018,,
+1005P002,Contract Cloud,,,"105,000",,"105,000",,09/14/2018,,
+1005P003,Eversport Media,,,"281,709",,"281,709",,06/14/2018,,
+1005P004,Fanbread,,,"200,000","200,000","200,000","200,000",05/14/2018,,
+1005P005,FitWallet,,,"125,000",,"125,000",,10/14/2018,,
+1005P006,Instarad.io,,,"100,000","100,000","100,000","100,000",09/14/2018,,
+1005P007,TripScope,,,"225,000",,"225,000",,07/14/2018,,
+1005P008,Vadio,,,"100,000","100,000","100,000","100,000",01/15/2018,,
+1005P009,Weaver,,,"125,000",,"125,000",,06/14/2018,,
+1005P010,Ziptask,,,"100,000","184,012","100,000","184,012",07/14/2018,,
+1006A001,Brighten Labs,,,"250,000","250,000","250,000","250,000",,,
+1006A002,CarPay,,,"200,000","200,000",,,,,
+1006A003,The Flex Company,,,"376,597","2,980,568","350,000","350,000",,,
+1006A004,Ledge,,,"255,600","282,000","250,000","276,400",,,
+1006A005,Lensabl,,,"150,000","150,000","150,000","150,000",,,
+1006A006,Markett,,,"328,255","750,000","328,255","750,000",,,
+1006A007,Medrepublic,,,"350,000","350,000","200,000","200,000",,,
+1006A008,SafeRide,,,"450,001","865,905","450,001","865,905",,,
+1006A009,Stop Breate Think,,,"307,792","600,000","307,792","600,000",,,
+1006A010,unGlue,,,"375,000","375,000","375,000","375,000",,,
+1006A011,Vetted Petcare,,,"552,607","951,127","300,000","300,000",,,
+1006A012,WeeCare,,,"450,000","450,000",0,0,,,
+1006A013,"Kulagy Technologies, Inc.",,,"350,000","350,000","350,000",0,08/01/2018,,
+1006A014,"Skylar Body, Inc.",,,"453,025","677,540","677,540",0,08/01/2018,,
+1006A015,"TapCart, Inc.",,,"400,000","400,000","400,000",0,08/01/2018,,
+1006A016,"SmartLane, Inc.",,,"350,000","350,000","350,000",0,08/01/2018,,
+1006A017,"Volley, Inc,",,,"550,000","1,144,494","1,144,494",0,08/01/2018,,
+1006A018,"Slinger Studios, inc.",,,"350,000","350,000","350,000",0,08/01/2018,,
+1007A001,"Abot Labs, Inc.",,,"250,000","250,000","250,000",0,08/01/2018,Software,
+1007A002,"The Apparel Network, Inc. (TAN)",,,"425,953","606,309","606,309",0,08/01/2018,Software,
+1007A003,"GLG Gaming, Inc (ProGuides)",,,"375,000","375,000","375,000",0,08/01/2018,"Tech, Media & Telecom",
+1008A001,Battlefy,,,"200,000","359,539",,,,,
+1008A002,Bitvault,,,"300,000","300,000",,,,,
+1008A003,Estify,,,"299,994","299,994",,,,,
+1008A004,Fama,,,"500,000","609,251","200,000","200,000",,,
+1008A005,FloQast,,,"100,000","100,000","100,000","100,000",,,
+1008A006,HypeVR,,,"110,000","110,000","110,000","110,000",,,
+1008A007,Winc,,,"175,000","175,000",,,,,
+1008A008,"Stop, Breathe, Think, PBC",,,"150,000","150,000","150,000",0,06/01/2018,Retail,
+1009A001,iHeartMedia (Clear Channel),NYSE,CCO,"489,246,000","191,860,000","489,246,000","249,192,000",07/08/2017,TMT,Global media and entertainment company specializing in mobile and on-demand entertainment and information services for local communities and premiere opportunities for advertisers. CCO focuses on radio and outdoor displays.
+1009A002,Michaels Stores,NASDAQ,MIK,"579,670,000","1,538,118,000","589,418,000","1,514,086,000",10/06/2017,Retail,"Leading North American specialty arts and crafts retail chain with >1,00 stores, headquartered in Iriving, Texas."
+1009A003,Quintiles Group,NASDAQ,Q,"300,681,000","1,071,901,000","300,681,000","1,030,313,000",01/08/2017,Healthcare,"Market leading US and Eurpoean focused Contract Research Organization providing clinical trials management and other outsourced services to pharmaceutical and biotech customers, headquartered in Durham, North Carolina."
+1009A004,Sankaty Special Situations,,,"447,867,000","246,470,000","447,867,000","246,510,000",08/07/2017,Financial,"The fixed income affiliate of Bain Capital, a private manager of high yield debt securities."
+1009P001,Applied Systems,,,"235,812,000","1,033,225,000","235,812,000","1,033,225,000",09/06/2017,Software,Market leader in agency management systems supplying full enterprise management software to insurance agencies in the US and Canada. Headquarted in University Park Illinois.
+1009P002,Bavaria Yacht,,,"138,989,000",,"138,989,000",,07/07/2017,Industrial,"German yacht builder producing 2,500 sailing and motor yachts each year by 600 employees. One of Europe's biggest yacht manufacturer's."
+1009P003,Bloomin' Brands,NASDAQ,BLMN,"540,066,000","1,190,497,000","540,066,000","1,190,497,000",06/07/2017,Consumer & Retail,"One of the largest casual dining restaurant companies in the world with a portfolio of brands that includes Outback Steakhouse, Carrabba's Italian Grill, Bonefish Grill, Fleming's Prime Steakhouse & Wine Bar and Roy's Hawaiian Fusion Cuisine."
+1009P004,Brakes (f/k/a Brake Bros.)*,LSE,BKB,"429,968,000","577,749,000","429,968,000","577,749,000",09/07/2017,Restaurants,"Leading foodservice distributor operating in United Kingdom, Ireland, France and Sweden, servicing over 160,000 customer outlets; headquartered in London, England."
+1009P005,Burlington Coat Factory,NYSE,BURL,"265,246,000","1,741,400,000","265,246,000","1,741,400,000",04/06/2017,Retail,"Off-price department store retailer with 477 stores; headquartered in Burlington, New Jersey."
+1009P006,Edcon,,,"580,174,000",,"580,174,000",,05/07/2017,Retail,"South Africa's #1 retailer of clothing, footwear and cosmetics; headquartered in Johannesburg, South Africa"
+1009P007,Greatview Aseptic Packaging,HK,468,"53,302,000","262,404,000","53,302,000","262,404,000",09/06/2017,Industrial,A leading local producer of aseptic packaging materials for liquid food and beverages in China; headquartered in Bejing
+1009P008,HCA,NYSE,HCA,"684,539,000","3,575,508,000","684,539,000","3,575,508,000",11/06/2017,Healthcare,"Leading acute care hospital operator in the US, based in Nashville, Tennesee."
+1009P009,HD Supply,NASDAQ,HDS,"807,760,000","1,871,743,000","807,760,000","1,871,743,000",08/07/2017,Industrial,"Diversified US wholesale distributor of construction materials to professional contractors and homebuilders, based in Atlanta, Georgia."
+1009P010,Jinsheng,,,"44,511,000","57,943,000","44,511,000","57,684,000",01/07/2017,Real Estate,"Operator and developer of Chinese shopping malls focusing on home décor and furniture; based in Nanjing, China."
+1009P011,MEI Conlux,,,"80,566,000","177,275,000","80,566,000","177,275,000",06/06/2017,Industrial,"Global leader in payment acceptance systems; combination of #1 US and Japan player, headquartered in West Chester, Pennsylvania."
+1009P012,NXP,NASDAQ,NXPI,"622,672,000","909,022,000","622,672,000","909,022,000",09/06/2017,Technology Hardware,"Global semi-conductor business, predominantly focused on mixed-signal and application specific segments; headquartered in Eindhoven, Netherlands."
+1009P013,Nutro Products,,,"274,424,000","688,338,000","274,424,000","688,338,000",04/06/2017,Consumer & Retail,"A subsidiary of Mars Inc, is the developer and manufacturer of various dog and cat food brands."
+1009P014,Sensata Technologies,NYSE,ST,"368,256,000","1,783,287,000","368,256,000","1,783,287,000",04/06/2017,Healthcare,"Global leader in sensors and controls business; headquartered in Attleboro, Massachusetts."
+1009P015,Sinomedia (CTVGB),HK,623,"29,918,000","63,985,000","29,918,000","63,985,000",11/06/2017,Media,Sinomedia is a leading media advertising operator in China and provides TV advertising services nationwide. Sinomedia is one of the largest underwriters of TV advertisement time for China Central Television Station.
+1009P016,Sun Telephone,,,"29,608,000","50,551,000","29,608,000","50,551,000",02/07/2017,Telecommunications,"Market leading distributor/procurement house in IT wiring/cable and equipment market and leading small and medium enterprise equipment leasing provider in Japan; headquartered in Tokyo, Japan."
+1009P017,Guitar Center Hello,,,"464,657,000",0,"464,657,000",0,10/07/2017,Retail,"Leading US multi-channel retailer of musical instruments since 1959 with over 200 stores and the greatest online traffic of musical instruments purchases; headquartered in Westlake Village, California."
+1009P018,Ideal Standard,,,"350,487,000","9,456,000","350,487,000","11,301,000",10/07/2017,Consumer,"Leading European manufacturer and marketer of bathroom products, headquartered in Belgium."
+1010A001,111 Capital,,,"429,699,000","429,704,000","429,699,000","429,699,000",03/08/2018,Finance,Bain owned distressed debt manager.
+1010A002,Apex Tool Group,,,"358,177,408","573,083,852","537,265,000","537,265,000",02/13/2018,Industrial & Energy,Leading global tools manufacturer that produces branded and private label hand tools for professionals and consumers.
+1010A003,ASIMCO,,,"223,949,000","214,160,000","223,949,000","223,949,000",09/10/2018,Industrials/Natural Resources,"Leading supplier of components to the diesel engine market in China. ASIMCO makes a wide range of products, including fuel injection systems, powertrain, chassis components, rotating electrics, and NVH products."
+1010A004,Atento,,,"246,222,000","249,433,000","246,222,000","246,222,000",12/12/2018,Financial & Business Services,Leading provider of call center and BPO services in Latin America.
+1010A005,Frank's International (fka Blackhawk Specialty Tools)*,,,"112,960,000","108,872,000","112,960,000","112,960,000",08/13/2018,Industrials/Natural Resources,"Blackhawk Specialty Tools is a leading provider of equipment and services to the oil and gas industries, specializing in deep-water cement heads, a critical part of well construction. - See more at: http://www.baincapitalprivateequity.com/investments/blackhawk-specialty-tools#sthash.HGkGUdK7.dpuf"
+1010A006,BMC Software,,,"389,664,000","998,302,000","858,291,000","858,291,000",09/13/2018,"Tech, Media & Telecom","BMC develops, markets and sells software used for multiple functions, including IT service management, data center automation, performance management, virtualization lifecycle management and cloud computing management."
+1010A007,Bob's Discount Furniture,,,"365,053,000","365,053,000","365,053,000","365,053,000",02/14/2018,Retail,"Bob's Discount Furniture is a privately owned regional chain of furniture stores along the Eastern United States, primarily in theNortheastern United States."
+1010A008,Canada Goose,,,"119,891,000","3,073,592,000","1,306,620,000","1,306,620,000",12/13/2018,"Consumer, Retail & Dining","Leading designer and manufacturer of premium outdoor apparel that sells its professional-grade jackets, gloves, hats and vests to consumers globally."
+1010A009,China Fire & Security Group,NASDAQ,CSFG,"9,755,000","9,755,000","9,755,000","9,755,000",11/11/2018,Industrials/Natural Resources,Leading player in home appliance and consumer electronics
+1010A010,Clear Channel (iHeartMedia),NYSE,CCO,"174,328,000","160,400,000","174,328,000","174,328,000",07/08/2018,"Tech, Media & Telecom",Global media and entertainment company specializing in mobile and on-demand entertainment and information services for local communities and premiere opportunities for advertisers. CCO focuses on radio and outdoor displays.
+1010A011,Genpact,NYSE,G,"839,294,000","871,735,000","839,294,000","839,294,000",10/12/2018,Financial & Business Services,"Global provider of business process management and technology services, focused on finance and accounting for corporations."
+1010A012,Himadri,IN,HCIL,"125,256,000","219,546,000","125,256,000","125,256,000",01/10/2018,Industrials/Natural Resources,"Leading Indian distiller of coal tar, producing coal tar pitch and other value-added downstream products that are key inputs for core industries, including aluminum, steel, building products, auto tires, consumer goods, and lithium ion batteries."
+1010A013,Ideal Standard,,,"3,152,000","3,234,000","3,152,000","3,152,000",10/07/2018,Industrials/Natural Resources,Leading European manufacturer of bathroom products.
+1010A014,MYOB Group,,,"1,239,398,000","1,255,399,000","1,239,398,000","1,239,398,000",09/11/2018,Financial & Business Services,Australia's leading ERP software provider for small and micro businesses and accounting practices.
+1010A015,Quintiles Group,NYSE,Q,"1,033,272,000","1,056,633,000","1,033,272,000","1,033,272,000",01/08/2018,Healthcare,"Market leading US and Eurpoean focused Contract Research Organization providing clinical trials management and other outsourced services to pharmaceutical and biotech customers, headquartered in Durham, North Carolina."
+1010A016,The Weather Company,,,"403,478,000","403,479,000","403,478,000","403,478,000",09/08/2018,"Tech, Media & Telecom",Leading provider of weather information.
+1010A017,Kestra Medical Technologies,,,"51,831,000","61,145,000","51,831,000","51,831,000",10/16/2018,Healthcare,Kestra Medical Technologies represents the business spun-off from Physio-Control during 2014. Total dollars invested includes $24.2M of the initial investment in Physio-Control that was subsequently invested into Kestra Medical Technologies and the amount invested in this company at the time of the Physio-Control sale.
+1010P001,Air Medical,,,"397,442,000","858,891,000","397,442,000","858,891,000",10/10/2018,Healthcare,Leading provider of community-based air ambulance services
+1010P002,Apple Leisure,,,"143,026,000","747,245,000","143,026,000","747,245,000",12/12/2018,"Consumer, Retail & Dining",Vertically integrated travel and resort company focused on packaged travel and hotel management in Mexico and the Carribean.
+1010P003,Contec Holdings,,,"213,370,000",,"213,370,000",,07/08/2018,Services,Leading consumer premise equipment repair company providing services to the broadband industry.
+1010P004,Denon & Marantz (D&M),,,"168,382,000",,"168,382,000",,09/08/2018,"Consumer, Retail & Dining","Leading provider of premium branded audio & visual, information, and communication equipment."
+1010P005,Consolidated Container,,,"167,558,000","391,914,000","391,914,000","391,914,000",07/12/2018,Industrials/Natural Resources,"U.S. supplier of High-Density Polyethylene plastic bottle packaging to several end markets including the Food, Beverage, Household Chemical and Auto Chemical industries."
+1010P006,Gymboree,,,"495,814,000","68,878,000","68,878,000","68,878,000",11/10/2018,"Consumer, Retail & Dining",Leading retailer of higher-quality children's apparel and accessories.
+1010P007,GOME Electrical Appliances,HK,493,"140,528,000","176,762,000","140,528,000","176,762,000",09/09/2018,"Consumer, Retail & Dining",One of the largest privately-owned electrical appliance retailers in Mainland China and Hong Kong
+1010P008,Hero Investments,NASDAQ,HERO,"562,090,000","796,228,000","562,090,000","796,228,000",04/11/2018,"Consumer, Retail & Dining",Leading motorcycle manufacturer in India with the largest nationwide distribution and service network.
+1010P009,International Market Centers,,,"198,994,000","427,952,000","415,189,000","415,189,000",05/11/2018,Financial & Business Services,"Operator of premier showroom space for the furnishings, home décor and gift industries."
+1010P010,Jupiter Shop Channel,,,"76,947,000","239,725,000","76,947,000","239,203,000",06/12/2018,"Consumer, Retail & Dining",Direct marketing/retailing company that operates a television shopping channel in Japan.
+1010P011,Lilliput Kidswear,,,"59,478,000","18,094,000","59,478,000","18,094,000",04/10/2018,"Consumer, Retail & Dining",India's leading kidswear company.
+1010P012,Physio Control,,,"126,882,000","734,205,000","126,882,000","735,014,000",11/11/2018,Healthcare,"Leading manufacturer of external defibrillators, providing mission critical lifesaving equipment to hospitals and first responders worldwide."
+1010P013,Securitas Direct,,,"260,938,000","541,955,000","260,938,000","541,955,000",09/11/2018,Consumer,Europe’s leading provider of high quality alarm and security services to residential homes and small businesses.
+1010P014,Skillsoft,,,"157,188,000","449,368,000","157,188,000","449,368,000",05/10/2018,"Tech, Media & Telecom",Leading SaaS provider of on demand e-learning and performance support solutions.
+1010P015,Square Trade,,,"190,096,000","607,585,000","190,096,000","607,585,000",01/12/2018,Financial & Business Services,"Growing provider of extended warranties for consumer electronics products such as smart-phones, tablets, laptops, and TVs."
+1010P016,Trinseo,NYSE,TSE,"363,453,000","963,873,000","363,453,000","963,873,000",06/10/2018,Industrials/Natural Resources,"Leading global materials manufacturer of specialty Synthetic Rubber, Latex and Plastics."
+1010P017,Bravida,,,"145,096,000","344,701,000","344,013,000","344,013,000",05/12/2018,Financial & Business Services,"Multi-technical services provider with activities spanning from electrical engineering to plumbing and HVAC (heating, ventilation & air-conditioning.)"
+1010P018,WorldPay,,,"96,341,000","547,598,000","96,341,000","547,598,000",11/10/2018,Financial & Business Services,Provider of single card and non-card electronic payment processing services to businesses.
+1010P019,Bright Horizons,NYSE,BFAM,"576,760,000","2,868,885,000","2,725,292,000","2,725,292,000",05/08/2018,Financial & Business Services,"Provider of center-based child care, education and enrichment programs, back-up care, before and after school care, and other family support services."
+1010P020,Skylark,,,"746,725,000","1,885,462,000","1,892,393,000","1,892,393,000",11/11/2018,Restaurants,"Largest operator of sit-in “family style” restaurants operating under such names as Gusto, Steak Gusto, Jonathan’s, Bamiyan and Yume-an."
+1010P021,Bellsystem24,,,"334,886,000","1,023,959,000","1,011,478,000","1,011,478,000",12/09/2018,Financial & Business Services,Provider of marketing and customer service solutions through a nationwide network of contact centers in Japan.
+1011A001,Beacon Health Options,,,"191,867,000","207,307,000","191,867,000","207,307,000",12/14/2018,Healthcare,Behavioral health management
+1011A002,Virgin Cruises,,,"46,432,000","86,016,000","41,684,000","46,432,000",12/14/2018,Tourism,"A cruise liner business formed in a joint venture between the Virgin Group and Bain Capital, the latter having a majority shareholding"
+1011A003,ATW (Big Tex),,,"254,573,000","572,790,000","254,573,000","381,860,000",12/15/2018,Industrial,"Big Tex is the leading national manufacturer of professional-grade trailers, parts and supplies, merged with ATW August 2016"
+1011A004,Mercury (formerly ICBPI),,,"166,175,000","391,366,000","166,175,000","253,308,000",12/15/2018,Financial Services,"ICBPI is the leading operator in the Italian card issuing, acquiring, payments and securities services areas, providing a large range of services to financial institutions and corporates."
+1011A005,QuVa Pharma,,,"103,306,000","165,312,000","103,306,000","103,306,000",08/15/2018,Healthcare,"QuVa Pharmaceuticals will compete in the nascent outsourced sterile admixing space, which includes the preparation for hospital pharmacies of drugs in combinations, dosage concentrations and dispensing forms, mostly in ready-to-use formats"
+1011A006,TI Automotive,,,"481,086,000","1,011,902,000","481,086,000","865,954,000",06/15/2018,Mantufacturing,"TI Automotive develops, manufactures and supplies automotive fluid storage, carrying and delivery systems"
+1011A007,Grupo Notre Dame Intermedica (GNDI),,,"439,932,000","2,133,067,000","439,932,000","1,495,061,000",05/14/2018,Healthcare,Grupo Notre Dame Intermedica is one of the largest healthcare services companies in Brazil and the market leader for low cost health and dental plans serving Brazil's growing market for employer-provided insurance.
+1011A008,Viewpoint Construction,,,"278,530,000","736,725,000","278,530,000","417,794,000",05/14/2018,Software,Viewpoint Construction Software is a US-based software provider that solves the specific and unique accounting and project management needs of construction contractors.
+1011A009,Vertafore,,,"505,032,000","707,045,000","505,032,000","555,535,000",06/16/2018,Software,Vertafore is the largest provider of technology for the insurance industry in the United States
+1011A010,TOMS,,,"159,011,000","127,209,000","159,011,000","127,209,000",10/14/2018,Consumer,The company designs and sells shoes based on the Argentine alpargata design as well as eyewear
+1011A011,Innocor,,,"172,257,000","129,193,000","172,257,000","129,193,000",02/17/2018,Industrial,Innocor Foam Technologies is a national manufacturer of polyurethane foam products for commercial customers
+1011A012,Blue Nile,,,"213,676,000","214,367,000","213,676,000","214,367,000",02/17/2018,Consumer,Blue Nile is the world's leading diamond jeweler online.
+1011A013,Aveanna,,,"300,586,000","391,157,000","300,586,000","300,586,000",03/17/2018,Healthcare,Leading pediatric home healthcare company in North America.
+1011A014,Navicure*,,,"172,596,000","743,718,000","172,596,000","189,856,000",07/16/2018,,
+1011A015,STADA,,,"383,403,000","387,957,000","383,403,000","385,156,000",07/16/2018,,
+1011A016,Surgery Partners,,,"554,973,000","567,728,000","554,973,000","419,520,000",07/16/2018,,
+1011A017,Diversey,,,"503,041,000","603,650,000","503,041,000","503,041,000",07/16/2018,,
+1011A018,Blue Coat Systems,,,"474,185,000","1,497,912,000","474,185,000","1,689,551,000",05/01/2015,Software,"Blue Coat is a leader in enterprise security, providing on-premise, hybrid and cloud-based solutions for protecting web connectivity, combating advanced threats, and responding to security breaches."
+1011P001,Sundial Brands,,,"222,508,000","571,250,000","222,508,000","278,136,000",10/15/2018,Consumer,"Sundial Brands, a leading skin care and hair care manufacturer and maker of brands including SheaMoisture and Nubian Heritage, is committed to making the highest quality products possible with natural, certified organic and ethically-sourced ingredients"
+1012A001,Axis Bank Ltd.,,,"239,619,000","197,703,000","197,703,000",0,12/01/2017,,
+1012A002,Toshiba Memory Corp.,,,"580,988,000","567,235,000",0,0,05/01/2018,,
+1012A003,TriTech Software Systems,,,"401,498,000","401,498,000","401,498,000",0,06/01/2018,,
+1013A001,Asia Pacific Medical Group,,,"109,504,000","109,868,000","69,563,000","107,937,000",03/16/2018,,"The Asia Pacific Medical (APM) Group is an American founded international medical concern, which has been providing world class healthcare to China and South East Asia since it’s founding in 1992."
+1013A002,ChinaPnR,,,"100,836,000","111,533,000","100,836,000","109,572,000",06/15/2018,Financial & Business Services,"ChinaPNR is a financial payment company focused on payment services such as online, POS, and mobile payment"
+1013A003,Emcure,,,"106,471,000","165,148,000","106,471,000","173,167,000",04/14/2018,Pharmaceuticals,"Emcure Pharmaceuticals headquartered at Pune in West India is an Indian pharmaceutical company. The company's products include tablets, capsules (both softgel capsules and hard-gel capsules), and injectables."
+1013A004,Genpact,NYSE,G,"164,035,000","354,368,000","164,035,000","340,373,000",10/12/2018,Financial & Business Services,"Global provider of business process management and technology services, focused on finance and accounting for corporations."
+1013A005,Japan Wind Development,,,"111,614,000","279,544,000","111,614,000","207,092,000",05/15/2018,Energy,"Japan Wind Development Co., Ltd. provides integrated services for windmill power. The Company imports and distributes windmill machinery as a main business line."
+1013A006,L&T Finance Holdings,,,"112,922,000","395,416,000","112,922,000","269,416,000",09/15/2018,Financial & Business Services,"The financial services arm of building firm Larsen & Toubro, an engineering firm"
+1013A007,Lionbridge,,,"175,523,000","244,432,000","175,523,000","211,911,000",09/14/2018,"Tech, Media & Telecom","A company based in Waltham, Massachusetts, United States that provides translation, online marketing, global content management and application testing products"
+1013A008,Ooedo Onsen,,,"122,533,000","361,780,000","122,533,000","312,135,000",03/15/2018,Tourism,The Ooedo Onsen Monogatari is a lavish hot spring theme park on Odaiba
+1013A009,QuEST Global Services,,,"133,487,000","193,876,000","133,487,000","160,184,000",02/16/2018,Engineering Consulting & Software,"QuEST Global, is an engineering consulting firm, founded in 1997. They began by offering various engineering services, primarily to Aerospace & Defence and Aeroengines industries."
+1013A010,Retail Zoo,,,"73,702,000","113,983,000","73,702,000","104,580,000",05/14/2018,"Consumer, Retail & Dining","Retail Zoo is the owner of three food franchising brands: Boost Juice Bars, Salsa's Fresh Mex Grill, and Cibo Expresso."
+1013A011,Rise Education,,,"125,387,000","734,285,000","125,387,000","318,415,000",09/13/2018,"Tech, Media & Telecom",Rise is a leading provider of after school English language programs for children aged 3 to 12 years old in China.
+1013A012,VXI Global Solutions,,,"82,051,000","286,611,000","82,051,000","286,611,000",08/13/2018,Financial & Business Services,"VXI Global Solutions is a fast-growing, mid-sized call center operator with a leading position in China, as well as operations in the Philippines and in the United States.  - See more at: http://www.baincapitalprivateequity.com/investments/vxi-global-solutions#sthash.1E7dRHy1.dpuf"
+1013A013,Yukiguni Maitake,,,"78,613,000","287,032,000","78,613,000","213,253,000",04/15/2018,Food,Japanese mushroom producer
+1013P001,Jupiter Shop Channel,,,"187,296,000","582,053,000","187,296,000","580,790,000",07/12/2018,"Consumer, Retail & Dining",Direct marketing/retailing company that operates a television shopping channel in Japan.
+1013P002,Biglobe,,,"55,710,000","166,905,000","55,710,000","166,704,000",11/14/2018,"Tech, Media & Telecom",Biglobe is a largest independent Internet Service Provider (ISP) company in Japan.
+1013P003,Macromill,,,"162,917,000","644,038,000","162,917,000","588,339,000",02/14/2018,Financial & Business Services,"Macromill offers a proprietary automatic online research system which instantly collects consumer response on products and services, as well as its own Japanese panel, and a brand data bank through which it analyzes the correlation between consumers and the brands they purchase. "
+1014A001,Solid Biosciences,,,"6,784,000","6,784,000","6,784,000","6,784,000",,,
+1014A002,"Dicerna Pharmaceuticals, Inc.",,,"22,614,000","43,099,000","22,614,000","23,209,000",,,
+1014A003,Hugel,,,"35,647,000","44,738,000","35,647,000",,,,
+1014A004,Replimune,,,"13,607,000","13,607,000","13,607,000",,,,
+1014A005,SpringWorks,,,"2,906,000","2,906,000","2,906,000",,,,
+1014A006,Marinus Pharmaceuticals,,,"17,859,000","27,956,000","17,859,000",,,,
+1018A001,Coherent Path,,,"673,445","788,894","672,694","788,143",06/13/2018,,
+1018A002,Crew (ooomf),,,"749,998","1,192,527","749,998","1,192,527",12/13/2018,,
+1018A003,Emissary,,,"549,998","663,653","549,998","663,653",12/13/2018,,
+1018A004,EngageInbox (RebelMail),,,"551,479","677,218","551,479","677,218",03/14/2018,,
+1018A005,Frontapp,,,"300,000","608,291","300,000","608,291",09/14/2018,,
+1018A006,Gong (Apper Labs),,,"350,000","350,000","350,000","350,000",12/14/2018,,
+1018A007,Handshake,,,"350,000","455,586","350,000","607,449",10/12/2018,,
+1018A008,Karma,,,"486,037","59,134","486,037","59,134",11/11/2018,,
+1018A009,KlipFolio,,,"479,003","1,133,797","479,003","1,133,797",01/14/2018,,
+1018A010,Preact,,,"539,699","145,962","539,699","145,962",02/13/2018,,
+1018A011,Replicated,,,"701,810","991,047","701,810","991,047",12/14/2018,,
+1018A012,Robin,,,"650,000","794,290","650,000","794,290",,,
+1018A013,Security Scorecard,,,"1,204,818","5,110,426","1,204,818","3,530,617",11/13/2018,,
+1018A014,Sling (Gangverk),,,"176,630","176,630","174,361","174,361",10/14/2018,,
+1018A015,SocialRank,,,"177,410","177,410","177,410","177,410",05/14/2018,,
+1018A016,Superhuman Labs,,,"950,000","2,539,867","950,000","2,539,867",12/14/2018,,
+1018A017,TapFwd,,,"350,000","542,422","350,000","350,000",,,
+1018A018,TrulyWireless,,,"705,205","1,308,316","705,205","705,205",07/13/2018,,
+1018A019,Wonder,,,"214,776","762,434","214,776","762,434",07/13/2018,,
+1018A020,WemoMedia,,,"500,000","1,304,404","500,000","1,304,404",,,
+1018P001,Bowery,,,"311,079","154,764","311,079","154,764",07/14/2018,,
+1018P002,Dunwello,,,"250,001",,"250,001",,01/14/2018,,
+1018P003,ChangeCoin (ChangeTip),,,"452,432",,"452,432",,03/14/2018,,
+1018P004,Memoir (veri inc),,,"100,312","53,000","100,312","56,849",10/13/2018,,
+1018P005,Paracosm,,,"500,466","114,211","500,466","50,046",10/14/2018,,
+1018P006,Plain Vanilla (quizup),,,"1,318,529",,"1,318,529",,07/12/2018,,
+1018P007,ShowMe (Learnbat),,,"271,653",,"271,653",,07/11/2018,,
+1018P008,Yhat,,,"582,438","815,414","582,438",,10/13/2018,,
+1018P009,Zillabyte,,,"207,003","12,449","207,003","12,449",04/13/2018,,
+1019A001,Arigato Machine,,,"1,700,000","2,813,154","1,700,000","2,813,154",,,
+1019A002,BigID,,,"1,055,979","1,055,979","701,096","701,096",02/16/2018,,
+1019A003,Catalytic,,,"1,187,682","1,625,313","1,187,682","1,625,313",02/16/2018,,
+1019A004,Clay,,,"500,000","500,000","500,000","500,000",,,
+1019A005,Daisho,,,"1,131,250","1,131,250","1,131,250","1,131,250",,,
+1019A006,Dark,,,"250,000","250,000",,,,,
+1019A007,Deep Current,,,"1,050,000","1,050,000","1,050,000","1,050,000",,,
+1019A008,Fortress IQ,,,"1,000,000","1,000,000",,,,,
+1019A009,HYPR,,,"1,750,000","2,753,969","750,000","750,000",12/15/2018,,
+1019A010,IOpipe,,,"252,774","328,607","252,774","328,607",08/15/2018,,
+1019A011,Jyve,,,"566,109","1,406,299","566,109","1,406,299",09/15/2018,,
+1019A012,Kustomer,,,"2,913,810","3,451,813","2,913,809","3,451,813",,,
+1019A013,Pinpoint,,,"1,000,000","1,000,000","1,000,000","1,000,000",,,
+1019A014,Smallstep,,,"385,000","385,000","385,000","385,000",10/15/2018,,
+1019A015,Snyk Limited,,,"2,103,500","2,551,276","2,103,500","2,551,276",02/16/2018,,
+1019A016,Wallaroo Labs,,,"354,718","354,718",,,,,
+1019A017,WorkRails,,,"750,000","750,000","750,000","750,000",,,
+1019P001,Wealth,,,"369,726","369,726","369,726","369,726",,,
+1021A001,Agrilyst,,,"200,000","200,000","200,000","200,000",12/15/2018,,
+1021A002,Amper Music,,,"249,999","249,999","249,999","249,999",09/15/2018,,
+1021A003,Ample Hills Holdings,,,"300,000","300,000","300,000","300,000",12/15/2018,,
+1021A004,And Co Ventures,,,"102,958","102,958","102,958","102,958",09/15/2018,,
+1021A005,BioDigital,,,"30,000","57,400","30,000","57,400",,,
+1021A006,Canary,,,"519,673","519,673","519,673","1,168,509",07/13/2018,,
+1021A007,Clubhouse Software,,,"249,998","566,662","249,998","368,300",10/01/2014,,
+1021A008,Emergent Properties,,,"300,000","300,000","300,000","300,000",,,
+1021A009,Even Financial,,,"225,000","225,000","225,000","225,000",12/15/2018,,
+1021A010,Gotenna,,,"249,999","641,716","249,999","641,716",09/13/2018,,
+1021A011,Hungryroot,,,"312,066","604,282","312,066","604,282",04/01/2015,,
+1021A012,Odyssey Logistics,,,"266,194","425,125","266,194","425,125",10/01/2014,,
+1021A013,Orchard,,,"50,000","470,106","50,000","470,106",11/13/2018,,
+1021A014,Plum Print,,,"300,000","300,000","300,000","300,000",10/01/2014,,
+1021A015,Refresh Club,,,"211,867","663,588","211,867","663,588",09/15/2018,,
+1021A016,Roto Capital,,,"250,000","250,000","250,000","250,000",12/15/2018,,
+1021A017,Seed CX,,,"250,000","250,000","250,000","250,000",09/15/2018,,
+1021A018,SocialSignIn,,,"269,715","269,715","265,715","265,715",03/13/2018,,
+1021A019,That's No Moon,,,"250,001","250,001","250,001","250,001",12/15/2018,,
+1021A020,Tinkergarten,,,"315,419","590,860","315,419","315,419",10/01/2014,,
+1021A021,Tinybop,,,"308,208","1,539,000","308,208","1,539,000",11/12/2018,,
+1021A022,Vixxenn,,,"250,000","250,000","250,000","250,000",10/01/2014,,
+1021P001,Drip.FM,,,"250,000","37,385","250,000",,10/12/2018,,
+1021P002,Design Scout,,,"100,000",,"100,000",,10/01/2014,,
+1021P003,Electnext,,,"200,000",,"200,000",,07/13/2018,,
+1021P004,Floored,,,"206,000","376,355","206,000","376,355",12/12/2018,,
+1021P005,Happy/Makr,,,"200,000","200,000","200,000","200,000",09/12/2018,,
+1021P006,Project Surf,,,"250,000",,"250,000",,09/15/2018,,
+1021P007,ProofPilot,,,"300,000",,"300,000",,,,
+1021P008,Ringly,,,"149,986",,"149,986","455,092",08/13/2018,,
+1021P009,Ronin Labs,,,"250,000",,"250,000",,04/01/2015,,
+1021P010,Superhuman,,,"50,000",,"50,000",,,,
+1021P011,Talla,,,"50,664","50,664","50,664","50,664",12/15/2018,,
+1021P012,Versa Media,,,"228,978",,"228,978",,12/15/2018,,
+1021P013,Vox Media (fka Editorially),,,"200,000","85,861","200,000","85,861",12/15/2018,,
+1021P014,Windowfarms,,,"300,000",,"300,000",,12/12/2018,,
+1022A001,Access Bazaar,,,"256,514","256,514","256,514","256,514",12/15/2018,,
+1022A002,Bizly,,,"269,971","269,971","269,971","269,971",,,
+1022A003,Bravely,,,"153,908","153,908",,,,,
+1022A004,ClearDoc,,,"256,515","256,515","256,515","256,515",,,
+1022A005,Imagen Technologies,,,"275,229","275,229","275,229","275,229",,,
+1022A006,Noken,,,"256,515","256,515",,,,,
+1022A007,Industrial Organic (reponsecycle),,,"285,831","285,831","256,515","256,515",09/15/2018,,
+1022A008,Petal Card,,,"337,134","337,134","256,515","256,515",,,
+1022A009,Radius8 (velocity retail),,,"199,946","199,946","199,946","199,946",,,
+1022A010,SolidX (Madison O),,,"256,907","256,907","256,907","256,907",,,
+1022A011,Start Hatching,,,"256,515","256,515","199,946","199,946",,,
+1022A012,The Financial Gym,,,"256,515","256,515",,,,,
+1022A013,Waggle Ventures,,,"210,570","210,570","210,570","210,570",,,
+1023A001,Wesco Technologies,NYSE,AIR,"282,500,000","946,800,000","282,500,000","979,400,000",09/06/2018,Aerospace,"Wesco Aircraft has grown to be one of world largest privately held distributors of aerospace consumables and providers of comprehensive supply chain management services.  Our services range from traditional distribution, managing supplier relationships, quality assurance, kitting, to just-in-time delivery and point-of-use inventory management."
+1023P001,Allison Transmission,NYSE,ALSN,"762,500,000","2,435,700,000","762,500,000","2,435,700,000",08/07/2018,Transportation,An American manufacturer of commercial dutyautomatic transmissions and hybrid propulsion systems.
+1023P002,ARINC Inc,,,"252,900,000","1,169,200,000","252,900,000","1,169,200,000",10/07/2018,Aerospace,"A major provider of transport communications and systems engineering solutions for eight industries: aviation, airports, defense, government, healthcare, networks, security, and transportation."
+1023P003,AxleTech International,,,"112,300,000","415,400,000","112,300,000","415,400,000",10/05/2018,Industrial,"AxleTech International is a global manufacturer and supplier of axles, axle components, planetary axles, brakes and aftermarket parts for specialty trucks, military vehicles and off highway machines used in the construction, materials handling, forestry, mining and agriculture markets."
+1023P004,Dunkin Brands,NASDAQ,NKN,"345,300,000","1,059,500,000","345,300,000","1,059,500,000",03/06/2018,Consumer,"Together with its subsidiaries, owns, operates, and franchises quick service restaurants under the Dunkin’ Donuts and Baskin-Robbins brands worldwide. It restaurants offer coffee, donuts, bagels, ice cream, frozen beverages, baked goods, and related products."
+1023P005,Insight Communications,,,"266,800,000","484,700,000","266,800,000","484,700,000",12/05/2018,Media,"Insight Communications Company is the tenth largest cable operator in the United States, serving approximately 700,000 basic video customers in the three contiguous states of Indiana, Kentucky and Ohio."
+1023P006,JMC Steel Group,,,"151,200,000","498,700,000","151,200,000","498,700,000",03/06/2018,Industrials,"Manufactures pipe and tubular products. It offers oil and gas, standard pipe, fire protection pipe, electrical conduit, electrical fittings, fence framework, hollow structural sections, pipe piling, and mechanical tubing products. The company also provides tubular steel solutions, including powder primed tubing and hollow structural sections; steel pipe and tube products, which include fire protection, electrical conduit, standard, mechanical tubing, and fence framework products; and rigid, EMT, IMC, and rigid aluminum products."
+1023P007,Kinder Morgan,NYSE,KMP,"840,700,000","2,346,400,000","840,700,000","2,346,400,000",05/07/2018,Energy,"An American energy company. It is, through a subsidiary, the general partner and owner of many of the interests in Kinder Morgan Energy Partners, a publicly traded pipeline and terminal limited partnership. Kinder Morgan Energy partners, L.P. is a leading pipeline transportation and energy storage company in North America."
+1023P008,LifeCare Holdings,,,"176,200,000",,"176,200,000",,08/05/2018,Healthcare,"Develops, acquires, and operates long-term acute care (LTAC) hospitals in the United States. The company’s LTAC hospitals provide treatment for patients with complex medical needs requiring extended treatment, such as respiratory failure, chronic pulmonary disease, nervous system disorders, infectious diseases, and severe wounds."
+1023P009,Multiplan Inc,,,"370,000,000","1,260,100,000","370,000,000","1,260,100,000",04/06/2018,Healthcare,"During the period of Carlyle's ownership, MultiPlan, Inc. was the largest independent preferred provider organization in the United States, with 2,350 clients in all 50 states, the District of Columbia and Puerto Rico."
+1023P010,NXP Semicondictor (acquired Freescale Semiconductor),NYSE,FSL,"785,000,000","791,900,000","785,000,000","791,900,000",12/06/2018,Technology,"FreeScale, acquired by NXP, produces and designs embedded hardware, with 17 billion semiconductor chips in use around the world. The company focuses on the automotive, consumer, industrial and networking markets with its product portfolio including microprocessors, microcontrollers, digital signal processors, digital signal controllers, sensors, RF power ICs and power management ICs."
+1023P011,Open Solutions,,,"268,200,000","25,300,000","268,200,000","25,300,000",01/07/2018,Technology,A Software Vendor offering Core Processing Systems for financial institutions.
+1023P012,Oriental Trading Co.,,,"257,700,000",,"257,700,000",,07/06/2018,Retail,"During the period of Carlyle's ownership, Oriental Trading Company, Inc. was the largest direct marketer of party supplies, novelties, toys and children's arts and crafts, and leading marketer of school supplies and value-priced home décor and giftware."
+1023P013,Philosophy Inc,,,"202,600,000","571,000,000","202,600,000","571,000,000",03/07/2018,Retail,"During the period of Carlyle's ownership, Philosophy, Inc. developed, manufactured and marketed a full line of premium personal care products focused on skin care, fragrance, bath & body care and color cosmetics."
+1023P014,PQ Corportation,,,"288,900,000","453,600,000","288,900,000","453,600,000",07/07/2018,Industrials,"Manufactures silicate, zeolite, and other performance materials for the detergent, pulp and paper, chemical, petroleum, catalyst, water treatment, construction, and beverage markets."
+1023P015,SS&C Corporation,NASDAQ,SSNC,"381,000,000","1,128,700,000","381,000,000","1,128,700,000",11/05/2018,Technology,A specialized software provider to the global financial services industry.
+1023P016,The Hertz Corporation,NYSE,HTZ,"740,000,000","1,911,600,000","740,000,000","1,911,600,000",12/05/2018,Transportation,An American car rentalcompany with international locations in 145 countries worldwide.
+1023P017,The Nielsen Company,NYSE,NLSN,"669,100,000","1,791,100,000","669,100,000","1,791,100,000",05/06/2018,Media,"Nielsen is a publicly held global information and media company, and is one of the world's leading suppliers of marketing information, media information and TV ratings, online intelligence and mobile measurement."
+1023P018,Veyance Technologies,,,"459,700,000","687,600,000","459,700,000","687,600,000",07/07/2018,Industrials,"Manufactures engineered rubber products for industrial, automotive, and military markets worldwide. The company provides industrial hoses, hydraulics, power transmission products, automotive aftermarket parts, commercial truck aftermarket parts, air springs, conveyor belts, rubber tracks and rubberized components, OE hoses, belts, air springs and molded parts, home and garden products, power sports products, and marine fenders."
+1024A001,Acosta,,,"1,107,100,000","885,700,000","1,107,100,000","996,400,000",09/14/2018,Consumer Business Services,"Sales, marketing and retail merchandising solutions to consumer packaged goods companies and retailers in the U.S. and Canada"
+1024A002,"ADT CAPS Co., Ltd.",,,"283,700,000","434,100,000","283,700,000","421,600,000",05/14/2018,Consumer & Retail,ADT Caps is one of the leading advanced security monitoring and dispatch service providers in South Korea.
+1024A003,Albany Molecular,,,"461,300,000","461,300,000",0,,08/17/2018,,
+1024A004,Dealogic,,,"219,600,000","340,300,000","219,600,000","340,300,000",12/14/2018,Business Software Services,An international financial software company
+1024A005,Ortho-Clinical Diagnostics,,,"900,000,000","1,710,000,000","900,000,000","1,485,000,000",06/14/2018,Healthcare,"Ortho Clinical Diagnostics serves the transfusion medicine community and laboratories around the world. We're the leading provider of total solutions for screening, diagnosing, monitoring and confirming diseases early before they put lives at risk. Our single focus is to help hospitals, laboratories and blood centers worldwide deliver results that help patients experience a better quality of life."
+1024A006,Signode Industrial Group,,,"882,500,000","1,544,400,000","882,500,000","1,544,400,000",05/14/2018,Industrial,"Signode is a global manufacturer of steel and plastic strapping, stretch film and the application equipment and accessory products for each. Our products are used throughout the world in a broad range of industries to secure everything from cotton bales and newspapers to steel coils and corrugated cartons."
+1024A007,"Rede D'Or SaoLuiz, LLC",,,"526,800,000","793,100,000","527,100,000","731,700,000",05/15/2018,Healthcare,The largest private hospital operator in Brazil
+1024A008,Centennial Resource Partners,NASDAQ,CDEV,"45,800,000","120,000,000","45,800,000","116,700,000",05/15/2018,Energy,Denver-based private oil and gas company
+1024A009,"Novetta Solutions, LLC",,,"277,400,000","110,900,000","277,400,000","110,900,000",10/15/2018,Government/Business Services,"McLean, Va.-based provider of software and IT services to the U.S. intelligence community"
+1024A010,Veritas Holdings,,,"1,063,300,000","1,222,800,000","1,063,300,000","1,222,800,000",01/16/2018,Technology & Business Services,"Veritas Technologies LLC develops and delivers backup and recovery, business continuity, information governance, and storage management solutions worldwide."
+1024A011,ION Investment Group Limited,,,"354,500,000","485,100,000","354,500,000","450,900,000",05/16/2018,Technology & Business Services,ION Investment Group (IIG) is a holding company formed to acquire and consolidate financial technology companies.
+1024A012,Novolex,,,"772,900,000","811,500,000","772,900,000","811,500,000",10/16/2018,Industrial,"Novolex™ is North America’s leader in packaging choice and sustainability. Novolex™ focuses on customers within the retail, grocery, convenience store, deli, food service, hospitality, institutional, processor and industrial markets."
+1024A013,ProKarma Holdings Inc.,,,"217,500,000","228,400,000","217,500,000","217,500,000",12/16/2018,Technology & Business Services,"ProKarma is a global IT solutions company that brings full-scale technology expertise and implementation capabilities to inspire, empower and drive our clients to focus on what they do best"
+1024A014,Atotech,,,"755,900,000","940,500,000","756,000,000","869,000,000",01/17/2018,Chemicals,"Atotech provides specialty chemical processes and equipment for the printed circuit board, IC-substrate and semiconductor industries as well as the decorative and functional surface finishing industries"
+1024A015,WellDyneRX,,,"345,800,000","345,800,000","345,800,000","345,800,000",02/17/2018,Healthcare,"WellDyneRx is an innovative, full-service prescription benefit manager, servicing its health plan members through a retail network of over 65,000 pharmacies"
+1024A016,Ithaca Holdings,,,"131,100,000","131,100,000","131,100,000","131,100,000",,,
+1024A017,Pharma Product Dev,,,"950,000,000","1,045,000,000","950,000,000","1,045,000,000",,,
+1024A018,WildHorse Resource,,,"434,500,000","434,500,000","434,500,000","434,500,000",,,
+1024A019,Project Jupiter,,,"483,300,000","408,000,000","483,300,000","483,300,000",,,
+1024A020,Portfolio Company Debt - 1,,,"126,300,000","208,700,000","126,300,000","206,300,000",,,
+1024A021,ZeroChaos,,,"322,700,000","322,700,000","126,300,000","206,300,000",,,
+1024P001,Vogue International LLC,,,"420,800,000","1,512,300,000","420,800,000","1,512,300,000",02/14/2018,Consumer & Retail,"Vogue International is one of America’s leading manufacturers and distributors of salon-heritage hair care and other personal care products. For over 20 years, Vogue has represented a refreshing and innovative point of difference in a saturated hair care industry. Headquartered in Tampa Bay, Florida, Vogue’s branded products include the FX ™ line of hair styling products, the award winning Organix® collection of shampoos, conditioners and styling/treatment items, and Organix® Bath & Body Collection. Vogue’s products are distributed exclusively to the world’s largest retailers, primarily through the Food, Drug, and Mass channels of distribution, both domestically throughout the U.S. and globally in 42 foreign countries."
+1026A001,AvanStrate,,,"271,345,828",,"271,345,828",,06/08/2018,Business Services,"AvanStrate engages in the manufacture and sale of glass substrates for thin-film transistor color LCDs. It offers glass substrates LCD panels for use in LCD televisions and LCD monitors for personal computers; and glass substrates for use as display screens in mobile phones, digital cameras, digital camcorders, game consoles, and automotive navigation systems, as well as for digital signage, touch panels, and 3D televisions."
+1026A002,CxS Corporation (Diversey),,,"90,004,235","119,409,620","90,004,235","93,453,852",11/12/2018,Indutrial,Manufacturer of cleaning and hygiene products and solutions.
+1026A003,Walbro Engine,,,"76,238,882","89,889,748","76,238,882","126,387,943",09/12/2018,Industrial,"Walbro Corporation is a manufacturing company that specializes in samll engine carburetion and supplier of auto parts. Otherwise, Walbro carburetors are commonly used on line-trimmers, leaf blowers, chain-saws, and edgers."
+1026P001,Tsubaki Nakashima,,,"418,336,390","546,122,522","418,336,390","479,236,802",03/11/2018,Industrial,"A manufacturer of precision balls, precision components and ventilators."
+1026P002,Covalent Materials,,,"264,718,340","42,494,888","264,718,340","46,502,170",12/06/2018,Business Services,"A manufacturer of advanced materials such as semiconductor-related ceramics products, FPD-related ceramics products and silicon wafers."
+1026P003,Simplex Holdings,,,"67,742,034","201,783,587","67,742,034","138,628,889",08/13/2018,Financial & Business Services,"Simplex Holdings, Inc., through its subsidiaries, provides various financial system solutions in Japan. It engages in planning, developing, operating, maintaining, and consulting, as well as providing various financial institutions access to trading systems and online trading systems. The company offers system integration services, which include consulting, development, maintenance, and operation of computer systems used by financial institutions for their profit-earning operations. It provides capital markets solutions, which include the provision of trading systems that handle bonds, stocks, currencies, and derivatives, as well as various financial products on the same platform; retail solutions, which offer an Internet trading environment, via financial institutions that allows individual investors to trade various financial products from a personal computer or cell phone; and solutions for securities exchanges, which comprise the construction of a trading system that handles exchange-traded foreign exchange (FX) transactions. Simplex Holdings, Inc. serves banks, securities firms, full-service brokerage firms, net brokerages, net banks, FX firms, and securities exchanges. The company was formerly known as Simplex Technology, Inc. and changed its name to Simplex Holdings, Inc. in October 2010. Simplex Holdings, Inc. was founded in 1997 and is headquartered in Tokyo, Japan."
+1026P004,Broadleaf Co.,,,"102,144,219","197,508,669","102,144,219","216,133,803",11/09/2018,Business Services,A software designer and manufacturer as well as IT solutions provider for the automotive industry.
+1026P005,Solasto,TYO,197,"79,415,502","405,332,089","79,415,502","426,896,807",11/11/2018,Healthcare,Provider of medical administrative and staffing services.
+1026P006,Chimney Co.,TKS,178,"114,358,323","226,184,760","114,358,323","247,514,059",12/09/2018,Restaurants,"A Japanese pub-restaurant operator, with more than 500 stores primarily in the greater Tokyo area."
+1027A001,MSX,,,"30,966,188","16,828,379","30,966,188","1,475,564",12/01/2018,Business Services,"Leading global supplier of technical business services, primarily to the automotive industry."
+1027A002,Strategic Indutries,,,"92,975,764","136,823,359","92,975,764","134,606,857",12/01/2018,Industrial,"Portfolio of two companies - Leon Plastics (wholly owned) is a manufacturer of soft padded interior trim components for the automotive industry. Simplicity Creative Group (partially owned) markets a wide variety of product lines to the home decorating, home sewing and crafts markets."
+1027A003,Worldspan,,,"202,397,451","560,685,590","202,397,439","560,685,590",06/03/2018,Business Services,Leading global provider of mission-critical electronic glocal distribution and information technology services to the travel industry
+1027P003,AMIS/ON,,,"179,498,373","478,072,939","179,498,373","478,072,939",12/01/2018,Technology - Semi,"Leading designer and manufacturer of mized signal and digital semiconducters for medical, industrial, communications and other applications."
+1027P004,Arizant,,,"104,600,819","675,168,365","104,600,819","675,168,365",07/04/2018,Healthcare,"Leading developer, manufactuere and distributor of temperature management products that prevent hypothermia associated with anesthesia during surgical procedures."
+1027P005,ERICO,,,"74,049,337","386,487,038","74,049,337","386,487,038",11/02/2018,Industrial,"Designs, manufactures and markets highly engineered metal products serving a diverse range of construction, utility and industrial applications."
+1027P006,Euramax,,,"106,304,991","542,742,597","106,304,991","542,742,597",06/03/2018,Industrial,Fabricates aluminum and steel products for the building products and recreational vehicles industries.
+1027P007,Flender,,,"118,462,861","947,628,079","118,462,861","947,628,079",07/14/2018,Industrial,Leading global manufacturer of power transmission equipment for a wide variety of applications in numerous diverse industries.
+1027P008,IWCO Direct,,,"70,408,000","239,044,820","70,408,000","239,044,820",02/05/2018,Business Services,"Leading, fully integrated direct marketing solutions provider."
+1027P009,MagnaChip,NYSE,X,"197,592,760","149,840,952","197,592,760","149,840,952",10/04/2018,Technology - Semi,Designer and manufacturer of inegrated circuits targeted at consumer markets including Display Driver Interfaces (LCD panels) and CMOS Image Sensors (camera phones).
+1027P010,NCI,,,"186,000,000","40,000,000","186,000,000","40,000,000",01/05/2018,Media,One of the largest and most diversified publishers of information for the local realestate market in North America.
+1027P011,nTelos,NASDAQ,TLS,"62,246,929","334,984,308","62,246,929","334,984,308",02/06/2018,Telecommunications,"Diversified, regional integrated communications provider with two major businesses - Wireless Services and Wireline Services. Products and services are ofered to bussiness and residential customers in Virginia, West Virginia, Kentucky, Tennessee and North Carolina."
+1027P012,Remy,,,"180,879,706","2,250,000","180,879,706","2,250,000",12/01/2018,Industrial,"Leading re-manufacturer of rotating electrical components, engines and transmissions serving both the automotive and heavy duty after-markets."
+1027P013,Rexel,RXL,PA,"79,306,547","104,995,850","79,306,547","104,995,850",03/05/2018,Industrial,Worldwide leader in the distribution of low and ultra-low voltage electrical products.
+1027P014,SEAT Pagine Gialle,IM,SP,"46,248,694","19,144,160","46,248,694","19,144,160",09/03/2018,Media,Leader in the European directory publishing business. Its main activities are based in Italy where it is the leading publisher of Yellow & White Pages and maintains a strong position in online and voice-based directory assistance.
+1027P015,Southern Graphics,,,"103,950,000","450,089,006","103,950,000","448,600,139",12/05/2018,Business Services,"Leading provider of prepress graphics services, image carriers (printing cylinders and printing plates) and other design-related services for the international consumer packaged goods industry."
+1027P016,Western Dental,,,"141,629,157","314,443,594","141,629,157","313,147,457",06/06/2018,Healthcare,"Leading provider of quality, affordable dental care and the largest dental services provider in California with ~300 general and specialty dential offices throughout California, Arizona, Nevada and Texas."
+1028A001,ANCILE Solutions,,,"162,000,000","354,005,846","162,000,000","354,005,846",07/10/2018,Business Services,One of the largest distributors of car rental services for Europe bound leisure travelers. Offers a wide range of automobiles.
+1028A002,Auto Europe Group,,,"107,300,000","270,312,961","107,300,000","270,312,961",12/06/2018,Business Services,"Leading, fully integrated direct marketing solutions provider."
+1028A003,Cadence Aerospace,,,"167,451,195","9,701,674","162,451,195","25,000,000",05/12/2018,Technology,Distributes its software through OEM software and hardware venors in addition to selling through channel partners and end customer. Focus is on computer infrastructure software.
+1028A004,CompuCom Systems,,,"266,750,990","538,502,597","266,750,990","538,502,597",09/07/2018,Business Services,Provider of customizable direct marketing solutions through shared mail products to rural and suburban markets.
+1028A005,Encompass Digital Media,,,"221,539,466","154,300,000","221,539,466","154,300,000",02/12/2018,Business Services,"Largest merchandising and experiential marketing company in North America. The company has 3 core services: product presentation and merchandising, direct in-person retail selling and experiential marketing services."
+1028A006,"HDG Acquisition, Inc. (Harvard Drug Group)",,,"171,139,418","765,146,844","171,139,418","763,886,022",04/10/2018,Healthcare,Largest independt complimentary distributor of generic pharmaceutical in the U.S. Involved in both retail and institutional distribution.
+1028A007,IWCO Direct,,,"96,464,008","221,898,358","96,464,008","207,748,861",04/08/2018,Healthcare,Pure-play national provider of outpatient rehabilitation services.
+1028A008,"Mspark, Inc. (MailSouth, Inc.)",,,"107,500,000","125,000,000","107,500,000","112,200,000",12/10/2018,Industrial/Natural Resources,Manufactures aerostructure components and subassemblies for the commercial aerospace and defense. Upside opportunity from integration across facilities and reduced operational costs.
+1028A009,Rocket Software,,,"120,000,000","617,955,729","120,000,000","617,955,729",09/09/2018,Telecommunications,"Provider of outsourced mission critical services to broadcast, cable, digital media and government entities. Services include services cable and broadcast channel origination and playout, media content encoding and storage, transmission and disaster recovery services."
+1028P001,ERICO Global Company,,,"49,838,472","107,584,514","49,838,472","107,584,514",10/12/2018,Industrial,"Designs, manufactures and markets highly engineered metal products serving a diverse range of construction, utility and industrial applications."
+1028P002,Fibertech Networks,,,"228,298,197","1,139,926,748","228,298,197","1,139,926,748",11/10/2018,Business Services,"Leading government services contractor providing systems engineering, acquisition support, test & evaluation, scientific and IT services to the Dept of Defense and numerous other civilian agencies."
+1028P003,MacDermid,,,"202,053,002","631,156,242","202,053,002","631,156,242",04/07/2018,Industrial/Natural Resources,"Global producer of value-added specialty chemicals to a wide range of end markets including electronics, metal and platic finishing, commercial printing, newspaper and packaging industries and offshore oil and gas markets."
+1028P004,Mosaic Sales Solutions,,,"75,050,000","177,297,964","75,050,000","177,297,964",12/07/2018,Technology,"Provides software products used as performance enhancement tools to businesses to accelerate the development, organization and implementation and distribution of training materials as well as for ongoing training and certification requirements."
+1028P005,"NMTI Holdings, Inc. (Newmarket)",,,"91,810,000","410,551,167","91,810,000","410,551,167",04/07/2018,Technology,The company is a provider of IT services and hardware & software product fulfillment. There services are focused on managing corporate help desks and data centers.
+1028P006,Physiotherapy Associates,,,"215,037,075",,"215,037,075",,04/12/2018,Technology,"Provider of sales, group catering and banquet software solutions to the flobal hospitality and entertainment industries."
+1028P007,"SPS Holdco, LLC",,,"87,048,023","4,467,688","87,048,023","4,467,688",09/11/2018,Telecommunications,Leading Metropolitan bandwidth infrastructure provider in Tier II and III cities. Customer are in a number of end markets.
+1028P008,"Wyle, Inc.",,,"183,775,562","335,562,535","183,775,562","335,562,535",06/09/2018,Telecommunications,Provider of outsourced communications services and solutions.
+1029A001,AFS (Gold Holding Corp.),,,"149,161,892","1,356","149,161,892",,02/14/2018,Technology,"AFS Technologies, Inc. is the leading provider of software solutions designed to meet the unique requirements of the consumer packaged goods industry. With over 25 years of industry experience, AFS provides global solutions and supports 1,100 customers in more than 40 countries. AFS' solutions are utilized by manufacturers, distributors, sales agencies, and third party logistics providers. AFS offers deployment flexibility through traditional licensing or subscription-based programs, from on premise to cloud based on-demand solutions."
+1029A002,"AHEAD (Redwood Ahead Acquisition, LLC)",,,"95,431,403","102,241,293","95,431,403","95,431,403",11/16/2018,,AHEAD helps simplify IT through innovation. We enable enterprise clients to rapidly deliver applications and services by providing a Cloud Delivery Platform and Innovation Framework for execution.
+1029A003,Conterra,,,"132,319,742","203,800,000","132,319,742","179,500,000",02/14/2018,Technology,"Bandwidth infrastructure - Conterra designs, builds, and operates high-performance networks for education, enterprises, healthcare and government organizations."
+1029A004,DISA Holdings Corp.,,,"163,510,609","200,400,000","163,510,609","170,400,000",12/14/2018,Business Services,"DISA is a provider of drug testing, background screening and employee compliance solutions focused on labor intensive industries including the refining, petrochemical and oil and gas end markets."
+1029A005,"PIKE (Pioneer Parent, Inc.)",,,"115,880,706","368,243,273","115,880,706","368,243,273",12/14/2018,Industrials,"Pike Corporation is one of the nation's largest specialty construction and engineering firms serving over 300 investor-owned, municipal and cooperative utilities in the United States."
+1029A006,"Infogroup Parent Holdings, Inc.",,,"154,172,258","154,172,258","154,172,258","154,172,258",06/17/2018,Business Services,"Infogroup and its various affiliates and subsidiaries provide to clients a wide variety of data management, distribution, analytic and marketing services, which help our clients and the platforms and partners they work with to provide more relevant marketing and communications, and to understand their consumers better."
+1029A007,Vestcom,,,"80,224,966","406,432,128","80,224,966","406,432,128",12/12/2018,Business Services,Provider of shelf edge media and shopper marketing products for U.S. grocery and drug store chains
+1029A008,Research Now,,,"176,336,696","231,200,000","176,336,696","176,336,696",03/15/2018,Business Services,"Research Now, headquartered in Plano, Texas, is the leading digital data collection provider powering analytics and insights."
+1029A009,NDC Acqusition Corp.,,,"57,737,005","57,737,005","57,737,005","57,737,005",02/16/2018,Healthcare,"Headquartered in Nashville, TN, NDC is a leading healthcare supply chain company and distributor of consumable medical supplies"
+1029A010,NSM Top Holdings Corp.,,,"155,088,909","155,088,909","155,088,909","155,088,909",10/16/2018,Healthcare,"AccessNSM is the newest member of the National Seating & Mobility family of companies. The integration of five New England-based Hudson Access locations with Chair and Equipment Rentals and Sales in Charlotte and Philadelphia’s Nexus Medical, means seven AccessNSM locations now serve the I95 corridor."
+1029A011,PlayCore Group,,,"270,615,000","270,615,000","270,615,000",,08/17/2018,Industrials,"PlayCore designs, manufactures, and markets commercial playground, park, recreation, performance and specialty equipment, and related complementary products"
+1029A012,System1,,,"97,196,789","97,196,789","97,196,789",,08/17/2018,Business Services,"Internet advertising business that utilizes data and technology to source targeted leads using various digital media (display ads, email, social network ads) which it then monetizes (i.e. sells) through the pay-per-click (PPC) networks including Google, Yahoo and Bing"
+1029A013,Terra Millennium (TMC Parent Corp.),,,"86,167,182","86,167,182","86,167,182","86,167,182",10/16/2018,Industrials,"TMC services the power generation, refining, petrochemical, mining, solar, mineral processing and steel industries nationwide"
+1029P001,ERICO Global Company,,,"199,334,359","432,095,910","199,334,359","432,095,910",10/12/2018,Industrial,"Designs, manufactures and markets highly engineered metal products serving a diverse range of construction, utility and industrial applications."
+1031A001,AdTrib (MaestroIQ),,,"349,992","1,552,150","349,992","1,552,150",11/13/2018,,
+1031A002,Better Company,,,"575,011","645,049","500,011","570,049",03/14/2018,,
+1031A003,BioBeats,,,"50,000","50,000","50,000","50,000",10/12/2018,,
+1031A004,Boxed (Giddy),,,"806,987","7,051,565","806,987","7,051,565",12/12/2018,,
+1031A005,Brightwheel (kid casa),,,"376,623","747,934","376,623","747,934",12/14/2018,,
+1031A006,Change Collective,,,"265,548","265,548","265,548","265,548",01/14/2018,,
+1031A007,Glide Talk,,,"250,000","343,364","250,000","343,364",09/13/2018,,
+1031A008,Hinge (Cleod9),,,"650,000","1,182,014","650,000","1,182,014",11/13/2018,,
+1031A009,LaunchKey,,,"175,000","73,744","175,000","175,000",12/14/2018,,
+1031A010,Memoir (Veri),,,"201,249","121,998","201,249","254,800",10/13/2018,,
+1031A011,mParticle,,,"799,999","1,611,323","400,000","551,177",10/13/2018,,
+1031A012,Navdy,,,"683,912","1,325,312","547,130","1,188,529",06/14/2018,,
+1031A013,Owlet Baby Care,,,"737,328","1,311,170","737,328","1,311,170",06/14/2018,,
+1031A014,Simple Labs (Live Notes),,,"356,537","456,467","356,537","456,467",06/14/2018,,
+1031A015,Stitch (Hothouse Labs) (Acq. by SugarCRM),,,"200,000","161,136","200,000","161,136",06/14/2018,,
+1031A016,StockUp (BlueTiger),,,"650,581","696,476","350,581","508,180",10/13/2018,,
+1031A017,Strut (Olympus Labs),,,"150,000","150,000","150,000","150,000",09/14/2018,,
+1031A018,Testfire (Shortcast),,,"250,000","250,000","250,000","250,000",06/14/2018,,
+1031A019,Truly Wireless (Highbeam),,,"402,417","708,853","250,000","250,000",07/13/2018,,
+1031A020,Vistar Media,,,"100,000","667,000","100,000","667,000",03/13/2018,,
+1031A021,Voyat,,,"250,000","93,335","250,000","202,580",06/14/2018,,
+1031A022,Vungle,,,"60,000","841,840","60,000","841,840",09/12/2018,,
+1031P001,Circa 1605,,,"50,000",,"50,000",,06/14/2018,,
+1031P002,Fitocracy (Acq. by Fitlab),,,"60,833","1,199","60,833","60,833",09/12/2018,,
+1031P003,Fleksy,,,"200,000",,"200,000",,10/14/2018,,
+1031P004,GridMobile,,,"125,000",,"125,000",,09/14/2018,,
+1031P005,Jobr,,,"250,000","317,171","250,000","317,171",06/14/2018,,
+1031P006,Just Sing It (Anyone Game),,,"100,000",1,"100,000",1,07/13/2018,,
+1031P007,Luxe Valet,,,"125,000","18,217","125,000","428,085",09/14/2018,,
+1031P008,MeowChat,,,"209,030",,"209,030",,10/14/2018,,
+1031P009,Nextpeer (Innobell) (Acq. by Viber),,,"200,000","286,634","200,000","286,634",03/14/2018,,
+1031P010,Shake,,,"250,000","13,458","250,000","13,458",11/13/2018,,
+1031P011,Sneeky,,,"100,000",,"100,000",,06/14/2018,,
+1031P012,Stuph,,,"225,000",,"225,000",,11/13/2018,,
+1031P013,TapCommerce (Acq. by Twitter),,,"419,999","2,699,425","419,999","2,699,425",08/13/2018,,
+1031P014,Winston (Reactor Labs),,,"100,000",,"100,000",,11/12/2018,,
+1031P015,Wut,,,"100,000",,"100,000",,06/14/2018,,
+1032A001,Alloy,,,"900,000","900,000",,,,,
+1032A002,Anchor FM,,,"2,061,211","3,367,353","1,031,213","1,031,213",10/15/2018,,
+1032A003,AutoFi,,,"100,000","230,645","100,000","100,000",04/01/2016,,
+1032A004,b8ta,,,"1,650,000","1,761,766","1,050,000","1,162,948",12/15/2018,,
+1032A005,Brightwheel (DSSV),,,"914,658","1,816,409","914,658","1,816,409",12/14/2018,,
+1032A006,Chatgrid,,,"500,000","500,000","500,000","500,000",07/15/2018,,
+1032A007,Dubsmash,,,"766,994","978,338","766,994","978,338",07/15/2018,,
+1032A008,Eden Tech (Wizard Labs),,,"1,150,155","1,704,426","550,000","1,324,271",05/15/2018,,
+1032A009,Embrace (PubFirst),,,"1,400,008","1,910,200","699,999","699,999",04/01/2016,,
+1032A010,Franklin Mobile,,,"750,000","750,000","500,000","500,000",,,
+1032A011,Fritz Labs,,,"1,000,000","1,000,000",,,,,
+1032A012,Hickory (Forty One),,,"849,999","849,999","849,999","849,999",09/15/2018,,
+1032A013,Hush,,,"989,345","3,391,189","600,000","3,391,189",04/01/2016,,
+1032A014,Hyperloop Technologies,,,"100,000","216,518","100,000","100,000",02/16/2018,,
+1032A015,iSee,,,"600,000","600,000",,,,,
+1032A016,Kiwi (Chatous),,,"100,000","100,000","100,000","100,000",08/15/2018,,
+1032A017,LaunchKey,,,"325,000","136,963","325,000","325,000",11/14/2018,,
+1032A018,Legit Patents,,,"1,000,000","1,000,000",,,,,
+1032A019,Lynk (Sticks and Brains),,,"700,000","700,000","600,000","600,000",06/15/2018,,
+1032A020,Meta,,,"99,982","99,982","99,982","99,982",03/16/2018,,
+1032A021,N3twork,,,"1,189,999","1,547,539","1,189,999","1,547,539",04/15/2018,,
+1032A022,Neumob,,,"559,026","647,112","559,026","647,112",04/15/2018,,
+1032A023,Phhhoto,,,"600,000","600,000","600,000","600,000",11/15/2018,,
+1032A024,Pi Charging,,,"749,999","749,999","749,999","750,369",09/15/2018,,
+1032A025,Pienso,,,"800,000","800,000","800,000","800,000",,,
+1032A026,Prompt App,,,"2,194,175","2,720,481","2,194,175","2,720,481",04/01/2016,,
+1032A027,Quilt,,,"1,025,000","1,025,000","650,000","650,000",04/01/2016,,
+1032A028,Raken,,,"487,500","487,500","487,500","487,500",04/01/2016,,
+1032A029,ReadyRobotics,,,"874,999","1,461,953","874,999","1,461,953",04/01/2016,,
+1032A030,Recharge Labs,,,"350,000","350,000","350,000","350,000",04/01/2016,,
+1032A031,Red/Green,,,"300,000","300,000","300,000","300,000",03/15/2018,,
+1032A032,Phil (Rex Technology),,,"2,158,527","2,575,333","2,158,527","2,575,333",08/15/2018,,
+1032A033,Shaper Tools,,,"966,669","1,583,336","966,669","1,583,336",04/01/2016,,
+1032A034,Shine,,,"762,694","762,694","762,694","762,694",,,
+1032A035,Snips,,,"824,716","2,191,055","824,716","2,191,055",05/15/2018,,
+1032A036,Statsbot,,,"750,000","750,000","750,003","750,003",,,
+1032A037,Strut (Olympus Labs),,,"150,000","150,000","150,000","150,000",09/14/2018,,
+1032A038,Trim (Ask Benjamin),,,"1,000,000","1,000,000","1,000,000","1,000,000",03/16/2018,,
+1032A039,Un1verse (Future Lab),,,"200,000","200,000","200,000","200,000",12/14/2018,,
+1032A040,Viro Media,,,"600,000","600,000","600,000","600,000",04/01/2016,,
+1032A041,Visual Vocal,,,"850,000","850,000","850,000","850,000",,,
+1032A042,Zero Financial,,,"1,750,000","2,624,999","1,750,000","2,624,999",03/16/2018,,
+1032P001,Envoy Commerce,,,"579,310",,"579,310",,04/15/2018,,
+1032P002,Fleksy,,,"300,000",,"300,000",,10/14/2018,,
+1032P003,Luxe Valet,,,"125,000","18,217","125,000","428,085",09/14/2018,,
+1032P004,Mast (Grid Mobile),,,"125,000",,"125,000",,09/14/2018,,
+1032P005,MeowChat (Minus),,,"313,545",,"313,545",,10/14/2018,,
+1032P006,Rumr (My Table),,,"500,000","100,400","500,000","100,400",,,
+1032P007,Workflow (DeskConnect),,,"500,000","1,080,567","500,000","1,080,567",12/15/2018,,
+1034A001,Junis CAA LP,,,"65,125,238","65,648,172","64,719,896","65,971,076",,,
+1035A001,JustFab,,,"5,000,032","6,810,272","5,000,032","5,000,032",,,
+1037A001,Apttus,,,"26,638,446","83,927,984","26,638,446","70,590,032",09/13/2018,Business Services,Provider of cloud-based software used by enterprise sales and legal teams to automate routine processes in the sales and contract management processes.
+1037A002,Buildium,,,"19,615,865","67,062,686","19,615,865","67,062,868",07/11/2018,Information Technology,Provider of a comprehensive system of record for small real estate property managers.
+1037A003,Checkmarx,,,"8,106,309","58,478,040","8,106,309","58,478,040",09/13/2018,Information Technology,Delivers a status application security solution that scan's an application source code for security vulnerabilities and stores the results for future comparisons.
+1037A004,eFolder,,,"27,596,270","38,154,442","27,596,270","37,552,654",09/13/2018,Business Services,"Provider of backup abd disaster recovery (BDR) and cloud file synchronization products, sold primarily thourgh MSPs."
+1037A005,Certent (Equity Admin Solutions),,,"33,153,330","58,620,694","33,153,330","58,576,309",11/11/2018,Business Services,"System of record for homeowner associations, condominium associations and community management companies."
+1037A006,Inthinc,,,"29,245,150","31,676,608","29,245,150","33,013,072",09/13/2018,Information Technology,Provider of fleet management and driver safety technology delivered through a SaaS platform.
+1037A007,Unified Media,,,,,,,10/12/2018,Business Services,SaaS system of record for marketers to manage advertising campaigns across social media.
+1037A008,Zapproved (Unproved),,,"15,199,925","46,199,737","15,199,925","46,184,570",06/14/2018,Business Services,Zapproved is a software provider that offers a compliance platform to facilitate companies to comply with rules and regulations.
+1037P001,Chirotouch,,,,,"23,331,245","101,627,490",08/14/2018,Information Technology,"ChiroTouch and SmartCloud, by Integrated Practice Solutions Inc., is the premier provider of fully-certified innovative chiropractic software technology solutions for the chiropractic industry."
+1037P002,Community Investors,,,,,"6,976,969","47,813,288",07/12/2018,Business Services,"Solution for employee stock option plans handling tax, accounting, administration, participant services and compliance."
+1037P003,WorkForce Software,,,,,"6,976,969","21,370,952",02/13/2018,Business Services,"Provider of workforce management software that adresses time and attendace, absence management, staff scheduling, fatigue management and labor analytics to ensure compliance."
+1038A001,CrownPeak,,,"37,052,830","74,927,342","37,052,830","54,906,421",11/15/2018,Business Services,CrownPeak provides SaaS web content management solutions which manage the content that is displayed on websites of large organizations
+1038A002,Core Security (Courion),,,"49,811,917","56,759,762","49,811,917","56,759,762",02/15/2018,Business Services,"Courion is the market leader in enterprise IAM solutions, from provisioning & governance to enterprise password management"
+1038A003,Nexonia,,,"91,363,821","108,977,106","91,363,821","119,479,882",06/15/2018,Business Services,Expense Reports and Timesheets web and mobile software to track your employees business expenses and working hours
+1038A004,Skuid,,,"5,644,238","14,746,784","5,644,238","14,744,188",08/15/2018,Business Services,Skuid is a codeless platform for rapid application development and user experience customization with Salesforce.com.
+1038A005,Skywalker Investments,,,"68,004,188","86,367,195","68,004,188","95,527,315",12/15/2018,Business Services,"NOTE Smarsh merged with Faulkner Media Group to form Skywalker investments. Smarsh is a leading provider of cloud-based archiving and compliance solutions for companies in regulated industries, specifically financial services companies"
+1038A006,ControlUp,,,"6,985,343","6,985,343","6,985,343","6,985,343",02/17/2018,Business Services,"ControlUp provides an IT operations analytics and management platform which helps companies to monitor, analyze and remediate issues in on-premise, hybrid cloud and cloud infrastructures."
+1038P001,Granicus,,,"5,659,901","59,038,986","5,659,901","58,401,581",07/14/2018,Business Services,"Granicus offers a truly unique integrated public meeting record, servicing governing bodies that are increasingly looking for more reliable and cost-effective solutions for webcasting, public meeting management and constituent communication"
+1039A001,Rave Mobile,,,"46,747,607","46,747,607","46,747,607","46,747,607",06/13/2018,Business Services,"Rave Wireless, Inc. (“Rave Mobile Safety”) is headquartered in Framingham, Massachusetts. The company provides a comprehensive suite of software solutions to assist with public safety and emergency response. The company primarily sells its solution to higher education institutions and state & local government agencies across the United States. Customers sign annual or multi-year subscription agreements."
+1039A002,Granicus,,,"49,137,652","49,137,652","49,137,652","49,137,652",06/14/2018,Business Services,"Granicus, Inc. (""Granicus"") is headquartered in Denver, Colorado. The company is a leading provider of cloud-based legislative automation and recordkeeping software for federal, state and local government. The multi-tenant software-as-a-service (“SaaS”) solutions allow clerical staff to efficiently manage the complex legislative process and effectively communicate with the public."
+1039A003,Skywalker,,,"40,673,821","92,203,162","71,399,692","103,063,195",06/15/2018,Business Services,Expense Reports and Timesheets web and mobile software to track your employees business expenses and working hours
+1039A004,eFolder,,,"35,000,000","35,000,000",,,09/17/2018,Business Services,"eFolder is a leading supplier of cloud data protection, business continuity, and cloud file sync solutions for Managed Service Providers (MSPs), solution providers, and Value Added Resellers (VARs)."
+1039A005,Core Security Holdings,,,"175,000,000","172,923,456",0,0,08/17/2018,Business Services,Core Security (“Core”) is the market leader in vulnerability and access risk management.
+1039A006,Microsystems,,,,,,,08/15/2018,Business Services,Skuid is a codeless platform for rapid application development and user experience customization with Salesforce.com.
+1041A001,Albacore,,,"7,700,000","15,800,000","7,700,000","15,800,000",01/01/2014,Manufacturing,"Based in Wellesley, Mass., Ampersand was founded in 1988. The firm focuses on growth equity investments primarily in lower middle-market companies. As of the record date, the fund consisted of five companies. The following is an overview of each company in the fund: A provider of esoteric lab testing services to hospitals and pharmaceutical companies. A developer and manufacturer of point-of-care diagnostic products for the pediatric market. A developer and manufacturer of protein-based lab testing products for hospitals. A value-added reseller of engineering and design software products. An equipment manufacturer of plastic container production systems."
+1041A002,Albacore IV,,,"8,200,000","13,300,000","12,200,000","10,900,000",04/01/2013,Manufacturing,"Based in Wellesley, Mass., Ampersand was founded in 1988. The firm focuses on growth equity investments primarily in lower middle-market companies. As of the record date, the fund consisted of five companies. The following is an overview of each company in the fund: A provider of esoteric lab testing services to hospitals and pharmaceutical companies. A developer and manufacturer of point-of-care diagnostic products for the pediatric market. A developer and manufacturer of protein-based lab testing products for hospitals. A value-added reseller of engineering and design software products. An equipment manufacturer of plastic container production systems."
+1041A003,Alfa,,,"37,100,000","52,100,000","37,100,000","46,800,000",01/01/2015,Financial Services,"Newport Global Advisors, founded in 2005, has $525 million in assets under management. We are based in Houston, Texas, and are advisors to a primarily distressed credit-for-control private equity fund and a distressed credit hedge fund."
+1041A004,Avenger,,,"10,800,000","15,600,000","10,800,000","14,700,000",04/01/2013,Software,"In the Project Avenger secondary transaction, the Fund invested $6.5 million in Costanoa Venture Capital Growth Fund, L.P. (“Costanoa Growth”) and $4.3 million in Costanoa Venture Capital RP Co-investment, L.P. (“Costanoa RP”), for a total investment of $10.8 million. Costanoa is a privately held venture capital firm based in Palo Alto, California, that invests in early-stage, cloud-based services companies that lever data and analytics to solve real-world problems for businesses and consumers. As of the closing date, Project Avenger consisted of six positions, with the majority of the value concentrated in mid- and latestage software as a service (SaaS) and internet companies. The following is an overview of the key companies in the portfolio: An SaaS email certification and intelligence company. A provider of a cloud-based accounting and financial management software. A business-to-business marketing and web analytics company. An SaaS solution for prevention of online bank fraud. A provider of e-commerce subscription websites for public archives."
+1041A005,Blackfriar,,,"58,900,000","74,100,000","58,900,000","73,000,000",01/01/2017,,"Project Blackfriar ($69.6 million investment): The Fund invested in a diversified portfolio of 29 private equity fund commitments and four co-investment stakes held within a separate account managed by WP Global Partners, a private equity fund of fund manager with $3 billion in AUM."
+1041A006,Carbon II,,,"19,400,000","28,400,000","19,400,000","29,100,000",10/01/2014,Diversified,"Diamond Castle is a private equity investment firm founded in 2004 with approximately $2.0 billion of capital raised to date. Our focus is on investments in the energy & power, financial services and healthcare sectors, as well as other diversified industries."
+1041A007,Convergence,,,"33,100,000","42,400,000","34,900,000","41,800,000",04/01/2014,Manufacturing,"PAC is a wholesale distributor and producer of extruded aluminum products. Its products are primarily sold to the RV and towable end market. The company also manufactures products for fencing, specialty trailer, aluminum fabrication, and building materials end markets."
+1041A008,Dash,,,"7,800,000","13,300,000","7,800,000","13,300,000",04/01/2014,Manufacturing,"PAC is a wholesale distributor and producer of extruded aluminum products. Its products are primarily sold to the RV and towable end market. The company also manufactures products for fencing, specialty trailer, aluminum fabrication, and building materials end markets."
+1041A009,Float,,,"59,500,000","29,000,000","58,800,000","31,500,000",10/01/2013,Oil/Gas,"PPF is a Norwegian real estate, shipping and offshore asset management and syndication house headquartered in Oslo and has approximately $800 million across its real estate and maritime investment funds.As of the April 30, 2013 record date, the Transaction consisted of a set of 27 projects across 63 vessels, with 76% of the NAV represented by offshore oil service assets and the balance comprised of gas and chemical tankers. The following represents a highlevel overview of the assets in the Transaction: The offshore oil service vessels include subsea, seismic, anchor handling tug supply (AHTS), platform support (PSV) and accommodation vessels. The shipping vessels include mostly liquefied petroleum gas (LPG) and chemical tankers. 78% of the projects are covered by long-term charters (of the 10 largest assets, seven are currently under contract, one is a publicly listed business and two are offered in the spot market). The weighted average age of the vessels is 5.3 years, with an expected life of 30–??35 years for oil service vessels and 25 years for the shipping fleet."
+1041A010,Float II,,,"11,100,000","2,000,000","11,000,000","2,100,000",07/01/2014,Oil/Gas,"Pareto Maritime Opportunity Fund II is a new investment vehicle set up and managed by the Pareto Project Financing (PPF). This new fund was created in order to complete the direct purchase of secondhand market stakes in a portfolio of 10 offshore oil service vessels and shipping assets. PPF is a Norwegian real estate, shipping and offshore asset management and syndication house headquartered in Oslo. At close, the project consists of 10 vessels, with 92% of contributed capital represented by offshore oil service assets and the balance comprised of gas tankers."
+1041A011,Geometry,,,"14,900,000","3,700,000","14,900,000","4,200,000",04/01/2013,Oil/Gas,"In Project Geometry, the Fund invested $12.8 million in TW/LM Acquisition, L.P. (”TW/LM”) which was formed by Tailwater Capital (“Tailwater”) to purchase the remaining unrealized energy assets from HM Capital’s Sector Performance Fund and other affiliated vehicles. Tailwater is a Dallas-based manager that pursues an investment strategy focused on acquiring upstream and midstream energy assets with a particular exposure to Texas. As of the investment date, the portfolio consisted of two entities, one of which represented 96% of the net asset value of the portfolio. This entity consists of midstream and upstream subsidiaries based in the South Texas Maverick Basin, where oil and gas development is experiencing rapid growth."
+1041A012,Hamam,,,"19,800,000","23,400,000","19,800,000","20,300,000",10/01/2013,Retail,"In the Project Hamam transaction, AIP invested €14.4 million in Turkish Private Equity Fund II L.P., managed by Turkven Private Equity (“Turkven”). Turkven is an established general partner with a strong Istanbul-based advisory team that makes control mid-market growth buyout investments only in Turkey and in a variety of sectors, with an emphasis on opportunities that seek to take advantage of the substantial growth in Turkish consumer spending (e.g., consumer services, consumer goods and retailing).As of the record date, the transaction consisted of nine portfolio companies. The following is an overview of the key value drivers in the transaction: A high street jeans retailer in Turkey. A well-known international pizza delivery brand franchise in Turkey and Russia. A chain of private high schools in Turkey. A mid-price fashion retail chain with more than 300 stores."
+1041A013,Haven,,,"12,400,000","16,600,000","12,200,000","16,400,000",,Healthcare,Revelstoke is a private equity firm formed by experienced investors who focus on building exceptional industry-leading companies
+1041A014,Herald,,,"6,600,000","8,900,000","6,600,000","7,000,000",04/01/2016,Diversified,Gryphon Partners is a global advisory firm focused on frontier markets
+1041A015,Holland,,,"400,000","800,000","400,000","800,000",01/01/2013,Telecom,"In the Project Holland secondary transaction, the Fund purchased an interest in Tailwind Capital Partners, L.P. (the “Tailwind Fund”), managed by Tailwind Capital (“Tailwind”), for $461,179 million. Tailwind, founded in 2003, focuses on control private equity investments in middle-market companies that are in targeted sectors, which include healthcare, media/communications and business services. As of the record date, the Fund held investments in 13 companies. The following is an overview of the impact companies owned by the fund: A provider of specialty generic pharmaceuticals; An owner / operator of wireless communication towers; A community bank based in the Southeast U.S.; and A provider of commercial networking and telecommunications equipment to the government."
+1041A016,Hudson,,,"36,100,000","29,900,000","35,700,000","29,000,000",10/01/2014,Agribusiness,Paine & Partners professionals have invested in the food and agribusiness sectors for more than 20 years.
+1041A017,Mercantile,,,"13,700,000","15,600,000","13,700,000","15,400,000",01/01/2017,,"In the Project Mercantile secondary transaction, the Fund invested in Life Investors of Korea, LP, a special purpose vehicle managed by Corsair Capital that was created to purchase interests in a Korean life insurance business from existing co-investors in the company."
+1041A018,Montgomery,,,"51,500,000","50,800,000","51,500,000","46,800,000",07/01/2015,Diversified,"For over forty years, we have applied our investment strategy focusing on small- and mid-capitalization companies to source strategic block and control investments and subsequently work with the managements and boards of directors to increase shareholder value."
+1041A019,Mortar,,,"11,500,000","16,300,000","11,500,000","16,300,000",10/01/2015,Financial Services,"Blackstone GSO is one of the world’s largest credit-oriented alternative asset managers, with a focus on delivering attractive risk-adjusted returns and capital preservation for our clients. 
+"
+1041A020,Outlaw II,,,"35,000,000","41,100,000","35,000,000","41,000,000",07/01/2012,Real Estate,"In the Project Outlaw II secondary transaction, the Fund invested $35 million in Lone Star Fund V (U.S.), L.P. (“Lone Star V”), managed by Lone Star Funds (“Lone Star”). Lone Star, based in Dallas, is a global investment firm that acquires distressed debt and equity assets. These include corporate, commercial real estate, single family residential and consumer debt products, as well as banks and asset rich operating companies, primarily in the U.S., Europe and Japan. As of the closing date, the Lone Star V portfolio consisted of 28 positions, with the majority of the value concentrated in four operating companies and the remainder invested in diversified loan portfolios and real estate assets. The following is an overview of the key companies in the portfolio: A regional supermarket chain in the U.S., with approximately $10 billion in annual sales. A leading German bank that provides commercial real estate financing and advisory services. A recently listed high-end steakhouse chain in the U.S. Diversified real estate and hotel assets in Japan"
+1041A021,Overcall,,,"35,800,000","58,400,000","35,800,000","57,100,000",07/01/2013,Services,"In the Project Overcall transaction, the Fund invested £14.7 million in BBTPS L.P. (“BBTPS”), £2.0 million in New HPE II L.P. (“HPE II”), and made a primary commitment of €10.2 million to BDC I L.P. (“BDC I”). All vehicles are managed by Bridgepoint Development Capital (“BDC”). Based in London, BDC is a lower middle-market private equity manager that invests in the UK, the Nordics and France. BDC targets companies with enterprise values below €150 million in industries with strong sector and geographic trends, primarily in the financial services, consumer, industrial, health care, media and technology sectors. As of the record date, the transaction consisted of 14 portfolio companies held across BBTPS, HPE II and BDC I. The following is an overview of the key value drivers in the transaction: UK-based provider of managed services, collocation and connectivity to SME clients from a national network of 10 data centers. Owner and operator of a portfolio of 15 large holiday parks located in desirable locations within France. Leading provider of specialist care services to the high acuity autism segment in the Nordics. UK-based manufacturer of shim components to the aerospace industry. Private hospitals operator in the Rhone-Alpes region in France. Largest provider of voice productivity software to the legal, health care and professional services market in the UK"
+1041A022,Oxygen,,,"15,200,000","21,400,000","15,200,000","19,000,000",01/01/2016,Healthcare,"Founded in 2014, Peloton Equity, LLC (Peloton) is a private equity firm dedicated to providing growth capital to innovative healthcare companies."
+1041A023,Piano,,,"19,600,000","21,200,000","19,700,000","21,500,000",07/01/2015,Diversified,Palamon Capital Partners is a private equity partnership that invests growth capital of between €15 million and €80 million in European lower mid-market companies.
+1041A024,Pulse,,,"20,700,000","32,000,000","20,700,000","31,500,000",07/01/2013,Medical Devices,"In Project Pulse, the Fund invested $16.8 million in FFC Partners III–B, LP (“New FFC III”), which was formed by Ferrer Freeman & Company (“FFC”) to purchase the remaining unrealized health care assets from FFC Partners III, LP (“Old FFC III”), a 2004 vintage year fund with $415 million in capital commitments. Based in Greenwich, Connecticut, FFC is a growth-oriented private equity firm that invests in US-based companies across the major subsectors of the health care industry. As of the December 31, 2012 record date, the transaction consisted of five portfolio companies. The following is an overview of the key value drivers in the transaction: Developer of blood glucose monitoring products for the global diabetes market. Distributor of durable medical products and supplies used in both home and hospital settings. Manufacturer of laboratory plastic consumables and liquid handling products for both robotic and manual clinical labs. Provider of outpatient dialysis services. Designer and direct seller of spinal fixation implants."
+1041A025,Rainfall,,,"21,900,000","31,800,000","21,900,000","31,300,000",,,
+1041A026,Roof,,,"13,300,000","27,800,000","13,300,000","16,300,000",07/01/2014,Retail Services,"Larsen MacColl is a lower middle-market private equity manager that seeks to acquire growing companies in the U.S. with revenues of $5 to $40 million. As of the record date, the transaction consisted of six portfolio companies. The following is an overview of what AIP believes are the key value drivers in the transaction: Supplier of mission-critical cleaning and sanitizing chemicals, systems and value-added services to U.S. food and beverage manufacturers. Provider of regional short-haul trucking, warehousing and logistics services primarily serving customers in the mid-Atlantic region. Casual live entertainment bar and restaurant concept with 10 locations throughout the Southeast and Midwest U.S. with flagship locations in Nashville, Tenn. and Cincinnati, Ohio. Manufacturer of sorbent and filtration products for the industrial cleaning, medical and transportation industries."
+1041A027,Saddle,,,"16,300,000","19,100,000","16,300,000","19,100,000",10/01/2012,Real Estate,"In the Project Saddle secondary transaction, the Fund invested an additional $16.2 million in Lone Star Fund V (U.S.), L.P. (“Lone Star V”), managed by Lone Star Funds (“Lone Star”). Lone Star, based in Dallas, is a global investment firm that acquires distressed debt and equity assets. These include corporate, commercial real estate, single-family residential and consumer debt products, as well as banks and asset-rich operating companies, primarily in the U.S., Europe and Japan. As of the closing date, the Lone Star V portfolio consisted of 28 positions, with the majority of the value concentrated in four operating companies and the remainder invested in diversified loan portfolios and real estate assets. The following is an overview of the key companies in the portfolio: A regional supermarket chain in the U.S., with approximately $10 billion in annual sales A leading German bank that provides commercial real estate financing and advisory services A recently listed high-end steakhouse chain in the U.S. Diversified real estate and hotel assets in Japan"
+1041A028,Scibbles,,,"15,000,000","18,300,000","15,000,000","16,900,000",10/01/2016,Healthcare,"ScribeAmerica Holdco, LLC, a vehicle managed by Vesey Street Capital Partners, to facilitate the recapitalization of HealthChannels."
+1041A029,Sumo,,,"29,600,000","44,300,000","29,500,000","40,000,000",10/01/2014,Technology,"The team at Sumeru Equity Partners includes senior operating executives and experienced technology investors with complementary skill sets across software, technology enabled services, and hardware.Collectively, our team has 75 years of experience in founding, operating, and investing in growth-oriented technology companies. Prior to creating SEP, our team members worked together managing Silver Lake Sumeru, a $1.1 billion mid-market technology private equity fund started in 2007 by Silver Lake."
+1041A030,Tapas,,,"8,000,000","14,300,000","8,000,000","14,600,000",07/01/2013,Manufacturing,"In the Project Tapas transaction, the Fund invested €6.2 million in Magnum Capital, LP (“Magnum Capital”), managed by Magnum Industrial Partners (“Magnum”). Based in Madrid and Lisbon, Magnum is a middle-market private equity manager that invests in the Iberian Peninsula. As of the record date, the transaction consisted of seven portfolio companies. The following is an overview of what we believe were the key value drivers in the transaction: Portugal-based owner and operator of wind-energy generation parks. Large famous private Spanish hospital based in Barcelona. Large generic pharmaceutical manufacturer in Portugal. Owner and operator of elderly care residences in Spain."
+1041A031,Tapas III,,,"33,600,000","43,700,000","33,500,000","45,900,000",07/01/2014,Manufacturing,"Based in Madrid and Lisbon, Magnum is a middle-market private equity manager that invests in the Iberian Peninsula. As of the record date, the Tapas III Transaction consisted of seven portfolio companies. The following is an overview of the key value drivers in this transaction: Portugal-based owner and operator of wind-energy generation parks. Spanish-based flavorings and fragrances manufacturer with a global distribution. Large, generic pharmaceutical manufacturer in Portugal. Owner and operator of elderly-care residences in Spain."
+1041A032,Thyme,,,"43,100,000","48,100,000","43,500,000","48,200,000",07/01/2015,Manufacturing,"Sageview provides growth capital to small and mid-sized companies in the technology, financial services, and business services sectors."
+1041A033,Tick,,,"4,400,000","5,600,000","4,400,000","5,500,000",,,Lonestar fund VIII
+1042A001,CallFire,,,"9,512,063","15,884,533","9,512,063","13,877,335",,,"Software-as-a-Service (SaaS) provider of voice and text connectivity products and solutions to small and medium sized businesses (SMBs), not for profit organizations and political agencies"
+1042A002,Clinipace,,,"9,823,657","9,827,646","9,823,657","15,680,561",,Healthcare,North Carolina-based digitial Clinical Research Organization offering technology-driven clinical trial services to biopharmaceutical and medical device companies conducting Phase 1-4 clinical trials and registries.
+1042A003,DocuWare,,,"7,001,237","32,193,420","7,001,237","28,089,068",,Retail,"The largest North American online retailer of customized window covering such as blinds, shades, draperies and wallpaper."
+1042A004,Ecentria Group (OpticsPlanet),,,"16,112,396","34,932,956","16,037,776","33,746,497",,,
+1042A005,EcoIntense,,,"8,441,880","9,319,305","8,441,880","8,560,433",,,
+1042A006,Eska,,,"12,598,887","13,792,680","12,598,887","13,234,368",,,
+1042A007,GumGum,,,"11,000,001","11,000,001","11,000,001","11,000,001",,,
+1042A008,HighQ,,,"10,888,374","10,453,716","10,888,374","9,192,063",,,
+1042A009,MotionPoint,,,"6,999,989","8,247,189","6,999,989","6,999,989",10/14/2018,,
+1042A010,NanoString Tech,NASDAQ,NSTG,"5,000,000","5,612,368","5,000,000","6,528,839",,,
+1042A011,Rocket Lawyer,,,"6,598,773","9,130,699","6,598,773","8,702,741",,,
+1042A012,Vigilant Solutions,,,"20,499,790","41,243,772","20,499,790","41,153,652",,,
+1042P001,Fuhu,,,"12,082,125","1,000,000","12,082,125","1,000,000",,,
+1042P002,Global Custom Commerce,,,"9,000,046","37,200,046","9,000,046","37,200,046",,Information Technology,"Headquartered in Germany, the company provides small and medium sized businesses integrated electronic document management solutions through on-premise software and SaaS product offerings. The software enables document management, enterprise content management, electronic archiving, workflow and process management, document retrieval, input/our put management, web content management and knowledge management."
+1042P003,GOOD Technology,,,"10,000,002","9,113,476","10,000,002","9,113,476",,,
+1042P004,Motive Medical Intelligence,,,"5,000,000",,"5,000,000",,,,
+1042P005,Nutanix,NASDAQ,NTNX,"9,999,997","27,646,284","9,999,997","26,365,312",,,
+1042P006,Socialware,,,"7,337,634","1,600,000","7,337,634","7,337,634",,Information Technology,"Austin, Tx-based SaaS provider that enables companies and their employees to utilize social networking sites for commercial purposes ina regulatory compliant manner and tailored to company-specific user policies."
+1044A001,NEA 12,,,"30,340,310","33,254,371","31,051,646","35,591,263",,,
+1045A001,42Floors,,,"6,257,959",0,"6,257,959",0,,,
+1045A002,Acquia Inc.,,,"40,264,225","53,372,765","40,264,225","53,372,765",,,
+1045A003,Adv. Cardiac Therapeutics,,,"22,874,999","25,298,088","7,875,000","10,293,189",,,
+1045A004,Alfred Club,,,"11,495,105","15,509,105","11,495,105","15,509,105",10/01/2014,,
+1045A005,Appian Corp,,,"37,464,995","64,299,583","37,464,995","64,299,583",,,
+1045A006,Apropose,,,"2,522,498","1,000,000","2,522,498","1,000,000",,,
+1045A007,Upskill,,,"16,976,681","17,162,705","16,976,681","17,162,705",,,
+1045A008,Barkly Protects,,,"16,324,101","22,010,429","16,324,101","22,010,429",10/01/2014,,
+1045A009,Better Doctor,,,"8,240,000","5,794,847","8,240,000","5,794,847",,,
+1045A010,Bitglass,,,"24,974,999","55,486,447","24,974,999","55,486,447",,,
+1045A011,Blend Systems,,,"1,999,999","8,425,230","1,999,999","1,999,999",,,
+1045A012,Blispay,,,"579,999","579,999","579,999","579,999",,,
+1045A013,Bloomreach,,,"37,387,276","37,443,248","37,387,276","37,443,248",,,
+1045A014,Bonsai AI,,,"7,750,000","9,563,349","7,750,000","9,563,349",,,
+1045A015,Branch Metrics,,,"39,529,173","108,503,861","23,229,188","92,203,876",,,
+1045A016,BVCF III-A,,,"15,672,917","22,115,489","15,672,917","21,990,620",,,
+1045A017,Canopy Tax,,,"14,982,499","18,944,924","14,982,499","18,944,924",,,
+1045A018,Cape Productions,,,"6,843,184","7,218,802","5,193,184","5,568,802",,,
+1045A019,Captora,,,"18,335,009",0,"18,335,009","18,335,009",,,
+1045A020,Care Zone,,,"21,248,604","93,864,805","21,248,604","93,864,805",,,
+1045A021,Casper Sleep,,,"36,910,867","135,726,121","18,035,370","86,469,495",,,
+1045A022,Cleave Biosciences,,,"13,678,708","851,730","13,678,708","13,678,708",,,
+1045A023,Cohere Technologies,,,"22,809,443","55,206,711","22,809,443","55,206,711",,,
+1045A024,CollectiveHealth,,,"47,535,632","90,608,384","47,489,999","78,294,871",,,
+1045A025,Console Connect,,,"20,443,465","10,210,435","18,936,410","18,911,277",,,
+1045A026,Cydan,,,"7,701,387","2,141,043","10,906,013","3,031,953",,,
+1045A027,Cyence,,,"11,989,998","36,721,116","11,989,998","36,721,116",,,
+1045A028,D2L Holdings,,,"57,056,759","69,475,016","57,056,759","69,475,016",,,
+1045A029,DataBricks,,,"39,969,103","83,763,361","39,969,103","57,787,431",,,
+1045A030,DataRobot,,,"44,989,992","69,069,401","44,989,992","69,069,401",,,
+1045A031,DataVisor,,,"5,500,000","17,706,534","5,500,000","17,706,534",,,
+1045A032,Datrium,,,"45,609,999","34,342,448","45,609,999","69,912,310",,,
+1045A033,Duolingo,,,"15,192,637","106,876,688","15,192,637","74,644,759",,,
+1045A034,EarLens Corp,,,"21,567,331","21,265,038","20,116,632","19,814,338",,,
+1045A035,Edmodo,,,"17,238,185","8,646,949","17,238,185","17,293,868",,,
+1045A036,Elasticsearch Global B.V.,,,"49,979,996","67,992,078","49,979,996","67,992,078",,,
+1045A037,Envisia Therapeutics,,,"16,661,730","16,661,728","15,662,370","15,662,370",,,
+1045A038,Evernote Corp.,,,"955,108","774,277","955,108","774,277",,,
+1045A039,Eperia,,,"3,204,626","890,910",,,,,
+1045A040,Exploramed IV,,,"6,757,218","82,500","6,757,218","1,507,825",,,
+1045A041,ExploraMed NC7,,,"5,983,300","49,159,933","5,983,300","49,159,933",,,
+1045A042,Folloze,,,"3,898,673","4,682,199","3,898,673","4,682,199",,,
+1045A043,Forter,,,"14,019,394","25,749,786","14,019,394","25,749,786",,,
+1045A044,Foundry Innovation,,,"3,880,000","3,949,000","3,880,000","3,949,000",,,
+1045A045,Framebridge,,,"10,609,997","12,737,789","6,609,997","8,540,311",10/01/2014,,
+1045A046,Fugue,,,"35,670,903","49,234,836","35,670,903","49,234,836",,,
+1045A047,Aera Technology,,,"28,744,127","35,439,203","28,744,127","35,439,203",,,
+1045A048,Fyusion,,,"15,480,005","27,333,041","15,480,005","27,333,041",,,
+1045A049,Galera Therpeutics,,,"20,975,000","30,648,750","20,975,000","30,648,750",,,
+1045A050,Global Uprising,,,"199,999","199,999","199,999","199,999",,,
+1045A051,GoEuro,,,"26,146,783","100,359,246","26,146,783","100,359,246",,,
+1045A052,Growth Equity Opps. III,,,"73,265,204","94,692,905","75,055,408","97,287,395",,,
+1045A053,GuideSpark,,,"22,999,232","28,823,137","20,749,232","26,573,137",,,
+1045A054,Gushengtang (Cayman),,,"10,745,319","41,910,976","10,745,319","27,982,675",,,
+1045A055,Houzz,,,"21,975,028","144,032,164","21,975,028","125,588,849",,,
+1045A056,Hypefair,,,"850,000","850,000","850,000","850,000",,,
+1045A057,Igneous Systems,,,"12,038,998","12,038,998","12,038,998","12,038,998",,,
+1045A058,iHorizon Group,,,"6,109,359","11,701,673","6,109,359","11,701,673",,,
+1045A059,IMARA,,,"8,064,125","12,378,123","8,064,125","12,378,123",,,
+1045A060,Infinitas Energy Solutions,,,"21,082,254","20,923,415","21,082,254","20,923,415",,,
+1045A061,Innovation Group Investors,,,"20,342,038","24,049,422","18,494,292","20,943,888",,,
+1045A062,JBF Interlude,,,"2,343,230","2,676,956","2,343,230","2,676,956",,,
+1045A063,Kaazing,,,"11,960,796","324,912","11,960,796","324,912",,,
+1045A064,Koudai,,,"9,994,999","9,994,999","9,994,999","9,994,999",10/01/2014,,
+1045A065,Kumu Networks,,,"12,738,155","18,354,399","12,738,155","18,354,399",,,
+1045A066,Kurma Biofund II,,,"1,819,246","1,364,513","1,819,246","1,369,028",,,
+1045A067,Lattice Engines,,,"26,692,807","22,118,636","26,376,790","21,484,430",,,
+1045A068,LearnUp,,,"1,665,533",0,"3,186,877","1,521,344",,,
+1045A069,Clear Motion,,,"25,018,041","50,491,495","25,018,041","50,491,495",10/01/2014,,
+1045A070,Long Hill Capital,,,"1,913,454","2,342,376",,,,,
+1045A071,Luminate Wireless,,,"13,534,163",0,"13,534,163","16,658,397",,,
+1045A072,Lumos Pharma,,,"8,954,999","17,893,161","8,954,999","17,893,161",,,
+1045A073,MeCommerce,,,"7,499,984","39,853,857","5,499,996","37,853,869",,,
+1045A074,MediSys EduTech,,,"8,019,620","6,989,006","8,019,620","6,989,006",,,
+1045A075,Mena 360,,,"15,051,296","23,697,321","4,051,301","12,697,326",10/01/2014,,
+1045A076,Mersana Therapeutics,,,"39,237,598","72,476,433","39,237,598","72,476,433",,,
+1045A077,Mighty AI,,,"3,456,125","7,161,911","3,456,125","7,161,911",,,
+1045A078,Mimosa Networks,,,"33,520,056","35,520,912","33,520,056","35,520,912",,,
+1045A079,mNectar,,,"6,980,000","6,980,000","6,980,000","6,980,000",,,
+1045A080,MongoDB,,,"54,979,989","97,942,726","54,979,989","97,942,726",,,
+1045A081,Move Guides,,,"25,256,222","41,974,113","15,256,222","22,763,339",10/01/2014,,
+1045A082,NEA: Seed II,,,"24,860,585","40,182,028","24,860,585","40,182,028",,,
+1045A083,New Globe Schools,,,"19,005,250","24,431,394","19,005,250","24,431,394",,,
+1045A084,NextNav Holdings,,,"30,529,488","34,396,676","30,529,488","34,396,676",,,
+1045A085,Nginx,,,"20,044,739","36,596,924","20,044,739","36,596,924",,,
+1045A086,Onshape,,,"72,917,078","145,486,059","72,917,078","145,486,059",,,
+1045A087,Out of the Box Software,,,"3,000,000","3,000,000","3,000,000","3,000,000",,,
+1045A088,Oyster Point Pharma,,,"756,809","776,719","756,809","776,719",,,
+1045A089,Palantir,,,"511,918","511,918","511,918","511,918",,,
+1045A090,Panacea Medical,,,"5,808,775","8,157,591","5,808,775","8,157,591",,,
+1045A091,Pinetree Group,,,"4,117,860","3,993,236","4,117,860","3,993,236",,,
+1045A092,Placemeter,,,"4,590,000","3,445,210","4,590,000","3,445,210",,,
+1045A093,Plaid Technologies,,,"13,979,988","35,586,750","13,979,988","35,586,750",,,
+1045A094,PsiKick,,,"12,214,999","17,039,798","12,214,999","17,039,798",,,
+1045A095,Radiology Partners,,,"47,482,483","258,779,534","47,482,483","258,779,534",,,
+1045A096,Raise Marketplace,,,"46,544,219","49,258,958","46,544,219","49,258,958",10/01/2014,,
+1045A097,Ravel Law,,,"5,605,001","2,165,281","5,605,001","2,165,281",,,
+1045A098,RezNext Global Solutions,,,"5,948,716","5,528,248","5,948,716","5,528,248",10/01/2014,,
+1045A099,ScoutRFP,,,"10,085,001","13,526,181","10,085,001","13,526,181",10/01/2014,,
+1045A100,Scratch Music Group,,,"1,325,000","1,325,000","1,325,000","1,325,000",,,
+1045A101,Silk Internet Corp,,,"2,864,748","324,222","2,864,748","324,222",,,
+1045A102,Sonatype,,,"18,786,540","26,666,661","18,786,540","26,666,661",,,
+1045A103,Sportsrocket,,,"16,980,001","7,349,771","16,980,001","7,349,771",,,
+1045A104,Springpath,,,"10,479,997","38,065,610","10,479,997","38,065,610",,,
+1045A105,Stride Health,,,"2,749,998","2,749,998","2,749,998","2,749,998",,,
+1045A106,Surface Oncology,,,"7,009,967","37,773,000","7,009,967","37,773,000",,,
+1045A107,Synlogic,,,"26,546,887","42,195,333","26,546,887","42,195,333",,,
+1045A108,Tamr,,,"13,860,000","29,721,807","13,860,000","29,721,807",,,
+1045A109,TechFellow Fund,,,"350,000","298,017","350,000","298,017",,,
+1045A110,TrackMaven,,,"16,955,001","16,955,001","16,955,001","16,955,001",,,
+1045A111,Traina Interactive,,,"8,695,106","4,347,552","8,695,106","4,347,552",,,
+1045A112,Transifex Limited,,,"1,022,863","1,022,863","1,022,863","1,022,863",,,
+1045A113,Tuya,,,"8,000,000","8,000,000","8,000,000","8,000,000",,,
+1045A114,Uber,,,"50,026,675","73,192,873","50,026,675","73,192,873",,,
+1045A115,Ulink Group,,,"4,846,838","6,799,253","4,846,838","6,799,253",,,
+1045A116,Velocloud Networks,,,"25,024,999","86,501,866","25,024,999","86,501,866",,,
+1045A117,Veriflow Systems,,,"4,919,615","5,797,774","4,919,615","5,797,774",,,
+1045A118,Vitru Corporation,,,"795,068","1,244,636","795,068","1,244,636",,,
+1045A119,Vtesse,,,"21,654,939","89,478,421","21,654,939","89,478,421",,,
+1045A120,Watermelon Express,,,"3,980,000","1,990,000","3,980,000","1,990,000",,,
+1045A121,WellTok,,,"19,279,992","37,942,096","19,279,992","37,942,096",,,
+1045A122,Xfund 2,,,"1,042,725","1,153,485","1,042,725","1,153,485",,,
+1045A123,Xiaojiu Kuaizhi,,,"25,040,000","19,545,019","25,040,000","19,545,019",,,
+1045A124,ZeroFox,,,"13,465,001","15,722,062","13,465,001","15,722,062",,,
+1045A125,Zoomdata,,,"1,524,996","1,778,059","1,524,996","1,778,059",,,
+1045P001,Adaptimmune Therapeutics,NASDAQ,ADAP,"45,941,227","53,984,015","36,744,030","80,309,495",,,
+1045P002,Ajax Vascular,,,"1,557,945",0,"1,557,945",0,,,
+1045P003,BetterDoctor,,,"8,240,000",0,"8,240,000",0,,,
+1045P004,Cerecor,,,"5,031,506","1,994,880","5,031,506","1,994,880",,,
+1045P005,Champions Oncology,OTC,CSBR,"7,560,974","8,031,016","7,560,974","8,031,016",,,
+1045P006,D & E Cowboys,,,"3,600,000","1,357,872","3,600,000","1,357,872",,,
+1045P007,Edimer Pharma,,,"9,981,055",0,"9,981,055",0,,,
+1045P008,FabricLock,,,"2,017,162","2,000,080","2,017,162","2,000,080",,,
+1045P009,Gainspeed,,,"17,605,878","28,934,847","17,605,878","28,934,847",,,
+1045P010,Graphite Systems,,,"23,964,628","23,964,628","23,964,628","23,964,628",,,
+1045P011,Indiaworld,,,"18,714,297",0,"18,714,297",0,,,
+1045P012,Jet.com,,,"65,046,612","362,592,403","65,046,612","362,592,403",,,
+1045P013,Loxo Oncology,NASDAQ,OXO,"17,012,592","48,922,743","17,012,592","48,922,743",,,
+1045P014,Mirna Therapeutics,,,"20,828,321","12,985,529","20,828,321","12,985,529",,,
+1045P015,MixBit,,,"9,981,660",0,"9,981,660",0,,,
+1045P016,MuleSoft,,,"66,136,610","284,614,607","66,136,610","179,801,974",,,
+1045P017,Nevro,NYSE,NVRO,"8,078,067","37,063,075","8,078,067","37,063,075",,,
+1045P018,NexImmune,,,"1,659,134",0,"1,659,134",0,,,
+1045P019,Niara,,,"8,964,999","8,964,999","8,964,999","8,964,999",,,
+1045P020,NR Investments II,,,"5,284,533",0,"5,284,533",0,,,
+1045P021,Nuelle,,,"11,927,168",0,"11,927,168",0,,,
+1045P022,Oculeve,,,"7,084,869","28,155,173","7,084,869","28,155,173",,,
+1045P023,Olio Devices,,,"5,732,410",0,"5,732,410",0,,,
+1045P024,OpsClarity,,,"6,644,999","1,262,707","6,644,999","1,262,707",,,
+1045P025,Say Media,,,"14,559,466","21,863","14,559,466","21,863",,,
+1045P026,Surf Airlines,,,"1,999,991",0,"1,999,991",0,,,
+1045P027,Turi,,,"7,770,142","12,302,850","7,770,142","12,302,850",,,
+1045P028,The Orange Chef,,,"65,000","5,998","65,000","5,998",,,
+1045P029,Tracon Pharmaceuticals,NASDAQ,TCON,"16,786,544","13,200,433","16,786,544","13,200,433",,,
+1045P030,Ziarco,,,"14,046,101","78,596,307","14,046,101","78,596,307",,,
+1046A001,440 Labs,,,"2,990,000","2,990,000",,,,,
+1046A002,51 Hunter Group,,,"792,724","726,265",,,,,
+1046A003,Amplyx,,,"9,310,127","9,310,127",,,,,
+1046A004,Annexon,,,"12,515,693","12,479,999",,,,,
+1046A005,Baldor,,,"2,506,023","2,452,705",,,,,
+1046A006,Banjo,,,"9,999,989","9,999,989",,,,,
+1046A007,Battersea,,,"9,287,679","9,286,200",,,,,
+1046A008,Berkshire Grey,,,"10,969,998","10,969,998",,,,,
+1046A009,Bit Kitchen,,,"3,492,499","3,482,499",,,,,
+1046A010,Branbees Solutions,,,"13,083,663","14,739,376",,,,,
+1046A011,Bright Health,,,"22,023,998","22,023,998",,,,,
+1046A012,BusyBees,,,"1,360","2,168,508",,,,,
+1046A013,Catalina Labs,,,"3,974,999","3,974,999",,,,,
+1046A014,Catalytic,,,"6,484,849","6,469,999",,,,,
+1046A015,CCP,,,"43,654,672","47,479,393",,,,,
+1046A016,Chuqu,,,"1,411,669","1,411,669",,,,,
+1046A017,Clementia,,,"19,987,623","19,975,885",,,,,
+1046A018,Code 42,,,"33,102,398","33,314,102",,,,,
+1046A019,DeepAssist,,,"1,280,110","1,250,000",,,,,
+1046A020,Desktop Metal,,,"22,144,772","66,066,962",,,,,
+1046A021,Docent Health,,,"5,629,999","7,308,596",,,,,
+1046A022,DOTS Technology,,,"6,005,002","5,990,002",,,,,
+1046A023,Eargo,,,"20,254,501","20,242,500",,,,,
+1046A024,Enigma,,,"21,494,991","34,780,165",,,,,
+1046A025,Expel,,,"1,700,000","1,700,000",,,,,
+1046A026,FabFitFun,,,"1,000,000","1,000,000",,,,,
+1046A027,FiftyThree,,,"24,979,997","24,979,997",,,,,
+1046A028,FoodPerfection,,,"10,025,062","9,990,000",,,,,
+1046A029,Frontier Car,,,"1,499,999","1,499,999",,,,,
+1046A030,Functional Software,,,"6,129,999","6,129,999",,,,,
+1046A031,Genesus Supply,,,"39,218,209","39,218,209",,,,,
+1046A032,GitStar,,,"2,000,000","2,000,000",,,,,
+1046A033,Gladly Software,,,"11,229,999","11,229,999",,,,,
+1046A034,GlamSquad,,,"13,257,382","13,257,382",,,,,
+1046A035,Goop,,,"15,375,010","17,235,598",,,,,
+1046A036,Go Qii,,,"5,084,393","4,992,508",,,,,
+1046A037,Green Bay Ventures,,,"5,000,000","5,000,000",,,,,
+1046A038,Green Chef Corp,,,"28,480,000","45,255,906",,,,,
+1046A039,GreyTip Software,,,"5,293,404","5,262,952",,,,,
+1046A040,Growing Corp,,,"9,819,650","9,792,650",,,,,
+1046A041,Growth Equity,,,"66,339,451","114,342,834",,,,,
+1046A042,Guideline Technologies,,,"999,999","999,999",,,,,
+1046A043,HackerOne,,,"1,682,595","23,324,657",,,,,
+1046A044,Heap,,,"6,992,501","6,992,501",,,,,
+1046A045,HMY,,,"3,751,323","3,734,559",,,,,
+1046A046,Illusive Networks,,,"11,535,343","11,489,999",,,,,
+1046A047,Instabase,,,"1,875,004","1,875,004",,,,,
+1046A048,Intact Vascular,,,"18,221,954","18,211,749",,,,,
+1046A049,Intelligence Node Consulting,,,"2,854,348","2,822,639",,,,,
+1046A050,ionQ,,,"2,000,000","2,000,000",,,,,
+1046A051,Kiswe,,,"2,000,007","2,000,007",,,,,
+1046A052,Konux,,,"3,000,000","3,819,854",,,,,
+1046A053,Krypton Project,,,"1,999,995","1,999,995",,,,,
+1046A054,Letgo,,,"5,300,000","5,300,000",,,,,
+1046A055,LinkDoc,,,"6,616,896","11,085,087",,,,,
+1046A056,Long Hill Capital,,,"1,822,676","1,737,180",,,,,
+1046A057,Lytmus,,,"3,496,246","3,482,500",,,,,
+1046A058,Matroid,,,"3,492,500","3,492,500",,,,,
+1046A059,Millendo Therapeutics,,,"25,007,423","24,992,501",,,,,
+1046A060,MindTickle,,,"9,396,839","9,362,691",,,,,
+1046A061,Mobi Social,,,"3,000,000","3,000,000",,,,,
+1046A062,More Health,,,"2,281,338","2,239,554",,,,,
+1046A063,MuleSoft,,,"28,931,964","36,540,995",,,,,
+1046A064,MyCash Fintech,,,"1,700,000","1,700,000",,,,,
+1046A065,MyTherapist,,,"2,997,994","2,980,669",,,,,
+1046A066,nea:Seed,,,"20,495,111","25,147,422",,,,,
+1046A067,Nefeli Networks,,,"7,950,003","7,950,003",,,,,
+1046A068,NightstaRx,,,"9,926,615","9,865,966",,,,,
+1046A069,Nimble Collective,,,"4,984,999","4,984,999",,,,,
+1046A070,Northern Light Strategic,,,"6,075,000","7,770,709",,,,,
+1046A071,Nuvolo,,,"1,520,000","1,500,000",,,,,
+1046A072,ObsEva,,,"14,854,136","33,238,764",,,,,
+1046A073,OpenDoor,,,"24,949,999","24,949,999",,,,,
+1046A074,Pager,,,"3,684,354","4,003,409",,,,,
+1046A075,Paysa,,,"2,999,999","2,999,999",,,,,
+1046A076,Personal Genome,,,"21,531,251","21,492,499",,,,,
+1046A077,Pilot AI,,,"6,710,000","6,710,000",,,,,
+1046A078,Placester,,,"28,480,004","42,941,364",,,,,
+1046A079,Qadium,,,"14,979,999","14,979,999",,,,,
+1046A080,Read It Later,,,"3,686,011","3,669,999",,,,,
+1046A081,Reltio,,,"15,252,587","15,252,587",,,,,
+1046A082,Reneo Pharma,,,"400,000","400,000",,,,,
+1046A083,Robinhood Markets,,,"38,954,422","91,124,002",,,,,
+1046A084,Rocket Chat,,,"4,982,661","4,969,999",,,,,
+1046A085,Runtime,,,"5,600,315","6,361,085",,,,,
+1046A086,Senti Biosciences,,,"1,000,000","1,000,000",,,,,
+1046A087,SineWave Ventures,,,"740,394","521,195",,,,,
+1046A088,Snap,,,"24,979,999","24,979,999",,,,,
+1046A089,SolveBot,,,"1,500,000","1,500,000",,,,,
+1046A090,Speedinvest,,,"1,700,082","1,494,204",,,,,
+1046A091,StreamSets,,,"5,184,999","5,184,999",,,,,
+1046A092,Swift Navigation,,,"2,172,596","2,172,596",,,,,
+1046A093,Tamara Melon,,,"12,123,200","11,988,200",,,,,
+1046A094,Tectus Corp,,,"249,999","249,999",,,,,
+1046A095,The Players Tribune,,,"18,485,498","21,995,133",,,,,
+1046A096,TherAchon,,,"1,430,390",,,,,,
+1046A097,ThreatQuotient,,,"19,455,890","20,769,933",,,,,
+1046A098,Tigera,,,"9,980,000","9,980,000",,,,,
+1046A099,Transfix,,,"14,980,000","14,980,000",,,,,
+1046A100,Travelator,,,"7,992,501","7,992,501",,,,,
+1046A101,Uhana,,,"10,066,567","10,066,567",,,,,
+1046A102,Vesper Medical,,,"5,530,751","5,530,751",,,,,
+1046A103,VividCortex,,,"2,999,914","2,999,914",,,,,
+1046A104,Wallapop,,,"35,186,188","34,628,565",,,,,
+1046A105,Waltz Networks,,,"5,992,499","5,992,499",,,,,
+1046A106,Wheels Up,,,"2,999,999","2,999,999",,,,,
+1046A107,Xiang He Fund,,,"35,330,175","34,447,198",,,,,
+1046A108,Xtuit Pharma,,,"8,721,456","8,682,964",,,,,
+1046A109,Yanka Industries,,,"11,173,278","11,157,000",,,,,
+1046A110,CRISPR Therapeutics,,,"26,719,247","41,026,600",,,,,
+1046A111,Ardelyx,,,"15,561,079","52,125,268",,,,,
+1046P001,Lowell,,,"3,000,000","1,949,698",,,,,
+7009A001,National Golf Properties,,,"80,000,000","93,000,000","18,234,852","1,344,489",,,
+7009A002,Neos Inc,,,"93,000,000",,"52,845,222","13,500,309",,,
+7009A003,Sensus Ltd,,,"113,000,000","226,000,000","55,638,707","49,108,184",,,
+7009A004,SunGard Data Systems (Fidelity National Information Services),,,"192,000,000","298,000,000","111,243,805","102,636,004",,,
+7009P001,Fiberlink Communications,,,"18,000,000","65,000,000","18,000,000","5,659,891",,,
+7009P002,Haisheng Juice Holdings,HK,59,"19,000,000","21,000,000","10,343,784","4,120,008",,,
+7009P003,ISS A/S,,,"250,000,000","557,000,000","144,958,152","188,699,614",,,
+7009P004,Nepstar Chain Drugstore,NYSE,PD,"24,000,000","142,000,000","14,181,327","22,589,138",,,
+7009P005,3854621 Canada,,,"4,000,000","5,000,000","4,000,000","5,000,000",,,
+7009P006,Adam Aircraft,,,"37,000,000","2,000,000","37,000,000","2,000,000",,,
+7009P007,AirClic,,,"11,000,000",,"11,000,000",,,,
+7009P008,Allied World Insurance,NYSE,AWH,"241,000,000","557,000,000","241,000,000","557,000,000",,,
+7009P009,Apple American,,,"40,000,000","115,000,000","40,000,000","115,000,000",,,
+7009P010,Arbor Netrowks,,,"13,000,000",,"13,000,000",,,,
+7009P011,Atkins Nutritionals,,,"71,000,000","38,000,000","71,000,000","38,000,000",,,
+7009P012,Autocam Corp,,,"61,000,000",,"61,000,000",,,,
+7009P013,BeamReach Networks,,,"13,000,000",,"13,000,000",,,,
+7009P014,Berry Plastics,NYSE,ERY,"199,000,000","599,000,000","199,000,000","599,000,000",,,
+7009P015,Bill Barrett Corp,NYSE,BG,"65,000,000","178,000,000","65,000,000","178,000,000",,,
+7009P016,Burger King,NYSE,KC,"176,000,000","906,000,000","176,000,000","906,000,000",,,
+7009P017,GS Cap Part (Cequel),,,"166,000,000","449,000,000","24,485,430","166,341,647",,,
+7009P018,CIENA Comm,,,"13,000,000","19,000,000","13,000,000","19,000,000",,,
+7009P019,Cinicinnati Bell,NYSE,BB,"90,000,000","149,000,000","90,000,000","149,000,000",,,
+7009P020,Citrix Systems,NASDAQ,CTSX,"20,000,000","55,000,000","20,000,000","53,000,000",,,
+7009P021,Clearwater Networks,,,"11,000,000","1,000,000","11,000,000","1,000,000",,,
+7009P022,Cooper Standard Automotive,,,"170,000,000",,"170,000,000",,,,
+7009P023,Euramax,,,"219,000,000",,"219,000,000",,,,
+7009P024,Geodex Comm,,,"10,000,000","4,000,000","10,000,000","4,000,000",,,
+7009P025,Hexcel,NYSE,XL,"223,000,000","572,000,000","223,000,000","572,000,000",,,
+7009P026,IPC Acquisition,,,"147,000,000","552,000,000","147,000,000","552,000,000",,,
+7009P027,Kinetic Concepts,,,"33,000,000","132,000,000","33,000,000","132,000,000",,,
+7009P028,Lantern Comm,,,"14,000,000","2,000,000","14,000,000","2,000,000",,,
+7009P029,Nalco,,,"246,000,000","653,000,000","246,000,000","653,000,000",,,
+7009P030,NextMedia Investors,,,"71,000,000",,"71,000,000",,,,
+7009P031,Openpages,,,"10,000,000","4,000,000","10,000,000","4,000,000",,,
+7009P032,RH Donnelley,,,"190,000,000","635,000,000","190,000,000","635,000,000",,,
+7009P033,Sapphire Comm,,,"10,000,000",,"10,000,000",,,,
+7009P034,Triad Financial,,,"62,000,000","20,000,000","62,000,000","20,000,000",,,
+7009P035,Sportfive,,,"48,000,000","163,000,000","48,000,000","163,000,000",,,
+7009P036,XLHealth,,,"19,000,000","69,000,000","19,000,000","65,000,000",,,
+7009P037,YES Network,,,"220,000,000","744,000,000","220,000,000","744,000,000",,,
+7009P038,Cablecom,,,"105,000,000","292,000,000","105,000,000","292,000,000",,,
+7009P039,Cognis,,,"202,000,000","823,000,000","202,000,000","823,000,000",,,
+7009P040,Eutelsat,,,"210,000,000","399,000,000","210,000,000","399,000,000",,,
+7009P041,InterXion,,,"14,000,000",,"14,000,000",,,,
+7009P042,Kabel Deutschland,,,"271,000,000","853,000,000","271,000,000","853,000,000",,,
+7009P043,Kamelian,,,"7,000,000",,"7,000,000",,,,
+7009P044,Legrand,PA,R,"100,000,000","368,000,000","100,000,000","368,000,000",,,
+7009P045,Messer Griesheim,,,"338,000,000","824,000,000","338,000,000","824,000,000",,,
+7009P046,Nascent Group,,,"21,000,000","2,000,000","21,000,000","1,000,000",,,
+7009P047,Neuf Cegetel,,,"34,000,000","111,000,000","34,000,000","111,000,000",,,
+7009P048,Versatel Telecom,,,"38,000,000","77,000,000","38,000,000","77,000,000",,,
+7009P049,C&M Co.,,,"119,000,000","614,000,000","119,000,000","614,000,000",,,
+7009P050,Equinix,NASDAQ,QIX,"48,000,000","29,000,000","48,000,000","29,000,000",,,
+7009P051,Focus Media,NASDAQ,MCN,"20,000,000","186,000,000","20,000,000","186,000,000",,,
+7009P052,Industrial & Commercial BOC,,,"177,000,000","774,000,000","177,000,000","774,000,000",,,
+7009P053,Japan Telecom,,,"60,000,000","255,000,000","60,000,000","255,000,000",,,
+7009P054,Kookmin Bank,,,"15,000,000","18,000,000","15,000,000","18,000,000",,,
+7009P055,Semiconductor Manufacturing,,,"49,000,000","107,000,000","49,000,000","107,000,000",,,
+7009P063,MuleSoft,,,"28,931,964","36,540,995",,,,,
+7009P064,MyCash Fintech,,,"1,700,000","1,700,000",,,,,
+7009P065,MyTherapist,,,"2,997,994","2,980,669",,,,,
+7009P066,nea:Seed,,,"20,495,111","25,147,422",,,,,
+7009P067,Nefeli Networks,,,"7,950,003","7,950,003",,,,,
+7009P068,NightstaRx,,,"9,926,615","9,865,966",,,,,
+7009P069,Nimble Collective,,,"4,984,999","4,984,999",,,,,
+7009P070,Northern Light Strategic,,,"6,075,000","7,770,709",,,,,
+7009P071,Nuvolo,,,"1,520,000","1,500,000",,,,,
+7009P072,ObsEva,,,"14,854,136","33,238,764",,,,,
+7009P073,OpenDoor,,,"24,949,999","24,949,999",,,,,
+7009P074,Pager,,,"3,684,354","4,003,409",,,,,
+7009P075,Paysa,,,"2,999,999","2,999,999",,,,,
+7009P076,Personal Genome,,,"21,531,251","21,492,499",,,,,
+7009P077,Pilot AI,,,"6,710,000","6,710,000",,,,,
+7009P078,Placester,,,"28,480,004","42,941,364",,,,,
+7009P079,Qadium,,,"14,979,999","14,979,999",,,,,
+7009P080,Read It Later,,,"3,686,011","3,669,999",,,,,
+7009P081,Reltio,,,"15,252,587","15,252,587",,,,,
+7009P082,Reneo Pharma,,,"400,000","400,000",,,,,
+7009P083,Robinhood Markets,,,"38,954,422","91,124,002",,,,,
+7009P084,Rocket Chat,,,"4,982,661","4,969,999",,,,,
+7009P085,Runtime,,,"5,600,315","6,361,085",,,,,
+7009P086,Senti Biosciences,,,"1,000,000","1,000,000",,,,,
+7009P087,SineWave Ventures,,,"740,394","521,195",,,,,
+7009P088,Snap,,,"24,979,999","24,979,999",,,,,
+7009P089,SolveBot,,,"1,500,000","1,500,000",,,,,
+7009P090,Speedinvest,,,"1,700,082","1,494,204",,,,,
+7009P091,StreamSets,,,"5,184,999","5,184,999",,,,,
+7009P092,Swift Navigation,,,"2,172,596","2,172,596",,,,,
+7009P093,Tamara Melon,,,"12,123,200","11,988,200",,,,,
+7009P094,Tectus Corp,,,"249,999","249,999",,,,,
+7009P095,The Players Tribune,,,"18,485,498","21,995,133",,,,,
+7009P096,TherAchon,,,"1,430,390",,,,,,
+7009P097,ThreatQuotient,,,"19,455,890","20,769,933",,,,,
+7009P098,Tigera,,,"9,980,000","9,980,000",,,,,
+7009P099,Transfix,,,"14,980,000","14,980,000",,,,,
+7009P100,Travelator,,,"7,992,501","7,992,501",,,,,
+7009P101,Uhana,,,"10,066,567","10,066,567",,,,,
+7009P102,Vesper Medical,,,"5,530,751","5,530,751",,,,,
+7009P103,VividCortex,,,"2,999,914","2,999,914",,,,,
+7009P104,Wallapop,,,"35,186,188","34,628,565",,,,,
+7009P105,Waltz Networks,,,"5,992,499","5,992,499",,,,,
+7009P106,Wheels Up,,,"2,999,999","2,999,999",,,,,
+7009P107,Xiang He Fund,,,"35,330,175","34,447,198",,,,,
+7009P108,Xtuit Pharma,,,"8,721,456","8,682,964",,,,,
+7009P109,Yanka Industries,,,"11,173,278","11,157,000",,,,,
+7009P110,CRISPR Therapeutics,,,"26,719,247","41,026,600",,,,,
+7009P111,Ardelyx,,,"15,561,079","52,125,268",,,,,
+7009P112,Lowell,,,"3,000,000","1,949,698",,,,,
+7013A001,Fiberlink Communications,,,"5,659,891","5,659,891","5,659,891","5,659,891",07/10/2018,Business Services,"The company enables IT to manage laptops, desktops and smartphones, such as the Android and iPhone, as well as tablet devices such as the iPad, in one window, one system. The mobility infrastructure and subscription services of MaaS360 have revolutionized how enterprises and business users share and secure information over the Internet. The MaaS360 platform ensures reliable, secure and compliant mobile working for employees, while delivering unprecedented Mobility Intelligence™ to senior management and IT operations. "
+7016A001,Avaya,,,"287,000,000",,"287,000,000",,07/07/2018,Telecommunications,"Avaya is a leading global provider of communication systems, applications, and end-to-end services to enterprises worldwide; its offerings include IP telephony solutions, traditional voice communications solutions, contact center infrastructure and applications, and unified communications gear and appliances."
+7016A002,IPC Systems,,,"264,400,000",,"264,400,000",,06/07/2018,Financial Technology,"IPC is a leading provider of mission critical communications solutions to global enterprises and other organizations. Clients include the world’s largest financial services firms, as well as public safety, government, power, energy and utility, and transportation organizations."
+7016A003,NXP,NASDAQ,NXP,"505,800,000","463,000,000","505,800,000","393,000,000",09/07/2018,Technology Hardware,"Global semi-conductor business, predominantly focused on mixed-signal and application specific segments; headquartered in Eindhoven, Netherlands."
+7016A004,Sabre Holdings,,,"393,900,000",,"393,900,000",,04/06/2018,Travel Services,"Sabre Holdings provides technology-enabled travel distribution services to travel agencies, consumers, and suppliers through its Travel Network, Travelocity, and Airline Solutions business units."
+7016A005,Serena Software,,,"262,200,000",,"262,200,000",,07/08/2018,Software,"Serena is the leading pure play provider of Application Lifecycle Management for the Enterprise. With 29 offices in 14 countries, Serena dedicated to helping IT capitalize on its software development initiatives."
+7016A006,SunGard Data Systems,,,"476,900,000",,"476,900,000",,05/07/2018,Business Services,"Provides software and processing for financial services, K-12 education and the public sector. It also provides continuity-assurance and production data center hosting services to enterprises of all types. "
+7016A007,Avago Technologies,,,"392,200,000","2,056,000,000","392,200,000","2,056,000,000",09/06/2018,Semiconductor,"Avago provides an extensive range of analog, mixed-signal and optoelectronic components and subsystems to tens of thousands of manufacturers in four major end markets: industrial / automotive electronics, wired infrastructure, wireless communications, and consumer and computing peripherals."
+7016A008,Instinet II,,,"152,200,000","763,000,000","152,200,000","763,000,000",09/06/2018,Financial Technology,Agency broker for Nomura
+7016A009,Nasdaq,,,"138,600,000","317,000,000","138,600,000","317,000,000",10/07/2018,Financial Technology,"The NASDAQ Stock Market, commonly known as the NASDAQ, is an American stock exchange. It is the second-largest exchange in the world by market capitalization"
+7016A010,Thomson S.A.,,,"283,000,000","305,000,000","283,000,000","305,000,000",11/06/2018,Financial Technology,"French multinational corporation that provides services and products for the communication, media and entertainment industries"
+7021A001,Archon Capital,,,"52,000,000","70,400,000","30,966,188","1,475,563",11/12/2018,,
+7021A002,Border Industrial,IM,SP,"7,500,000","12,100,000","46,248,694","19,466,373",11/12/2018,,
+7021A003,CPG Ware House,,,"22,900,000","22,500,000","92,975,764","153,148,728",11/12/2018,,
+7021A004,Central Park West,,,"44,300,000","174,300,000","179,500,000","478,100,000",11/12/2018,,
+7021A005,Crown American Hotels,,,"16,800,000","44,700,000","104,600,819","675,168,365",11/12/2018,,
+7021A006,Fairlane Green,,,"26,300,000","7,400,000","74,049,337","386,487,038",11/12/2018,,
+7021A007,Grizzly Ranch,,,"11,000,000","3,300,000","106,304,991","542,742,597",11/12/2018,,
+7021A008,HUD VII,,,"8,600,000","8,400,000","118,462,861","947,628,079",11/12/2018,,
+7021A009,Horizon Bay,,,"7,900,000","14,800,000","70,408,000","239,044,820",11/12/2018,,
+7021A010,LV Hilton,NYSE,X,"55,100,000","400,000","197,592,760","149,840,952",11/12/2018,,
+7021A011,Metropolitan Hotel,,,"19,400,000","7,400,000","186,000,000","40,000,000",11/12/2018,,
+7021A012,National Golf,NASDAQ,TLS,"39,000,000","59,300,000","62,246,929","334,984,308",11/12/2018,,
+7021A013,Pan Pacific Hotel,,,"8,500,000","28,200,000","180,879,706","2,250,000",11/12/2018,,
+7021A014,Park Central Hotel,RXL,PA,"32,300,000","119,700,000","79,306,547","104,995,850",11/12/2018,,
+7021A015,Poplar Creek,,,"28,800,000","8,000,000","103,950,000","432,280,820",11/12/2018,,
+7021A016,Radisson Ambassador SJ,,,"15,100,000","22,500,000","141,629,157","283,003,119",11/12/2018,,
+7021A017,Residences at Little Nell,,,"48,400,000","59,200,000","202,397,439","557,587,581",11/12/2018,,
+7021A018,Ritz Carlton SJ,,,"22,700,000","37,400,000",,,,,
+7021A019,San Diego Land,,,"46,700,000","10,800,000",,,,,
+7021A020,Southlake,,,"3,100,000","11,000,000",,,,,
+7021A021,WP Commerical,,,"67,700,000","66,300,000",,,,,
+7021A022,Wailea Resort,,,"21,700,000","38,000,000",,,,,
+7021A023,A&G Capital,,,"2,400,000","5,200,000",,,,,
+7021A024,Accordia,,,"130,100,000","353,900,000",,,,,
+7021A025,Blue Creek,,,"4,900,000","8,300,000",,,,,
+7021A026,Cortland Street,,,"6,400,000","21,500,000",,,,,
+7021A027,Cross Tower,,,"2,000,000","4,100,000",,,,,
+7021A028,East Island,,,"2,600,000","4,100,000",,,,,
+7021A029,Endeavor Private Fund,,,"9,100,000","31,200,000",,,,,
+7021A030,Endeavor Relaty,,,"21,700,000","58,200,000",,,,,
+7021A031,Forest Green,,,"12,800,000","34,700,000",,,,,
+7021A032,Huarong Mgmt I,,,"3,800,000","8,500,000",,,,,
+7021A033,Huarong Mgmt II,,,"3,200,000",,,,,,
+7021A034,Hapan Hotel Alliance,,,"44,600,000","76,200,000",,,,,
+7021A035,Japan Asset Program,,,"6,100,000","11,500,000",,,,,
+7021A036,Kawasaki Holdings,,,"400,000","500,000",,,,,
+7021A037,Leaf Green,,,"4,500,000","9,900,000",,,,,
+7021A038,North Land,,,"1,100,000","1,400,000",,,,,
+7021A039,Oval Building,,,"7,000,000","8,500,000",,,,,
+7021A040,Palmwood,,,"700,000","1,300,000",,,,,
+7021A041,Plumwood,,,"7,700,000","8,800,000",,,,,
+7021A042,Prime Capital,,,"16,800,000","38,700,000",,,,,
+7021A043,Rokko Residence,,,"4,700,000","14,800,000",,,,,
+7021A044,TE Capital,,,"11,800,000","24,700,000",,,,,
+7021A045,UDE,,,"2,100,000","1,800,000",,,,,
+7021A046,Universal,,,"3,900,000","6,000,000",,,,,
+7021A047,West Wind,,,"23,000,000","35,900,000",,,,,
+7021A048,Westport Finance,,,"8,800,000","16,200,000",,,,,
+7021A049,BNL II,,,"28,200,000","21,000,000",,,,,
+7021A050,Canary Wharf Debt,,,"39,200,000","46,800,000",,,,,
+7021A051,Canary Wharf Equity,,,"12,300,000","17,600,000",,,,,
+7021A052,Carrefour Portfolio,,,"8,300,000","10,800,000",,,,,
+7021A053,Coeur Defnese - Equity,,,"40,600,000","65,200,000",,,,,
+7021A054,Coeur Defense - Equity,,,"3,000,000","255,700,000",,,,,
+7021A055,DT Portfolio,,,"6,900,000","13,800,000",,,,,
+7021A056,Drott Portfolio,,,"27,900,000","93,200,000",,,,,
+7021A057,FT Portfolio,,,"92,700,000","245,500,000",,,,,
+7021A058,GSW,,,"187,000,000","435,500,000",,,,,
+7021A059,Kingfisher Portfolio,,,"8,200,000","82,300,000",,,,,
+7021A060,Lancer,,,"5,700,000","15,500,000",,,,,
+7021A061,NCC Portfolio,,,"20,100,000","23,700,000",,,,,
+7021A062,Project Parc,,,"34,200,000","30,900,000",,,,,
+7021A063,Queens Moat,,,"53,400,000","39,400,000",,,,,
+7021A064,Telemaco,,,"40,200,000","67,000,000",,,,,
