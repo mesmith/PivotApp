@@ -16,7 +16,7 @@ a high-performance mid-tier and back-end that is 100%
 <div style="margin-top:100px; margin-left:30px"/>
 <div id="strat" style="float:left; width:400px">
 
-I used those tools to develop this app <a href="http://d3.7bsoftware.com:8080/views/index.html">(see it live!)</a>.  You can point this app to any dataset,
+I used those tools to develop this app <a href="http://d3.7bsoftware.com:8080/index.html">(see it live!)</a>.  You can point this app to any dataset,
 and it will semi-automatically provide categorical data pivoting and
 filtering.  (You will have to modify the metadata object in 
 js-react/metadata.js, but that is an easy thing to do.)
