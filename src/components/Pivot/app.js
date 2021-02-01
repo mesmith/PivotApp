@@ -563,11 +563,11 @@ class PivotApp extends React.Component {
   //
   componentDidMount(){
     const { needData, dataset, data, initCategoricalValues, currentState,
-        initData, newMetadata }
+        initData }
       = this.props;
 
     if (needData || metadata.getDataset() !== dataset) {
-      startup.startup(initData, dataset, newMetadata);
+      startup.startup(initData, dataset);
     } else if (currentState) {
       const initState = getInitState(dataset, currentState, data, 
           initCategoricalValues, null);

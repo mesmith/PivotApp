@@ -35,11 +35,7 @@ const getReusedDatasetState = function(categoricalValues, previousState, data) {
 // After initial DOM loading, initialize or restart the dataset, and
 // display the Loading icon.
 //
-// One of dataset and newMetadata should be non-null.  If newMetadata is null,
-// then we look up existing dataset from metadata.js.  If newMetadata is non-null,
-// use that metadata for dataset.
-//
-const startup = function(initData, dataset, newMetadata){
+const startup = function(initData, dataset){
   const { pivot } = store.getState();
   const previousState = utils.getCurrentState(pivot);
   const previousDataset = previousState ? previousState.dataset : null;
@@ -47,9 +43,6 @@ const startup = function(initData, dataset, newMetadata){
     function(resolve, reject) {
       const actualDataset = dataset ? dataset : metadata.getActualDataset();
       const filter = metadata.getFilters();
-      if (newMetadata) {
-        metadata.addMetadata(newMetadata);
-      }
       metadata.setMetadata(actualDataset);
       const datapointCol = datapoint.getDefaultDatapointCol();
 

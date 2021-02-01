@@ -1104,10 +1104,7 @@ const metadata = function(){
   const customer = process.env.CUSTOMER  || 'master';
   const initMetadata = custToMeta[customer];
 
-  // This is a variable because we allow external metadata to be
-  // added to this.  FIXME.
-  //
-  var allMetadata = [
+  const allMetadata = [
     airForceMetadata,
     ticketSubjectMetadata,
     ticketSubjectMetadataSmall,
@@ -1126,20 +1123,6 @@ const metadata = function(){
   //
   const setMetadata = function(dataset) {
     thisMetadata = getMetadata(dataset);
-  }
-
-  // Add 'newMetadata' to the list of all accessible metadata.
-  //
-  // Do nothing if the dataset represented by 'newMetadata' already
-  // exists, or if 'newMetadata' is missing a dataset name.
-  //
-  const addMetadata = function(newMetadata) {
-    const dataset = newMetadata.dataset && newMetadata.dataset.name
-      ? newMetadata.dataset.name
-      : null;
-    if (dataset && !getMetadata(dataset)) {
-      allMetadata = allMetadata.concat(newMetadata);
-    }
   }
 
   const getMetadata = function(dataset) {
@@ -1696,8 +1679,7 @@ const metadata = function(){
     getReverseMap,
     getAliasedReverseMap,
     metadataExists,
-    setMetadata,
-    addMetadata
+    setMetadata
   }
 }();
 
