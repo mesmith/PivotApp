@@ -567,10 +567,9 @@ class PivotApp extends React.Component {
     const { needData, dataset, data, initCategoricalValues, currentState,
         initData, newMetadata }
         = this.props;
-    if (needData) {
-      startup.startup(initData, dataset, newMetadata).then(function(result) {
-        const { dataset, categoricalValues, drawingData, cookedData } = result;
-      });
+
+    if (needData || metadata.getDataset() !== dataset) {
+      startup.startup(initData, dataset, newMetadata);
     } else if (currentState) {
       const initState = getInitState(dataset, currentState, data, 
           initCategoricalValues, null);
@@ -594,6 +593,7 @@ class PivotApp extends React.Component {
   }
 
   render(){
+    const datasetLabel = metadata.getDatasetLabel();
 
     // When the app is starting up, there is no state or props.
     // We want to just show the Loading icon while the initial
@@ -601,7 +601,7 @@ class PivotApp extends React.Component {
     //
     if (!this.state || !this.props || this.props.needData) {
       return (
-        <div className={"pivot-all pivot-div"}>
+        <div key={datasetLabel} className={"pivot-all pivot-div"}>
           <Loader fullPage loading={true} />
         </div>
       );
@@ -633,7 +633,6 @@ class PivotApp extends React.Component {
 
     const categoricalValues = currentState && currentState.categoricalValues || null;
 
-    const datasetLabel = metadata.getDatasetLabel();
     const datasetMonths = metadata.getDatasetMonths();
     const datasetSubtitle = metadata.getDatasetSubtitle();
 
@@ -657,9 +656,9 @@ class PivotApp extends React.Component {
         <div className={"pivot-header pivot-div"}>
           <div className={"title pivot-div"}>
             <h1>{actualTitle}</h1>
-            { actualSubtitle ?  <h2>{actualSubtitle}</h2> : null }
+            { actualSubtitle ? <h2>{actualSubtitle}</h2> : null }
           </div>
-          {showDataset ?  <SelectDataset value={dataset} /> : null}
+          {showDataset ? <SelectDataset value={dataset} /> : null}
         </div>
         <PivotContainer
           loading={loading}
@@ -673,21 +672,25 @@ class PivotApp extends React.Component {
   }
 }
 
-const mapStateToProps = function(state, ownProps) {
+const mapStateToProps = function(state) {
   const { pivot } = state;
 
   const currentState = utils.getCurrentState(pivot);
 
   if (currentState) {
-    const { history, current } = pivot;
     const { data, dataset, categoricalValues } = currentState;
-    return { currentState, history, current,
-        key: dataset,
-        dataset,
-        data,
-        needData: false, 
-        initCategoricalValues: categoricalValues
-    };
+    if (pivot.dataset && pivot.dataset !== dataset) {  // changed dataset!
+      return { dataset: pivot.dataset };
+    } else {
+      const { history, current } = pivot;
+      return { currentState, history, current,
+          key: dataset,
+          dataset,
+          data,
+          needData: false,
+          initCategoricalValues: categoricalValues
+      };
+    }
   } else {
     return {}
   }

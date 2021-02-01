@@ -47,11 +47,11 @@ const startup = function(initData, dataset, newMetadata){
     function(resolve, reject) {
       const actualDataset = dataset ? dataset : metadata.getActualDataset();
       const filter = metadata.getFilters();
-      const datapointCol = datapoint.getDefaultDatapointCol();
       if (newMetadata) {
         metadata.addMetadata(newMetadata);
       }
       metadata.setMetadata(actualDataset);
+      const datapointCol = datapoint.getDefaultDatapointCol();
 
       dataread.readDataset(actualDataset, filter, null, datapointCol, initData)
           .then(function(result) {

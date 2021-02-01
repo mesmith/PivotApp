@@ -30,25 +30,12 @@ if (module.hot) {
 // display the Loading icon.
 //
 window.onload = function(){
-if (false) {
-  startup.startup().then(function(result) {
-    const { dataset, categoricalValues, drawingData, cookedData } = result;
-    ReactDOM.render(
-      <Provider store={store}>
-        <PivotApp key={dataset} dataset={dataset} data={cookedData}
-            showDataset={true} initCategoricalValues={categoricalValues} />
-      </Provider>, document.getElementById('root'));
-  });
-}
 
   // This will display the Loading icon
   //
-  // ReactDOM.render( 
-    // <Provider store={store}>
-      // <PivotApp />
-    // </Provider>, document.getElementById('root'));
+  const datasetLabel = metadata.getDatasetLabel();
   ReactDOM.render( 
     <Provider store={store}>
-      <PivotApp needData={true} showDataset={true} />
+      <PivotApp key={datasetLabel} needData={true} showDataset={true} />
     </Provider>, document.getElementById('root'));
 }

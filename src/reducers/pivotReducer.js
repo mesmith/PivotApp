@@ -20,10 +20,11 @@ export default function(state = initialState, action) {
 
     case actionTypes.pivot_ChangeDataset:
     {
-      const currentState = state.history[state.current];
-      const changed = { dataset: action.dataset, datapoint: null };
-      const newState = {...currentState, ...changed, last: 'dataset'};
-      return getNewState(state, newState);
+      // For this one, we don't push a new state onto history;
+      // instead, just record the new dataset name.  The component
+      // will know to ask for the new dataset's data.
+      //
+      return {...state, dataset: action.dataset};
     }
 
     case actionTypes.pivot_ChangeDatasetAndDatapoint:
