@@ -23,7 +23,7 @@ const dataread = function() {
     //
     return new Promise(
       function(resolve, reject) {
-        if (dataset && !metadata.getMetadata(dataset)) {
+        if (dataset && !metadata.metadataExists(dataset)) {
           reject(`Dataset "${dataset}" does not exist`);
           return;
         }

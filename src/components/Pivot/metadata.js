@@ -3,7 +3,6 @@
 import time from './time.js';
 import constants from './constants.js';
 import utils from './utils.js';
-// import dotenv from 'dotenv';
 
 const metadata = function(){
 
@@ -1091,18 +1090,6 @@ const metadata = function(){
     },
   };
 
-  // This is a variable because we allow external metadata to be
-  // added to this.  FIXME.
-  //
-  var allMetadata = [
-    airForceMetadata,
-    ticketSubjectMetadata,
-    ticketSubjectMetadataSmall,
-    callMetadata,
-    aisSoloMetadata,
-    aisTimeMetadata
-  ];
-
   const custToMeta = {
     ais: aisSoloMetadata,
     mannis: aisSoloMetadata,
@@ -1117,16 +1104,28 @@ const metadata = function(){
   const customer = process.env.CUSTOMER  || 'master';
   const initMetadata = custToMeta[customer];
 
+  // This is a variable because we allow external metadata to be
+  // added to this.  FIXME.
+  //
+  var allMetadata = [
+    airForceMetadata,
+    ticketSubjectMetadata,
+    ticketSubjectMetadataSmall,
+    callMetadata,
+    aisSoloMetadata,
+    aisTimeMetadata
+  ];
+
   // We now allow this to change, supporting change dataset.
   // FIXME: Use Redux, not variable.
   //
-  var metadata = initMetadata;
+  var thisMetadata = initMetadata;
 
   // Change current metadata.
   // FIXME: Use Redux, not variable.
   //
   const setMetadata = function(dataset) {
-    metadata = getMetadata(dataset);
+    thisMetadata = getMetadata(dataset);
   }
 
   // Add 'newMetadata' to the list of all accessible metadata.
@@ -1149,16 +1148,20 @@ const metadata = function(){
     });
   }
 
+  const metadataExists = function(dataset) {
+    return !!getMetadata(dataset);
+  }
+
   const getInitDataset = function(){
     return initMetadata.dataset.name;
   }
 
   const getDataset = function(){
-    return metadata.dataset.name;
+    return thisMetadata.dataset.name;
   }
 
   const getActualDataset = function(){
-    return metadata.dataset.actualName || metadata.dataset.name;
+    return thisMetadata.dataset.actualName || thisMetadata.dataset.name;
   }
 
   // Return list of datasets in (name, alias) array
@@ -1171,29 +1174,29 @@ const metadata = function(){
   }
 
   const getDatasetAttr = function(attr){
-    return metadata.dataset.hasOwnProperty(attr) ? metadata.dataset[attr] : null;
+    return thisMetadata.dataset.hasOwnProperty(attr) ? thisMetadata.dataset[attr] : null;
   }
 
   const getDatasetLabel = function(){
-    return metadata.dataset.alias;
+    return thisMetadata.dataset.alias;
   }
 
   const getDatasetSubtitle = function(){
-    return metadata.dataset.subtitle;
+    return thisMetadata.dataset.subtitle;
   }
 
   const getDatasetMonths = function(){
-    return metadata.dataset.months;
+    return thisMetadata.dataset.months;
   }
 
   const getDatasetModel = function(){
-    return metadata.dataset.model;
+    return thisMetadata.dataset.model;
   }
 
   // Return vector of disabled controls from the 'dataset' metadata attribute
   //
   const getDatasetDisabled = function() {
-    return metadata.dataset.disabled || [];
+    return thisMetadata.dataset.disabled || [];
   }
 
 
@@ -1201,38 +1204,38 @@ const metadata = function(){
   // column 'attr' exists.
   //
   const getColumnsWithAttr = function(attr){
-    return Object.keys(metadata).filter(function(column){
-      return metadata[column].hasOwnProperty(attr);
+    return Object.keys(thisMetadata).filter(function(column){
+      return thisMetadata[column].hasOwnProperty(attr);
     });
   }
 
   // Return all columns that have 'attr' set to a truthy value
   //
   const getColumnsWithAttrTrue = function(attr){
-    return Object.keys(metadata).filter(function(column){
-      return metadata[column].hasOwnProperty(attr) && metadata[column][attr];
+    return Object.keys(thisMetadata).filter(function(column){
+      return thisMetadata[column].hasOwnProperty(attr) && thisMetadata[column][attr];
     });
   }
 
   // Return TRUE if 'column' has attribute 'attr' with the given 'value'
   //
   const hasValue = function(column, attr, value){
-    return metadata.hasOwnProperty(column) &&
-        metadata[column].hasOwnProperty(attr) &&
-        metadata[column][attr]===value;
+    return thisMetadata.hasOwnProperty(column) &&
+        thisMetadata[column].hasOwnProperty(attr) &&
+        thisMetadata[column][attr]===value;
   }
 
   const isTrue = function(column, attr) {
-    return metadata.hasOwnProperty(column) &&
-        metadata[column].hasOwnProperty(attr) &&
-        metadata[column][attr];
+    return thisMetadata.hasOwnProperty(column) &&
+        thisMetadata[column].hasOwnProperty(attr) &&
+        thisMetadata[column][attr];
   }
 
   // Similar to the above, but only return columns whose attribute matches
   // 'value'.
   //
   const getColumnsByAttrValue = function(attr, value){
-    return Object.keys(metadata).filter(function(column){
+    return Object.keys(thisMetadata).filter(function(column){
       return hasValue(column, attr, value);
     });
   }
@@ -1240,8 +1243,8 @@ const metadata = function(){
   // Return 'true' if the given column has attribute===value
   //
   const hasAttributeValue = function(col, attr, value){
-    return ( col in metadata && attr in metadata[col] &&
-        metadata[col][attr]===value );
+    return ( col in thisMetadata && attr in thisMetadata[col] &&
+        thisMetadata[col][attr]===value );
   }
 
   // Return value for 'attr' for given property,
@@ -1249,8 +1252,8 @@ const metadata = function(){
   //
   const getAttrValue = function(col, attr, defaultValue){
     const dValue = defaultValue || '';
-    return ( col in metadata && attr in metadata[col] ) ?
-        metadata[col][attr] : dValue;
+    return ( col in thisMetadata && attr in thisMetadata[col] ) ?
+        thisMetadata[col][attr] : dValue;
   }
 
   // Apply 'format' to the value
@@ -1359,9 +1362,9 @@ const metadata = function(){
   // are not calculated fields
   //
   const getNumericsNotCalculated = function() {
-    return metadata
-      ? Object.keys(metadata)
-        .map(i => { return {column: i, ...metadata[i]}; })
+    return thisMetadata
+      ? Object.keys(thisMetadata)
+        .map(i => { return {column: i, ...thisMetadata[i]}; })
         .filter(i => i.type==="Number" && !i.calculated)
         .map(i => i.column)
       : [];
@@ -1374,9 +1377,9 @@ const metadata = function(){
   // Same as above, but filter out columns that have 'isAverage' set to true.
   //
   const getNonAverageNumerics = function(){
-    return metadata
-      ? Object.keys(metadata)
-        .map(i => { return {column: i, ...metadata[i]}; })
+    return thisMetadata
+      ? Object.keys(thisMetadata)
+        .map(i => { return {column: i, ...thisMetadata[i]}; })
         .filter(i => i.type==="Number" && !i.isAverage)
         .map(i => i.column)
       : [];
@@ -1385,9 +1388,9 @@ const metadata = function(){
   // Return all columns with the given 'type'
   //
   const getColsWithType = function(type) {
-    return metadata
-      ? Object.keys(metadata)
-        .map(i => { return {column: i, ...metadata[i]}; })
+    return thisMetadata
+      ? Object.keys(thisMetadata)
+        .map(i => { return {column: i, ...thisMetadata[i]}; })
         .filter(i => i.type===type)
         .map(i => i.column)
       : [];
@@ -1396,15 +1399,15 @@ const metadata = function(){
   // Return 'alias' if we can't find it
   //
   function aliasToColumn(alias){
-    return Object.keys(metadata)
-      .filter(i => metadata[i].alias===alias)
+    return Object.keys(thisMetadata)
+      .filter(i => thisMetadata[i].alias===alias)
       .reduce((v1, v2) => v2, alias);
   }
 
   // Return the input value to tickFormat, given the alias name.
   //
   function getAxisFormat(alias){
-    const col = metadata[aliasToColumn(alias)];
+    const col = thisMetadata[aliasToColumn(alias)];
     const axisFormat = col && col.axisFormat || null;
     if (axisFormat === 'million') {
       return function(d) {
@@ -1438,8 +1441,8 @@ const metadata = function(){
   // Return alias for 'column'
   //
   function getAlias(column){
-    if( column in metadata && 'alias' in metadata[column] ){
-      return metadata[column].alias;
+    if( column in thisMetadata && 'alias' in thisMetadata[column] ){
+      return thisMetadata[column].alias;
     } else {
       return column;
     }
@@ -1448,8 +1451,8 @@ const metadata = function(){
   // Return datapoint representation alias for 'column'
   //
   function getDatapointAlias(column){
-    if( column in metadata && 'datapointAlias' in metadata[column] ){
-      return metadata[column].datapointAlias;
+    if( column in thisMetadata && 'datapointAlias' in thisMetadata[column] ){
+      return thisMetadata[column].datapointAlias;
     } else {
       return getAlias(column);
     }
@@ -1477,8 +1480,8 @@ const metadata = function(){
   // Return all columns that are marked searchable
   //
   function getSearchable(){
-    return Object.keys(metadata).filter(function(column){
-      return metadata[column].searchable;
+    return Object.keys(thisMetadata).filter(function(column){
+      return thisMetadata[column].searchable;
     });
   }
 
@@ -1486,10 +1489,10 @@ const metadata = function(){
   //   { column: [filter-vector], ... }
   //
   function getFilters(){
-    return Object.keys(metadata).filter(i => {
-      return metadata[i].hasOwnProperty('filter');
+    return Object.keys(thisMetadata).filter(i => {
+      return thisMetadata[i].hasOwnProperty('filter');
     }).reduce((i, j) => {
-      return {...i, ...{[j]: metadata[j].filter}};
+      return {...i, ...{[j]: thisMetadata[j].filter}};
     }, {});
   }
 
@@ -1536,7 +1539,7 @@ const metadata = function(){
   // get the interpreter of the symbolic name.
   //
   function getBinner(column){
-    return metadata.hasOwnProperty(column) && metadata[column].binner || null;
+    return thisMetadata.hasOwnProperty(column) && thisMetadata[column].binner || null;
   }
 
   // Similar to getBinner(), but this one returns the internal and
@@ -1611,10 +1614,10 @@ const metadata = function(){
   // particular load percentage.
   //
   const getReverseMap = function(attr) {
-    return Object.keys(metadata).filter(i => {
-      return metadata[i].hasOwnProperty(attr);
+    return Object.keys(thisMetadata).filter(i => {
+      return thisMetadata[i].hasOwnProperty(attr);
     }).reduce((i, j) => {
-      const attrValue = metadata[j][attr];
+      const attrValue = thisMetadata[j][attr];
       const prevArray = i[attrValue] ? i[attrValue] : [];
       const newArray = prevArray.concat([j]);
       return {...i, ...{[attrValue]: newArray}};
@@ -1641,7 +1644,7 @@ const metadata = function(){
   // is not returned by this.
   //
   const getAll = function(){
-    return Object.keys(metadata).filter(i => {
+    return Object.keys(thisMetadata).filter(i => {
       return i !== 'dataset';
     });
   }
@@ -1692,11 +1695,10 @@ const metadata = function(){
     getAll,
     getReverseMap,
     getAliasedReverseMap,
-    getMetadata,
+    metadataExists,
     setMetadata,
     addMetadata
   }
-
 }();
 
 export default metadata;
