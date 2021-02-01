@@ -5,8 +5,6 @@ import {connect} from 'react-redux';
 import actions from '../../actions';
 import metadata from './metadata.js';
 
-import store from '../../store.js';
-
 class Select extends React.Component {
   constructor(props) {
     super(props);

@@ -1,6 +1,5 @@
 import React from 'react';
 import {connect} from 'react-redux';
-import store from '../../store.js';
 import metadata from './metadata';
 import utils from './utils';
 import actions from '../../actions';

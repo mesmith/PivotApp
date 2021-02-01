@@ -8,8 +8,6 @@ import {connect} from 'react-redux';
 import { Loader } from 'react-overlay-loader';
 import 'react-overlay-loader/styles.css';
 
-import store from '../../store';
-
 import PivotContainer from './pivot-container.js';
 import SelectDataset from './select-dataset.js';
 

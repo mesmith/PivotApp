@@ -2,7 +2,6 @@
 //
 import React from 'react';
 import {connect} from 'react-redux';
-import store from '../../store.js';
 import actions from '../../actions';
 
 class RadioGroup extends React.Component {
