@@ -6,7 +6,7 @@ import datapoint from './datapoint';
 import utils from './utils';
 import constants from './constants';
 
-import $ from 'jquery';
+import axios from 'axios';
 
 const dataread = function() {
 
@@ -230,8 +230,6 @@ const dataread = function() {
 
     // If the dataset has changed from last time, load the new csv file
     //
-    // NOTE: This will now fail unless data is under the app/views folder.
-    //
     if( dataset !== datasets.slice(-1) ){
       const url = constants.dataFolder + '/' + dataset;
       if (utils.isCSV(dataset)) {
@@ -411,36 +409,23 @@ const dataread = function() {
   }
 
   const process = function(data, loadTable) {
-    const res = 
-      withCalculatedFields( // must be last, after synthetic dataset!
-      withFormats(
-      getDatasetTransform(
-      withAverages(
-      withDates(
-      preprocess(data, loadTable))))));
-    return res;
+    return utils.compose(
+      withCalculatedFields,
+      withFormats,
+      getDatasetTransform,
+      withAverages,
+      withDates,
+      preprocess)(data, loadTable);
   }
 
   // Use mongodb services to retrieve data every time there
   // is a state change.  Returns a Promise.
   //
   const mongoReadDataset = function(dataset, datapointCol, filter){
-    return new Promise((resolve, reject) => {
-      return mongoReadDatasetInner(dataset, datapointCol, filter).then(function(res) {
-        if (res.error) {
-          reject(res);
-        } else {
-          resolve(res);
-        }
-      });
-    });
-  }
-
-  // This version uses jquery $.when and $.get to retrieve data.
-  // 
-  const mongoReadDatasetInner = function(dataset, datapointCol, filter){
     if (datapointCol === null){
-      return $.when({error: 'There was no default datapoint col specified'});
+      return new Promise((resolve, reject) => {
+        reject({error: 'There was no default datapoint col specified'});
+      });
     }
 
     const query = getQueryString(filter);
@@ -449,12 +434,49 @@ const dataread = function() {
     const url2 = '/api/aggregate/' + encodeURIComponent(dataset) + '/' + 
         encodeURIComponent(datapointCol) +
         '?' + query;
-    return $.when($.get(url1), $.get(url2)).then((r1, r2) => {
-      if (r1[1] !== 'success' || r2[1] !== 'success') {
-        return {error: 'Data read failure'};
+    return axios.all([
+      axios.get(url1),
+      axios.get(url2)
+    ]).then(axios.spread((...res) => {
+      if (res[0].status === 200 && res[1].status === 200 && 
+          res[0].data && Array.isArray(res[1].data)) {
+        return {categoricalValues: res[0].data, drawingData: res[1].data};
       } else {
-        return {categoricalValues: r1[0], drawingData: r2[0]};
+        return {error: 'Data read failure'};
       }
+    })).catch(errors => {
+      return {error: 'Data read failure'};
+    });
+  }
+
+  // Similar to the above, but used when the user changes the
+  // aggregation column.
+  //
+  const mongoGetTransformedData = function(graphtype, dataset, filter, datapointCol){
+
+    // Convert 'filter' into a REST query string
+    //
+    const query = getQueryString(filter);
+
+    // For force graphs, we handle the map/reduce in the browser.
+    // For other graphs, let mongo do all of the work.
+    //
+    const url = (graphtype==="force" || graphtype==="forceStatus")
+      ? '/api/pivot/' + encodeURIComponent(dataset) +
+        '/' + encodeURIComponent(graphtype) +
+        '/' + encodeURIComponent(datapointCol) +
+        '?' + query
+      : '/api/aggregate/' + encodeURIComponent(dataset) +
+        '/' + encodeURIComponent(datapointCol) + '?' + query;
+
+    return axios.get(url).then(result => {
+      if (result.status === 200 && Array.isArray(result.data)) {
+        return {drawingData: result.data, facetData: result.data};
+      } else {
+        return {drawingData: [], facetData: []};
+      }
+    }).catch(error => {
+      return {drawingData: [], facetData: []};
     });
   }
 
@@ -470,6 +492,7 @@ const dataread = function() {
 
   return {
     readDataset,
+    mongoGetTransformedData,
     process
   };
 }();

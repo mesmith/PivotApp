@@ -984,6 +984,10 @@ const utils = function(){
     }
   }
 
+  const compose = (...fns) => x => {
+    return fns.reduceRight((i, j) => j(i), x);
+  }
+
   return {
     safeVal,
     getSafe,
@@ -1025,7 +1029,8 @@ const utils = function(){
     getFloat,
     isCSV,
     isJSON,
-    getCurrentState
+    getCurrentState,
+    compose
   }
 
 }();

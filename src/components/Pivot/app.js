@@ -26,8 +26,6 @@ import '../../static/colorbrewer.css';
 import '../../static/styles.css';
 import '../../static/tipsy.css';
 
-import $ from 'jquery';
-
 // Control/selection prototypes
 //
 const datasetControls = {
@@ -245,8 +243,8 @@ const transformMongoState = function(currentState, categoricalValues){
   // Use ajax to transform raw data,
   // so we can set the Refine Results state
   //
-  return mongoGetTransformedData(graphtype, dataset, filter, datapointCol)
-      .then(function(xform){
+  const handle = 
+      ((currentState, categoricalValues, loadTable, filter, datapointCol) => xform => {
     const data = dataread.process(xform.drawingData, loadTable);
 
     const summaryData = transforms.getSummaryData(data);
@@ -272,7 +270,11 @@ const transformMongoState = function(currentState, categoricalValues){
       loadComparisonData,
       loadTable
     }
-  });
+  })(currentState, categoricalValues, loadTable, filter, datapointCol);
+
+  return dataread.mongoGetTransformedData(graphtype, dataset, filter, datapointCol)
+      .then(handle)
+      .catch(handle);
 }
 
 // This converts the currentState into an axes object.
@@ -311,60 +313,6 @@ const getAxesFromState = function(state, controlState) {
     }, {});
     return {...ax, ...nonAxis};
   }
-}
-
-// Stub for mongo transformed data.  WILL NOT WORK for force graphs.
-//
-const mongoGetTransformedData = function(graphtype, dataset, filter, datapointCol){
-
-  // Convert 'filter' into a REST query string
-  //
-  const query = getQueryString(filter);
-
-  // For force graphs, we handle the map/reduce in the browser.
-  // For other graphs, let mongo do all of the work.
-  //
-  if (graphtype==="force" || graphtype==="forceStatus") {
-    return new Promise(
-      function(resolve, reject){
-        const url =
-            '/api/pivot/' + encodeURIComponent(dataset) +
-            '/' + encodeURIComponent(graphtype) +
-            '/' + encodeURIComponent(datapointCol) +
-            '?' + query;
-        $.ajax({
-          url: url,
-          success: resolve,
-          error: function(xhr, status, err){ reject(err); },
-        });
-      }
-    );
-  } else {
-    return new Promise(
-      function(resolve, reject){
-        const url =
-            '/api/aggregate/' + encodeURIComponent(dataset) +
-            '/' + encodeURIComponent(datapointCol) + '?' + query;
-        $.ajax({
-          url: url,
-          success: function(drawingData){
-            resolve({drawingData, facetData: drawingData});
-          },
-          error: function(xhr, status, err){ reject(err); },
-        });
-      }
-    );
-  }
-}
-
-// Convert 'filter' into a RESTful query string
-//
-const getQueryString = function(filter) {
-  return [].concat.apply([], Object.keys(filter).map(i => {
-    return filter[i].map(j => {
-      return i + '=' + j;
-    });
-  })).join('&');
 }
 
 // Return the enabled/disabled state for every control for 'graphtype'
@@ -441,14 +389,17 @@ class PivotApp extends React.Component {
       // This is asynchronous when the dataset is mongo or CSV,
       // and synchronous if the dataset is JSON.
       //
-      dataread.readDataset(actualDataset, filter, loadTable,
-          datapointCol).then(function(result) {
-        const { dataset, categoricalValues, drawingData, cookedData } = result;
+      const handle = 
+          ((nextProps, dataset) => 
+          (categoricalValues, drawingData, cookedData) => {
         return self.onNewDatasetRead(nextProps, dataset, categoricalValues, 
           drawingData, cookedData);
-      }, function(error) {
-        return self.onNewDatasetRead(nextProps, dataset, {}, [], []);
-      });
+      })(nextProps, dataset);
+
+      dataread.readDataset(actualDataset, filter, loadTable, datapointCol)
+        .then(result => handle(result.categoricalValues, result.drawingData, 
+                               result.cookedData))
+        .catch(() => handle({}, [], []));
 
       // Doing this will cause the datapoint
       // control to re-render with the new datapoint choice
@@ -478,6 +429,9 @@ class PivotApp extends React.Component {
       //
       transformMongoState(currentState, categoricalValues).then(function(newState){
         self.setState({...newState, loading: false});
+      }).catch(function(error) {
+        console.error(error);
+        self.setState({loading: false});
       });
       return {loading: true};
     }
@@ -567,7 +521,7 @@ class PivotApp extends React.Component {
 
     if (needData || metadata.getDataset() !== dataset) {
       const actualDataset = dataset ? dataset : metadata.getActualDataset();
-      metadata.setMetadata(actualDataset);
+      metadata.setMetadata(actualDataset); // FIXME: mutable
 
       const filter = metadata.getFilters();
       const datapointCol = datapoint.getDefaultDatapointCol();

@@ -13,8 +13,8 @@ import utils from './utils.js';
 // these will be updated in Redux state on new dataset read
 // (since we can't change these props).
 //
-const getNewDatasetState = (dataset, filter) => (categoricalValues, data) => {
-  const datapointCol = datapoint.getDefaultDatapointCol();
+const getNewDatasetState = (dataset, filter, datapointCol) => 
+    (categoricalValues, data) => {
   const initControlState = controls.getInitControlState(categoricalValues, 
       datapointCol, 'bubble');
   return { dataset, categoricalValues, data, filter, ...initControlState };
@@ -34,7 +34,7 @@ const startup = (currentState, newDataset, filter, datapointCol, initData) => {
 
   const getDatasetState = newDataset === currentDataset
     ? getReusedDatasetState(currentState)
-    : getNewDatasetState(newDataset, filter)
+    : getNewDatasetState(newDataset, filter, datapointCol)
 
   const handle = ((dataset, state) => getDatasetState)(newDataset, currentState);
 
@@ -43,7 +43,8 @@ const startup = (currentState, newDataset, filter, datapointCol, initData) => {
   const handleError = () => handle({}, []);
 
   return dataread.readDataset(newDataset, filter, null, datapointCol, initData)
-      .then(handleData, handleError);
+      .then(handleData)
+      .catch(handleError);
 }
 
 export default {
