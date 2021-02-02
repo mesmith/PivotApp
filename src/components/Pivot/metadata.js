@@ -133,9 +133,6 @@ const metadata = function(){
     APPLICLEADORIGIN_CD_DSP: {
       alias: 'Lead Origin', type: 'String', searchable: true
     },
-    CUSTOMER: {
-      alias: 'Customer', type: 'String', tooltip: true, obscure: true
-    },
     GAINSTATUS_CD: {
       alias: 'Gain Status', type: 'Categorical', tooltip: true,
       searchable: true, datapoint: true
@@ -1114,12 +1111,12 @@ const metadata = function(){
   ];
 
   // We now allow this to change, supporting change dataset.
-  // FIXME: Use Redux, not variable.
+  // FIXME: Avoid mutation.
   //
   var thisMetadata = initMetadata;
 
   // Change current metadata.
-  // FIXME: Use Redux, not variable.
+  // FIXME: Avoid mutation.
   //
   const setMetadata = function(dataset) {
     thisMetadata = getMetadata(dataset);

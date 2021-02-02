@@ -21,40 +21,28 @@ const dataread = function() {
     // We consider that we're reading from a CSV file if the chosen 
     // dataset's name ends in '.csv'.
     //
-    return new Promise(
-      function(resolve, reject) {
-        if (dataset && !metadata.metadataExists(dataset)) {
-          reject(`Dataset "${dataset}" does not exist`);
-          return;
-        }
-        if (initData) {
-          resolve(readInitData(initData, dataset));
-        } else if( utils.isCSV(dataset) || utils.isJSON(dataset) ){
-          const result = csvOrJsonReadDataset(dataset);
-          resolve(result);
-        } else {
-          return mongoReadDataset(dataset, datapointCol, filter).done((res) => {
-            if (res.categoricalValues && res.drawingData) {
-              const { categoricalValues, drawingData } = res;
-              const cookedData = process(drawingData, loadTable);
-              const result = { dataset, categoricalValues, drawingData, cookedData };
-              resolve(result);
-            } else {
-              const result = {
-                dataset, 
-                categoricalValues: {},
-                drawingData: [],
-                cookedData: []
-              };
-              resolve(result);
-            }
-          });
-        }
-      }
-    );
+    if (dataset && !metadata.metadataExists(dataset)) {
+      return new Promise(function(resolve, reject) {
+        reject(`Dataset "${dataset}" does not exist`);
+      });
+    } else if (initData) {
+      return new Promise(function(resolve, reject) {
+        resolve(readInitData(initData, dataset));
+      });
+    } else if (utils.isCSV(dataset) || utils.isJSON(dataset)) {
+      return csvOrJsonReadDataset(dataset);
+    } else {
+      return mongoReadDataset(dataset, datapointCol, filter).then((res) => {
+        const categoricalValues = res.categoricalValues || {};
+        const drawingData = res.drawingData || [];
+        const cookedData = process(drawingData, loadTable);
+        return { dataset, categoricalValues, drawingData, cookedData };
+      });
+    }
   }
 
-  // Initialize visualizations from a CSV file in 'dataset'
+  // Initialize visualizations from a CSV file in 'dataset'.
+  // Returns a Promise.
   //
   const csvOrJsonReadDataset = function(dataset){
     return new Promise(
@@ -64,16 +52,16 @@ const dataread = function() {
             const error = 'No data found';
             console.error(error);
             reject({error});
-            return;
-          }
-          const catColumns = metadata.getColumnsByAttrValue('type', 'Categorical');
-          const dateColumns = metadata.getColumnsByAttrValue('type', 'IsoDate');
-          const columns = catColumns.concat(dateColumns);
-          const cookedData = process(drawingData, null);
-          const categoricalValues = utils.getAllUniqueValues(cookedData, columns);
+          } else {
+            const catColumns = metadata.getColumnsByAttrValue('type', 'Categorical');
+            const dateColumns = metadata.getColumnsByAttrValue('type', 'IsoDate');
+            const columns = catColumns.concat(dateColumns);
+            const cookedData = process(drawingData, null);
+            const categoricalValues = utils.getAllUniqueValues(cookedData, columns);
     
-          const res = {dataset, categoricalValues, drawingData, cookedData};
-          resolve(res);
+            const res = {dataset, categoricalValues, drawingData, cookedData};
+            resolve(res);
+          }
         });
       }
     );
@@ -434,11 +422,23 @@ const dataread = function() {
   }
 
   // Use mongodb services to retrieve data every time there
-  // is a state change.  The CSV handler is synchronous; it only
-  // reads the data once (and therefore uses in-browser, slower javascript
-  // for pivoting transforms).
+  // is a state change.  Returns a Promise.
   //
   const mongoReadDataset = function(dataset, datapointCol, filter){
+    return new Promise((resolve, reject) => {
+      return mongoReadDatasetInner(dataset, datapointCol, filter).then(function(res) {
+        if (res.error) {
+          reject(res);
+        } else {
+          resolve(res);
+        }
+      });
+    });
+  }
+
+  // This version uses jquery $.when and $.get to retrieve data.
+  // 
+  const mongoReadDatasetInner = function(dataset, datapointCol, filter){
     if (datapointCol === null){
       return $.when({error: 'There was no default datapoint col specified'});
     }

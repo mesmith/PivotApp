@@ -438,18 +438,6 @@ class PivotApp extends React.Component {
       const loadTable = currentState.loadTable;
       const datapointCol = getDatapointCol(currentState);
 
-      // Doing this will cause the datapoint
-      // control to re-render with the new datapoint choice
-      // (if the user chose a new one), prior to reading the new data.
-      // Just a bit nicer.
-      //
-      const graphtype = currentState.graphtype || controls.getGraphtypeDefault();
-      const enabled = getAllEnabled(graphtype);
-      const choices = getAllControlChoices(graphtype, currentState,
-          categoricalValues, datapointCol);
-      const datapoint = {...controls.dfltControls.datapoint, 
-          disabled: !enabled.datapoint, list: choices.datapoint};
-
       // This is asynchronous when the dataset is mongo or CSV,
       // and synchronous if the dataset is JSON.
       //
@@ -461,6 +449,18 @@ class PivotApp extends React.Component {
       }, function(error) {
         return self.onNewDatasetRead(nextProps, dataset, {}, [], []);
       });
+
+      // Doing this will cause the datapoint
+      // control to re-render with the new datapoint choice
+      // (if the user chose a new one), prior to reading the new data.
+      // Just a bit nicer.
+      //
+      const graphtype = currentState.graphtype || controls.getGraphtypeDefault();
+      const enabled = getAllEnabled(graphtype);
+      const choices = getAllControlChoices(graphtype, currentState,
+          categoricalValues, datapointCol);
+      const datapoint = {...controls.dfltControls.datapoint, 
+          disabled: !enabled.datapoint, list: choices.datapoint};
 
       return {datapoint, loading: true};
     }
@@ -563,11 +563,12 @@ class PivotApp extends React.Component {
   //
   componentDidMount(){
     const { needData, dataset, data, initCategoricalValues, currentState,
-        initData }
-      = this.props;
+        initData, onPushStateDispatch } = this.props;
 
     if (needData || metadata.getDataset() !== dataset) {
-      startup.startup(initData, dataset);
+      startup.startup(initData, dataset).then(function(res) {
+        onPushStateDispatch(res);
+      });
     } else if (currentState) {
       const initState = getInitState(dataset, currentState, data, 
           initCategoricalValues, null);
@@ -696,6 +697,12 @@ const mapStateToProps = function(state) {
 
 const mapDispatchToProps = function(dispatch, ownProps) {
   return {
+
+    // Dispatch Redux "Push State" message
+    //
+    onPushStateDispatch: function(newState) {
+      actions.pushState(newState)(dispatch);
+    },
 
     // Dispatch Redux "Change Query" message
     //

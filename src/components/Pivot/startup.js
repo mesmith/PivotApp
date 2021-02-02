@@ -32,67 +32,34 @@ const getReusedDatasetState = function(categoricalValues, previousState, data) {
 }
 
 
-// After initial DOM loading, initialize or restart the dataset, and
-// display the Loading icon.
+// After initial DOM loading, initialize or restart the dataset.
 //
 const startup = function(initData, dataset){
   const { pivot } = store.getState();
   const previousState = utils.getCurrentState(pivot);
   const previousDataset = previousState ? previousState.dataset : null;
-  return new Promise(
-    function(resolve, reject) {
-      const actualDataset = dataset ? dataset : metadata.getActualDataset();
-      const filter = metadata.getFilters();
-      metadata.setMetadata(actualDataset);
-      const datapointCol = datapoint.getDefaultDatapointCol();
 
-      dataread.readDataset(actualDataset, filter, null, datapointCol, initData)
-          .then(function(result) {
-        const { dataset, categoricalValues, drawingData, cookedData } = result;
-        const datasetState = (dataset === previousDataset)
-          ? getReusedDatasetState(categoricalValues, previousState, cookedData)
-          : getNewDatasetState(dataset, categoricalValues, cookedData);
-        actions.pushState(datasetState)(store.dispatch);
-        resolve(result);
-      }, function(error) {
-        const res = {
-          dataset, categoricalValues: {}, drawingData: [], cookedData: []
-        };
-        const datasetState = (dataset === previousDataset)
-          ? getReusedDatasetState(res.categoricalValues, previousState, res.cookedData)
-          : getNewDatasetState(dataset, res.categoricalValues, res.cookedData);
-        actions.pushState(datasetState)(store.dispatch);
-        resolve(res);
-      });
-    }
-  );
-}
+  const actualDataset = dataset ? dataset : metadata.getActualDataset();
+  metadata.setMetadata(actualDataset);
+  const filter = metadata.getFilters();
+  const datapointCol = datapoint.getDefaultDatapointCol();
 
-// We also put a data flattener in here.  Useful when the dataset is
-// not already flat (e.g. FB data).
-//
-const flatten = function(data) {
-  return data.map(i => {
-    return flattenObject(null, i);
+  return dataread.readDataset(actualDataset, filter, null, datapointCol, initData)
+      .then(function(result) {
+    const { dataset, categoricalValues, drawingData, cookedData } = result;
+    return (dataset === previousDataset)
+      ? getReusedDatasetState(categoricalValues, previousState, cookedData)
+      : getNewDatasetState(dataset, categoricalValues, cookedData);
+  }, function(error) {
+    const res = {
+      dataset, categoricalValues: {}, drawingData: [], cookedData: []
+    };
+    return (dataset === previousDataset)
+      ? getReusedDatasetState(res.categoricalValues, previousState, res.cookedData)
+      : getNewDatasetState(dataset, res.categoricalValues, res.cookedData);
   });
 }
 
-// Given an array of objects with possible sub-objects, flatten it.
-// Assumes there are no arrays as sub-objects:  arrays won't be flattened.
-//
-const flattenObject = function(prefix, obj) {
-  return Object.keys(obj).reduce((j, k) => {
-    const name = prefix ? `${prefix}_${k}` : k;
-    const value = obj[k];
-
-    const newObj = (typeof value === 'object' && value !== null)
-      ? flattenObject(name, value)
-      : {[name]: value};
-    return {...j, ...newObj};
-  }, {});
-}
-
 export default {
-  startup,
-  flatten
+  startup
 };
