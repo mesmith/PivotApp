@@ -28,27 +28,26 @@ const getReusedDatasetState = function(categoricalValues, currentState, data) {
   return { ...currentState, categoricalValues, data };
 }
 
-
 // After initial DOM loading, initialize or restart the dataset.
 //
-const startup = function(currentState, initData, actualDataset, filter,
-    datapointCol){
+// actualDataset takes into account whether the dataset is synthetic.
+//
+const startup = function(currentState, initData, actualDataset, filter, datapointCol){
   const currentDataset = currentState ? currentState.dataset : null;
 
-  return dataread.readDataset(actualDataset, filter, null, datapointCol, initData)
-      .then(function(result) {
-    const { dataset, categoricalValues, drawingData, cookedData } = result;
-    return (dataset === currentDataset)
+  const handle = ((actualDataset, currentDataset, currentState) => 
+      (categoricalValues, cookedData) => {
+    return (actualDataset === currentDataset)
       ? getReusedDatasetState(categoricalValues, currentState, cookedData)
-      : getNewDatasetState(dataset, categoricalValues, cookedData);
-  }, function(error) {
-    const res = {
-      dataset, categoricalValues: {}, drawingData: [], cookedData: []
-    };
-    return (dataset === currentDataset)
-      ? getReusedDatasetState(res.categoricalValues, currentState, res.cookedData)
-      : getNewDatasetState(dataset, res.categoricalValues, res.cookedData);
-  });
+      : getNewDatasetState(actualDataset, categoricalValues, cookedData);
+  })(actualDataset, currentDataset, currentState);
+
+  const handleData = result => handle(result.categoricalValues, result.cookedData);
+
+  const handleError = () => handle({}, []);
+
+  return dataread.readDataset(actualDataset, filter, null, datapointCol, initData)
+      .then(handleData, handleError);
 }
 
 export default {
