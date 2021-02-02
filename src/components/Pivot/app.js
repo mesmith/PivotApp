@@ -571,7 +571,7 @@ class PivotApp extends React.Component {
 
       const filter = metadata.getFilters();
       const datapointCol = datapoint.getDefaultDatapointCol();
-      startup.startup(currentState, initData, actualDataset, filter, datapointCol)
+      startup.startup(currentState, actualDataset, filter, datapointCol, initData)
           .then(onPushStateDispatch);
     } else if (currentState) {
       const initState = getInitState(dataset, currentState, data, 
