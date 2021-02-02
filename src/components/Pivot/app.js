@@ -576,17 +576,10 @@ class PivotApp extends React.Component {
     const datapointCol = getReduxStateDatapoint(currentState);
 
     const { loading, summaryData, loadComparisonData, drawingData,
-        axes, dataset, datapoint, facet,
+        axes, dataset, datapoint, facet, graphtype,
         animate, xAxis, yAxis, radiusAxis, colorAxis } = this.state;
-    const controls = {
-      animate: this.state.animate,
-      datapoint: this.state.datapoint,
-      graphtype: this.state.graphtype,
-      xAxis: this.state.xAxis,
-      yAxis: this.state.yAxis, 
-      radiusAxis: this.state.radiusAxis,
-      colorAxis: this.state.colorAxis
-    };
+    const controls = { animate, datapoint, graphtype, xAxis, 
+        yAxis, radiusAxis, colorAxis };
 
     const categoricalValues = currentState && currentState.categoricalValues || null;
 
@@ -594,8 +587,7 @@ class PivotApp extends React.Component {
     const datasetSubtitle = metadata.getDatasetSubtitle();
 
     const actualTitle = title ? title : 'Visualizing ' + datasetLabel + ' Data';
-    // const commitDate = __COMMIT_DATE__ || 'Today';
-    const commitDate = 'Today';
+    const commitDate = __COMMIT_DATE__ || 'Today';
     const builddate = `(build date: ${commitDate})`;
     const actualSubtitle = subtitle ? subtitle : 
         datasetSubtitle? `${datasetSubtitle} ${builddate}` : null;
