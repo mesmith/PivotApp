@@ -24,7 +24,8 @@ export default function(state = initialState, action) {
       // instead, just record the new dataset name.  The component
       // will know to ask for the new dataset's data.
       //
-      return {...state, dataset: action.dataset};
+      const newState = {dataset: action.dataset, last: 'change_dataset'};
+      return getNewState(state, newState);
     }
 
     case actionTypes.pivot_ChangeDatasetAndDatapoint:
@@ -77,15 +78,28 @@ export default function(state = initialState, action) {
 
     case actionTypes.pivot_PressButton:
     {
+      // Special rules for Undo and Redo.  The change_dataset record
+      // should be skipped, since we already have the data for
+      // the dataset.
+      //
       switch( action.button ){
         case "Undo": {
-          const prev = state.current>0? state.current-1 : 0;
-          return {...state, current: prev};
+          const prev = state.current > 0 ? state.current - 1 : 0;
+          const prevRec = state.history[prev];
+          const prev2 = (prevRec.last === 'change_dataset')
+            ? (prev > 1? prev - 1 : 0)
+            : prev;
+
+          return {...state, current: prev2};
         }
         case "Redo": {
-          const next = state.current<state.history.length-1 ?
-              state.current+1 : state.current;
-          return {...state, current: next};
+          const next = state.current < state.history.length - 1 ?
+              state.current + 1 : state.current;
+          const nextRec = state.history[next];
+          const next2 = (nextRec.last === 'change_dataset')
+            ? (next < state.history.length - 1 ? next + 1 : next)
+            : next;
+          return {...state, current: next2};
         }
         default:     return state;
       }

@@ -518,16 +518,23 @@ class PivotApp extends React.Component {
   componentDidMount(){
     const { needData, dataset, data, initCategoricalValues, currentState,
         initData, onPushStateDispatch } = this.props;
+    const newDataset = dataset ? dataset : metadata.getActualDataset();
 
-    if (needData || metadata.getDataset() !== dataset) {
-      const actualDataset = dataset ? dataset : metadata.getActualDataset();
-      metadata.setMetadata(actualDataset); // FIXME: mutable
 
+    // needData should only be set if we must fetch data.
+    // We do NOT have to fetch data when changing datasets if we
+    // already have it (e.g. when doing undo/redo across dataset changes).
+    //
+    if (needData) {
+      metadata.setMetadata(newDataset); // FIXME: mutable
       const filter = metadata.getFilters();
       const datapointCol = datapoint.getDefaultDatapointCol();
-      startup.startup(currentState, actualDataset, filter, datapointCol, initData)
+      startup.startup(currentState, newDataset, filter, datapointCol, initData)
           .then(onPushStateDispatch);
     } else if (currentState) {
+      if (metadata.getDataset() !== newDataset) {
+        metadata.setMetadata(newDataset); // FIXME: mutable
+      }
       const initState = getInitState(dataset, currentState, data, 
           initCategoricalValues, null);
       this.setState({ ...initState });
@@ -628,8 +635,8 @@ const mapStateToProps = function(state) {
 
   if (currentState) {
     const { data, dataset, categoricalValues } = currentState;
-    if (pivot.dataset && pivot.dataset !== dataset) {  // changed dataset!
-      return { dataset: pivot.dataset };
+    if (currentState.last === 'change_dataset') {
+      return { dataset: currentState.dataset };
     } else {
       const { history, current } = pivot;
       return { currentState, history, current,
