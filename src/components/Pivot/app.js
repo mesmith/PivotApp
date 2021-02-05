@@ -520,7 +520,6 @@ class PivotApp extends React.Component {
         initData, onPushStateDispatch } = this.props;
     const newDataset = dataset ? dataset : metadata.getActualDataset();
 
-
     // needData should only be set if we must fetch data.
     // We do NOT have to fetch data when changing datasets if we
     // already have it (e.g. when doing undo/redo across dataset changes).
@@ -534,6 +533,8 @@ class PivotApp extends React.Component {
     } else if (currentState) {
       if (metadata.getDataset() !== newDataset) {
         metadata.setMetadata(newDataset); // FIXME: mutable
+        this.onReduxStateChange(this.props);
+        return;
       }
       const initState = getInitState(dataset, currentState, data, 
           initCategoricalValues, null);
