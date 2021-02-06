@@ -76,7 +76,7 @@ const getInitDatapointCol = function() {
 //
 const getInitState = function(dataset, currentState, data, categoricalValues,
     datapointCol) {
-  if (!dataset) return;
+  if (!dataset) return {};
   if (utils.isCSV(dataset) || utils.isJSON(dataset)) {
     return transformCSVState(currentState, data, categoricalValues,
         datapointCol);
@@ -593,10 +593,10 @@ class PivotApp extends React.Component {
         datasetSubtitle? `${datasetSubtitle} ${builddate}` : null;
 
     const chartProps = {
-      drawingData: drawingData,
+      drawingData,
       tooltipPivots: categoricalValues,
-      datapointCol: datapointCol,
-      axes: axes,
+      datapointCol,
+      axes
     };
 
     return (

@@ -414,8 +414,7 @@ const dataread = function() {
       withFormats,
       getDatasetTransform,
       withAverages,
-      withDates,
-      preprocess)(data, loadTable);
+      withDates)(preprocess(data, loadTable));
   }
 
   // Use mongodb services to retrieve data every time there
