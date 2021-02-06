@@ -102,12 +102,12 @@ const transformCSVState = function(currentState, rawData, categoricalValues,
   //
   const xform = transforms.getTransformedData(graphtype, rawData,
       filter, datapointCol, animationCol, constants.d3geom);
-  const data = dataread.process(xform.drawingData, loadTable);
+  const processedData = dataread.process(xform.drawingData, loadTable);
 
-  const facetList = facets.getReactFacets(data,
+  const facetList = facets.getReactFacets(processedData,
       filter, datapointCol, categoricalValues);
-  const summaryData = transforms.getSummaryData(data);
-  const loadComparisonData = transforms.getLoadComparisonData(data);
+  const summaryData = transforms.getSummaryData(processedData);
+  const loadComparisonData = transforms.getLoadComparisonData(processedData);
 
   const controlState = getControlState(currentState, graphtype, 
       categoricalValues, datapointCol);
@@ -121,7 +121,7 @@ const transformCSVState = function(currentState, rawData, categoricalValues,
 
     facet: { list: facetList, filter, datapointCol },
     tooltipPivots: categoricalValues,
-    drawingData: data,
+    drawingData: processedData,
     axes,
     summaryData, // currently untested for CSV
     loadComparisonData, // currently untested for CSV
@@ -249,12 +249,12 @@ const transformMongoState = function(currentState, categoricalValues){
   //
   const handle = 
       ((currentState, categoricalValues, loadTable, filter, datapointCol) => xform => {
-    const data = dataread.process(xform.drawingData, loadTable);
+    const processedData = dataread.process(xform.drawingData, loadTable);
 
-    const facetList = facets.getReactFacets(data, filter, datapointCol,
+    const facetList = facets.getReactFacets(processedData, filter, datapointCol,
         categoricalValues);
-    const summaryData = transforms.getSummaryData(data);
-    const loadComparisonData = transforms.getLoadComparisonData(data);
+    const summaryData = transforms.getSummaryData(processedData);
+    const loadComparisonData = transforms.getLoadComparisonData(processedData);
 
     // Calculating the graphtype disabled state requires that we look at
     // the currently displayed Aggregate By datapoint, *not* the predetermined
@@ -267,7 +267,7 @@ const transformMongoState = function(currentState, categoricalValues){
       graphtype: controls.getGraphtypeControls(graphtype, datapointForGraphtype),
       ...controlState,
       tooltipPivots: categoricalValues,
-      drawingData: data,
+      drawingData: processedData,
       facet: { list: facetList, filter, datapointCol },
       axes,
       summaryData,
