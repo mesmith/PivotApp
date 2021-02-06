@@ -91,6 +91,7 @@ const getInitState = function(dataset, currentState, data, categoricalValues,
 //
 const transformCSVState = function(currentState, rawData, categoricalValues,
     dfltDatapointCol){
+console.log('transformCSVState: rawData='); console.log(rawData);
   const graphtype = currentState.graphtype || controls.getGraphtypeDefault();
   const datapointCol = dfltDatapointCol || currentState.datapoint;
   const animationCol = currentState.animate;
@@ -446,6 +447,7 @@ class PivotApp extends React.Component {
   // Returns the new component state.
   //
   onNewDatasetRead(nextProps, dataset, categoricalValues, rawData, data) {
+console.log('onNewDatasetRead: rawData='); console.log(rawData);
     const oldReduxState = nextProps.currentState;
 
     // OK, this is pretty confusing.  We must calculate two datapoints:

@@ -33,14 +33,6 @@ export const changeFilter = function (filter) {
   }
 };
 
-// Called when user changes datasets (and thus queries).
-//
-export const changeQuery = function (query) {
-  return function(dispatch) {
-    dispatch({ type: actionTypes.pivot_ChangeQuery, query });
-  }
-}
-
 // Called whe the user changes a dataset
 //
 export const changeDataset = function (dataset) {
@@ -82,7 +74,6 @@ export default {
   pushState,
   changeControl,
   changeFilter,
-  changeQuery,
   changeDataset,
   changeDatasetAndDatapoint,
   pressButton,

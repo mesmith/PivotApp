@@ -3,7 +3,6 @@ export default {
   pivot_PushState: 'pivot_PushState',
   pivot_ChangeControl: 'pivot_ChangeControl',
   pivot_ChangeFilter: 'pivot_ChangeFilter',
-  pivot_ChangeQuery: 'pivot_ChangeQuery',
   pivot_ChangeDataset: 'pivot_ChangeDataset',
   pivot_ChangeDatasetAndDatapoint: 'pivot_ChangeDatasetAndDatapoint',
   pivot_PressButton: 'pivot_PressButton',

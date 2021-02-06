@@ -63,19 +63,6 @@ export default function(state = initialState, action) {
       return getNewState(state, filterState);
     }
 
-    case actionTypes.pivot_ChangeQuery:  // contains a filter and a set of controls
-    {
-      const oldState = state.history[state.current];
-      const { filter, categoricalValues, data, rawData, dataset,
-          datapointCol, originalDatapointCol } = action.query;
-
-      const withLast = {...oldState, last: 'query' };
-      const withControls = {...withLast, ...action.query.controls};
-      const withData = { ...withControls, filter, categoricalValues,
-          data, rawData, dataset, datapointCol, originalDatapointCol };
-      return getNewState(state, withData);
-    }
-
     case actionTypes.pivot_PressButton:
     {
       // Special rules for Undo and Redo.  The change_dataset record
