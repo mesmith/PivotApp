@@ -89,7 +89,7 @@ const getInitState = function(dataset, currentState, data, categoricalValues,
 // Called when a new Redux state is available.
 // Return a state suitable for the <PivotApp/> component.
 //
-const transformCSVState = function(currentState, data, categoricalValues,
+const transformCSVState = function(currentState, rawData, categoricalValues,
     dfltDatapointCol){
   const graphtype = currentState.graphtype || controls.getGraphtypeDefault();
   const datapointCol = dfltDatapointCol || currentState.datapoint;
@@ -100,7 +100,7 @@ const transformCSVState = function(currentState, data, categoricalValues,
 
   // Transform raw data, so we can set the Refine Results state
   //
-  const xform = transforms.getTransformedData(graphtype, data,
+  const xform = transforms.getTransformedData(graphtype, rawData,
       filter, datapointCol, animationCol, constants.d3geom);
   const summaryData = transforms.getSummaryData(xform.drawingData);
   const loadComparisonData = transforms.getLoadComparisonData(xform.drawingData);
@@ -334,12 +334,66 @@ class PivotApp extends React.Component {
     const { categoricalValues } = currentState;
     const self = this;
 
-    // If this is a query change, it just indicates a change in redux
-    // state at dataset init time, so we don't need to re-read
-    // the database.
+    // We'll go to the database when other things change (e.g.
+    // the dataset, causing a data source change; or the
+    // datapoint, which forces re-pivot of the source data).
     //
-    if (action === 'query') {
-      return this.onQueryAction(currentState);
+    const dataset = currentState.dataset || metadata.getInitDataset();
+
+    //
+    // Determine if the dataset changed, which typically happens
+    // on Undo (Next View) or Redo (Previous View).  If so, read in the new
+    // dataset, and then call the onNewDatasetRead() handler on
+    // the new data.
+    //
+    // Note that we use the "actual dataset", since the
+    // dataset may be synthetic (e.g. a time series based on an aggregation
+    // of time series by entity).
+    //
+    // Scenarios where this runs:  
+    //   Enter, change dataset, Previous.
+    //   Enter, change axis, change dataset, Previous.
+    //   Enter, change datapoint, change dataset, Previous.
+    //   Enter, change filter, change dataset, Previous.
+    //   Or any combination of the above.
+    //
+    if (metadata.getDataset() !== dataset) {
+      metadata.setMetadata(dataset);
+
+      const actualDataset = metadata.getActualDataset();
+      const filter = currentState.filter || metadata.getFilters();
+      const loadTable = currentState.loadTable;
+      const datapointCol = getDatapointCol(currentState);
+
+      // This is asynchronous when the dataset is mongo or CSV,
+      // and synchronous if the dataset is JSON.
+      //
+      const handle = 
+          ((nextProps, dataset) => 
+          (categoricalValues, drawingData, cookedData) => {
+        const newState = self.onNewDatasetRead(nextProps, dataset,
+            categoricalValues, drawingData, cookedData);
+        this.setState(newState);
+      })(nextProps, dataset);
+
+      dataread.readDataset(actualDataset, filter, loadTable, datapointCol)
+        .then(result => handle(result.categoricalValues, result.drawingData, 
+                               result.cookedData))
+        .catch(() => handle({}, [], []));
+
+      // Doing this will cause the datapoint
+      // control to re-render with the new datapoint choice
+      // (if the user chose a new one), prior to reading the new data.
+      // Just a bit nicer.
+      //
+      const graphtype = currentState.graphtype || controls.getGraphtypeDefault();
+      const enabled = getAllEnabled(graphtype);
+      const choices = getAllControlChoices(graphtype, currentState,
+          categoricalValues, datapointCol);
+      const datapoint = {...controls.dfltControls.datapoint, 
+          disabled: !enabled.datapoint, list: choices.datapoint};
+
+      return {datapoint, loading: true};
     }
 
     // If this is an axis change, just set the axis state.  This 
@@ -364,77 +418,24 @@ class PivotApp extends React.Component {
       return {[action]: newAxisState, axes};
     }
 
-    // We'll go to the database when other things change (e.g.
-    // the dataset, causing a data source change; or the
-    // datapoint, which forces re-pivot of the source data).
-    //
-    const dataset = currentState.dataset || metadata.getInitDataset();
-
-    // Determine if the dataset changed.  If so, read in the new
-    // dataset, and then call the onNewDatasetRead() handler on
-    // the new data.
-    //
-    // Note that we use the "actual dataset", since the
-    // dataset may be synthetic (e.g. a time series based on an aggregation
-    // of time series by entity).
-    //
-    if (metadata.getDataset() !== dataset) {
-      metadata.setMetadata(dataset);
-
-      const actualDataset = metadata.getActualDataset();
-      const filter = metadata.getFilters();
-      const loadTable = currentState.loadTable;
-      const datapointCol = getDatapointCol(currentState);
-
-      // This is asynchronous when the dataset is mongo or CSV,
-      // and synchronous if the dataset is JSON.
-      //
-      const handle = 
-          ((nextProps, dataset) => 
-          (categoricalValues, drawingData, cookedData) => {
-        return self.onNewDatasetRead(nextProps, dataset, categoricalValues, 
-          drawingData, cookedData);
-      })(nextProps, dataset);
-
-      dataread.readDataset(actualDataset, filter, loadTable, datapointCol)
-        .then(result => handle(result.categoricalValues, result.drawingData, 
-                               result.cookedData))
-        .catch(() => handle({}, [], []));
-
-      // Doing this will cause the datapoint
-      // control to re-render with the new datapoint choice
-      // (if the user chose a new one), prior to reading the new data.
-      // Just a bit nicer.
-      //
-      const graphtype = currentState.graphtype || controls.getGraphtypeDefault();
-      const enabled = getAllEnabled(graphtype);
-      const choices = getAllControlChoices(graphtype, currentState,
-          categoricalValues, datapointCol);
-      const datapoint = {...controls.dfltControls.datapoint, 
-          disabled: !enabled.datapoint, list: choices.datapoint};
-
-      return {datapoint, loading: true};
-    }
-
     // CSV state is returned synchronously;
     // Mongo state is returned via an async call
     //
-    else if (utils.isCSV(dataset) || utils.isJSON(dataset)) {
+    if (utils.isCSV(dataset) || utils.isJSON(dataset)) {
       const { data } = nextProps;
       const newState = transformCSVState(currentState, data, categoricalValues, null);
       return {...newState, loading: false};
-    } else {
-
-      // This is asynchronous!
-      //
-      transformMongoState(currentState, categoricalValues).then(function(newState){
-        self.setState({...newState, loading: false});
-      }).catch(function(error) {
-        console.error(error);
-        self.setState({loading: false});
-      });
-      return {loading: true};
     }
+
+    // This is asynchronous!
+    //
+    transformMongoState(currentState, categoricalValues).then(function(newState){
+      self.setState({...newState, loading: false});
+    }).catch(function(error) {
+      console.error(error);
+      self.setState({loading: false});
+    });
+    return {loading: true};
   }
 
   // Called after dataset changes and new data is read in.
@@ -442,10 +443,9 @@ class PivotApp extends React.Component {
   // Dispatch action to initialize dataset.
   // The action will reset the filter and the selection controls.
   //
-  // Changes the component state.
+  // Returns the new component state.
   //
   onNewDatasetRead(nextProps, dataset, categoricalValues, rawData, data) {
-    const { onChangeQueryDispatch } = nextProps;
     const oldReduxState = nextProps.currentState;
 
     // OK, this is pretty confusing.  We must calculate two datapoints:
@@ -470,27 +470,25 @@ class PivotApp extends React.Component {
     const datasetGraphtype = metadata.getDatasetAttr('graphtype', null);
     const graphtype = datasetGraphtype || oldReduxState.graphtype;
 
-    const initControlState = controls.getInitControlState(categoricalValues,
+    const initControls = controls.getInitControlState(categoricalValues,
         datapointCol, graphtype);
-    const filter = metadata.getFilters();
 
-    const newControls = Object.keys(initControlState).reduce((i, j) => {
-      return {...i, ...{[j]: initControlState[j]}};
+    const newControls = Object.keys(initControls).reduce((i, j) => {
+      const controlValue = oldReduxState[j] || initControls[j];
+      return {...i, ...{[j]: controlValue}};
     }, {});
+
+    const filter = oldReduxState.filter || metadata.getFilters();
 
     // Send the Change Query event.
     //
     const query = {rawData, data, filter, categoricalValues, controls: newControls,
         datapointCol, originalDatapointCol, dataset};
-    onChangeQueryDispatch(query);
-  }
+    const withControls = {...oldReduxState, ...newControls};
+    const newState = { ...withControls, filter, categoricalValues,
+        data, rawData, dataset, datapointCol, originalDatapointCol };
 
-  // Called when the ChangeQuery action is applied
-  //
-  onQueryAction(currentState) {
-    const { filter, categoricalValues, rawData, data,
-        dataset, datapointCol, originalDatapointCol } = currentState;
-    const loadTable = currentState.loadTable;
+    const loadTable = newState.loadTable;
     const summaryData = transforms.getSummaryData(data);
     const loadComparisonData = transforms.getLoadComparisonData(data);
 
@@ -500,16 +498,16 @@ class PivotApp extends React.Component {
     const facetList = facets.getReactFacets(rawData,
       filter, originalDatapointCol, categoricalValues);
 
-    const initState = getInitState(dataset, currentState, data,
+    const initState = getInitState(dataset, newState, data,
         categoricalValues, datapointCol);
-    const newState = {
+    const finalState = {
         ...initState,
         loading: false,
         summaryData,
         loadComparisonData,
         facet: { list: facetList, filter, datapointCol }
     };
-    return newState;
+    return finalState;
   }
 
   // Fetch initial (potentially async) data for the component here
@@ -532,9 +530,7 @@ class PivotApp extends React.Component {
           .then(onPushStateDispatch);
     } else if (currentState) {
       if (metadata.getDataset() !== newDataset) {
-        metadata.setMetadata(newDataset); // FIXME: mutable
         this.onReduxStateChange(this.props);
-        return;
       }
       const initState = getInitState(dataset, currentState, data, 
           initCategoricalValues, null);
@@ -551,14 +547,13 @@ class PivotApp extends React.Component {
   // Called after (e.g.) mapStateToProps finishes.
   //
   componentWillReceiveProps(nextProps) {
-    if (this.state) {
-      const newState = this.onReduxStateChange(nextProps);
-      this.setState(newState);
-    }
+    const newState = this.onReduxStateChange(nextProps);
+    this.setState(newState);
   }
 
   render(){
     const datasetLabel = metadata.getDatasetLabel();
+    const key = 'PivotApp';
 
     // When the app is starting up, there is no state or props.
     // We want to just show the Loading icon while the initial
@@ -566,7 +561,7 @@ class PivotApp extends React.Component {
     //
     if (!this.state || !this.props || this.props.needData) {
       return (
-        <div key={datasetLabel} className={"pivot-all pivot-div"}>
+        <div key={key} className={"pivot-all pivot-div"}>
           <Loader fullPage loading={true} />
         </div>
       );
@@ -608,7 +603,7 @@ class PivotApp extends React.Component {
     };
 
     return (
-      <div key={datasetLabel} className={"pivot-all pivot-div"}>
+      <div key={key} className={"pivot-all pivot-div"}>
         <Loader fullPage loading={loading} />
         <div className={"pivot-header pivot-div"}>
           <div className={"title pivot-div"}>
@@ -660,12 +655,6 @@ const mapDispatchToProps = function(dispatch, ownProps) {
     //
     onPushStateDispatch: function(newState) {
       actions.pushState(newState)(dispatch);
-    },
-
-    // Dispatch Redux "Change Query" message
-    //
-    onChangeQueryDispatch: function(query) {
-      actions.changeQuery(query)(dispatch);
     }
   };
 }

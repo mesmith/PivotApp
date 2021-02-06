@@ -125,8 +125,8 @@ const metadata = function(){
   //
   const airForceMetadata = {
     dataset: {
-      name: 'FY11Accessions', alias: 'Air Force Recruitment',
-      // name: 'test1000.csv', alias: 'Air Force Recruitment',
+      // name: 'FY11Accessions', alias: 'Air Force Recruitment',
+      name: 'test1000.csv', alias: 'Air Force Recruitment',
       subtitle: '2005 and later',
       graphtype: 'bubble',         // by default, show the bubble chart
     },
@@ -1092,6 +1092,7 @@ const metadata = function(){
     mannis: aisSoloMetadata,
     // master: ticketSubjectMetadata,
     master: aisSoloMetadata,
+    // master: airForceMetadata,
     dtmo: ticketSubjectMetadata,
     orig: airForceMetadata
   };

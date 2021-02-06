@@ -33,11 +33,9 @@ window.onload = function(){
 
   // This will display the Loading icon
   //
-  const datasetLabel = metadata.getDatasetLabel();
   const dataset = metadata.getActualDataset();
   ReactDOM.render( 
     <Provider store={store}>
-      <PivotApp key={datasetLabel} dataset={dataset}
-          needData={true} showDataset={true} />
+      <PivotApp dataset={dataset} needData={true} showDataset={true} />
     </Provider>, document.getElementById('root'));
 }
