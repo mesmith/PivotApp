@@ -470,12 +470,12 @@ const dataread = function() {
 
     return axios.get(url).then(result => {
       if (result.status === 200 && Array.isArray(result.data)) {
-        return {drawingData: result.data, facetData: result.data};
+        return {pivotedData: result.data, facetData: result.data};
       } else {
-        return {drawingData: [], facetData: []};
+        return {pivotedData: [], facetData: []};
       }
     }).catch(error => {
-      return {drawingData: [], facetData: []};
+      return {pivotedData: [], facetData: []};
     });
   }
 

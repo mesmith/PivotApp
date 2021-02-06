@@ -249,7 +249,7 @@ const transformMongoState = function(currentState, categoricalValues){
   //
   const handle = 
       ((currentState, categoricalValues, loadTable, filter, datapointCol) => xform => {
-    const processedData = dataread.process(xform.drawingData, loadTable);
+    const processedData = dataread.process(xform.pivotedData, loadTable);
 
     const facetList = facets.getReactFacets(processedData, filter, datapointCol,
         categoricalValues);
