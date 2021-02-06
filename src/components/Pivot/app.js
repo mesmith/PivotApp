@@ -91,7 +91,6 @@ const getInitState = function(dataset, currentState, data, categoricalValues,
 //
 const transformCSVState = function(currentState, rawData, categoricalValues,
     dfltDatapointCol){
-console.log('transformCSVState: rawData='); console.log(rawData);
   const graphtype = currentState.graphtype || controls.getGraphtypeDefault();
   const datapointCol = dfltDatapointCol || currentState.datapoint;
   const animationCol = currentState.animate;
@@ -103,10 +102,13 @@ console.log('transformCSVState: rawData='); console.log(rawData);
   //
   const xform = transforms.getTransformedData(graphtype, rawData,
       filter, datapointCol, animationCol, constants.d3geom);
-  const summaryData = transforms.getSummaryData(xform.drawingData);
-  const loadComparisonData = transforms.getLoadComparisonData(xform.drawingData);
-  const facetList = facets.getReactFacets(xform.facetData,
+  const data = dataread.process(xform.drawingData, loadTable);
+
+  const facetList = facets.getReactFacets(data,
       filter, datapointCol, categoricalValues);
+  const summaryData = transforms.getSummaryData(data);
+  const loadComparisonData = transforms.getLoadComparisonData(data);
+
   const controlState = getControlState(currentState, graphtype, 
       categoricalValues, datapointCol);
   const axes = getAxesFromState(currentState, controlState);
@@ -119,7 +121,7 @@ console.log('transformCSVState: rawData='); console.log(rawData);
 
     facet: { list: facetList, filter, datapointCol },
     tooltipPivots: categoricalValues,
-    drawingData: xform.drawingData,
+    drawingData: data,
     axes,
     summaryData, // currently untested for CSV
     loadComparisonData, // currently untested for CSV
@@ -153,6 +155,7 @@ const initMongoState = function(currentState, data, categoricalValues, dfltDatap
   const datapointCol = dfltDatapointCol || currentState.datapoint;
   const loadTable = currentState.loadTable;
   const filter = currentState.filter || {};
+
   const facetList = facets.getReactFacets(data, filter, datapointCol,
       categoricalValues);
   const summaryData = transforms.getSummaryData(data);
@@ -248,10 +251,10 @@ const transformMongoState = function(currentState, categoricalValues){
       ((currentState, categoricalValues, loadTable, filter, datapointCol) => xform => {
     const data = dataread.process(xform.drawingData, loadTable);
 
+    const facetList = facets.getReactFacets(data, filter, datapointCol,
+        categoricalValues);
     const summaryData = transforms.getSummaryData(data);
     const loadComparisonData = transforms.getLoadComparisonData(data);
-    const facetList = facets.getReactFacets(xform.facetData,
-        filter, datapointCol, categoricalValues);
 
     // Calculating the graphtype disabled state requires that we look at
     // the currently displayed Aggregate By datapoint, *not* the predetermined
@@ -446,8 +449,7 @@ class PivotApp extends React.Component {
   //
   // Returns the new component state.
   //
-  onNewDatasetRead(nextProps, dataset, categoricalValues, rawData, data) {
-console.log('onNewDatasetRead: rawData='); console.log(rawData);
+  onNewDatasetRead(nextProps, dataset, categoricalValues, drawingData, data) {
     const oldReduxState = nextProps.currentState;
 
     // OK, this is pretty confusing.  We must calculate two datapoints:
@@ -484,11 +486,9 @@ console.log('onNewDatasetRead: rawData='); console.log(rawData);
 
     // Send the Change Query event.
     //
-    const query = {rawData, data, filter, categoricalValues, controls: newControls,
-        datapointCol, originalDatapointCol, dataset};
     const withControls = {...oldReduxState, ...newControls};
     const newState = { ...withControls, filter, categoricalValues,
-        data, rawData, dataset, datapointCol, originalDatapointCol };
+        data, drawingData, dataset, datapointCol, originalDatapointCol };
 
     const loadTable = newState.loadTable;
     const summaryData = transforms.getSummaryData(data);
@@ -497,7 +497,7 @@ console.log('onNewDatasetRead: rawData='); console.log(rawData);
     // Note that we use originalDatapointCol here.  We want to
     // allow filtering based on the data in the original dataset.
     //
-    const facetList = facets.getReactFacets(rawData,
+    const facetList = facets.getReactFacets(drawingData,
       filter, originalDatapointCol, categoricalValues);
 
     const initState = getInitState(dataset, newState, data,
