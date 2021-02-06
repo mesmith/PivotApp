@@ -374,15 +374,15 @@ class PivotApp extends React.Component {
       //
       const handle = 
           ((nextProps, dataset) => 
-          (categoricalValues, drawingData, cookedData) => {
+          (categoricalValues, drawingData, processedData) => {
         const newState = self.onNewDatasetRead(nextProps, dataset,
-            categoricalValues, drawingData, cookedData);
+            categoricalValues, drawingData, processedData);
         this.setState(newState);
       })(nextProps, dataset);
 
       dataread.readDataset(actualDataset, filter, loadTable, datapointCol)
         .then(result => handle(result.categoricalValues, result.drawingData, 
-                               result.cookedData))
+                               result.processedData))
         .catch(() => handle({}, [], []));
 
       // Doing this will cause the datapoint

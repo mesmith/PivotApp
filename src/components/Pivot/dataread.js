@@ -35,8 +35,8 @@ const dataread = function() {
       return mongoReadDataset(dataset, datapointCol, filter).then((res) => {
         const categoricalValues = res.categoricalValues || {};
         const drawingData = res.drawingData || [];
-        const cookedData = process(drawingData, loadTable);
-        return { dataset, categoricalValues, drawingData, cookedData };
+        const processedData = process(drawingData, loadTable);
+        return { dataset, categoricalValues, drawingData, processedData };
       });
     }
   }
@@ -56,10 +56,10 @@ const dataread = function() {
             const catColumns = metadata.getColumnsByAttrValue('type', 'Categorical');
             const dateColumns = metadata.getColumnsByAttrValue('type', 'IsoDate');
             const columns = catColumns.concat(dateColumns);
-            const cookedData = process(drawingData, null);
-            const categoricalValues = utils.getAllUniqueValues(cookedData, columns);
+            const processedData = process(drawingData, null);
+            const categoricalValues = utils.getAllUniqueValues(processedData, columns);
     
-            const res = {dataset, categoricalValues, drawingData, cookedData};
+            const res = {dataset, categoricalValues, drawingData, processedData};
             resolve(res);
           }
         });
@@ -71,10 +71,10 @@ const dataread = function() {
     const catColumns = metadata.getColumnsByAttrValue('type', 'Categorical');
     const dateColumns = metadata.getColumnsByAttrValue('type', 'IsoDate');
     const columns = catColumns.concat(dateColumns);
-    const cookedData = process(drawingData, null);
-    const categoricalValues = utils.getAllUniqueValues(cookedData, columns);
+    const processedData = process(drawingData, null);
+    const categoricalValues = utils.getAllUniqueValues(processedData, columns);
    
-    return {dataset, categoricalValues, drawingData, cookedData};
+    return {dataset, categoricalValues, drawingData, processedData};
   }
 
   // Post-process data by adding average values for all Numeric columns

@@ -38,7 +38,7 @@ const startup = (currentState, newDataset, filter, datapointCol, initData) => {
 
   const handle = ((dataset, state) => getDatasetState)(newDataset, currentState);
 
-  const handleData = result => handle(result.categoricalValues, result.cookedData);
+  const handleData = result => handle(result.categoricalValues, result.processedData);
 
   const handleError = () => handle({}, []);
 
