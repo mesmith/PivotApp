@@ -37,6 +37,12 @@ const datasetControls = {
   list: [],
 };
 
+const pureAxisNames = [ 'colorAxis', 'radiusAxis', 'xAxis', 'yAxis' ];
+const otherAxisNames = [ 'datapoint', 'animate' ];
+const graphAxisNames = [ 'graphtype' ];
+
+const axisNames = pureAxisNames.concat(otherAxisNames);
+
 // Return the datapoint column, used when getting original data and then
 // potentially transforming it.
 //
@@ -288,8 +294,6 @@ const transformMongoState = function(currentState, categoricalValues){
 // axis choice will be selected.
 //
 const getAxesFromState = function(state, controlState) {
-  const axisNames = ['animate', 'colorAxis', 'datapoint',
-      'radiusAxis', 'xAxis', 'yAxis'];
   
   // This isn't one of the axes,
   // but it's a control that's passed into drawing routines
@@ -334,7 +338,6 @@ class PivotApp extends React.Component {
   //
   onReduxStateChange(nextProps) {
     const { currentState } = nextProps;
-    const action = currentState.last;
     const { categoricalValues } = currentState;
     const self = this;
 
@@ -400,13 +403,12 @@ class PivotApp extends React.Component {
       return {datapoint, loading: true};
     }
 
-    // If this is an axis change, just set the axis state.  This 
+    // If this is a "pure" axis change, just set the axis state.  This 
     // will cause a re-render without re-reading the database.
     //
-    if (action === 'xAxis' || action === 'yAxis' || 
-        action === 'radiusAxis' || action === 'colorAxis') {
-      const axisActionList = ['xAxis', 'yAxis', 'radiusAxis', 'colorAxis'];
-      const allAxisState = axisActionList.reduce((i, j) => {
+    const changedAxis = this.getPureAxisChange(this.state, currentState);
+    if (changedAxis !== null) {
+      const allAxisState = pureAxisNames.reduce((i, j) => {
         return {...i, ...{[j]: self.state[j]}};
       }, {});
 
@@ -415,11 +417,11 @@ class PivotApp extends React.Component {
       const enabled = getAllEnabled(graphtype);
       const choices = getAllControlChoices(graphtype, currentState,
           categoricalValues, datapointCol);
-      const list = choices[action];
-      const disabled = !enabled[action];
-      const newAxisState = {...allAxisState[action], disabled, list};
+      const list = choices[changedAxis];
+      const disabled = !enabled[changedAxis];
+      const newAxisState = {...allAxisState[changedAxis], disabled, list};
       const axes = getAxesFromState(currentState, null);
-      return {[action]: newAxisState, axes};
+      return {[changedAxis]: newAxisState, axes};
     }
 
     // CSV state is returned synchronously;
@@ -440,6 +442,49 @@ class PivotApp extends React.Component {
       self.setState({loading: false});
     });
     return {loading: true};
+  }
+
+  // Return the name of a "pure" axis if the difference 
+  // between newReduxState and the current
+  // localState indicates that the axis value changed.
+  //
+  // Return null if something other than a pure axis element changed.
+  //
+  getPureAxisChange(localState, newReduxState) {
+    if (!localState || !localState.axes || !newReduxState) {
+      return null;
+    }
+    const localStateAxes = localState.axes;
+
+    // Check for filter change
+    // 
+    const changedFilter = 
+        JSON.stringify(localState.facet.filter) !== JSON.stringify(newReduxState.filter);
+    if (changedFilter) {
+      return null;
+    }
+
+    // Check for elements that are called axes, but that we don't
+    // treat as such.
+    //
+    const changedOtherAxis = otherAxisNames.concat(graphAxisNames).reduce((i, j) => {
+      return i || 
+          (localStateAxes[j] && newReduxState[j] &&
+           localStateAxes[j] !== newReduxState[j]);
+    }, false);
+    if (changedOtherAxis) {
+      return null;
+    }
+
+    // Finally, return the name of a changed pure axis name.
+    //
+    return pureAxisNames.reduce((i, j) => {
+      return (i === null &&
+        localStateAxes[j] && newReduxState[j] &&
+        (localStateAxes[j] !== newReduxState[j]))
+        ? j
+        : i;
+    }, null);
   }
 
   // Called after dataset changes and new data is read in.
