@@ -3,6 +3,7 @@
 //
 import metadata from './metadata';
 import datapoint from './datapoint';
+import transforms from './transforms';
 import utils from './utils';
 import constants from './constants';
 
@@ -15,7 +16,7 @@ const dataread = function() {
   // of time series by entity).
   //
   const readDataset = function(dataset, filter, loadTable, datapointCol,
-      initData){
+      initData, graphtype, animationCol){
 
     // If we're reading from mongodb, start a mongodb RESTful session.
     // We consider that we're reading from a CSV file if the chosen 
@@ -30,13 +31,21 @@ const dataread = function() {
         resolve(readInitData(initData, dataset));
       });
     } else if (utils.isCSV(dataset) || utils.isJSON(dataset)) {
-      return csvOrJsonReadDataset(dataset);
+      return csvOrJsonReadDataset(dataset).then(res => {
+        const categoricalValues = res.categoricalValues || {};
+        const xform = transforms.getTransformedData(graphtype,
+            res.rawData, filter, datapointCol, animationCol,
+            constants.d3geom);
+        const pivotedData = xform.data;
+        const processedData = process(pivotedData, loadTable);
+        return { dataset, categoricalValues, pivotedData, processedData };
+      });
     } else {
       return mongoReadDataset(dataset, datapointCol, filter).then((res) => {
         const categoricalValues = res.categoricalValues || {};
-        const drawingData = res.drawingData || [];
-        const processedData = process(drawingData, loadTable);
-        return { dataset, categoricalValues, drawingData, processedData };
+        const pivotedData = res.pivotedData || [];
+        const processedData = process(pivotedData, loadTable);
+        return { dataset, categoricalValues, pivotedData, processedData };
       });
     }
   }
@@ -47,8 +56,8 @@ const dataread = function() {
   const csvOrJsonReadDataset = function(dataset){
     return new Promise(
       function(resolve, reject) {
-        readCSVOrJsonData([], dataset, function(drawingData){
-          if (!Array.isArray(drawingData)) {
+        readCSVOrJsonData([], dataset, function(rawData){
+          if (!Array.isArray(rawData)) {
             const error = 'No data found';
             console.error(error);
             reject({error});
@@ -56,10 +65,9 @@ const dataread = function() {
             const catColumns = metadata.getColumnsByAttrValue('type', 'Categorical');
             const dateColumns = metadata.getColumnsByAttrValue('type', 'IsoDate');
             const columns = catColumns.concat(dateColumns);
-            const processedData = process(drawingData, null);
-            const categoricalValues = utils.getAllUniqueValues(processedData, columns);
+            const categoricalValues = utils.getAllUniqueValues(rawData, columns);
     
-            const res = {dataset, categoricalValues, drawingData, processedData};
+            const res = {dataset, categoricalValues, rawData};
             resolve(res);
           }
         });
@@ -67,14 +75,14 @@ const dataread = function() {
     );
   }
 
-  const readInitData = function(drawingData, dataset) {
+  const readInitData = function(pivotedData, dataset) {
     const catColumns = metadata.getColumnsByAttrValue('type', 'Categorical');
     const dateColumns = metadata.getColumnsByAttrValue('type', 'IsoDate');
     const columns = catColumns.concat(dateColumns);
-    const processedData = process(drawingData, null);
+    const processedData = process(pivotedData, null);
     const categoricalValues = utils.getAllUniqueValues(processedData, columns);
    
-    return {dataset, categoricalValues, drawingData, processedData};
+    return {dataset, categoricalValues, pivotedData, processedData};
   }
 
   // Post-process data by adding average values for all Numeric columns
@@ -439,7 +447,7 @@ const dataread = function() {
     ]).then(axios.spread((...res) => {
       if (res[0].status === 200 && res[1].status === 200 && 
           res[0].data && Array.isArray(res[1].data)) {
-        return {categoricalValues: res[0].data, drawingData: res[1].data};
+        return {categoricalValues: res[0].data, pivotedData: res[1].data};
       } else {
         return {error: 'Data read failure'};
       }
@@ -451,7 +459,8 @@ const dataread = function() {
   // Similar to the above, but used when the user changes the
   // aggregation column.
   //
-  const mongoGetTransformedData = function(graphtype, dataset, filter, datapointCol){
+  const mongoGetTransformedData = function(graphtype, dataset, filter,
+      datapointCol){
 
     // Convert 'filter' into a REST query string
     //

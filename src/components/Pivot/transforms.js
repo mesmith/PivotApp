@@ -217,7 +217,7 @@ const transforms = function(){
   }
 
   // Return the transformed data as an object of the form
-  // { drawingData, facetData }.
+  // { data, facetData }.
   //
   function getTransformedData(graphtype, rawData, search, datapointCol,
       animationCol, d3geom){
@@ -226,10 +226,10 @@ const transforms = function(){
       case 'bubble':
       case 'map':
       {
-        const drawingData = transforms.cullAndAddIDs(
+        const data = transforms.cullAndAddIDs(
             transforms.reducer(transforms.mapper(rawData, 
             search, datapointCol, animationCol)));
-        return {drawingData, facetData: drawingData};
+        return {data, facetData: data};
       }
       case 'force':
       case 'forceStatus':
@@ -237,27 +237,27 @@ const transforms = function(){
         const useStatus = (graphtype=='forceStatus');
         const mapped = transforms.mapper(rawData, search, datapointCol,
             animationCol);
-        const drawingData = transforms.cullAndAddIDs(
+        const data = transforms.cullAndAddIDs(
             transforms.reducerForce(mapped, useStatus, datapointCol, d3geom));
         const facetData = transforms.cullAndAddIDs(transforms.reducer(mapped));
-        return {drawingData, facetData};
+        return {data, facetData};
       }
       default:
       {
-        const drawingData = transforms.cullAndAddIDs(
+        const data = transforms.cullAndAddIDs(
             transforms.reducer(transforms.mapper(rawData, 
             search, datapointCol, animationCol)));
-        return {drawingData, facetData: drawingData};
+        return {data, facetData: data};
       }
     }
   }
 
   // Given a previously transformed dataset, return a summary dataset.
   //
-  function getSummaryData(drawingData){
+  function getSummaryData(data){
     return {
-      ...getCategoricalSummaries(drawingData),
-      ...getNumericSummaries(drawingData)
+      ...getCategoricalSummaries(data),
+      ...getNumericSummaries(data)
     };
   }
 

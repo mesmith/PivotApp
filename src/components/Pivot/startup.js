@@ -29,7 +29,8 @@ const getReusedDatasetState = currentState => (categoricalValues, data) => {
 
 // After initial DOM loading, initialize or restart the dataset.
 //
-const startup = (currentState, newDataset, filter, datapointCol, initData) => {
+const startup = (currentState, newDataset, filter, datapointCol, initData,
+    graphtype, animationCol) => {
   const currentDataset = currentState ? currentState.dataset : null;
 
   const getDatasetState = newDataset === currentDataset
@@ -42,9 +43,10 @@ const startup = (currentState, newDataset, filter, datapointCol, initData) => {
 
   const handleError = () => handle({}, []);
 
-  return dataread.readDataset(newDataset, filter, null, datapointCol, initData)
-      .then(handleData)
-      .catch(handleError);
+  return dataread.readDataset(newDataset, filter, null, datapointCol, initData,
+      graphtype, animationCol)
+    .then(handleData)
+    .catch(handleError);
 }
 
 export default {

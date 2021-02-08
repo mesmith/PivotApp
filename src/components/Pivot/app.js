@@ -84,7 +84,7 @@ const getInitState = function(dataset, currentState, data, categoricalValues,
     datapointCol) {
   if (!dataset) return {};
   if (utils.isCSV(dataset) || utils.isJSON(dataset)) {
-    return transformCSVState(currentState, data, categoricalValues,
+    return getCSVstate(currentState, data, categoricalValues,
         datapointCol);
   } else {
     return initMongoState(currentState, data, categoricalValues,
@@ -92,23 +92,17 @@ const getInitState = function(dataset, currentState, data, categoricalValues,
   }
 }
 
-// Called when a new Redux state is available.
+// Called when pivoted and processed CSV data is available.
 // Return a state suitable for the <PivotApp/> component.
 //
-const transformCSVState = function(currentState, rawData, categoricalValues,
+const getCSVstate = function(currentState, processedData, categoricalValues,
     dfltDatapointCol){
-  const graphtype = currentState.graphtype || controls.getGraphtypeDefault();
-  const datapointCol = dfltDatapointCol || currentState.datapoint;
-  const animationCol = currentState.animate;
   const loadTable = currentState.loadTable;
-  const filter = currentState.filter || {};
-  const datasetChoices = getDatasetChoices();
 
-  // Transform raw data, so we can set the Refine Results state
-  //
-  const xform = transforms.getTransformedData(graphtype, rawData,
-      filter, datapointCol, animationCol, constants.d3geom);
-  const processedData = dataread.process(xform.drawingData, loadTable);
+  const filter = currentState.filter || {};
+  const datapointCol = dfltDatapointCol || currentState.datapoint;
+  const graphtype = currentState.graphtype || controls.getGraphtypeDefault();
+  const datasetChoices = getDatasetChoices();
 
   const facetList = facets.getReactFacets(processedData,
       filter, datapointCol, categoricalValues);
@@ -135,8 +129,8 @@ const transformCSVState = function(currentState, rawData, categoricalValues,
   }
 }
 
-  // Return the state of all Select controls
-  //
+// Return the state of all Select controls
+//
 const getControlState = function(currentState, graphtype, categoricalValues,
     datapointCol) {
   const enabled = getAllEnabled(graphtype);
@@ -371,20 +365,23 @@ class PivotApp extends React.Component {
       const filter = currentState.filter || metadata.getFilters();
       const loadTable = currentState.loadTable;
       const datapointCol = getDatapointCol(currentState);
+      const graphtype = currentState.graphtype || controls.getGraphtypeDefault();
+      const animationCol = currentState.animate;
 
       // This is asynchronous when the dataset is mongo or CSV,
       // and synchronous if the dataset is JSON.
       //
       const handle = 
           ((nextProps, dataset) => 
-          (categoricalValues, drawingData, processedData) => {
+          (categoricalValues, pivotedData, processedData) => {
         const newState = self.onNewDatasetRead(nextProps, dataset,
-            categoricalValues, drawingData, processedData);
+            categoricalValues, pivotedData, processedData);
         this.setState(newState);
       })(nextProps, dataset);
 
-      dataread.readDataset(actualDataset, filter, loadTable, datapointCol)
-        .then(result => handle(result.categoricalValues, result.drawingData, 
+      dataread.readDataset(actualDataset, filter, loadTable, datapointCol,
+          null, graphtype, animationCol)
+        .then(result => handle(result.categoricalValues, result.pivotedData, 
                                result.processedData))
         .catch(() => handle({}, [], []));
 
@@ -393,7 +390,6 @@ class PivotApp extends React.Component {
       // (if the user chose a new one), prior to reading the new data.
       // Just a bit nicer.
       //
-      const graphtype = currentState.graphtype || controls.getGraphtypeDefault();
       const enabled = getAllEnabled(graphtype);
       const choices = getAllControlChoices(graphtype, currentState,
           categoricalValues, datapointCol);
@@ -428,9 +424,25 @@ class PivotApp extends React.Component {
     // Mongo state is returned via an async call
     //
     if (utils.isCSV(dataset) || utils.isJSON(dataset)) {
-      const { data } = nextProps;
-      const newState = transformCSVState(currentState, data, categoricalValues, null);
-      return {...newState, loading: false};
+      // const { data } = nextProps;
+      const datapointCol = getDatapointCol(currentState);
+      const filter = currentState.filter || metadata.getFilters();
+      const loadTable = currentState.loadTable;
+      const animationCol = currentState.animate;
+      const graphtype = currentState.graphtype || controls.getGraphtypeDefault();
+      const handle = 
+          ((currentState, datapointCol) => 
+          (categoricalValues, processedData) => {
+        const initState = getCSVstate(currentState, processedData, categoricalValues,
+            datapointCol);
+        const finalState = { ...initState, loading: false };
+        this.setState(finalState);
+      })(currentState, datapointCol);
+
+      dataread.readDataset(dataset, filter, loadTable, datapointCol,
+          null, graphtype, animationCol)
+        .then(result => handle(result.categoricalValues, result.processedData))
+        .catch(() => handle({}, [], []));
     }
 
     // This is asynchronous!
@@ -573,8 +585,13 @@ class PivotApp extends React.Component {
       metadata.setMetadata(newDataset); // FIXME: mutable
       const filter = metadata.getFilters();
       const datapointCol = datapoint.getDefaultDatapointCol();
-      startup.startup(currentState, newDataset, filter, datapointCol, initData)
-          .then(onPushStateDispatch);
+      const graphtype = currentState && currentState.graphtype
+        ? currentState.graphtype
+        : controls.getGraphtypeDefault();
+      const animationCol = currentState ? currentState.animate : null;
+      startup.startup(currentState, newDataset, filter, datapointCol, initData,
+          graphtype, animationCol)
+        .then(onPushStateDispatch);
     } else if (currentState) {
       if (metadata.getDataset() !== newDataset) {
         this.onReduxStateChange(this.props);
