@@ -83,15 +83,15 @@ const getInitDatapointCol = function() {
 //
 // This is a sync operation--it doesn't actually do a Mongo query.
 //
-const getInitLocalState = function(dataset, currentState, processedData,
-    categoricalValues, datapointCol) {
+const getInitLocalState = function(dataset, currentState, 
+    pivotedData, processedData, categoricalValues, datapointCol) {
   if (!dataset) return {};
   if (utils.isCSV(dataset) || utils.isJSON(dataset)) {
-    return getCsvLocalState(currentState, processedData, categoricalValues,
-        datapointCol);
+    return getCsvLocalState(currentState, pivotedData, processedData,
+        categoricalValues, datapointCol);
   } else {
-    return getMongoLocalState(currentState, processedData, categoricalValues,
-        datapointCol);
+    return getMongoLocalState(currentState, pivotedData, processedData,
+        categoricalValues, datapointCol);
   }
 }
 
@@ -99,8 +99,8 @@ const getInitLocalState = function(dataset, currentState, processedData,
 // 
 // Returns an object to be pushed into local state.
 //
-const getCsvLocalState = function(currentState, processedData, categoricalValues,
-    dfltDatapointCol){
+const getCsvLocalState = function(currentState, pivotedData, processedData,
+    categoricalValues, dfltDatapointCol){
   const loadTable = currentState.loadTable;
 
   const filter = currentState.filter || {};
@@ -108,9 +108,9 @@ const getCsvLocalState = function(currentState, processedData, categoricalValues
   const graphtype = currentState.graphtype || controls.getGraphtypeDefault();
   const datasetChoices = getDatasetChoices();
 
-  // FIXME: I think this should take pivotedData, not processedData
+  // Must get filters from pre-processed pivoted data.
   //
-  const facetList = facets.getReactFacets(processedData,
+  const facetList = facets.getReactFacets(pivotedData,
       filter, datapointCol, categoricalValues);
   const summaryData = transforms.getSummaryData(processedData);
   const loadComparisonData = transforms.getLoadComparisonData(processedData);
@@ -158,16 +158,16 @@ const getControlState = function(currentState, graphtype, categoricalValues,
 //
 // Returns an object to be pushed into local state.
 //
-const getMongoLocalState = function(currentState, processedData, categoricalValues,
-    dfltDatapointCol){
+const getMongoLocalState = function(currentState, pivotedData, processedData,
+    categoricalValues, dfltDatapointCol){
   const graphtype = currentState.graphtype || controls.getGraphtypeDefault();
   const datapointCol = dfltDatapointCol || currentState.datapoint;
   const loadTable = currentState.loadTable;
   const filter = currentState.filter || {};
 
-  // FIXME: I think this should take pivotedData, not processedData
+  // Must get filters from pre-processed pivoted data.
   //
-  const facetList = facets.getReactFacets(processedData, filter, datapointCol,
+  const facetList = facets.getReactFacets(pivotedData, filter, datapointCol,
       categoricalValues);
   const summaryData = transforms.getSummaryData(processedData);
   const loadComparisonData = transforms.getLoadComparisonData(processedData);
@@ -262,9 +262,9 @@ const getMongoLocalStateAsync = function(currentState, categoricalValues){
       ((currentState, categoricalValues, loadTable, filter, datapointCol) => xform => {
     const processedData = dataread.process(xform.pivotedData, loadTable);
 
-    // FIXME: I think this should take pivotedData, not processedData
+    // Must get filters from pre-processed pivoted data.
     //
-    const facetList = facets.getReactFacets(processedData, filter, datapointCol,
+    const facetList = facets.getReactFacets(xform.pivotedData, filter, datapointCol,
         categoricalValues);
     const summaryData = transforms.getSummaryData(processedData);
     const loadComparisonData = transforms.getLoadComparisonData(processedData);
@@ -447,8 +447,9 @@ class PivotApp extends React.Component {
       const graphtype = currentState.graphtype || controls.getGraphtypeDefault();
       const handle = 
           ((currentState, datapointCol) => 
-          (categoricalValues, processedData) => {
-        const initLocalState = getCsvLocalState(currentState, processedData,
+          (categoricalValues, pivotedData, processedData) => {
+        const initLocalState = getCsvLocalState(currentState, 
+            pivotedData, processedData,
             categoricalValues, datapointCol);
         const finalLocalState = { ...initLocalState, loading: false };
         this.setState(finalLocalState);
@@ -456,7 +457,8 @@ class PivotApp extends React.Component {
 
       dataread.readDataset(dataset, filter, loadTable, datapointCol,
           null, graphtype, animationCol)
-        .then(result => handle(result.categoricalValues, result.processedData))
+        .then(result => handle(result.categoricalValues,
+            result.pivotedData, result.processedData))
         .catch(() => handle({}, [], []));
       return;
     }
@@ -576,7 +578,8 @@ class PivotApp extends React.Component {
     const facetList = facets.getReactFacets(pivotedData,
       filter, originalDatapointCol, categoricalValues);
 
-    const initState = getInitLocalState(dataset, newReduxState, processedData,
+    const initState = getInitLocalState(dataset, newReduxState, 
+        pivotedData, processedData,
         categoricalValues, datapointCol);
     const finalState = {
         ...initState,
