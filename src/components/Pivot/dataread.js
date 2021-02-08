@@ -34,8 +34,8 @@ const dataread = function() {
       return csvOrJsonReadDataset(dataset).then(res => {
         const categoricalValues = res.categoricalValues || {};
         const xform = transforms.getTransformedData(graphtype,
-            res.rawData, filter, datapointCol, animationCol,
-            constants.d3geom);
+            filter, datapointCol, animationCol,
+            constants.d3geom, res.rawData);
         const pivotedData = xform.data;
         const processedData = process(pivotedData, loadTable);
         return { dataset, categoricalValues, pivotedData, processedData };

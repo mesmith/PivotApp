@@ -219,8 +219,8 @@ const transforms = function(){
   // Return the transformed data as an object of the form
   // { data, facetData }.
   //
-  function getTransformedData(graphtype, rawData, search, datapointCol,
-      animationCol, d3geom){
+  function getTransformedData(graphtype, search, datapointCol,
+      animationCol, d3geom, rawData){
     switch( graphtype ){
       case 'line':
       case 'bubble':

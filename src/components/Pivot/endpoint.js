@@ -176,7 +176,7 @@ const endpoint = function(){
       reader.getDataWithQuery(db, dataset, query)
         .then(function(data){
           const xform = transforms.getTransformedData(req.params.graphtype,
-              data, {}, req.params.datapoint, 'None', constants.d3geom);
+              {}, req.params.datapoint, 'None', constants.d3geom, data);
           res.send(xform);
         });
     });
