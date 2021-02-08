@@ -62,7 +62,8 @@ const getDatapointCol = function(currentState){
 // Return the datapoint in the current state, from the Aggregate By control.
 //
 const getReduxStateDatapoint = function(currentState) {
-  return currentState && currentState.hasOwnProperty('datapoint') && currentState.datapoint
+  return currentState && currentState.hasOwnProperty('datapoint') && 
+      currentState.datapoint
     ? currentState.datapoint
     : null;
 }
@@ -78,24 +79,27 @@ const getInitDatapointCol = function() {
   return colForDataset || dfltDatapointCol;
 }
 
+// Return the local state from an initial CSV or Mongo query.
+//
 // This is a sync operation--it doesn't actually do a Mongo query.
 //
-const getInitState = function(dataset, currentState, data, categoricalValues,
-    datapointCol) {
+const getInitLocalState = function(dataset, currentState, processedData,
+    categoricalValues, datapointCol) {
   if (!dataset) return {};
   if (utils.isCSV(dataset) || utils.isJSON(dataset)) {
-    return getCSVstate(currentState, data, categoricalValues,
+    return getCsvLocalState(currentState, processedData, categoricalValues,
         datapointCol);
   } else {
-    return initMongoState(currentState, data, categoricalValues,
+    return getMongoLocalState(currentState, processedData, categoricalValues,
         datapointCol);
   }
 }
 
 // Called when pivoted and processed CSV data is available.
-// Return a state suitable for the <PivotApp/> component.
+// 
+// Returns an object to be pushed into local state.
 //
-const getCSVstate = function(currentState, processedData, categoricalValues,
+const getCsvLocalState = function(currentState, processedData, categoricalValues,
     dfltDatapointCol){
   const loadTable = currentState.loadTable;
 
@@ -111,7 +115,7 @@ const getCSVstate = function(currentState, processedData, categoricalValues,
 
   const controlState = getControlState(currentState, graphtype, 
       categoricalValues, datapointCol);
-  const axes = getAxesFromState(currentState, controlState);
+  const axes = getAxesFromReduxState(currentState, controlState);
 
   return {
     dataset: {...datasetControls, list: datasetChoices},
@@ -121,7 +125,7 @@ const getCSVstate = function(currentState, processedData, categoricalValues,
 
     facet: { list: facetList, filter, datapointCol },
     tooltipPivots: categoricalValues,
-    drawingData: processedData,
+    processedData,
     axes,
     summaryData, // currently untested for CSV
     loadComparisonData, // currently untested for CSV
@@ -150,7 +154,10 @@ const getControlState = function(currentState, graphtype, categoricalValues,
 // to get Mongo data is async, and render() needs to run with
 // something.
 //
-const initMongoState = function(currentState, data, categoricalValues, dfltDatapointCol){
+// Returns an object to be pushed into local state.
+//
+const getMongoLocalState = function(currentState, data, categoricalValues,
+    dfltDatapointCol){
   const graphtype = currentState.graphtype || controls.getGraphtypeDefault();
   const datapointCol = dfltDatapointCol || currentState.datapoint;
   const loadTable = currentState.loadTable;
@@ -164,7 +171,7 @@ const initMongoState = function(currentState, data, categoricalValues, dfltDatap
   const datasetChoices = getDatasetChoices();
   const controlState = getControlState(currentState, graphtype, 
       categoricalValues, datapointCol);
-  const axes = getAxesFromState(currentState, controlState);
+  const axes = getAxesFromReduxState(currentState, controlState);
 
   return {
     dataset: {...datasetControls, list: datasetChoices},
@@ -174,7 +181,7 @@ const initMongoState = function(currentState, data, categoricalValues, dfltDatap
 
     facet: { list: facetList, filter, datapointCol },
     tooltipPivots: categoricalValues,
-    drawingData: data,
+    processedData: data,
     axes,
     summaryData,
     loadComparisonData,
@@ -225,9 +232,10 @@ const getAllControlDisabled = function(graphtype){
   }, {});
 }
 
-// Similar to the above, but returns state via Mongo call
+// Similar to the above, but returns local state asynchronously,
+// from a Mongo query.
 //
-const transformMongoState = function(currentState, categoricalValues){
+const getMongoLocalStateAsync = function(currentState, categoricalValues){
   const dataset = metadata.getActualDataset();
   const loadTable = currentState.loadTable;
   const datasetChoices = getDatasetChoices();
@@ -261,13 +269,13 @@ const transformMongoState = function(currentState, categoricalValues){
     // datapoint from the metadata (when using a synthetic dataset).
     //
     const datapointForGraphtype = currentState.datapoint;
-    const axes = getAxesFromState(currentState, controlState);
+    const axes = getAxesFromReduxState(currentState, controlState);
     return {
       dataset: {...datasetControls, list: datasetChoices},
       graphtype: controls.getGraphtypeControls(graphtype, datapointForGraphtype),
       ...controlState,
       tooltipPivots: categoricalValues,
-      drawingData: processedData,
+      processedData,
       facet: { list: facetList, filter, datapointCol },
       axes,
       summaryData,
@@ -287,7 +295,7 @@ const transformMongoState = function(currentState, categoricalValues){
 // appear in the control state.  In that case, the first
 // axis choice will be selected.
 //
-const getAxesFromState = function(state, controlState) {
+const getAxesFromReduxState = function(state, controlState) {
   
   // This isn't one of the axes,
   // but it's a control that's passed into drawing routines
@@ -374,9 +382,9 @@ class PivotApp extends React.Component {
       const handle = 
           ((nextProps, dataset) => 
           (categoricalValues, pivotedData, processedData) => {
-        const newState = self.onNewDatasetRead(nextProps, dataset,
+        const newLocalState = self.onNewDatasetRead(nextProps, dataset,
             categoricalValues, pivotedData, processedData);
-        this.setState(newState);
+        this.setState(newLocalState);
       })(nextProps, dataset);
 
       dataread.readDataset(actualDataset, filter, loadTable, datapointCol,
@@ -416,15 +424,14 @@ class PivotApp extends React.Component {
       const list = choices[changedAxis];
       const disabled = !enabled[changedAxis];
       const newAxisState = {...allAxisState[changedAxis], disabled, list};
-      const axes = getAxesFromState(currentState, null);
+      const axes = getAxesFromReduxState(currentState, null);
       return {[changedAxis]: newAxisState, axes};
     }
 
-    // CSV state is returned synchronously;
-    // Mongo state is returned via an async call
+    // CSV local state is returned synchronously;
+    // Mongo local state is returned via an async call
     //
     if (utils.isCSV(dataset) || utils.isJSON(dataset)) {
-      // const { data } = nextProps;
       const datapointCol = getDatapointCol(currentState);
       const filter = currentState.filter || metadata.getFilters();
       const loadTable = currentState.loadTable;
@@ -433,7 +440,7 @@ class PivotApp extends React.Component {
       const handle = 
           ((currentState, datapointCol) => 
           (categoricalValues, processedData) => {
-        const initState = getCSVstate(currentState, processedData, categoricalValues,
+        const initState = getCsvLocalState(currentState, processedData, categoricalValues,
             datapointCol);
         const finalState = { ...initState, loading: false };
         this.setState(finalState);
@@ -445,10 +452,11 @@ class PivotApp extends React.Component {
         .catch(() => handle({}, [], []));
     }
 
-    // This is asynchronous!
+    // Get local state from async Mongo query.
     //
-    transformMongoState(currentState, categoricalValues).then(function(newState){
-      self.setState({...newState, loading: false});
+    getMongoLocalStateAsync(currentState, categoricalValues)
+        .then(function(newLocalState){
+      self.setState({...newLocalState, loading: false});
     }).catch(function(error) {
       console.error(error);
       self.setState({loading: false});
@@ -499,14 +507,15 @@ class PivotApp extends React.Component {
     }, null);
   }
 
-  // Called after dataset changes and new data is read in.
+  // Called after dataset changes when doing an Undo or Redo.
   //
   // Dispatch action to initialize dataset.
   // The action will reset the filter and the selection controls.
   //
-  // Returns the new component state.
+  // Returns the new local state.
   //
-  onNewDatasetRead(nextProps, dataset, categoricalValues, drawingData, data) {
+  onNewDatasetRead(nextProps, dataset, categoricalValues, pivotedData,
+      processedData) {
     const oldReduxState = nextProps.currentState;
 
     // OK, this is pretty confusing.  We must calculate two datapoints:
@@ -544,20 +553,21 @@ class PivotApp extends React.Component {
     // Send the Change Query event.
     //
     const withControls = {...oldReduxState, ...newControls};
-    const newState = { ...withControls, filter, categoricalValues,
-        data, drawingData, dataset, datapointCol, originalDatapointCol };
+    const newReduxState = { ...withControls, filter, categoricalValues,
+        data: processedData,
+        dataset, datapointCol, originalDatapointCol };
 
-    const loadTable = newState.loadTable;
-    const summaryData = transforms.getSummaryData(data);
-    const loadComparisonData = transforms.getLoadComparisonData(data);
+    const loadTable = newReduxState.loadTable;
+    const summaryData = transforms.getSummaryData(processedData);
+    const loadComparisonData = transforms.getLoadComparisonData(processedData);
 
     // Note that we use originalDatapointCol here.  We want to
     // allow filtering based on the data in the original dataset.
     //
-    const facetList = facets.getReactFacets(drawingData,
+    const facetList = facets.getReactFacets(pivotedData,
       filter, originalDatapointCol, categoricalValues);
 
-    const initState = getInitState(dataset, newState, data,
+    const initState = getInitLocalState(dataset, newReduxState, processedData,
         categoricalValues, datapointCol);
     const finalState = {
         ...initState,
@@ -573,7 +583,7 @@ class PivotApp extends React.Component {
   // (as is best practice).
   //
   componentDidMount(){
-    const { needData, dataset, data, initCategoricalValues, currentState,
+    const { needData, dataset, data, categoricalValues, currentState,
         initData, onPushStateDispatch } = this.props;
     const newDataset = dataset ? dataset : metadata.getActualDataset();
 
@@ -596,8 +606,8 @@ class PivotApp extends React.Component {
       if (metadata.getDataset() !== newDataset) {
         this.onReduxStateChange(this.props);
       }
-      const initState = getInitState(dataset, currentState, data, 
-          initCategoricalValues, null);
+      const initState = getInitLocalState(dataset, currentState, data, 
+          categoricalValues, null);
       this.setState({ ...initState });
     }
   }
@@ -611,8 +621,8 @@ class PivotApp extends React.Component {
   // Called after (e.g.) mapStateToProps finishes.
   //
   componentWillReceiveProps(nextProps) {
-    const newState = this.onReduxStateChange(nextProps);
-    this.setState(newState);
+    const newLocalState = this.onReduxStateChange(nextProps);
+    this.setState(newLocalState);
   }
 
   render(){
@@ -631,7 +641,7 @@ class PivotApp extends React.Component {
       );
     }
 
-    const { currentState, current, history, showDataset, title, subtitle }
+    const { currentState, current, history, showDataset, title, subtitle, data }
         = this.props;
 
     // Note that we get the datapoint from the current state.  If this
@@ -642,7 +652,7 @@ class PivotApp extends React.Component {
     //
     const datapointCol = getReduxStateDatapoint(currentState);
 
-    const { loading, summaryData, loadComparisonData, drawingData,
+    const { loading, summaryData, loadComparisonData, processedData,
         axes, dataset, datapoint, facet, graphtype,
         animate, xAxis, yAxis, radiusAxis, colorAxis } = this.state;
     const controls = { animate, datapoint, graphtype, xAxis, 
@@ -660,7 +670,7 @@ class PivotApp extends React.Component {
         datasetSubtitle? `${datasetSubtitle} ${builddate}` : null;
 
     const chartProps = {
-      drawingData,
+      drawingData: processedData,
       tooltipPivots: categoricalValues,
       datapointCol,
       axes
@@ -688,6 +698,9 @@ class PivotApp extends React.Component {
   }
 }
 
+// Expect componentDidMount() or componentWillReceiveProps() to be called
+// after this runs.
+//
 const mapStateToProps = function(state) {
   const { pivot } = state;
 
@@ -703,8 +716,8 @@ const mapStateToProps = function(state) {
           key: dataset,
           dataset,
           data,
-          needData: false,
-          initCategoricalValues: categoricalValues
+          categoricalValues,
+          needData: false
       };
     }
   } else {
@@ -717,8 +730,8 @@ const mapDispatchToProps = function(dispatch, ownProps) {
 
     // Dispatch Redux "Push State" message
     //
-    onPushStateDispatch: function(newState) {
-      actions.pushState(newState)(dispatch);
+    onPushStateDispatch: function(newReduxState) {
+      actions.pushState(newReduxState)(dispatch);
     }
   };
 }
