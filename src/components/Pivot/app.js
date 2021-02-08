@@ -84,14 +84,17 @@ const getInitDatapointCol = function() {
 // This is a sync operation--it doesn't actually do a Mongo query.
 //
 const getInitLocalState = function(dataset, currentState, 
-    pivotedData, processedData, categoricalValues, datapointCol) {
+    categoricalValues, datapointCol,
+    pivotedData, processedData) {
   if (!dataset) return {};
   if (utils.isCSV(dataset) || utils.isJSON(dataset)) {
-    return getCsvLocalState(currentState, pivotedData, processedData,
-        categoricalValues, datapointCol);
+    return getCsvLocalState(currentState,
+        categoricalValues, datapointCol,
+        pivotedData, processedData);
   } else {
-    return getMongoLocalState(currentState, pivotedData, processedData,
-        categoricalValues, datapointCol);
+    return getMongoLocalState(currentState,
+        categoricalValues, datapointCol,
+        pivotedData, processedData);
   }
 }
 
@@ -99,8 +102,9 @@ const getInitLocalState = function(dataset, currentState,
 // 
 // Returns an object to be pushed into local state.
 //
-const getCsvLocalState = function(currentState, pivotedData, processedData,
-    categoricalValues, dfltDatapointCol){
+const getCsvLocalState = function(currentState,
+    categoricalValues, dfltDatapointCol,
+    pivotedData, processedData) {
   const loadTable = currentState.loadTable;
 
   const filter = currentState.filter || {};
@@ -158,8 +162,9 @@ const getControlState = function(currentState, graphtype, categoricalValues,
 //
 // Returns an object to be pushed into local state.
 //
-const getMongoLocalState = function(currentState, pivotedData, processedData,
-    categoricalValues, dfltDatapointCol){
+const getMongoLocalState = function(currentState,
+    categoricalValues, dfltDatapointCol,
+    pivotedData, processedData) {
   const graphtype = currentState.graphtype || controls.getGraphtypeDefault();
   const datapointCol = dfltDatapointCol || currentState.datapoint;
   const loadTable = currentState.loadTable;
@@ -449,8 +454,8 @@ class PivotApp extends React.Component {
           ((currentState, datapointCol) => 
           (categoricalValues, pivotedData, processedData) => {
         const initLocalState = getCsvLocalState(currentState, 
-            pivotedData, processedData,
-            categoricalValues, datapointCol);
+            categoricalValues, datapointCol,
+            pivotedData, processedData);
         const finalLocalState = { ...initLocalState, loading: false };
         this.setState(finalLocalState);
       })(currentState, datapointCol);
@@ -525,8 +530,8 @@ class PivotApp extends React.Component {
   //
   // Returns the new local state.
   //
-  onNewDatasetRead(nextProps, dataset, categoricalValues, pivotedData,
-      processedData) {
+  onNewDatasetRead(nextProps, dataset, categoricalValues,
+      pivotedData, processedData) {
     const oldReduxState = nextProps.currentState;
 
     // OK, this is pretty confusing.  We must calculate two datapoints:
@@ -579,8 +584,8 @@ class PivotApp extends React.Component {
       filter, originalDatapointCol, categoricalValues);
 
     const initState = getInitLocalState(dataset, newReduxState, 
-        pivotedData, processedData,
-        categoricalValues, datapointCol);
+        categoricalValues, datapointCol,
+        pivotedData, processedData);
     const finalState = {
         ...initState,
         loading: false,
@@ -623,7 +628,7 @@ class PivotApp extends React.Component {
     }
   }
 
-  componentWillUnmount(){
+  componentWillUnmount() {
     if (this && this.unsubscribe) {
       this.unsubscribe();
     }
@@ -635,7 +640,7 @@ class PivotApp extends React.Component {
     this.reduxStateToLocalState(nextProps);
   }
 
-  render(){
+  render() {
     const datasetLabel = metadata.getDatasetLabel();
     const key = 'PivotApp';
     const emptyComponent = (
