@@ -984,9 +984,88 @@ const utils = function(){
     }
   }
 
+  // Function composition helper.  The last function argument will
+  // be applied first.
+  //
   const compose = (...fns) => x => {
     return fns.reduceRight((i, j) => j(i), x);
   }
+
+  // Wrapper composition helper.  (I call monads wrappers, because
+  // nobody knows what a monad is.)
+  //
+  // This composer works left to right, not right to left (as in
+  // 'compose' above).
+  // 
+  // The 'chainMethod' is the name of the method that the wrapper
+  // uses to extract its value, and then apply a function to
+  // the that value (aka 'flatten and map', aka "Kleisli composition").
+  //
+  // The standard name of a monad's
+  // chainMethod is usually 'chain'; but a Promise uses 'then' to 
+  // achieve almost the same thing.
+  //
+  // The chainMethod must be a method in the wrapper, not a "free"
+  // function.
+  //
+  // Applying one of the '...wrappers' is equivalent to
+  // taking a value and wrapping it.  So e.g. g(x) means "take x
+  // and make it a wrapper containing x as its value".
+  //
+  const composeWrappers = chainMethod => (...wrappers) => (
+    wrappers.reduce((f, g) => x => g(x)[chainMethod](f))
+  )
+
+  // Compose Promises by binding composeWrappers to 'then'.
+  // 'then' is the chaining (flatten and map) function for a Promise.
+  //
+  // (Note: If the result passed to 'then' is a regular value (not a Promise),
+  // 'then' is a mapping function, not a chaining function.
+  // This means that 'then' doesn't precisely follow the rules
+  // for a chaining function.)
+  //
+  const composePromises = composeWrappers('then');
+
+  // Similarly, for wrappers that implement 'map'; e.g.
+  // an array.
+  //
+  const composeMap = composeWrappers('map');
+
+  // Wrapper for composing functions on a simple value.
+  //
+  const Identity = x => ({
+    emit: () => x,
+    chain: f => f(x),
+    map: f => Identity(f(x)),
+    inspect: () => `Identity(${x})`
+  });
+
+  // Building blocks for Maybe monad, allowing null
+  // processing to work in a composition pipeline.
+  //
+  const Just = x => ({
+    chain: f => f(x),
+    emit: () => x,
+    map: f => Maybe(f(x)),
+    fork: (_, g) => g(x),
+    isJust: true,
+    isNothing: false,
+    inspect: () => `Just(${x})`,
+  });
+
+  const Nothing = x => ({
+    chain: _ => Nothing(),
+    emit: () => Nothing(),
+    map: _ => Nothing(),
+    fork: (f, _) => f(),
+    isJust: false,
+    isNothing: true,
+    inspect: () => `Nothing`,
+  });
+
+  const Maybe = x => x === null || x === undefined || x.isNothing
+    ? Nothing()
+    : Just(x);
 
   return {
     safeVal,
@@ -1030,7 +1109,12 @@ const utils = function(){
     isCSV,
     isJSON,
     getCurrentState,
-    compose
+    compose,
+    composeWrappers,
+    composePromises,
+    composeMap,
+    Identity,
+    Maybe
   }
 
 }();

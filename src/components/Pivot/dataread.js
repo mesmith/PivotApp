@@ -409,12 +409,12 @@ const dataread = function() {
   }
 
   const process = function(data, loadTable) {
-    return utils.compose(
-      withCalculatedFields,
-      withFormats,
-      getDatasetTransform,
-      withAverages,
-      withDates)(preprocess(data, loadTable));
+    return utils.Identity(preprocess(data, loadTable))
+      .map(withDates)
+      .map(withAverages)
+      .map(getDatasetTransform)
+      .map(withFormats)
+      .chain(withCalculatedFields);
   }
 
   // Use mongodb services to retrieve data every time there
