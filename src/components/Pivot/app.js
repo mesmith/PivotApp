@@ -399,7 +399,7 @@ class PivotApp extends React.Component {
       })(nextProps, dataset);
 
       dataread.readDataset(actualDataset, filter, loadTable, datapointCol,
-          null, graphtype, animationCol)
+          graphtype, animationCol, null)
         .then(result => handle(result.categoricalValues, result.pivotedData, 
                                result.processedData))
         .catch(() => handle({}, [], []));
@@ -461,7 +461,7 @@ class PivotApp extends React.Component {
       })(currentState, datapointCol);
 
       dataread.readDataset(dataset, filter, loadTable, datapointCol,
-          null, graphtype, animationCol)
+          graphtype, animationCol, null)
         .then(result => handle(result.categoricalValues,
             result.pivotedData, result.processedData))
         .catch(() => handle({}, [], []));

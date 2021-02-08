@@ -16,7 +16,7 @@ const dataread = function() {
   // of time series by entity).
   //
   const readDataset = function(dataset, filter, loadTable, datapointCol,
-      initData, graphtype, animationCol){
+      graphtype, animationCol, initData){
 
     // If we're reading from mongodb, start a mongodb RESTful session.
     // We consider that we're reading from a CSV file if the chosen 

@@ -43,8 +43,8 @@ const startup = (currentState, newDataset, filter, datapointCol, initData,
 
   const handleError = () => handle({}, []);
 
-  return dataread.readDataset(newDataset, filter, null, datapointCol, initData,
-      graphtype, animationCol)
+  return dataread.readDataset(newDataset, filter, null, datapointCol,
+      graphtype, animationCol, initData)
     .then(handleData)
     .catch(handleError);
 }
