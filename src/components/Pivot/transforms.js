@@ -60,7 +60,7 @@ const transforms = function(){
   // Return the list of all newly created columns from
   // the pivots.
   //
-  function mapper(data, where, datapointCol, animationCol){
+  function mapper(where, datapointCol, animationCol, data){
     const datapointAlias = metadata.getAlias(datapointCol);
     const pivots = merge(metadata.getCategoricals(), 
         metadata.getSearchable());
@@ -227,16 +227,16 @@ const transforms = function(){
       case 'map':
       {
         const data = transforms.cullAndAddIDs(
-            transforms.reducer(transforms.mapper(rawData, 
-            search, datapointCol, animationCol)));
+            transforms.reducer(transforms.mapper(
+            search, datapointCol, animationCol, rawData)));
         return {data, facetData: data};
       }
       case 'force':
       case 'forceStatus':
       {
         const useStatus = (graphtype=='forceStatus');
-        const mapped = transforms.mapper(rawData, search, datapointCol,
-            animationCol);
+        const mapped = transforms.mapper(search, datapointCol,
+            animationCol, rawData);
         const data = transforms.cullAndAddIDs(
             transforms.reducerForce(mapped, useStatus, datapointCol, d3geom));
         const facetData = transforms.cullAndAddIDs(transforms.reducer(mapped));
@@ -245,8 +245,8 @@ const transforms = function(){
       default:
       {
         const data = transforms.cullAndAddIDs(
-            transforms.reducer(transforms.mapper(rawData, 
-            search, datapointCol, animationCol)));
+            transforms.reducer(transforms.mapper(
+            search, datapointCol, animationCol, rawData)));
         return {data, facetData: data};
       }
     }
@@ -264,7 +264,7 @@ const transforms = function(){
   // Return summary information for categorical variables.
   // This just returns counts.
   //
-  function getCategoricalSummaries(drawingData){
+  function getCategoricalSummaries(data){
     const catVarMap = metadata.getCategoricals().reduce((i, j) => {
       return {...i, ...{[metadata.getAlias(j)]: true}};
     }, {});
@@ -274,7 +274,7 @@ const transforms = function(){
       return {...i, ...{[metadata.getAlias(j)]: true}};
     }, {});
 
-    const dataMap = drawingData.reduce((i, j) => {
+    const dataMap = data.reduce((i, j) => {
       const inner = Object.keys(j).reduce((k, l) => {
         return {...k, ...{[l]: true}};
       }, {});
@@ -310,7 +310,7 @@ const transforms = function(){
     }, {});
   }
 
-  function getCategoricalValueSummaries(drawingData){
+  function getCategoricalValueSummaries(data){
     const catVarMap = metadata.getCategoricals()
       .filter(i => {
         return metadata.isTrue(i, 'summaryValues');
@@ -321,12 +321,12 @@ const transforms = function(){
 
   // Sum up every numeric variable
   //
-  function getNumericSummaries(drawingData){
+  function getNumericSummaries(data){
     const numericMap = metadata.getNumerics().reduce((i, j) => {
       return {...i, ...{[metadata.getAlias(j)]: true}};
     }, {});
 
-    return drawingData.reduce((i, j) => {
+    return data.reduce((i, j) => {
       const thisRow = Object.keys(numericMap).reduce((k, l) => {
         const val = j.hasOwnProperty(l) ? j[l]: 0;
         const prev = i.hasOwnProperty(l) ? i[l]: 0;
@@ -340,10 +340,10 @@ const transforms = function(){
   // Return data that allows us to compare original values with values
   // after loads are applied.
   //
-  function getLoadComparisonData(drawingData) {
+  function getLoadComparisonData(data) {
     const map = metadata.getAliasedReverseMap('whatIfOriginal');
 
-    return drawingData.reduce((i, j) => {
+    return data.reduce((i, j) => {
       const thisRow = Object.keys(map).reduce((k, l) => {
         const val = j.hasOwnProperty(l) ? j[l]: 0;
         const prev = i.hasOwnProperty(l) ? i[l]: 0;

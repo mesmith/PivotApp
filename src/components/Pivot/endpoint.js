@@ -158,7 +158,7 @@ const endpoint = function(){
         .then(function(data){
           const datapointCol = datapoint.getDefaultDatapointCol();
           const pivoted = transforms.reducer(
-              transforms.mapper(data, {}, datapointCol, 'None'));
+              transforms.mapper({}, datapointCol, 'None', data));
           res.send(pivoted);
         });
     });
