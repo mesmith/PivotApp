@@ -238,7 +238,7 @@ const transforms = function(){
         const mapped = transforms.mapper(search, datapointCol,
             animationCol, rawData);
         const data = transforms.cullAndAddIDs(
-            transforms.reducerForce(mapped, useStatus, datapointCol, d3geom));
+            transforms.reducerForce(useStatus, datapointCol, d3geom, mapped));
         const facetData = transforms.cullAndAddIDs(transforms.reducer(mapped));
         return {data, facetData};
       }
@@ -398,7 +398,7 @@ const transforms = function(){
   // This function converts the data into a form suitable for a force graph.
   // It calculates a node status and a rollup status if bStatus is truthy.
   //
-  function reducerForce(mapped, bStatus, datapointCol, d3geom){
+  function reducerForce(bStatus, datapointCol, d3geom, mapped){
     var id = 1;                 // Needed for the force plot
     const outer = outerReducer(mapped);
     const data = outer.$all;
@@ -587,8 +587,7 @@ const transforms = function(){
     getLoadComparisonData,
     merge,
     mapper,
-    reducer,
-    reducerForce,
+    reducer
   }
 }();
 
