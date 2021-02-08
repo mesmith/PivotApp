@@ -337,6 +337,7 @@ class PivotApp extends React.Component {
     super(props);
 
     this.onNewDatasetRead = this.onNewDatasetRead.bind(this);
+    this.reduxStateToLocalState = this.reduxStateToLocalState.bind(this);
   }
 
   // Called when the properties change, presumably because the Redux state changed.
@@ -409,7 +410,8 @@ class PivotApp extends React.Component {
       const datapoint = {...controls.dfltControls.datapoint, 
           disabled: !enabled.datapoint, list: choices.datapoint};
 
-      return {datapoint, loading: true};
+      this.setState({datapoint, loading: true});
+      return;
     }
 
     // If this is a "pure" axis change, just set the axis state.  This 
@@ -430,7 +432,8 @@ class PivotApp extends React.Component {
       const disabled = !enabled[changedAxis];
       const newAxisState = {...allAxisState[changedAxis], disabled, list};
       const axes = getAxesFromReduxState(currentState, null);
-      return {[changedAxis]: newAxisState, axes};
+      this.setState({[changedAxis]: newAxisState, axes});
+      return;
     }
 
     // CSV local state is returned synchronously;
@@ -455,7 +458,7 @@ class PivotApp extends React.Component {
           null, graphtype, animationCol)
         .then(result => handle(result.categoricalValues, result.processedData))
         .catch(() => handle({}, [], []));
-      return {};
+      return;
     }
 
     // Get local state from async Mongo query.
@@ -467,7 +470,7 @@ class PivotApp extends React.Component {
       console.error(error);
       self.setState({loading: false});
     });
-    return {loading: true};
+    this.setState({loading: true});
   }
 
   // Return the name of a "pure" axis if the difference 
@@ -626,36 +629,25 @@ class PivotApp extends React.Component {
   // Called after (e.g.) mapStateToProps finishes.
   //
   componentWillReceiveProps(nextProps) {
-    const newLocalState = this.reduxStateToLocalState(nextProps);
-    this.setState(newLocalState);
+    this.reduxStateToLocalState(nextProps);
   }
 
   render(){
     const datasetLabel = metadata.getDatasetLabel();
     const key = 'PivotApp';
+    const emptyComponent = (
+      <div key={key} className={"pivot-all pivot-div"}>
+        <Loader fullPage loading={true} />
+      </div>
+    );
 
     // When the app is starting up, there is no state or props.
     // We want to just show the Loading icon while the initial
     // data is being read in.
     //
     if (!this.state || !this.props || this.props.needData) {
-      return (
-        <div key={key} className={"pivot-all pivot-div"}>
-          <Loader fullPage loading={true} />
-        </div>
-      );
+      return emptyComponent;
     }
-
-    const { currentState, current, history, showDataset, title, subtitle }
-        = this.props;
-
-    // Note that we get the datapoint from the current state.  If this
-    // is a simulated dataset, then the redux state will pull the data
-    // out of that simulated dataset (unlike the API, which uses the
-    // datapoint from the original dataset, not the simulated one).
-    // Tricky.
-    //
-    const datapointCol = getReduxStateDatapoint(currentState);
 
     // Also note that we get the data to plot from local state, NOT
     // from redux (props) state.  That's because render() runs after
@@ -667,8 +659,25 @@ class PivotApp extends React.Component {
     const { loading, summaryData, loadComparisonData, processedData,
         axes, dataset, datapoint, facet, graphtype,
         animate, xAxis, yAxis, radiusAxis, colorAxis } = this.state;
+
+    if (!processedData || !axes || !dataset || !datapoint || !facet ||
+        !graphtype || !xAxis || !yAxis || !radiusAxis || !colorAxis) {
+      return emptyComponent;
+    }
+
     const controls = { animate, datapoint, graphtype, xAxis, 
         yAxis, radiusAxis, colorAxis };
+
+    const { currentState, current, history, showDataset, title, subtitle }
+        = this.props;
+
+    // Note that we get the datapoint from the current state.  If this
+    // is a simulated dataset, then the redux state will pull the data
+    // out of that simulated dataset (unlike the API, which uses the
+    // datapoint from the original dataset, not the simulated one).
+    // Tricky.
+    //
+    const datapointCol = getReduxStateDatapoint(currentState);
 
     const categoricalValues = currentState && currentState.categoricalValues || null;
 
