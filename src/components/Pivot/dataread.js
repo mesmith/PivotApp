@@ -34,7 +34,7 @@ const dataread = function() {
           datapointCol, graphtype, animationCol, rawData);
     } else if (utils.isCSV(dataset) || utils.isJSON(dataset)) {
       return readCSVOrJsonData(dataset)
-        .then(handleRawCSVData(dataset))
+        .then(getCategoricalValues)
         .then(csvRawToProcessed(filter, loadTable,
                                 datapointCol, graphtype, animationCol));
     } else {
@@ -48,40 +48,42 @@ const dataread = function() {
   // data accessors.
   //
   const rawDataToProcessed = (filter, loadTable, datapointCol,
-      graphtype, animationCol, rawData) => {
+      graphtype, animationCol, unsafeRawData) => {
     return new Promise((resolve, reject) => {
+      const { categoricalValues, rawData } = getCategoricalValues(unsafeRawData);
+
       const xform = transforms.getTransformedData(graphtype,
           filter, datapointCol, animationCol,
-          constants.d3geom, res.rawData);
-      const catColumns = metadata.getColumnsByAttrValue('type', 'Categorical');
-      const dateColumns = metadata.getColumnsByAttrValue('type', 'IsoDate');
-      const columns = catColumns.concat(dateColumns);
+          constants.d3geom, rawData);
+      const pivotedData = xform.data;
       const processedData = process(pivotedData, loadTable);
-      const categoricalValues = utils.getAllUniqueValues(processedData, columns);
    
       resolve({categoricalValues, pivotedData, processedData});
     });
   }
 
-  const handleRawCSVData = dataset => rawData => {
-    if (!Array.isArray(rawData)) {
-      return {categoricalValues: {}, rawData: []};
-    } else {
-      const catColumns = metadata.getColumnsByAttrValue('type', 'Categorical');
-      const dateColumns = metadata.getColumnsByAttrValue('type', 'IsoDate');
-      const columns = catColumns.concat(dateColumns);
-      const categoricalValues = utils.getAllUniqueValues(rawData, columns);
+  // Given a (possibly null) set of raw values, return an object
+  // with the categorical values.  The raw data will be coerced to []
+  // on the output if it isn't an array on input.
+  //
+  const getCategoricalValues = unsafeRawData => {
+    const rawData = Array.isArray(unsafeRawData) ? unsafeRawData : [];
+    const categoricalValues = utils.getAllUniqueValues(rawData, getCatColumns());
+    return {rawData, categoricalValues};
+  }
 
-      return {categoricalValues, rawData};
-    }
+  const getCatColumns = () => {
+    const catColumns = metadata.getColumnsByAttrValue('type', 'Categorical');
+    const dateColumns = metadata.getColumnsByAttrValue('type', 'IsoDate');
+    return catColumns.concat(dateColumns);
   }
   
   const csvRawToProcessed = (filter, loadTable, datapointCol,
       graphtype, animationCol) => res => {
-    const categoricalValues = res.categoricalValues;
+    const {categoricalValues, rawData } = res;
     const xform = transforms.getTransformedData(graphtype,
         filter, datapointCol, animationCol,
-        constants.d3geom, res.rawData);
+        constants.d3geom, rawData);
     const pivotedData = xform.data;
     const processedData = process(pivotedData, loadTable);
 
@@ -478,24 +480,24 @@ const dataread = function() {
       : '/api/aggregate/' + encodeURIComponent(dataset) +
         '/' + encodeURIComponent(datapointCol) + '?' + query;
 
-    return axios.get(url).then(result => {
-      if (result.status === 200 && Array.isArray(result.data)) {
-        return {pivotedData: result.data, facetData: result.data};
-      } else {
-        return {pivotedData: [], facetData: []};
-      }
-    }).catch(error => {
-      return {pivotedData: [], facetData: []};
-    });
+    const handle = res => {
+      const pivotedData = res.status === 200 && Array.isArray(res.data)
+        ? res.data : [];
+      const facetData = res.status === 200 && Array.isArray(res.facetData)
+        ? res.facetData : [];
+      return {pivotedData, facetData};
+    }
+
+    return axios.get(url)
+      .then(handle)
+      .catch(error => ({pivotedData: [], facetData: []}));
   }
 
   // Convert 'filter' into a RESTful query string
   //
   const getQueryString = function(filter) {
     return [].concat.apply([], Object.keys(filter).map(i => {
-      return filter[i].map(j => {
-        return i + '=' + j;
-      });
+      return filter[i].map(j => `${i}=${j}`);
     })).join('&');
   }
 
