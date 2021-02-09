@@ -15,74 +15,98 @@ const dataread = function() {
   // dataset may be synthetic (e.g. a time series based on an aggregation
   // of time series by entity).
   //
+  // If rawData is provided, use it directly.  This is used when
+  // a 3rd party sends the component data.
+  //
   const readDataset = function(dataset, filter, loadTable, datapointCol,
-      graphtype, animationCol, initData){
+      graphtype, animationCol, rawData) {
 
     // If we're reading from mongodb, start a mongodb RESTful session.
     // We consider that we're reading from a CSV file if the chosen 
     // dataset's name ends in '.csv'.
     //
     if (dataset && !metadata.metadataExists(dataset)) {
-      return new Promise(function(resolve, reject) {
+      return new Promise((resolve, reject)  => {
         reject(`Dataset "${dataset}" does not exist`);
       });
-    } else if (initData) {
-      return new Promise(function(resolve, reject) {
-        resolve(readInitData(initData, dataset));
-      });
+    } else if (rawData) {
+      return rawDataToProcessed(filter, loadTable,
+          datapointCol, graphtype, animationCol, rawData);
     } else if (utils.isCSV(dataset) || utils.isJSON(dataset)) {
-      return csvOrJsonReadDataset(dataset).then(res => {
-        const categoricalValues = res.categoricalValues || {};
-        const xform = transforms.getTransformedData(graphtype,
-            filter, datapointCol, animationCol,
-            constants.d3geom, res.rawData);
-        const pivotedData = xform.data;
-        const processedData = process(pivotedData, loadTable);
-        return { dataset, categoricalValues, pivotedData, processedData };
-      });
+      return readCSVOrJsonData(dataset)
+        .then(handleRawCSVData(dataset))
+        .then(csvRawToProcessed(filter, loadTable,
+                                datapointCol, graphtype, animationCol));
     } else {
-      return mongoReadDataset(dataset, datapointCol, filter).then((res) => {
-        const categoricalValues = res.categoricalValues || {};
-        const pivotedData = res.pivotedData || [];
-        const processedData = process(pivotedData, loadTable);
-        return { dataset, categoricalValues, pivotedData, processedData };
-      });
+      return mongoReadDataset(dataset, datapointCol, filter)
+        .then(mongoPivotedToProcessed(loadTable));
     }
   }
 
-  // Initialize visualizations from a CSV file in 'dataset'.
-  // Returns a Promise.
+  // This is used when data is supplied from a 3rd party.
+  // Returns a Promise so its type aligns with the other
+  // data accessors.
   //
-  const csvOrJsonReadDataset = function(dataset){
-    return new Promise(
-      function(resolve, reject) {
-        readCSVOrJsonData([], dataset, function(rawData){
-          if (!Array.isArray(rawData)) {
-            const error = 'No data found';
-            console.error(error);
-            reject({error});
-          } else {
-            const catColumns = metadata.getColumnsByAttrValue('type', 'Categorical');
-            const dateColumns = metadata.getColumnsByAttrValue('type', 'IsoDate');
-            const columns = catColumns.concat(dateColumns);
-            const categoricalValues = utils.getAllUniqueValues(rawData, columns);
-    
-            const res = {dataset, categoricalValues, rawData};
-            resolve(res);
-          }
-        });
-      }
-    );
+  const rawDataToProcessed = (filter, loadTable, datapointCol,
+      graphtype, animationCol, rawData) => {
+    return new Promise((resolve, reject) => {
+      const xform = transforms.getTransformedData(graphtype,
+          filter, datapointCol, animationCol,
+          constants.d3geom, res.rawData);
+      const catColumns = metadata.getColumnsByAttrValue('type', 'Categorical');
+      const dateColumns = metadata.getColumnsByAttrValue('type', 'IsoDate');
+      const columns = catColumns.concat(dateColumns);
+      const processedData = process(pivotedData, loadTable);
+      const categoricalValues = utils.getAllUniqueValues(processedData, columns);
+   
+      resolve({categoricalValues, pivotedData, processedData});
+    });
   }
 
-  const readInitData = function(pivotedData, dataset) {
-    const catColumns = metadata.getColumnsByAttrValue('type', 'Categorical');
-    const dateColumns = metadata.getColumnsByAttrValue('type', 'IsoDate');
-    const columns = catColumns.concat(dateColumns);
-    const processedData = process(pivotedData, null);
-    const categoricalValues = utils.getAllUniqueValues(processedData, columns);
-   
-    return {dataset, categoricalValues, pivotedData, processedData};
+  const handleRawCSVData = dataset => rawData => {
+    if (!Array.isArray(rawData)) {
+      return {categoricalValues: {}, rawData: []};
+    } else {
+      const catColumns = metadata.getColumnsByAttrValue('type', 'Categorical');
+      const dateColumns = metadata.getColumnsByAttrValue('type', 'IsoDate');
+      const columns = catColumns.concat(dateColumns);
+      const categoricalValues = utils.getAllUniqueValues(rawData, columns);
+
+      return {categoricalValues, rawData};
+    }
+  }
+  
+  const csvRawToProcessed = (filter, loadTable, datapointCol,
+      graphtype, animationCol) => res => {
+    const categoricalValues = res.categoricalValues;
+    const xform = transforms.getTransformedData(graphtype,
+        filter, datapointCol, animationCol,
+        constants.d3geom, res.rawData);
+    const pivotedData = xform.data;
+    const processedData = process(pivotedData, loadTable);
+
+    return { categoricalValues, pivotedData, processedData };
+  }
+
+  const mongoPivotedToProcessed = loadTable => res => {
+    const categoricalValues = res.categoricalValues || {};
+    const pivotedData = res.pivotedData || [];
+    const processedData = process(pivotedData, loadTable);
+    return { categoricalValues, pivotedData, processedData };
+  }
+
+  // Read the CSV data.
+  // Returns a promise that is resolved with the raw CSV data.
+  //
+  const readCSVOrJsonData = function(dataset) {
+    return new Promise((resolve, reject) => {
+      const url = constants.dataFolder + '/' + dataset;
+      if (utils.isCSV(dataset)) {
+        d3.csv(url, resolve);
+      } else {
+        d3.json(url, resolve);
+      }
+    });
   }
 
   // Post-process data by adding average values for all Numeric columns
@@ -226,29 +250,6 @@ const dataread = function() {
     }, {output: [], prev: {}});
 
     return accumData.output;
-  }
-
-  // Read the CSV data.
-  // Return the new list of datasets.
-  //
-  // The function reads the CSV dataset, and calls onRead with the
-  // data when it's done.
-  //
-  const readCSVOrJsonData = function(datasets, dataset, onRead){
-
-    // If the dataset has changed from last time, load the new csv file
-    //
-    if( dataset !== datasets.slice(-1) ){
-      const url = constants.dataFolder + '/' + dataset;
-      if (utils.isCSV(dataset)) {
-        d3.csv(url, onRead);
-      } else {
-        d3.json(url, onRead);
-      }
-      return datasets.concat(dataset);
-    } else {  // No change to dataset: nothing to do
-      return datasets;
-    }
   }
 
   // Return data after any preprocessing.
