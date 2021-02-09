@@ -453,11 +453,10 @@ class PivotApp extends React.Component {
       const handle = 
           ((currentState, datapointCol) => 
           (categoricalValues, pivotedData, processedData) => {
-        const initLocalState = getCsvLocalState(currentState, 
+        const newLocalState = getCsvLocalState(currentState, 
             categoricalValues, datapointCol,
             pivotedData, processedData);
-        const finalLocalState = { ...initLocalState, loading: false };
-        this.setState(finalLocalState);
+        this.setState({...newLocalState, loading: false});
       })(currentState, datapointCol);
 
       dataread.readDataset(dataset, filter, loadTable, datapointCol,
