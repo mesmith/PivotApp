@@ -290,8 +290,8 @@ const getMongoLocalStateAsync = function(currentState, categoricalValues){
   })(currentState, categoricalValues, loadTable, filter, datapointCol);
 
   return dataread.mongoGetTransformedData(graphtype, dataset, filter, datapointCol)
-      .then(handle)
-      .catch(handle);
+    .then(handle)
+    .catch(handle);
 }
 
 // This converts the currentState into an axes object.
@@ -463,12 +463,9 @@ class PivotApp extends React.Component {
     // Get local state from async Mongo query.
     //
     getMongoLocalStateAsync(currentState, categoricalValues)
-        .then(function(newLocalState){
-      self.setState({...newLocalState, loading: false});
-    }).catch(function(error) {
-      console.error(error);
-      self.setState({loading: false});
-    });
+      .then(newLocalState => self.setState({...newLocalState, loading: false}))
+      .catch(error => self.setState({loading: false}));
+
     this.setState({loading: true});
   }
 
