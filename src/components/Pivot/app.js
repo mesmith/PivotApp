@@ -347,7 +347,7 @@ class PivotApp extends React.Component {
 
   // Called when the properties change, presumably because the Redux state changed.
   //
-  // Returns the object representing the local state change.
+  // Sets local state.
   //
   reduxStateToLocalState(nextProps) {
     const { currentState } = nextProps;
@@ -378,7 +378,7 @@ class PivotApp extends React.Component {
     //   Or any combination of the above.
     //
     if (metadata.getDataset() !== dataset) {
-      metadata.setMetadata(dataset);
+      metadata.setMetadata(dataset);  // FIXME: mutable
 
       const actualDataset = metadata.getActualDataset();
       const filter = currentState.filter || metadata.getFilters();
@@ -619,11 +619,19 @@ class PivotApp extends React.Component {
       startup.startup(currentState, newDataset, filter, datapointCol, initData,
           graphtype, animationCol)
         .then(res => {
-          this.setState({processedData: res.data});
-          onPushStateDispatch(res);
+          
+          // Avoid pushing the data into redux state; we want to avoid
+          // duplicates.
+          //
+          this.setState({ processedData: res.data });
+          const noData = Object.keys(res)
+            .filter(i => i !== 'data')
+            .reduce((i, j) => {
+              return {...i, ...{[j]: res[j]}};
+            }, {});
+          onPushStateDispatch(noData);
         });
-    }
-    else {
+    } else {
       this.reduxStateToLocalState(this.props);
     }
   }

@@ -1,14 +1,9 @@
 import controls from './controls.js';
-import datapoint from './datapoint.js';
 import dataread from './dataread.js';
-import metadata from './metadata.js';
-import utils from './utils.js';
 
 // Turns off eslint warnings:
 /* global d3 */
 
-// Called at startup time.  Use metadata to get initial state values.
-//
 // Note that we pass in an initial set of categorical values.  Later,
 // these will be updated in Redux state on new dataset read
 // (since we can't change these props).
