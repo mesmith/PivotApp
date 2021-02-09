@@ -150,8 +150,10 @@ const metadata = function(){
       alias: 'Ethnicity', type: 'String', tooltip: false,
       searchable: true, datapoint: true
     },
+
+    // Make this categorical in order to support multi-select filter
     STATE: {
-      alias: 'State', type: 'String', searchable: true, datapoint: true,
+      alias: 'State', type: 'Categorical', searchable: true, datapoint: true,
       geoclass: 'State', geoproperty: 'abbr', defaultDatapoint: true
     },
     GAIN_DT: {

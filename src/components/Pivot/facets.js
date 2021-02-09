@@ -61,6 +61,10 @@ const facets = function(){
   // aren't already present in the searchable facets.  The user can select
   // these values to create multi-selections.
   //
+  // Note: If there aren't categorical values for a particular column,
+  // multi-select won't work (since we aren't tracking the universe of
+  // all possible selections).
+  //
   function addCategoricalValues(searchableFacets, categoricalValues) {
     const catsByAlias = Object.keys(categoricalValues).reduce((i, j) => {
       return {...i, ...{[metadata.getAlias(j)]: categoricalValues[j]}}
@@ -127,7 +131,7 @@ const facets = function(){
   // Return TRUE if we're currently searching for 'column: value'
   //
   function searchingFor(searchObject, column, value) {
-    return (column in searchObject) && searchObject[column].indexOf(value)!=-1;
+    return (column in searchObject) && searchObject[column].indexOf(value) !== -1;
   }
 
   // Return the facet list, but in a more sane, React-friendly array
@@ -135,7 +139,7 @@ const facets = function(){
   function getReactFacets(drawingData, searchObject, datapointCol, categoricalValues){
     const oFacets = getFacets(drawingData, datapointCol, categoricalValues);
 
-    return Object.keys(oFacets).map(function(label){
+    return Object.keys(oFacets).map(label => {
       const column = metadata.aliasToColumn(label);
       const values = oFacets[label];
       const vlist = Object.keys(values)
