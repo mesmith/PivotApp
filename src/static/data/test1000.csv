@@ -1,0 +1,1000 @@
+RC_DESKFILE_OID,GENDER,RACE,CITY,STATE,ZIP,APPLICLEADORIGIN_CD,APPLICLEADORIGIN_CD_DSP,APPLICLEADSOURCECODE_CD,APPLICLEADSOURCECODE_CD_DSP,CREATE_DT,GAIN_DT,CURSTATUS_CD,GAINSTATUS_CD,LEADTYPE_CD,APPLICBRANCH_CD
+1702774,Male,White,Enfield,CT,6082,RG,Recruiter Generated,07C,RGM (High School List),11/22/2004,5/27/2011,ACG,ACG,Regular,AFR
+2389413,Female,Asian,Sacramento,CA,95829,R8,Reserve 1-800,GON,Get One Now Program,1/18/2005,4/25/2011,ACG,ACG,Regular,AFR
+2439847,Male,White,Flushing,NY,11358,MC,Military.Com,RFP,Perpetuation,1/24/2005,3/26/2011,ACG,ACG,Regular,AFR
+2462707,Male,White,Columbia,MO,65202,RG,Recruiter Generated,03D,Referral (Influencer),1/27/2005,2/16/2011,ACG,ACG,Regular,AFR
+2581143,Male,White,Bastrop,TX,78602,AW,AFReserve.com,RFI,Influencer (Teacher/Parent/Friend),2/2/2005,1/31/2011,ACG,ACG,Regular,AFR
+2631555,Male,White,Herrin,IL,62948,FW,Fast Web Leads,05I,Internet,2/3/2005,1/28/2011,ACG,ACG,Regular,AFR
+3248735,Male,White,Riverside,OH,45431,RG,Recruiter Generated,1,Reserve Member Referral,3/1/2005,8/29/2011,ACG,ACG,Regular,AFR
+3293539,Male,White,Boca Raton,FL,33486,PN,1-800#,ONS,Search Engine,3/4/2005,4/29/2011,ACG,ACG,Regular,AFR
+3588964,Male,White,Locust Grove,GA,30248,RG,Recruiter Generated,RFI,Influencer (Teacher/Parent/Friend),3/11/2005,5/25/2011,ACG,ACG,Regular,AFR
+3594638,Female,White,Mountain Home,ID,83647,R8,Reserve 1-800,05L,AFRC 800 Number,3/10/2005,12/6/2010,ACG,ACG,Regular,AFR
+3852131,Male,White,Fenton,MI,48430,AF,Air Force Web,04C,HQ Generated Lead (AFOC),3/23/2005,5/14/2011,ACG,ACG,Regular,AFR
+3861156,Female,White,Omaha,NE,63136,RG,Recruiter Generated,02D,In-Service Counseling (IRR),3/25/2005,2/25/2011,ACG,ACG,Regular,AFR
+3902281,Female,Asian,Columbia,MD,21046,AF,Air Force Web,04C,HQ Generated Lead (AFOC),3/24/2005,4/28/2011,ACG,ACG,Regular,AFR
+3902490,Female,White,Moore,OK,73160,AF,Air Force Web,04C,HQ Generated Lead (AFOC),3/25/2005,6/8/2011,ACG,ACG,Regular,AFR
+3904435,Male,White,Fredericksburg,VA,22405,AF,Air Force Web,04C,HQ Generated Lead (AFOC),3/28/2005,7/30/2011,ACG,ACG,Regular,AFR
+4049669,Male,White,Raleigh,NC,27604,AF,Air Force Web,04C,HQ Generated Lead (AFOC),4/6/2005,11/17/2010,ACG,ACG,Regular,AFR
+4050759,Male,White,Ocean Springs,MS,39564,AF,Air Force Web,04C,HQ Generated Lead (AFOC),4/6/2005,1/28/2011,ACG,ACG,Regular,AFR
+4051575,Female,Native Hawaiian or Other Pacific Islander,Agana Heights,GU,96910,AF,Air Force Web,GON,Get One Now Program,4/6/2005,9/14/2011,ACG,ACW,Regular,AFR
+4351042,Female,White,Wichita Falls,TX,76310,IR,IRR List,07A,RGM (IRR Roster),4/13/2005,6/23/2011,ACG,ACG,Regular,AFR
+4515830,Male,White,Bonney Lake,WA,98391,IR,IRR List,07A,RGM (IRR Roster),4/13/2005,3/9/2011,ACG,ACG,Regular,AFR
+4748741,Male,White,Apo,AP,96367,AF,Air Force Web,APF,Palace Front,4/15/2005,4/11/2011,ACG,ACG,Regular,AFR
+4837360,Male,Asian,Waterford,PA,16441,RG,Recruiter Generated,8,Recruiter Cold Contact,4/22/2005,11/18/2010,ACG,ACG,Regular,AFR
+4972122,Male,White,Blowing Rock,NC,28605,RG,Recruiter Generated,LIR,IRR Roster,4/26/2005,3/28/2011,ACG,ACG,Regular,AFR
+5262893,Male,White,Del City,OK,73117,AF,Air Force Web,04C,HQ Generated Lead (AFOC),5/3/2005,1/21/2011,ACG,ACG,Regular,AFR
+5305584,Male,White,Camas,WA,98607,RG,Recruiter Generated,03D,Referral (Influencer),5/4/2005,1/4/2011,ACG,ACG,Regular,AFR
+5331738,Female,White,Salt Lake City,UT,84119,RG,Recruiter Generated,03A,Referral (AFAD Recruiter),5/5/2005,6/10/2011,ACG,ACG,Regular,AFR
+5469884,Female,White,Pikeville,NC,27865,IS,ISR,02A,In-Service Counseling (Palace Front),5/12/2005,11/22/2010,ACG,ACG,Regular,AFR
+5484314,Male,White,Bury St Edmunds,,,IS,ISR,02A,In-Service Counseling (Palace Front),5/12/2005,3/25/2011,ACG,ACG,Regular,AFR
+5486420,Female,White,Phoenix,AZ,85037,IS,ISR,GON,Get One Now Program,5/12/2005,2/14/2011,ACG,ACG,Regular,AFR
+5493690,Male,White,St Cloud,FL,34769,RG,Recruiter Generated,02A,In-Service Counseling (Palace Front),5/12/2005,6/16/2011,ACG,ACG,Regular,AFR
+5508312,Male,White,Fairbanks,AK,99701,IS,ISR,02A,In-Service Counseling (Palace Front),5/12/2005,4/29/2011,ACG,ACG,ELead,AFR
+5513487,Male,White,Tucson,AZ,85708,RG,Recruiter Generated,RFO,Other Service Recruiter,5/12/2005,9/8/2011,ACG,ACG,Regular,AFR
+5529907,Male,"""American Indian/Alaska Native,Black or African American""",Katy,TX,77493,IS,ISR,RFA,ADAF Recruiter,5/12/2005,9/15/2011,ACG,ACG,Regular,AFR
+5533407,Male,White,San Antonio,TX,78247,IS,ISR,02A,In-Service Counseling (Palace Front),5/12/2005,7/13/2011,ACG,ACG,Regular,AFR
+5535072,Female,White,Albuquerque,NM,87111,AG,Advisor Generated,05I,Internet,5/12/2005,12/20/2010,ACG,ACG,Regular,AFR
+5562567,Male,White,Riverview,FL,33579,IS,ISR,GON,Get One Now Program,5/12/2005,11/1/2010,ACG,ACG,Regular,AFR
+5591102,Female,Black or African American,Uniontown,OH,44685,AF,Air Force Web,04C,HQ Generated Lead (AFOC),5/15/2005,4/2/2011,ACG,ACG,Regular,AFR
+5662645,Male,White,Hot Springs,SD,57747,AF,Air Force Web,04C,HQ Generated Lead (AFOC),5/18/2005,3/25/2011,ACG,ACG,Regular,AFR
+5679915,Male,Black or African American,Florissant,MO,63031,AF,Air Force Web,04C,HQ Generated Lead (AFOC),5/19/2005,1/21/2011,ACG,ACG,Regular,AFR
+7443713,Male,White,Philadelphia,PA,19130,IS,ISR,02A,In-Service Counseling (Palace Front),5/31/2005,5/27/2011,ACG,ACG,Regular,AFR
+7471268,Female,White,Bakersfield,CA,93314,IS,ISR,02A,In-Service Counseling (Palace Front),5/31/2005,2/23/2011,ACG,ACG,ELead,AFR
+7766183,Male,Black or African American,Baytown,TX,77523,IS,ISR,RFA,ADAF Recruiter,6/13/2005,12/16/2010,ACG,ACG,Regular,AFR
+7842146,Male,Black or African American,White Plains,NY,10607,AF,Air Force Web,04C,HQ Generated Lead (AFOC),6/14/2005,12/14/2010,ACG,ACG,Regular,AFR
+7939846,Female,White,Oklahoma City,OK,73115,RG,Recruiter Generated,LIR,IRR Roster,6/16/2005,7/27/2011,ACG,ACG,Regular,AFR
+7990984,Male,White,Tucson,AZ,85746,AF,Air Force Web,04C,HQ Generated Lead (AFOC),6/19/2005,3/31/2011,ACG,ACG,Regular,AFR
+8078094,Male,Black or African American,Columbus,GA,31907,PN,1-800#,ONS,Search Engine,6/22/2005,11/23/2010,ACG,ACG,Regular,AFR
+8159447,Female,Native Hawaiian or Other Pacific Islander,Apex,NC,27539,RG,Recruiter Generated,LIR,IRR Roster,6/27/2005,3/1/2011,ACG,ACG,Regular,AFR
+8258495,Female,White,Navarre,FL,32566,RG,Recruiter Generated,RFP,Perpetuation,6/29/2005,8/25/2011,ACG,ACG,Regular,AFR
+8281951,Male,White,Aurora,CO,80018,AF,Air Force Web,04C,HQ Generated Lead (AFOC),6/30/2005,8/26/2011,ACG,ACG,Regular,AFR
+8670756,Male,White,Martinsville,IN,46151,RG,Recruiter Generated,EIM,IRR Muster,7/5/2005,7/29/2011,ACG,ACG,Regular,AFR
+8673849,Male,Black or African American,Lexington Park,MD,20653,IS,ISR,02A,In-Service Counseling (Palace Front),7/5/2005,12/30/2010,ACG,ACG,ELead,AFR
+9218620,Male,White,Wheeling,WV,26003,AF,Air Force Web,04C,HQ Generated Lead (AFOC),7/28/2005,6/8/2011,ACG,ACG,ELead,AFR
+9240693,Male,Native Hawaiian or Other Pacfic Islander White,San Diego,CA,92142,AF,Air Force Web,04C,HQ Generated Lead (AFOC),7/30/2005,12/2/2010,ACG,ACG,Regular,AFR
+9358096,Male,White,Eldred,PA,16731,IS,ISR,02A,In-Service Counseling (Palace Front),8/5/2005,3/1/2011,ACG,ACG,Regular,AFR
+9479447,Female,White,Charleston,SC,29414,RG,Recruiter Generated,03A,Referral (AFAD Recruiter),8/11/2005,6/6/2011,ACG,ACG,Regular,AFR
+9500238,Male,White,Aliso Viejo,CA,92656,IS,ISR,02A,In-Service Counseling (Palace Front),8/12/2005,5/9/2011,ACG,ACG,Regular,AFR
+9577570,Female,White,Stafford,VA,22554,AF,Air Force Web,04C,HQ Generated Lead (AFOC),8/16/2005,10/16/2010,ACG,ACG,Regular,AFR
+9613617,Female,Black or African American,Hyattsville,MD,20782,RG,Recruiter Generated,03D,Referral (Influencer),8/18/2005,2/28/2011,ACG,ACG,Regular,AFR
+9700339,Female,White,Butler,PA,16001,AW,AFReserve.com,RFI,Influencer (Teacher/Parent/Friend),8/23/2005,9/30/2011,ACG,ACG,Regular,AFR
+9744574,Male,Asian,Las Vegas,NV,89115,IS,ISR,02A,In-Service Counseling (Palace Front),8/26/2005,10/6/2010,ACG,ACG,Regular,AFR
+9757884,Female,White,Apo,AA,9009,RG,Recruiter Generated,8,Recruiter Cold Contact,8/26/2005,10/21/2010,ACG,ACG,Regular,AFR
+9825252,Female,Black or African American,Gary,IN,46404,PN,1-800#,ONS,Search Engine,8/30/2005,10/13/2010,ACG,ACG,Regular,AFR
+9891838,Male,White,Charlotte,NC,28269,RG,Recruiter Generated,RAD,Radio,9/2/2005,4/8/2011,ACG,ACG,Regular,AFR
+9983406,Male,Black or African American,Waco,TX,76710,RG,Recruiter Generated,ONS,Search Engine,9/8/2005,10/15/2010,ACG,ACG,Regular,AFR
+9993823,Male,White,Cosby,TN,37722,AG,Advisor Generated,05I,Internet,9/9/2005,3/30/2011,ACG,ACG,Regular,AFR
+9996011,Male,White,Tampa,FL,33611,AF,Air Force Web,04C,HQ Generated Lead (AFOC),9/8/2005,2/24/2011,ACG,ACG,ELead,AFR
+10155787,Female,White,Lockport,NY,14094,AF,Air Force Web,04C,HQ Generated Lead (AFOC),8/30/2005,8/15/2011,ACG,ACG,Regular,AFR
+10253641,Male,Black or African American,Suisun,CA,94585,IS,ISR,05I,Internet,9/23/2005,8/22/2011,ACG,ACG,Regular,AFR
+10254653,Male,White,Elko,MN,55020,IS,ISR,02A,In-Service Counseling (Palace Front),9/23/2005,8/8/2011,ACG,ACG,Regular,AFR
+10609807,Male,White,Pomerene,AZ,85627,IS,ISR,02A,In-Service Counseling (Palace Front),10/7/2005,12/3/2010,ACG,ACG,Regular,AFR
+10640583,Male,White,Alta Loma,CA,91701,AF,Air Force Web,04C,HQ Generated Lead (AFOC),10/11/2005,12/4/2010,ACG,ACG,Regular,AFR
+11314190,Male,White,Maineville,OH,45039,RG,Recruiter Generated,1,Reserve Member Referral,10/21/2005,5/27/2011,ACG,ACG,Regular,AFR
+11317392,Female,Black or African American,Ruskin,FL,33570,IS,ISR,GON,Get One Now Program,10/21/2005,5/2/2011,ACG,ACG,Regular,AFR
+11317631,Male,White,Ocala,FL,34482,AG,Advisor Generated,05I,Internet,10/21/2005,4/13/2011,ACG,ACG,Regular,AFR
+11323266,Male,White,La Jolla,CA,92092,IS,ISR,02A,In-Service Counseling (Palace Front),10/21/2005,10/5/2010,ACG,ACG,Regular,AFR
+11629673,Male,White,Modesto,CA,95350,RG,Recruiter Generated,1,Reserve Member Referral,11/3/2005,2/16/2011,ACG,ACG,Regular,AFR
+11831044,Male,White,Brookville,OH,45309,AF,Air Force Web,04C,HQ Generated Lead (AFOC),11/7/2005,7/26/2011,ACG,ACG,Regular,AFR
+12283282,Male,White,Girard,OH,44515,AF,Air Force Web,GON,Get One Now Program,11/8/2005,8/26/2011,ACG,ACG,Regular,AFR
+13439561,Male,White,Hebron,KY,41048,AF,Air Force Web,04C,HQ Generated Lead (AFOC),11/15/2005,6/9/2011,ACG,ACG,Regular,AFR
+14035707,Female,White,Hampton,VA,23669,IS,ISR,02A,In-Service Counseling (Palace Front),11/18/2005,5/3/2011,ACG,ACG,Regular,AFR
+14123708,Male,White,Newnan,GA,30265,AF,Air Force Web,04C,HQ Generated Lead (AFOC),11/18/2005,10/28/2010,ACG,ACG,Regular,AFR
+14909079,Male,Black or African American,Sunrise,FL,33313,PN,1-800#,ONS,Search Engine,11/28/2005,11/22/2010,ACG,ACG,Regular,AFR
+15610368,Male,White,Mobile,AL,36618,RG,Recruiter Generated,07A,RGM (IRR Roster),12/1/2005,4/14/2011,ACG,ACG,Regular,AFR
+15838575,Male,White,Fayetteville,NC,28303,IS,ISR,02A,In-Service Counseling (Palace Front),12/2/2005,10/11/2010,ACG,ACG,Regular,AFR
+16456373,Female,White,Peyton,CO,80831,RG,Recruiter Generated,8,Recruiter Cold Contact,12/7/2005,6/10/2011,ACG,ACG,Regular,AFR
+16481902,Male,White,Las Cruces,NM,88001,AF,Air Force Web,04C,HQ Generated Lead (AFOC),12/6/2005,11/15/2010,ACG,ACG,Regular,AFR
+16634540,Male,Black or African American,Newcastle,DE,19720,AF,Air Force Web,ONS,Search Engine,12/7/2005,2/11/2011,ACG,ACG,Regular,AFR
+16844129,Female,Asian,Flushing,NY,11354,RG,Recruiter Generated,03D,Referral (Influencer),12/12/2005,7/20/2011,ACG,ACG,Regular,AFR
+16981197,Male,White,Fort Collins,CO,80525,AF,Air Force Web,04C,HQ Generated Lead (AFOC),12/12/2005,12/22/2010,ACG,ACG,Regular,AFR
+18022608,Male,White,San Diego,CA,92129,RG,Recruiter Generated,1,Reserve Member Referral,12/20/2005,8/31/2011,ACG,ACG,Regular,AFR
+18731719,Female,White,Port Saint Lucie,FL,34983,RG,Recruiter Generated,04B,HQ Generated Lead (Mailout),12/29/2005,2/22/2011,ACG,ACG,Regular,AFR
+19251291,Male,White,Morris,IL,60450,IS,ISR,RFI,Influencer (Teacher/Parent/Friend),1/6/2006,3/18/2011,ACG,ACG,Regular,AFR
+19251482,Male,White,Soledad,CA,93960,AW,AFReserve.com,RFI,Influencer (Teacher/Parent/Friend),2/2/2010,3/3/2011,ACG,ACG,Regular,AFR
+19261494,Male,White,Indianapolis,IN,46202,AF,Air Force Web,05I,Internet,1/4/2006,11/30/2010,ACG,ACG,Regular,AFR
+19979825,Male,Black or African American,Newport News,VA,23602,IS,ISR,02A,In-Service Counseling (Palace Front),1/13/2006,4/28/2011,ACG,ACG,Regular,AFR
+19981617,Female,White,Avondale,AZ,85323,IS,ISR,02A,In-Service Counseling (Palace Front),1/13/2006,1/4/2011,ACG,ACG,Regular,AFR
+19981830,Female,White,Alamogordo,NM,88310,IS,ISR,02A,In-Service Counseling (Palace Front),1/13/2006,5/16/2011,ACG,ACG,Regular,AFR
+20782048,Female,White,Wesley Chapel,FL,33544,IR,IRR List,07A,RGM (IRR Roster),1/20/2006,11/9/2010,ACG,ACG,Regular,AFR
+20966404,Female,White,Countryside,IL,60525,AF,Air Force Web,04C,HQ Generated Lead (AFOC),1/23/2006,12/16/2010,ACG,ACG,Regular,AFR
+21344025,Male,Black or African American,Fort Lauderdale,FL,33311,RG,Recruiter Generated,1,Reserve Member Referral,1/26/2006,5/31/2011,ACG,ACG,Regular,AFR
+21406783,Male,White,Newton,AL,36352,PN,1-800#,GON,Get One Now Program,1/26/2006,3/31/2011,ACG,ACG,Regular,AFR
+22350653,Female,Black or African American,Dallas,TX,75237,AF,Air Force Web,04C,HQ Generated Lead (AFOC),2/4/2006,8/11/2011,ACD,ACW,Regular,AFR
+22350962,Male,Black or African American,Conyers,GA,30012,RG,Recruiter Generated,GON,Get One Now Program,2/4/2006,12/1/2010,ACG,ACG,Regular,AFR
+22352237,Male,White,Griffin,GA,30223,RG,Recruiter Generated,RFI,Influencer (Teacher/Parent/Friend),2/2/2006,5/13/2011,ACG,ACG,Regular,AFR
+22753292,Male,Black or African American,Abilene,TX,79606,IS,ISR,02A,In-Service Counseling (Palace Front),2/10/2006,6/30/2011,ACG,ACG,Regular,AFR
+22755000,Male,White,Peru,IN,46970,RG,Recruiter Generated,RFP,Perpetuation,2/10/2006,11/19/2010,ACG,ACG,Regular,AFR
+22758097,Male,White,Gardner,KS,66030,AF,Air Force Web,04C,HQ Generated Lead (AFOC),2/8/2006,5/26/2011,ACG,ACG,Regular,AFR
+22917322,Female,Black or African American,Statesboro,GA,30458,AF,Air Force Web,04C,HQ Generated Lead (AFOC),2/9/2006,9/22/2011,ACG,ACW,Regular,AFR
+25133422,Male,White,Pico Rivera,CA,90660,AF,Air Force Web,04C,HQ Generated Lead (AFOC),3/2/2006,1/25/2011,ACG,ACG,Regular,AFR
+25368517,Female,White,Kansas City,MO,64157,RG,Recruiter Generated,03B,Referral (Other Service Recruiter),3/7/2006,7/8/2011,ACG,ACG,Regular,AFR
+26037424,Male,Asian,Roseville,CA,95747,AF,Air Force Web,04C,HQ Generated Lead (AFOC),3/8/2006,1/27/2011,ACG,ACG,Regular,AFR
+27643465,Male,White,Davis Monthan,AZ,85707,IS,ISR,02A,In-Service Counseling (Palace Front),3/24/2006,12/13/2010,ACG,ACG,Regular,AFR
+27647114,Female,White,Phenix City,AL,36869,IS,ISR,02A,In-Service Counseling (Palace Front),3/24/2006,10/1/2010,ACG,ACG,Regular,AFR
+29427032,Male,White,Lakewood,CO,80228,RG,Recruiter Generated,LDM,Direct Mail Brochure,3/31/2006,6/24/2011,ACG,ACG,Regular,AFR
+29980165,Male,White,Hertford,NC,27944,AF,Air Force Web,04C,HQ Generated Lead (AFOC),3/31/2006,5/31/2011,ACG,ACG,Regular,AFR
+30356325,Male,Black or African American,San Antonio,TX,78244,RG,Recruiter Generated,05K,Literature Rack,4/5/2006,1/31/2011,ACG,ACW,Regular,AFR
+30773285,Male,White,Morgantown,WV,26508,AF,Air Force Web,04C,HQ Generated Lead (AFOC),4/7/2006,3/31/2011,ACG,ACG,Regular,AFR
+31352564,Male,Native Hawaiian or Other Pacific Islander,San Diego,CA,92127,RG,Recruiter Generated,ONS,Search Engine,4/13/2006,1/16/2011,ACG,ACG,Regular,AFR
+32001896,Female,Black or African American,Kansas City,MO,64128,AF,Air Force Web,04C,HQ Generated Lead (AFOC),4/3/2006,9/22/2011,ACG,ACG,Regular,AFR
+32616048,Male,White,Bowling Green,OH,43402,PN,1-800#,ONS,Search Engine,4/21/2006,1/20/2011,ACG,ACG,ELead,AFR
+32621721,Female,Asian,Suisun City,CA,94585,IS,ISR,RFI,Influencer (Teacher/Parent/Friend),4/21/2006,5/18/2011,ACG,ACG,Regular,AFR
+32623130,Female,White,Pickerington,OH,94535,IS,ISR,02A,In-Service Counseling (Palace Front),4/21/2006,8/22/2011,ACG,ACG,ELead,AFR
+32632749,Female,White,Sherwood,AR,72120,RG,Recruiter Generated,RFP,Perpetuation,4/21/2006,10/12/2010,ACG,ACG,Regular,AFR
+32636614,Male,White,Ocala,FL,34480,IS,ISR,02A,In-Service Counseling (Palace Front),3/3/2006,7/8/2011,ACG,ACG,Regular,AFR
+33444899,Male,White,Spring Hill,FL,34606,PN,1-800#,ONS,Search Engine,4/21/2006,3/17/2011,ACG,ACG,Regular,AFR
+33735755,Male,White,Tampa,FL,33613,AF,Air Force Web,04C,HQ Generated Lead (AFOC),4/28/2006,11/1/2010,ACG,ACG,Regular,AFR
+34265378,Female,White,Harker Heights,TX,76548,AF,Air Force Web,04C,HQ Generated Lead (AFOC),5/3/2006,10/1/2010,ACG,ACG,Regular,AFR
+34272618,Male,"""Asian,Black or African American""",Vallejo,CA,94591,IS,ISR,02A,In-Service Counseling (Palace Front),5/5/2006,8/22/2011,ACG,ACG,Regular,AFR
+34440329,Male,White,Keene,NH,3431,AF,Air Force Web,04C,HQ Generated Lead (AFOC),8/11/2005,2/18/2011,ACG,ACG,Regular,AFR
+34869009,Male,Black or African American,Hephzibah,GA,30906,RG,Recruiter Generated,03A,Referral (AFAD Recruiter),5/8/2006,11/30/2010,ACG,ACG,Regular,AFR
+35187495,Female,White,Colorado Springs,CO,80925,RG,Recruiter Generated,02B,In-Service Counseling (Palace Chase),,10/27/2010,ACG,ACG,Regular,AFR
+35481784,Male,White,Las Vegas,NV,89129,PN,1-800#,ONS,Search Engine,5/12/2006,10/29/2010,ACG,ACG,Regular,AFR
+35483786,Male,White,Bellevue,NE,68123,IS,ISR,02A,In-Service Counseling (Palace Front),5/12/2006,3/4/2011,ACG,ACG,Regular,AFR
+36441147,Male,Black or African American,Fairlawn,OH,44333,RG,Recruiter Generated,03D,Referral (Influencer),5/19/2006,5/6/2011,ACG,ACG,Regular,AFR
+36444723,Male,White,Blossom,TX,75416,IS,ISR,02A,In-Service Counseling (Palace Front),5/19/2006,10/3/2010,ACG,ACG,Regular,AFR
+36445023,Male,White,Norman,OK,73026,IS,ISR,02A,In-Service Counseling (Palace Front),5/19/2006,11/18/2010,ACG,ACG,Regular,AFR
+36445559,Female,White,Nashua,NH,3060,IS,ISR,02A,In-Service Counseling (Palace Front),5/19/2006,1/31/2011,ACG,ACG,Regular,AFR
+36448139,Female,White,Del Rio,TX,78840,RG,Recruiter Generated,05I,Internet,5/19/2006,10/5/2010,ACG,ACG,Regular,AFR
+36598664,Male,White,Oklahoma City,OK,73105,PN,1-800#,ONS,Search Engine,5/19/2006,9/16/2011,ACG,ACG,Regular,AFR
+37797850,Male,Asian,Arlington,MA,2474,AF,Air Force Web,04C,HQ Generated Lead (AFOC),5/26/2006,4/4/2011,ACG,ACG,Regular,AFR
+37803081,Female,Black or African American,Barnwell,SC,28812,AF,Air Force Web,04C,HQ Generated Lead (AFOC),5/25/2006,5/20/2011,ACG,ACG,Regular,AFR
+38732639,Female,White,Shillington,PA,19607,AF,Air Force Web,04C,HQ Generated Lead (AFOC),5/31/2006,12/15/2010,ACG,ACG,Regular,AFR
+38907101,Male,White,Lancaster,OH,43130,AF,Air Force Web,04C,HQ Generated Lead (AFOC),6/1/2006,9/16/2011,ACG,ACG,ELead,AFR
+38907636,Female,Black or African American,Baltimore,MD,21217,AF,Air Force Web,04C,HQ Generated Lead (AFOC),5/31/2006,12/13/2010,ACG,ACG,Regular,AFR
+39218507,Male,White,West Haven,UT,84401,IS,ISR,GON,Get One Now Program,6/7/2006,8/31/2011,ACG,ACG,Regular,AFR
+39218841,Female,White,Pinehurst,NC,28374,RG,Recruiter Generated,LIR,IRR Roster,5/19/2006,3/16/2011,ACG,ACG,Regular,AFR
+39223526,Male,White,West Jordan,UT,84084,AW,AFReserve.com,RFI,Influencer (Teacher/Parent/Friend),3/31/2006,12/29/2010,ACG,ACG,ELead,AFR
+39558137,Male,White,Wichita,KS,67216,IS,ISR,02A,In-Service Counseling (Palace Front),6/9/2006,1/13/2011,ACG,ACG,Regular,AFR
+39746737,Male,White,University Place,WA,98467,AF,Air Force Web,04C,HQ Generated Lead (AFOC),6/9/2006,4/30/2011,ACG,ACG,Regular,AFR
+39749772,Male,White,Sacramento,CA,95820,AF,Air Force Web,RFP,Perpetuation,6/10/2006,10/7/2010,ACG,ACG,Regular,AFR
+39813185,Male,White,Navarre,FL,32566,RG,Recruiter Generated,05J,Telephone Directory (paid ad),6/12/2006,6/2/2011,ACG,ACG,Regular,AFR
+40364476,Female,White,Beaumont,CA,92223,IS,ISR,02A,In-Service Counseling (Palace Front),6/16/2006,10/7/2010,ACG,ACG,Regular,AFR
+40368509,Male,White,Hochsper,,,IS,ISR,02A,In-Service Counseling (Palace Front),6/16/2006,4/1/2011,ACG,ACG,Regular,AFR
+40369010,Male,White,Floresville,TX,78114,IS,ISR,02A,In-Service Counseling (Palace Front),6/16/2006,5/17/2011,ACG,ACG,Regular,AFR
+40494451,Male,White,Jacksonville,FL,32258,AG,Advisor Generated,05I,Internet,6/16/2006,3/9/2011,ACG,ACW,Regular,AFR
+40809506,Male,White,St Paul,MN,55107,RG,Recruiter Generated,9,Display,6/20/2006,7/26/2011,ACG,ACG,Regular,AFR
+40840168,Male,White,Danielson,CT,6239,AG,Advisor Generated,05L,AFRC 800 Number,6/21/2006,8/29/2011,ACG,ACG,Regular,AFR
+41188765,Male,White,Luke Afb,AZ,85309,IS,ISR,02A,In-Service Counseling (Palace Front),6/23/2006,1/4/2011,ACG,ACG,Regular,AFR
+42174980,Female,Black or African American,Shreveport,LA,71106,AG,Advisor Generated,RFI,Influencer (Teacher/Parent/Friend),6/29/2006,1/28/2011,ACG,ACG,Regular,AFR
+42280886,Male,White,Tacoma,WA,98467,AF,Air Force Web,04C,HQ Generated Lead (AFOC),6/27/2006,12/6/2010,ACG,ACG,Regular,AFR
+44258428,Male,White,Sunnyside,NY,11104,IR,IRR List,1,Reserve Member Referral,4/13/2005,12/9/2010,ACG,ACG,Regular,AFR
+44370796,Male,White,Riverside,CA,92505,IR,IRR List,07A,RGM (IRR Roster),4/13/2005,6/17/2011,ACG,ACG,Regular,AFR
+44404790,Male,White,Moultrie,GA,31768,PN,1-800#,RFI,Influencer (Teacher/Parent/Friend),1/20/2006,6/29/2011,ACG,ACG,ELead,AFR
+44470107,Male,White,Ocean Springs,MS,39564,AF,Air Force Web,04C,HQ Generated Lead (AFOC),7/6/2006,7/20/2011,ACG,ACG,Regular,AFR
+44474462,Male,Black or African American,Lumber Bridge,NC,28357,AF,Air Force Web,04C,HQ Generated Lead (AFOC),4/6/2006,11/9/2010,ACG,ACG,ELead,AFR
+47012677,Male,Black or African American,Sacramento,CA,95833,AF,Air Force Web,04C,HQ Generated Lead (AFOC),7/14/2006,8/22/2011,ACG,ACG,Regular,AFR
+47283769,Male,Black or African American,Greensboro,NC,27405,RG,Recruiter Generated,05I,Internet,7/17/2006,11/30/2010,ACG,ACG,Regular,AFR
+47669856,Female,Black or African American,Sedalia,MO,65301,RG,Recruiter Generated,03A,Referral (AFAD Recruiter),7/18/2006,10/5/2010,ACG,ACG,Regular,AFR
+50155663,Male,White,Tucson,AZ,85710,RG,Recruiter Generated,02A,In-Service Counseling (Palace Front),7/24/2006,3/21/2011,ACG,ACG,Regular,AFR
+54491945,Male,White,Crestview,FL,32539,IS,ISR,05L,AFRC 800 Number,7/31/2006,5/23/2011,ACG,ACG,Regular,AFR
+54495685,Male,Native Hawaiian or Other Pacfic Islander White,Brandon,FL,33511,AW,AFReserve.com,ONS,Search Engine,7/31/2006,12/20/2010,ACG,ACG,ELead,AFR
+54503097,Female,White,Sylmar,CA,91342,IS,ISR,02A,In-Service Counseling (Palace Front),8/4/2006,2/23/2011,ACG,ACG,Regular,AFR
+54512823,Female,Asian,San Antonio,TX,78253,IS,ISR,02A,In-Service Counseling (Palace Front),7/14/2006,12/13/2010,ACG,ACG,Regular,AFR
+54514222,Male,White,Biloxi,MS,39532,AG,Advisor Generated,05I,Internet,8/4/2006,10/29/2010,ACG,ACG,Regular,AFR
+54517905,Male,White,Anchorage,NV,99504,IS,ISR,02A,In-Service Counseling (Palace Front),7/14/2006,3/14/2011,ACG,ACG,Regular,AFR
+54520219,Male,White,Rialto,CA,92376,PN,1-800#,ONS,Search Engine,8/4/2006,10/7/2010,ACG,ACG,Regular,AFR
+54520683,Male,Asian,Del Rio,TX,78840,IS,ISR,02A,In-Service Counseling (Palace Front),8/4/2006,7/26/2011,ACG,ACG,Regular,AFR
+54525787,Female,Black or African American,Ft Worth,TX,76118,PN,1-800#,ONS,Search Engine,6/23/2006,7/22/2011,ACG,ACG,ELead,AFR
+54526264,Female,White,Alamogordo,NM,88310,RG,Recruiter Generated,RFP,Perpetuation,8/4/2006,2/24/2011,ACG,ACG,Regular,AFR
+56715358,Male,Black or African American,Indian Head,MD,20640,RG,Recruiter Generated,9,Display,8/10/2006,11/10/2010,ACG,ACG,Regular,AFR
+56868556,Female,Native Hawaiian or Other Pacific Islander,Las Vegas,NV,89081,IS,ISR,02A,In-Service Counseling (Palace Front),8/11/2006,1/18/2011,ACG,ACG,Regular,AFR
+56875379,Male,White,San Antonio,TX,78247,AF,Air Force Web,RFI,Influencer (Teacher/Parent/Friend),8/8/2006,9/14/2011,ACG,ACW,Regular,AFR
+58309835,Male,White,Lakewood,WA,98499,RG,Recruiter Generated,APF,Palace Front,8/16/2006,8/15/2011,ACG,ACG,Regular,AFR
+59256577,Male,White,Knob Noster,MO,65305,IS,ISR,02A,In-Service Counseling (Palace Front),8/18/2006,9/6/2011,ACG,ACG,Regular,AFR
+59257187,Female,White,Rome,PA,18837,IS,ISR,02A,In-Service Counseling (Palace Front),8/18/2006,7/19/2011,ACG,ACG,Regular,AFR
+59258071,Male,White,Houston,TX,77057,IS,ISR,02A,In-Service Counseling (Palace Front),8/18/2006,7/13/2011,ACG,ACG,Regular,AFR
+59258693,Male,White,Kirtland Afb,NM,87117,IS,ISR,APF,Palace Front,8/18/2006,12/6/2010,ACG,ACG,Regular,AFR
+59260311,Female,White,Holloman,NM,88330,IS,ISR,02A,In-Service Counseling (Palace Front),5/5/2006,10/1/2010,ACG,ACG,Regular,AFR
+59263770,Male,White,Tucson,AZ,85707,IS,ISR,02A,In-Service Counseling (Palace Front),8/18/2006,8/23/2011,ACG,ACG,Regular,AFR
+61127346,Female,Black or African American,Columbus,GA,31904,RG,Recruiter Generated,RFI,Influencer (Teacher/Parent/Friend),8/22/2006,1/31/2011,ACG,ACG,Regular,AFR
+62136249,Male,White,Ashville,NC,28804,AG,Advisor Generated,05L,AFRC 800 Number,8/25/2006,10/11/2010,ACG,ACG,Regular,AFR
+62213996,Male,White,Arleta,CA,91331,AW,AFReserve.com,ONS,Search Engine,8/25/2006,12/1/2010,ACG,ACG,Regular,AFR
+62602568,Female,White,Colonial Heights,VA,23834,AG,Advisor Generated,05L,AFRC 800 Number,8/28/2006,6/27/2011,ACG,ACG,Regular,AFR
+65331870,Male,Black or African American,Dayton,OH,45424,IS,ISR,APF,Palace Front,9/1/2006,12/30/2010,ACG,ACG,Regular,AFR
+65333482,Female,White,Lompoc,CA,93437,IS,ISR,02A,In-Service Counseling (Palace Front),8/4/2006,1/5/2011,ACG,ACG,Regular,AFR
+66332092,Male,White,Shreveport,LA,71104,IS,ISR,APF,Palace Front,9/8/2006,12/30/2010,ACG,ACG,Regular,AFR
+66333220,Male,White,Manassas Park,VA,20111,IS,ISR,02A,In-Service Counseling (Palace Front),9/8/2006,10/4/2010,ACG,ACG,Regular,AFR
+66335807,Male,White,Kapolei,HI,96707,IS,ISR,02A,In-Service Counseling (Palace Front),9/8/2006,1/11/2011,ACG,ACG,Regular,AFR
+66336764,Male,White,Destin,FL,32541,IS,ISR,GON,Get One Now Program,9/8/2006,6/20/2011,ACG,ACG,Regular,AFR
+66641636,Male,White,Lees Summit,MO,64779,AF,Air Force Web,04C,HQ Generated Lead (AFOC),9/7/2006,4/26/2011,ACG,ACG,Regular,AFR
+66871947,Female,White,Salem,OH,44446,AW,AFReserve.com,GON,Get One Now Program,9/11/2006,2/15/2011,ACG,ACG,Regular,AFR
+67761326,Female,White,Arlington,VA,22204,RG,Recruiter Generated,ONS,Search Engine,9/15/2006,11/19/2010,ACG,ACG,Regular,AFR
+67764876,Male,White,Las Vegas,NV,89084,IS,ISR,02A,In-Service Counseling (Palace Front),9/15/2006,12/21/2010,ACG,ACG,Regular,AFR
+67765523,Female,White,Moncks Corner,SC,29461,PN,1-800#,ONS,Search Engine,8/4/2006,10/1/2010,ACG,ACG,Regular,AFR
+70861687,Female,White,Corpus Christi,TX,78414,RG,Recruiter Generated,OUO,Other,9/29/2006,8/31/2011,ACG,ACG,Regular,AFR
+73243404,Male,White,Scranton,PA,18505,AW,AFReserve.com,ELE,Local Event,10/6/2006,8/24/2011,ACG,ACG,Regular,AFR
+73245909,Male,White,Brownsburg,IN,46112,PN,1-800#,ONS,Search Engine,10/6/2006,1/31/2011,ACG,ACG,Regular,AFR
+73251432,Male,White,Mountain Afb,ID,83648,AF,Air Force Web,04C,HQ Generated Lead (AFOC),10/6/2006,9/13/2011,ACG,ACG,Regular,AFR
+73703883,Male,White,Tucson,AZ,85741,RG,Recruiter Generated,02B,In-Service Counseling (Palace Chase),10/9/2006,8/17/2011,ACG,ACG,Regular,AFR
+75362724,Male,White,Las Vegas,NV,89115,IS,ISR,02A,In-Service Counseling (Palace Front),10/13/2006,12/21/2010,ACG,ACG,Regular,AFR
+76339090,Male,White,Las Cruces,NM,88001,AG,Advisor Generated,05I,Internet,10/16/2006,10/26/2010,ACG,ACG,Regular,AFR
+78015091,Male,Black or African American,Martha,OK,73556,IS,ISR,02A,In-Service Counseling (Palace Front),10/20/2006,2/11/2011,ACG,ACG,Regular,AFR
+78019893,Male,White,Centerville,GA,31028,IS,ISR,02A,In-Service Counseling (Palace Front),10/20/2006,1/24/2011,ACG,ACG,Regular,AFR
+78924947,Male,White,Fairfield,CA,94533,RG,Recruiter Generated,9,Display,10/23/2006,4/25/2011,ACG,ACG,Regular,AFR
+79316214,Male,White,Lubbock,TX,79410,PN,1-800#,ONS,Search Engine,10/24/2006,10/27/2010,ACG,ACG,Regular,AFR
+79406733,Male,Black or African American,Macon,GA,31206,AG,Advisor Generated,05I,Internet,10/24/2006,11/30/2010,ACG,ACG,Regular,AFR
+80701338,Female,Asian,Tampa,FL,33611,IS,ISR,02A,In-Service Counseling (Palace Front),10/27/2006,1/31/2011,ACG,ACG,Regular,AFR
+80701467,Male,White,Wichita,KS,67203,IS,ISR,02A,In-Service Counseling (Palace Front),10/27/2006,2/14/2011,ACG,ACG,Regular,AFR
+80704259,Male,White,Arlington,VA,22202,IS,ISR,02A,In-Service Counseling (Palace Front),9/8/2006,3/17/2011,ACG,ACG,Regular,AFR
+81159965,Male,White,Ringold,LA,71068,RG,Recruiter Generated,RFP,Perpetuation,8/18/2006,3/17/2011,ACG,ACG,Regular,AFR
+81162168,Male,White,Hampton,VA,23666,IS,ISR,02A,In-Service Counseling (Palace Front),11/3/2006,3/25/2011,ACG,ACG,Regular,AFR
+81162514,Male,White,Modesto,CA,95356,PN,1-800#,ONS,Search Engine,11/3/2006,6/30/2011,ACG,ACG,ELead,AFR
+81162527,Male,White,Remlap,AL,35133,IS,ISR,02A,In-Service Counseling (Palace Front),10/27/2006,10/15/2010,ACG,ACG,Regular,AFR
+81164516,Male,White,Joliet,IL,60435,RG,Recruiter Generated,03A,Referral (AFAD Recruiter),11/3/2006,8/18/2011,ACG,ACG,ELead,AFR
+81165817,Male,White,Robins,IA,52328,IS,ISR,02A,In-Service Counseling (Palace Front),11/3/2006,1/11/2011,ACG,ACG,Regular,AFR
+81181488,Male,Native Hawaiian or Other Pacific Islander,Newnan,GA,30263,AG,Advisor Generated,TEL,TV,11/3/2006,11/18/2010,ACG,ACG,Regular,AFR
+82796588,Female,Asian,Abilene,TX,79606,IS,ISR,02A,In-Service Counseling (Palace Front),11/10/2006,4/1/2011,ACG,ACG,Regular,AFR
+82796735,Male,Native Hawaiian or Other Pacific Islander,Foster City,CA,94404,RG,Recruiter Generated,RGL,Cold Call,11/10/2006,1/28/2011,ACG,ACG,Regular,AFR
+82797292,Male,American Indian/Alaska Native,Marysville,CA,95901,IS,ISR,02A,In-Service Counseling (Palace Front),11/10/2006,2/22/2011,ACG,ACG,Regular,AFR
+82797710,Female,White,Ft Walton Beach,FL,32547,PN,1-800#,RFO,Other Service Recruiter,11/10/2006,2/25/2011,ACG,ACG,Regular,AFR
+82798677,Female,White,Philadelphia,PA,19136,IS,ISR,02A,In-Service Counseling (Palace Front),11/10/2006,2/9/2011,ACG,ACG,Regular,AFR
+82807346,Male,White,Greensboro,NC,27406,AF,Air Force Web,04C,HQ Generated Lead (AFOC),11/10/2006,9/23/2011,ACW,ACW,Regular,AFR
+83341620,Male,White,Vacaville,CA,95687,AG,Advisor Generated,03B,Referral (Other Service Recruiter),11/13/2006,3/8/2011,ACG,ACG,Regular,AFR
+83419842,Female,Black or African American,Suffolk,VA,23434,RG,Recruiter Generated,03B,Referral (Other Service Recruiter),11/13/2006,2/28/2011,ACG,ACG,Regular,AFR
+87216648,Male,White,Williamsburg,VA,23185,IS,ISR,02A,In-Service Counseling (Palace Front),11/24/2006,4/30/2011,ACG,ACG,Regular,AFR
+87216726,Female,White,Leesville,LA,71446,IS,ISR,02A,In-Service Counseling (Palace Front),11/24/2006,6/20/2011,ACG,ACG,Regular,AFR
+87216894,Male,White,Phildelphia,PA,19107,PN,1-800#,ONS,Search Engine,11/24/2006,4/25/2011,ACG,ACG,ELead,AFR
+87221451,Female,White,Apo,AP,96367,AF,Air Force Web,AIA,ISR Assign from IRR,11/24/2006,1/19/2011,ACG,ACG,Regular,AFR
+89588481,Male,White,Minot,ND,58701,IS,ISR,02A,In-Service Counseling (Palace Front),12/1/2006,3/22/2011,ACG,ACG,Regular,AFR
+89592280,Female,White,Bury St Edmunds,,,IS,ISR,02A,In-Service Counseling (Palace Front),12/1/2006,6/22/2011,ACG,ACG,Regular,AFR
+91905462,Female,White,Tinker Afb,OK,73145,PN,1-800#,RFI,Influencer (Teacher/Parent/Friend),12/8/2006,4/13/2011,ACG,ACG,Regular,AFR
+91907222,Male,White,Alexndria,VA,22314,IS,ISR,RFI,Influencer (Teacher/Parent/Friend),12/8/2006,4/14/2011,ACG,ACG,Regular,AFR
+91909277,Male,White,Holly Pond,AL,35083,IS,ISR,02A,In-Service Counseling (Palace Front),12/8/2006,5/26/2011,ACG,ACG,ELead,AFR
+92458541,Female,White,Little Valley,NY,14755,AF,Air Force Web,04C,HQ Generated Lead (AFOC),12/11/2006,1/4/2011,ACG,ACW,Regular,AFR
+94636254,Male,Native Hawaiian or Other Pacific Islander,Henderson,NV,89012,IS,ISR,02A,In-Service Counseling (Palace Front),12/8/2006,3/21/2011,ACG,ACG,Regular,AFR
+94637607,Male,White,Lampasas,TX,76550,AW,AFReserve.com,RFI,Influencer (Teacher/Parent/Friend),12/15/2006,11/7/2010,ACG,ACG,Regular,AFR
+94638055,Female,Black or African American,Tolleson,AZ,85353,IS,ISR,02A,In-Service Counseling (Palace Front),12/15/2006,4/13/2011,ACG,ACG,Regular,AFR
+94853084,Male,White,Bigxby,OK,74088,RG,Recruiter Generated,02A,In-Service Counseling (Palace Front),12/15/2006,6/8/2011,ACG,ACG,Regular,AFR
+95185041,Male,White,Sandy,UT,84092,AF,Air Force Web,04C,HQ Generated Lead (AFOC),12/18/2006,5/23/2011,ACG,ACG,Regular,AFR
+97081181,Male,White,Amboy,IN,46911,RG,Recruiter Generated,GON,Get One Now Program,12/21/2006,12/29/2010,ACG,ACG,Regular,AFR
+98668314,Female,White,Navarre,FL,32566,IS,ISR,02A,In-Service Counseling (Palace Front),12/29/2006,6/1/2011,ACG,ACG,Regular,AFR
+98668481,Male,White,Fairfield,CA,94533,IS,ISR,02A,In-Service Counseling (Palace Front),11/10/2006,2/26/2011,ACG,ACG,Regular,AFR
+99057580,Male,White,Katy,TX,77449,AF,Air Force Web,04C,HQ Generated Lead (AFOC),1/1/2007,12/22/2010,ACG,ACG,Regular,AFR
+99870338,Male,White,Mcchord Afb,WA,98438,RG,Recruiter Generated,03A,Referral (AFAD Recruiter),1/4/2007,2/3/2011,ACG,ACG,Regular,AFR
+100242813,Male,White,Milaca,MN,56353,IS,ISR,02A,In-Service Counseling (Palace Front),1/5/2007,4/26/2011,ACG,ACG,Regular,AFR
+100243134,Male,Black or African American,Raleigh,NC,27615,IS,ISR,02A,In-Service Counseling (Palace Front),1/5/2007,8/30/2011,ACG,ACG,Regular,AFR
+100243220,Male,White,Indio,CA,92201,AW,AFReserve.com,ONS,Search Engine,1/5/2007,5/4/2011,ACG,ACG,Regular,AFR
+102646719,Female,White,Little Rock,AR,72223,RG,Recruiter Generated,05K,Literature Rack,1/11/2007,2/13/2011,ACG,ACG,Regular,AFR
+102930674,Female,Black or African American,Great Falls,MT,59405,IS,ISR,02A,In-Service Counseling (Palace Front),1/12/2007,5/1/2011,ACG,ACG,Regular,AFR
+102936088,Male,White,Fairfield,CA,94534,RG,Recruiter Generated,RFI,Influencer (Teacher/Parent/Friend),12/29/2006,4/21/2011,ACG,ACG,ELead,AFR
+102936681,Male,White,Andrews Afb,MD,20762,IS,ISR,02A,In-Service Counseling (Palace Front),1/12/2007,4/25/2011,ACG,ACG,Regular,AFR
+102963941,Male,White,Jacksonville,AR,72076,RG,Recruiter Generated,APF,Palace Front,1/12/2007,7/22/2011,ACG,ACG,Regular,AFR
+104530598,Male,White,East Berlin,PA,17316,AF,Air Force Web,04C,HQ Generated Lead (AFOC),1/18/2007,1/14/2011,ACG,ACG,Regular,AFR
+105047898,Female,White,Dayton,OH,45440,RG,Recruiter Generated,PPA,ART,1/19/2007,11/10/2010,ACG,ACG,Regular,AFR
+105050991,Male,White,San Antonio,TX,78251,PN,1-800#,LLR,Literature Rack Brochure,1/19/2007,9/22/2011,ACG,ACG,ELead,AFR
+105192219,Male,White,Cary,NC,27513,RG,Recruiter Generated,03D,Referral (Influencer),1/19/2007,5/17/2011,ACG,ACG,Regular,AFR
+106782897,Male,White,Lancaster,CA,93536,AF,Air Force Web,04C,HQ Generated Lead (AFOC),1/24/2007,4/21/2011,ACG,ACG,Regular,AFR
+107869710,Male,White,Ofallon,IL,62269,IS,ISR,02A,In-Service Counseling (Palace Front),1/26/2007,4/20/2011,ACG,ACG,Regular,AFR
+107874432,Male,White,Dayton,OH,45433,IS,ISR,02A,In-Service Counseling (Palace Front),1/26/2007,6/17/2011,ACG,ACG,Regular,AFR
+107876346,Female,White,Ogden,UT,84401,IS,ISR,02A,In-Service Counseling (Palace Front),1/26/2007,10/13/2010,ACG,ACG,Regular,AFR
+107877366,Male,White,Bossier City,LA,71111,IS,ISR,02A,In-Service Counseling (Palace Front),1/19/2007,4/30/2011,ACG,ACG,Regular,AFR
+111006881,Female,White,Tucson,AZ,85756,AG,Advisor Generated,05I,Internet,2/2/2007,4/20/2011,ACG,ACG,Regular,AFR
+111009009,Male,White,Frederica,DE,19946,IS,ISR,02A,In-Service Counseling (Palace Front),2/2/2007,5/4/2011,ACG,ACG,Regular,AFR
+111009728,Male,White,Brewerton,NY,13029,RG,Recruiter Generated,RGM,Mailout,2/2/2007,1/31/2011,ACG,ACG,Regular,AFR
+111013116,Male,White,Las Vegas,NV,89183,IS,ISR,02A,In-Service Counseling (Palace Front),2/2/2007,10/7/2010,ACG,ACG,Regular,AFR
+111015106,Male,White,Fargo,ND,58102,PN,1-800#,ONS,Search Engine,1/12/2007,6/29/2011,ACG,ACG,ELead,AFR
+111637530,Male,White,Chula Vista,CA,91911,AF,Air Force Web,04C,HQ Generated Lead (AFOC),2/5/2007,5/16/2011,ACG,ACG,Regular,AFR
+112168394,Female,Black or African American,Newport News,VA,23608,AF,Air Force Web,04C,HQ Generated Lead (AFOC),2/6/2007,12/2/2010,ACG,ACG,Regular,AFR
+112580649,Male,White,Portales,NM,88130,RG,Recruiter Generated,APC,Palace Chase,2/6/2007,6/2/2011,ACG,ACG,Regular,AFR
+113948815,Male,White,Las Vegas,GA,89148,IS,ISR,02A,In-Service Counseling (Palace Front),2/9/2007,6/17/2011,ACG,ACG,Regular,AFR
+113949527,Female,White,Lancaster,PA,17603,IS,ISR,02A,In-Service Counseling (Palace Front),1/5/2007,11/30/2010,ACG,ACG,Regular,AFR
+114905711,Female,White,Tucson,AZ,85713,RG,Recruiter Generated,8,Recruiter Cold Contact,2/12/2007,7/27/2011,ACG,ACG,Regular,AFR
+116827557,Male,White,Monroe,NC,28110,RG,Recruiter Generated,LIR,IRR Roster,2/16/2007,12/16/2010,ACG,ACG,Regular,AFR
+116828358,Male,Black or African American,Crestview,FL,32536,IS,ISR,02A,In-Service Counseling (Palace Front),1/5/2007,7/27/2011,ACG,ACG,Regular,AFR
+118928549,Male,White,Lorton,VA,22079,IS,ISR,ONS,Search Engine,2/23/2007,9/29/2011,ACG,ACG,Regular,AFR
+118929448,Female,White,Chickamauga,GA,30707,PN,1-800#,RFI,Influencer (Teacher/Parent/Friend),2/23/2007,11/19/2010,ACG,ACG,Regular,AFR
+121848712,Female,Native Hawaiian or Other Pacific Islander,Aurora,CO,80013,RG,Recruiter Generated,RFP,Perpetuation,3/2/2007,2/15/2011,ACG,ACG,Regular,AFR
+121856814,Male,White,Alexandria,VA,22314,IS,ISR,02A,In-Service Counseling (Palace Front),3/2/2007,10/25/2010,ACG,ACG,Regular,AFR
+123486258,Male,White,Perris,CA,92571,RG,Recruiter Generated,03D,Referral (Influencer),3/7/2007,2/28/2011,ACG,ACG,Regular,AFR
+124028392,Female,White,Hatton,ND,58240,AF,Air Force Web,04C,HQ Generated Lead (AFOC),4/5/2006,11/3/2010,ACG,ACG,Regular,AFR
+124029051,Male,White,Davis Monthan,AZ,85707,RG,Recruiter Generated,APF,Palace Front,3/9/2007,6/27/2011,ACG,ACG,Regular,AFR
+124029915,Male,White,Midland,MI,48640,IS,ISR,IMC,Military.com,3/9/2007,3/24/2011,ACG,ACG,Regular,AFR
+124033188,Female,Native Hawaiian or Other Pacific Islander,Travis Afb,CA,94535,IS,ISR,02A,In-Service Counseling (Palace Front),1/19/2007,10/7/2010,ACG,ACG,Regular,AFR
+124034283,Male,Black or African American,Fredericksburg,VA,22408,IS,ISR,03D,Referral (Influencer),3/9/2007,11/10/2010,ACG,ACG,Regular,AFR
+126387579,Female,Black or African American,Florissant,MO,63031,AF,Air Force Web,04C,HQ Generated Lead (AFOC),3/15/2007,8/20/2011,ACG,ACG,ELead,AFR
+127907345,Male,White,Shiloh,IL,62269,IS,ISR,02A,In-Service Counseling (Palace Front),2/2/2007,9/1/2011,ACG,ACG,Regular,AFR
+127911224,Female,White,Lakewood,CO,80226,PN,1-800#,RFI,Influencer (Teacher/Parent/Friend),3/16/2007,7/7/2011,ACG,ACG,ELead,AFR
+128695185,Female,White,Seattle,WA,98117,RG,Recruiter Generated,02A,In-Service Counseling (Palace Front),3/16/2007,3/21/2011,ACG,ACG,Regular,AFR
+132081246,Male,Black or African American,Oklahoma City,OK,73170,PN,1-800#,ONS,Search Engine,3/19/2007,12/22/2010,ACG,ACG,ELead,AFR
+134383367,Female,Black or African American,Goldsboro,NC,27534,AF,Air Force Web,04C,HQ Generated Lead (AFOC),3/19/2007,3/24/2011,ACW,ACW,Regular,AFR
+134383974,Male,Black or African American,Hampton,VA,23666,AF,Air Force Web,04C,HQ Generated Lead (AFOC),3/20/2007,10/1/2010,ACG,ACG,Regular,AFR
+134711678,Male,Native Hawaiian or Other Pacfic Islander White,Chino Hills,CA,91709,RG,Recruiter Generated,12,School Visit,3/22/2007,1/13/2011,ACG,ACG,Regular,AFR
+134991244,Female,White,Holloman Afb,NM,88330,PN,1-800#,02A,In-Service Counseling (Palace Front),3/23/2007,3/29/2011,ACG,ACG,ELead,AFR
+134991683,Male,White,Santa Ana,CA,92705,IS,ISR,APF,Palace Front,3/9/2007,6/23/2011,ACG,ACG,Regular,AFR
+135753023,Female,White,Kansas City,MO,64157,AF,Air Force Web,04C,HQ Generated Lead (AFOC),3/22/2007,12/30/2010,ACG,ACG,Regular,AFR
+138032227,Female,White,Riverview,FL,33578,IS,ISR,02A,In-Service Counseling (Palace Front),3/30/2007,4/4/2011,ACG,ACG,Regular,AFR
+138036805,Male,Asian,Venice,CA,90066,IS,ISR,02A,In-Service Counseling (Palace Front),3/30/2007,1/7/2011,ACG,ACG,Regular,AFR
+138038516,Male,White,San Antonio,TX,78253,RG,Recruiter Generated,PSA,Air Force Times,3/30/2007,2/25/2011,ACG,ACG,Regular,AFR
+138040310,Male,White,Homestead,FL,33033,IS,ISR,GON,Get One Now Program,3/30/2007,10/1/2010,ACG,ACG,Regular,AFR
+138042125,Male,White,Grove City,PA,68113,IS,ISR,02A,In-Service Counseling (Palace Front),3/30/2007,12/13/2010,ACG,ACG,Regular,AFR
+138045044,Male,Asian,Virginia Beach,VA,23462,IS,ISR,02A,In-Service Counseling (Palace Front),3/30/2007,11/1/2010,ACG,ACG,Regular,AFR
+138046974,Male,White,Fort Mill,SC,29715,RG,Recruiter Generated,LIR,IRR Roster,3/30/2007,1/28/2011,ACG,ACG,Regular,AFR
+140107185,Male,White,Fountain,CO,80817,RG,Recruiter Generated,1,Reserve Member Referral,4/4/2007,2/7/2011,ACG,ACG,Regular,AFR
+140336060,Male,White,Bethlehem,PA,18018,AF,Air Force Web,04C,HQ Generated Lead (AFOC),4/2/2007,12/29/2010,ACG,ACW,ELead,AFR
+140888518,Male,White,Albita Springs,LA,70420,PN,1-800#,LDM,Direct Mail Brochure,4/6/2007,9/2/2011,ACG,ACG,Regular,AFR
+141747723,Male,White,San Antonio,TX,78245,RG,Recruiter Generated,GON,Get One Now Program,4/9/2007,7/31/2011,ACG,ACG,Regular,AFR
+141934751,Female,American Indian/Alaska Native,Sacramento,CA,95826,IR,IRR List,07A,RGM (IRR Roster),4/13/2005,2/1/2011,ACG,ACG,Regular,AFR
+141981896,Female,Black or African American,Las Vegas,NV,89104,AG,Advisor Generated,05I,Internet,4/13/2005,3/7/2011,ACG,ACG,Regular,AFR
+142004180,Male,American Indian/Alaska Native,Ft Walton Beach,FL,32547,RG,Recruiter Generated,RFI,Influencer (Teacher/Parent/Friend),4/9/2007,2/24/2011,ACG,ACG,Regular,AFR
+142087035,Female,Black or African American,Kansas City,MO,64128,IR,IRR List,07A,RGM (IRR Roster),4/9/2007,7/22/2011,ACG,ACG,Regular,AFR
+142129884,Male,White,Washington,DC,20016,AG,Advisor Generated,05I,Internet,4/9/2007,2/2/2011,ACG,ACG,Regular,AFR
+142317886,Male,White,Atlanta,GA,30327,RG,Recruiter Generated,9,Display,4/10/2007,8/15/2011,ACG,ACG,Regular,AFR
+142870338,Female,White,Fort Worth,TX,76161,AF,Air Force Web,04C,HQ Generated Lead (AFOC),4/9/2007,10/29/2010,ACG,ACG,Regular,AFR
+143594528,Male,Black or African American,Oceanside,NY,11572,RG,Recruiter Generated,03A,Referral (AFAD Recruiter),4/12/2007,10/5/2010,ACG,ACG,Regular,AFR
+143831787,Male,Asian,Alhambra,CA,91801,RG,Recruiter Generated,RFP,Perpetuation,4/12/2007,7/20/2011,ACG,ACG,Regular,AFR
+143892774,Male,Identification Pending,Dallas,GA,30132,IS,ISR,GON,Get One Now Program,4/13/2007,4/21/2011,ACG,ACG,Regular,AFR
+143894747,Female,"""American Indian/Alaska Native, White""",Odenton,MD,21113,IS,ISR,02A,In-Service Counseling (Palace Front),4/13/2007,9/29/2011,ACG,ACG,Regular,AFR
+144366986,Female,Asian,Shreveport,LA,71115,AF,Air Force Web,04C,HQ Generated Lead (AFOC),4/13/2007,10/6/2010,ACG,ACG,Regular,AFR
+145052906,Male,White,Niskayuna,NY,12309,AF,Air Force Web,04C,HQ Generated Lead (AFOC),4/16/2007,8/25/2011,ACG,ACG,Regular,AFR
+146760062,Male,White,Great Bend,KS,67530,IS,ISR,LIR,IRR Roster,4/20/2007,3/7/2011,ACG,ACG,Regular,AFR
+146760394,Male,White,Dover,DE,19901,IS,ISR,02A,In-Service Counseling (Palace Front),4/20/2007,2/16/2011,ACG,ACG,Regular,AFR
+146765963,Male,White,Luke Afb,AZ,85309,IS,ISR,02A,In-Service Counseling (Palace Front),4/20/2007,8/1/2011,ACG,ACG,Regular,AFR
+146766080,Male,Asian,Torrance,CA,90503,IS,ISR,02A,In-Service Counseling (Palace Front),4/20/2007,11/18/2010,ACG,ACG,Regular,AFR
+149677592,Male,White,South Jordan,UT,84095,IS,ISR,02A,In-Service Counseling (Palace Front),4/27/2007,1/18/2011,ACG,ACG,Regular,AFR
+151530811,Female,White,Dothan,AL,36305,AF,Air Force Web,04C,HQ Generated Lead (AFOC),5/1/2007,11/19/2010,ACG,ACG,Regular,AFR
+152613042,Male,White,San Antonio,TX,78213,IS,ISR,02A,In-Service Counseling (Palace Front),4/27/2007,4/22/2011,ACG,ACG,Regular,AFR
+152613544,Male,White,Bossier City,LA,71112,IS,ISR,02A,In-Service Counseling (Palace Front),5/4/2007,9/1/2011,ACG,ACG,Regular,AFR
+153139708,Male,Black or African American,Akron,OH,44306,RG,Recruiter Generated,GON,Get One Now Program,5/5/2007,11/12/2010,ACG,ACG,Regular,AFR
+154276867,Male,Black or African American,Philadelphia,PA,19138,RG,Recruiter Generated,8,Recruiter Cold Contact,5/8/2007,12/11/2010,ACG,ACG,Regular,AFR
+155045828,Male,Black or African American,San Diego,CA,92101,RG,Recruiter Generated,02A,In-Service Counseling (Palace Front),5/10/2007,5/26/2011,ACG,ACG,Regular,AFR
+155368320,Male,Asian,Vienna,VA,22181,IS,ISR,02A,In-Service Counseling (Palace Front),5/11/2007,3/31/2011,ACG,ACG,Regular,AFR
+155371969,Female,White,Oklahoma City,OK,73120,IS,ISR,02A,In-Service Counseling (Palace Front),5/11/2007,9/4/2011,ACG,ACG,Regular,AFR
+155376275,Male,White,Alexandria,VA,22302,IS,ISR,02A,In-Service Counseling (Palace Front),5/4/2007,11/4/2010,ACG,ACG,Regular,AFR
+155377185,Male,White,Albuquerque,NM,87120,AW,AFReserve.com,ONS,Search Engine,5/11/2007,6/28/2011,ACG,ACG,Regular,AFR
+155377819,Male,White,Belleville,IL,62220,IS,ISR,02A,In-Service Counseling (Palace Front),5/11/2007,9/6/2011,ACG,ACG,Regular,AFR
+155930135,Male,White,Midland,TX,79707,AF,Air Force Web,04C,HQ Generated Lead (AFOC),5/13/2007,12/9/2010,ACG,ACG,Regular,AFR
+157632282,Male,White,Arlington,TX,76002,AF,Air Force Web,RFA,ADAF Recruiter,5/16/2007,3/25/2011,ACG,ACG,Regular,AFR
+158230870,Male,White,Elk Grove,CA,95757,AW,AFReserve.com,ONS,Search Engine,3/30/2007,3/28/2011,ACG,ACG,Regular,AFR
+158232584,Male,White,Sheppard Afb,TX,76311,IS,ISR,02A,In-Service Counseling (Palace Front),5/18/2007,6/16/2011,ACG,ACG,Regular,AFR
+159271332,Male,White,Trafford,PA,15085,AG,Advisor Generated,05I,Internet,5/21/2007,8/24/2011,ACG,ACG,Regular,AFR
+159275990,Male,White,Columbia,SC,29209,AG,Advisor Generated,GON,Get One Now Program,5/21/2007,2/26/2011,ACG,ACG,Regular,AFR
+160261079,Male,White,Anchorage,AK,99517,RG,Recruiter Generated,02B,In-Service Counseling (Palace Chase),5/23/2007,2/21/2011,ACG,ACG,Regular,AFR
+161019207,Male,White,Cohoes,NY,12047,IS,ISR,02A,In-Service Counseling (Palace Front),5/25/2007,8/18/2011,ACG,ACG,Regular,AFR
+161020430,Male,White,Fountain,CO,80817,IS,ISR,02A,In-Service Counseling (Palace Front),5/25/2007,10/7/2010,ACG,ACG,Regular,AFR
+161872440,Male,White,Keller,TX,76248,AF,Air Force Web,04C,HQ Generated Lead (AFOC),2/25/2006,9/8/2011,ACG,ACG,Regular,AFR
+161953589,Female,Black or African American,Crestview,FL,32539,RG,Recruiter Generated,03D,Referral (Influencer),5/30/2007,4/29/2011,ACG,ACG,Regular,AFR
+162550988,Female,White,Austin,AR,72007,AF,Air Force Web,04C,HQ Generated Lead (AFOC),5/30/2007,6/15/2011,ACG,ACG,Regular,AFR
+163178089,Male,White,Martinez,CA,94553,PN,1-800#,ONS,Search Engine,6/1/2007,8/27/2011,ACG,ACG,ELead,AFR
+163179353,Male,White,Davis Monthan,AZ,85707,IS,ISR,02A,In-Service Counseling (Palace Front),6/1/2007,9/16/2011,ACG,ACG,Regular,AFR
+163179509,Female,White,Riga,MI,49276,IS,ISR,02A,In-Service Counseling (Palace Front),6/1/2007,3/25/2011,ACG,ACG,ELead,AFR
+163182463,Female,White,Crestview,FL,32539,RG,Recruiter Generated,RFI,Influencer (Teacher/Parent/Friend),6/1/2007,8/12/2011,ACG,ACG,Regular,AFR
+163696930,Male,Black or African American,Tucson,AZ,85756,AF,Air Force Web,APC,Palace Chase,6/2/2007,10/12/2010,ACG,ACG,Regular,AFR
+167786687,Male,Black or African American,Glendale,AZ,85308,AF,Air Force Web,04C,HQ Generated Lead (AFOC),6/7/2007,2/9/2011,ACG,ACG,Regular,AFR
+168460545,Male,White,Dixon,CA,95620,RG,Recruiter Generated,RFP,Perpetuation,6/9/2007,3/15/2011,ACG,ACG,Regular,AFR
+168461354,Female,White,Swansea,IL,62226,IS,ISR,02A,In-Service Counseling (Palace Front),6/9/2007,9/26/2011,ACG,ACG,Regular,AFR
+168461900,Male,White,Charlotte,NC,28278,PN,1-800#,ONS,Search Engine,6/9/2007,5/31/2011,ACG,ACG,ELead,AFR
+168467456,Male,White,Owensboro,KY,42303,PN,1-800#,ONS,Search Engine,6/8/2007,10/14/2010,ACG,ACG,Regular,AFR
+171215508,Female,Black or African American,Raeford,NC,28376,AG,Advisor Generated,05E,Television,6/13/2007,9/12/2011,ACG,ACG,ELead,AFR
+171804913,Male,White,Scott Afb,IL,62225,RG,Recruiter Generated,RFI,Influencer (Teacher/Parent/Friend),6/14/2007,9/12/2011,ACG,ACG,Regular,AFR
+172020081,Female,White,Melbourne,FL,32935,IS,ISR,02A,In-Service Counseling (Palace Front),6/15/2007,9/20/2011,ACG,ACG,Regular,AFR
+172022073,Male,White,North Royalton,OH,44144,RG,Recruiter Generated,GON,Get One Now Program,6/15/2007,6/22/2011,ACG,ACG,Regular,AFR
+173343503,Male,White,South Weber,UT,84405,RG,Recruiter Generated,02B,In-Service Counseling (Palace Chase),6/18/2007,6/16/2011,ACG,ACG,Regular,AFR
+174820166,Male,Native Hawaiian or Other Pacific Islander,Washington,DC,20002,RG,Recruiter Generated,11,Perpetuation,6/20/2007,2/4/2011,ACG,ACG,Regular,AFR
+176198492,Male,White,Las Vegas,NV,89115,IS,ISR,02A,In-Service Counseling (Palace Front),6/22/2007,4/15/2011,ACG,ACG,Regular,AFR
+176207161,Male,White,Ladson,SC,29456,AF,Air Force Web,04C,HQ Generated Lead (AFOC),6/20/2007,3/18/2011,ACG,ACG,Regular,AFR
+176475755,Male,Black or African American,Sugar Land,TX,77479,AG,Advisor Generated,10,Air Show,6/22/2007,12/9/2010,ACG,ACG,Regular,AFR
+178883849,Male,Black or African American,Magnolia,DE,19962,AF,Air Force Web,04C,HQ Generated Lead (AFOC),6/25/2007,12/3/2010,ACG,ACG,Regular,AFR
+179961713,Male,White,Kendallville,IN,46755,AG,Advisor Generated,05I,Internet,6/28/2007,3/28/2011,ACG,ACG,Regular,AFR
+180782548,Male,White,Tampa,FL,33635,IS,ISR,02A,In-Service Counseling (Palace Front),5/11/2007,9/27/2011,ACG,ACG,Regular,AFR
+180783204,Male,White,Colorado Springs,CO,80910,IS,ISR,RFP,Perpetuation,6/29/2007,1/26/2011,ACG,ACG,Regular,AFR
+180784846,Male,White,Wesley Chapel,FL,33545,IS,ISR,02A,In-Service Counseling (Palace Front),5/25/2007,8/26/2011,ACG,ACG,Regular,AFR
+181476383,Male,Black or African American,Stockbridge,GA,30281,AF,Air Force Web,04C,HQ Generated Lead (AFOC),6/29/2007,7/30/2011,ACG,ACW,Regular,AFR
+182135244,Male,White,Grand Terrace,CA,92313,AG,Advisor Generated,1,Reserve Member Referral,7/2/2007,2/4/2011,ACG,ACG,Regular,AFR
+186225611,Female,Black or African American,Waskom,TX,75692,AF,Air Force Web,04C,HQ Generated Lead (AFOC),7/10/2007,10/14/2010,ACG,ACW,Regular,AFR
+187719884,Male,White,Hiram,GA,30141,AW,AFReserve.com,GON,Get One Now Program,7/13/2007,2/28/2011,ACG,ACG,Regular,AFR
+189697980,Male,Asian,Rochester,NY,14626,RG,Recruiter Generated,03A,Referral (AFAD Recruiter),7/17/2007,11/2/2010,ACG,ACG,Regular,AFR
+191771807,Male,White,Tampa,FL,33606,PN,1-800#,ONS,Search Engine,7/19/2007,8/1/2011,ACG,ACG,ELead,AFR
+192334950,Male,White,Colorado Springs,CO,80922,RG,Recruiter Generated,1,Reserve Member Referral,7/19/2007,10/26/2010,ACG,ACG,Regular,AFR
+192350826,Male,White,North Las Vegas,NV,89085,IS,ISR,ONS,Search Engine,7/20/2007,11/12/2010,ACG,ACG,Regular,AFR
+192351017,Female,White,Burkburnett,TX,76354,IS,ISR,02A,In-Service Counseling (Palace Front),7/6/2007,1/21/2011,ACG,ACG,Regular,AFR
+194174938,Male,White,Victorville,CA,92392,PN,1-800#,ONS,Search Engine,7/23/2007,8/24/2011,ACG,ACG,ELead,AFR
+196665495,Female,White,Callaway,FL,32404,IS,ISR,02A,In-Service Counseling (Palace Front),7/27/2007,11/1/2010,ACG,ACG,Regular,AFR
+196665614,Male,White,Miami,FL,33156,IS,ISR,RGL,Cold Call,7/27/2007,4/29/2011,ACG,ACG,Regular,AFR
+196665770,Female,White,Pearland,TX,77584,IS,ISR,LIR,IRR Roster,5/11/2007,4/15/2011,ACG,ACG,Regular,AFR
+196665889,Male,White,Brownwood,TX,76801,IS,ISR,02A,In-Service Counseling (Palace Front),7/27/2007,12/17/2010,ACG,ACG,Regular,AFR
+196666475,Female,American Indian/Alaska Native,Poquoson,VA,23662,IS,ISR,02A,In-Service Counseling (Palace Front),7/27/2007,9/16/2011,ACG,ACG,Regular,AFR
+196666653,Female,Black or African American,Columbus,OH,43224,PN,1-800#,ONS,Search Engine,7/27/2007,1/8/2011,ACG,ACG,ELead,AFR
+198128264,Male,White,Lynchburg,VA,24501,AF,Air Force Web,04C,HQ Generated Lead (AFOC),7/27/2007,4/22/2011,ACG,ACW,Regular,AFR
+200252363,Male,White,Cornell,WI,54732,AG,Advisor Generated,05J,Telephone Directory (paid ad),8/1/2007,1/13/2011,ACG,ACG,Regular,AFR
+200576359,Male,White,Roy,UT,84067,RG,Recruiter Generated,03D,Referral (Influencer),8/1/2007,5/19/2011,ACG,ACG,Regular,AFR
+201673478,Male,White,Pittsburgh,PA,15217,PN,1-800#,ONS,Search Engine,8/3/2007,12/17/2010,ACG,ACG,ELead,AFR
+201674715,Male,"""Asian,White""",Duluth,GA,30096,RG,Recruiter Generated,RFI,Influencer (Teacher/Parent/Friend),8/3/2007,5/6/2011,ACG,ACG,Regular,AFR
+201674799,Male,White,College Park,MD,20740,IS,ISR,02A,In-Service Counseling (Palace Front),8/3/2007,3/29/2011,ACG,ACG,Regular,AFR
+201676362,Female,White,Lompoc,CA,93437,IS,ISR,02A,In-Service Counseling (Palace Front),8/3/2007,6/20/2011,ACG,ACG,Regular,AFR
+201677469,Female,White,Melbourne,FL,32940,IS,ISR,RFP,Perpetuation,8/3/2007,8/23/2011,ACG,ACG,Regular,AFR
+202374584,Male,White,Humble,TX,77338,AF,Air Force Web,04C,HQ Generated Lead (AFOC),8/3/2007,3/5/2011,ACG,ACG,ELead,AFR
+204925844,Male,Black or African American,Burwell,,,AF,Air Force Web,04C,HQ Generated Lead (AFOC),8/8/2007,11/2/2010,ACG,ACG,Regular,AFR
+204926202,Male,Black or African American,Montgomery,AL,36117,AF,Air Force Web,04C,HQ Generated Lead (AFOC),8/8/2007,4/29/2011,ACG,ACG,Regular,AFR
+205885479,Male,Black or African American,Ashburn,VA,20147,IS,ISR,02A,In-Service Counseling (Palace Front),8/10/2007,10/8/2010,ACG,ACG,Regular,AFR
+205885538,Female,White,Bury St Edmunds,,,IS,ISR,02A,In-Service Counseling (Palace Front),8/10/2007,7/22/2011,ACG,ACG,Regular,AFR
+206694066,Male,White,San Angelo,TX,76904,AF,Air Force Web,04C,HQ Generated Lead (AFOC),8/12/2007,10/12/2010,ACG,ACG,Regular,AFR
+207396238,Male,White,Apo,AE,9464,RG,Recruiter Generated,02B,In-Service Counseling (Palace Chase),8/13/2007,9/28/2011,ACG,ACG,Regular,AFR
+209256810,Female,White,Greeley,CO,80634,AG,Advisor Generated,05I,Internet,8/15/2007,11/30/2010,ACG,ACG,Regular,AFR
+210182503,Male,White,Codroipo,,,IS,ISR,02A,In-Service Counseling (Palace Front),8/17/2007,11/5/2010,ACG,ACG,Regular,AFR
+210182994,Female,White,Satellite Beach,FL,32937,IS,ISR,EIM,IRR Muster,8/3/2007,8/23/2011,ACG,ACG,Regular,AFR
+210184488,Male,White,Tampa,FL,33602,PN,1-800#,ONS,Search Engine,8/17/2007,1/18/2011,ACG,ACG,Regular,AFR
+210185216,Male,White,Tunkhannock,PA,18657,AW,AFReserve.com,ONS,Search Engine,8/16/2007,8/30/2011,ACG,ACG,ELead,AFR
+211276539,Male,White,San Antonio,TX,78253,RG,Recruiter Generated,LIR,IRR Roster,8/20/2007,10/29/2010,ACG,ACG,Regular,AFR
+214419964,Male,White,Killeen,TX,76541,IS,ISR,02A,In-Service Counseling (Palace Front),8/24/2007,10/13/2010,ACG,ACG,Regular,AFR
+214422118,Male,White,Riverview,FL,33578,AW,AFReserve.com,ONS,Search Engine,8/24/2007,11/9/2010,ACG,ACG,Regular,AFR
+214422285,Male,White,Lake Mary,FL,32746,RG,Recruiter Generated,RFI,Influencer (Teacher/Parent/Friend),8/24/2007,5/26/2011,ACG,ACG,ELead,AFR
+215328878,Male,White,Valdosta,GA,31605,RG,Recruiter Generated,GON,Get One Now Program,8/27/2007,5/26/2011,ACG,ACG,Regular,AFR
+217293155,Male,Black or African American,Hampton,GA,30228,AG,Advisor Generated,RFI,Influencer (Teacher/Parent/Friend),8/29/2007,7/19/2011,ACG,ACG,Regular,AFR
+218689009,Male,Black or African American,Shreveport,LA,71119,IS,ISR,02A,In-Service Counseling (Palace Front),8/3/2007,10/6/2010,ACG,ACG,Regular,AFR
+220662217,Female,White,Menifee,CA,92584,RG,Recruiter Generated,1,Reserve Member Referral,9/6/2007,10/29/2010,ACG,ACG,Regular,AFR
+221646601,Female,White,Bertram,TX,78605,IS,ISR,RFI,Influencer (Teacher/Parent/Friend),8/31/2007,11/24/2010,ACG,ACG,Regular,AFR
+221647161,Female,White,Fremont,CA,94536,IS,ISR,LIR,IRR Roster,9/8/2007,8/27/2011,ACG,ACG,Regular,AFR
+222484175,Female,White,Beale Afb,CA,95903,AG,Advisor Generated,02D,In-Service Counseling (IRR),9/10/2007,12/16/2010,ACG,ACG,Regular,AFR
+224771883,Male,"""Black or African American, White""",Wilmington,NC,28403,IS,ISR,02A,In-Service Counseling (Palace Front),9/14/2007,5/23/2011,ACG,ACG,Regular,AFR
+224772553,Male,White,Edenton,NC,27932,RG,Recruiter Generated,EIM,IRR Muster,9/14/2007,11/30/2010,ACG,ACG,Regular,AFR
+224774182,Male,Black or African American,Jb Mdl,NJ,8641,IS,ISR,02A,In-Service Counseling (Palace Front),9/14/2007,5/17/2011,ACG,ACG,Regular,AFR
+224778625,Male,American Indian/Alaska Native,Lawton,OK,73505,IS,ISR,02A,In-Service Counseling (Palace Front),10/13/2006,3/8/2011,ACG,ACG,Regular,AFR
+225402650,Male,White,Coalport,PA,16627,AF,Air Force Web,RFO,Other Service Recruiter,9/14/2007,2/28/2011,ACG,ACW,Regular,AFR
+226914775,Male,Black or African American,Arlington,TX,76018,AF,Air Force Web,04C,HQ Generated Lead (AFOC),6/8/2006,3/31/2011,ACG,ACG,Regular,AFR
+228021949,Male,Black or African American,San Antonio,TX,78216,RG,Recruiter Generated,03B,Referral (Other Service Recruiter),9/20/2007,3/25/2011,ACG,ACG,Regular,AFR
+228178868,Female,White,Orcutt,CA,93455,IS,ISR,02A,In-Service Counseling (Palace Front),9/21/2007,12/27/2010,ACG,ACG,Regular,AFR
+228181440,Male,White,Springvalley,OH,45370,IS,ISR,02A,In-Service Counseling (Palace Front),9/21/2007,7/26/2011,ACG,ACG,Regular,AFR
+228809377,Male,Black or African American,Harker Heights,TX,76548,AF,Air Force Web,04C,HQ Generated Lead (AFOC),9/23/2007,5/30/2011,ACG,ACG,Regular,AFR
+231465211,Male,White,Longmont,CO,80504,IS,ISR,02A,In-Service Counseling (Palace Front),9/28/2007,6/20/2011,ACG,ACG,Regular,AFR
+231470050,Female,Black or African American,Dixon,CA,95620,RG,Recruiter Generated,EIM,IRR Muster,7/27/2007,6/17/2011,ACG,ACG,Regular,AFR
+231813404,Male,White,Westfield,IN,46074,RG,Recruiter Generated,03D,Referral (Influencer),9/28/2007,2/23/2011,ACG,ACG,Regular,AFR
+234550668,Male,White,Miami,FL,33170,AF,Air Force Web,04C,HQ Generated Lead (AFOC),10/2/2007,8/23/2011,ACG,ACW,Regular,AFR
+235533433,Male,White,Littleton,CO,80127,AG,Advisor Generated,05I,Internet,10/3/2007,4/26/2011,ACG,ACG,Regular,AFR
+236005751,Male,White,Suisun,CA,95687,RG,Recruiter Generated,02B,In-Service Counseling (Palace Chase),10/4/2007,12/30/2010,ACG,ACG,Regular,AFR
+236230450,Male,White,Dover,DE,19904,RG,Recruiter Generated,02B,In-Service Counseling (Palace Chase),10/4/2007,12/15/2010,ACG,ACG,Regular,AFR
+236554598,Female,Black or African American,Goldsboro,NC,27534,IS,ISR,AIA,ISR Assign from IRR,10/5/2007,8/1/2011,ACG,ACG,Regular,AFR
+236556733,Female,White,Montgomery,AL,36117,IS,ISR,GON,Get One Now Program,10/5/2007,7/13/2011,ACG,ACG,Regular,AFR
+236558388,Male,Black or African American,Las Vegas,NV,89178,IS,ISR,02A,In-Service Counseling (Palace Front),10/5/2007,3/24/2011,ACG,ACG,Regular,AFR
+237430120,Male,Black or African American,Baltimore,MD,21229,PN,1-800#,ONS,Search Engine,10/7/2007,5/18/2011,ACG,ACW,ELead,AFR
+237627291,Male,White,Gulfport,MS,39503,AW,AFReserve.com,RFI,Influencer (Teacher/Parent/Friend),10/8/2007,7/15/2011,ACG,ACG,Regular,AFR
+239124456,Male,White,Goodyear,AZ,85338,RG,Recruiter Generated,8,Recruiter Cold Contact,10/10/2007,3/30/2011,ACG,ACG,Regular,AFR
+240855544,Female,White,Hurlburt Field,FL,32544,RG,Recruiter Generated,GON,Get One Now Program,10/12/2007,7/19/2011,ACG,ACG,Regular,AFR
+240858964,Female,Black or African American,Tinker Afb,OK,73145,IS,ISR,02A,In-Service Counseling (Palace Front),7/27/2007,11/3/2010,ACG,ACG,Regular,AFR
+241672043,Male,White,Ellsworth,WI,54011,RG,Recruiter Generated,1,Reserve Member Referral,10/12/2007,12/9/2010,ACG,ACG,Regular,AFR
+241911040,Female,White,Fort Sill,OK,73503,IR,IRR List,07A,RGM (IRR Roster),7/10/2006,3/30/2011,ACG,ACG,Regular,AFR
+241911495,Male,White,Shreveport,LA,71106,IR,IRR List,05I,Internet,12/1/2005,11/29/2010,ACG,ACG,Regular,AFR
+241927066,Male,White,Acworth,GA,30102,RG,Recruiter Generated,GON,Get One Now Program,4/9/2007,12/15/2010,ACG,ACG,Regular,AFR
+242417264,Male,Black or African American,Irving,TX,75063,AG,Advisor Generated,05I,Internet,10/15/2007,5/13/2011,ACD,ACD,Regular,AFR
+246188672,Male,White,Oklahoma City,OK,73108,RG,Recruiter Generated,8,Recruiter Cold Contact,10/18/2007,8/18/2011,ACG,ACG,Regular,AFR
+247016428,Male,White,Goldsboro,NC,27530,IS,ISR,02A,In-Service Counseling (Palace Front),8/3/2007,11/30/2010,ACG,ACG,Regular,AFR
+247019234,Female,White,Summerville,SC,29485,RG,Recruiter Generated,GON,Get One Now Program,10/25/2007,1/28/2011,ACG,ACG,Regular,AFR
+247158700,Male,White,Burley,ID,83318,AF,Air Force Web,04C,HQ Generated Lead (AFOC),10/27/2007,1/19/2011,ACG,ACW,Regular,AFR
+249299849,Female,White,Bellevue,NE,68123,RG,Recruiter Generated,03D,Referral (Influencer),10/31/2007,4/27/2011,ACG,ACG,Regular,AFR
+250748278,Male,White,Denver,CO,80206,AF,Air Force Web,04C,HQ Generated Lead (AFOC),11/1/2007,10/5/2010,ACG,ACG,Regular,AFR
+251482863,Male,White,Falls Church,VA,22044,AF,Air Force Web,04C,HQ Generated Lead (AFOC),11/2/2007,6/14/2011,ACG,ACG,Regular,AFR
+251483231,Female,Black or African American,Marietta,GA,30008,PN,1-800#,RFI,Influencer (Teacher/Parent/Friend),11/2/2007,3/18/2011,ACG,ACG,ELead,AFR
+251621045,Male,Black or African American,Haymarket,VA,20169,AW,AFReserve.com,NPL,Local Print,11/3/2007,4/14/2011,ACG,ACG,Regular,AFR
+252569655,Female,Black or African American,Orlando,FL,32824,RG,Recruiter Generated,RFP,Perpetuation,11/5/2007,3/15/2011,ACG,ACG,Regular,AFR
+254549402,Male,White,Rustin,LA,71270,PN,1-800#,ONS,Search Engine,11/7/2007,7/19/2011,ACG,ACG,Regular,AFR
+255442103,Male,White,Alexandria,VA,22310,IS,ISR,02A,In-Service Counseling (Palace Front),11/9/2007,10/8/2010,ACG,ACG,Regular,AFR
+256132612,Male,Asian,West Des Moines,IA,50266,AF,Air Force Web,04C,HQ Generated Lead (AFOC),11/9/2007,5/27/2011,ACG,ACG,Regular,AFR
+257702094,Female,Black or African American,Aurora,CO,80018,AG,Advisor Generated,05I,Internet,11/14/2007,5/19/2011,ACG,ACG,Regular,AFR
+262472983,Male,White,Tyler,TX,75701,PN,1-800#,ONS,Search Engine,11/19/2007,4/29/2011,ACG,ACG,Regular,AFR
+263978983,Male,White,Napoleonville,LA,70390,IS,ISR,RFI,Influencer (Teacher/Parent/Friend),11/23/2007,11/15/2010,ACG,ACG,Regular,AFR
+264051453,Male,White,Littleton,CO,80123,AF,Air Force Web,04C,HQ Generated Lead (AFOC),11/23/2007,8/30/2011,ACG,ACG,Regular,AFR
+268040767,Female,Black or African American,Bolton,CT,6043,RG,Recruiter Generated,EIM,IRR Muster,11/28/2007,9/30/2011,ACG,ACG,Regular,AFR
+270351749,Female,Black or African American,Shreveport,LA,71103,NM,ASVAB List,04D,HQ Generated Lead (ASVAB),12/1/2007,3/10/2011,ACG,ACG,Regular,AFR
+271677825,Male,Black or African American,Arlington,VA,22204,AF,Air Force Web,04C,HQ Generated Lead (AFOC),12/3/2007,12/22/2010,ACG,ACG,Regular,AFR
+272452883,Male,Black or African American,San Antonio,TX,78239,RG,Recruiter Generated,11,Perpetuation,12/5/2007,4/29/2011,ACG,ACG,Regular,AFR
+273209688,Male,White,Cary,NC,27513,IS,ISR,02A,In-Service Counseling (Palace Front),12/7/2007,6/30/2011,ACG,ACG,Regular,AFR
+273209938,Male,Asian,Suisun,CA,94585,IS,ISR,APC,Palace Chase,12/7/2007,1/7/2011,ACG,ACG,Regular,AFR
+273212881,Female,White,Dayton,OH,45431,IS,ISR,02A,In-Service Counseling (Palace Front),12/7/2007,3/2/2011,ACG,ACG,Regular,AFR
+276983906,Male,White,Panama City,FL,32409,IS,ISR,02A,In-Service Counseling (Palace Front),12/14/2007,2/22/2011,ACG,ACG,Regular,AFR
+280917848,Female,White,Bullhead,AZ,86442,IS,ISR,02A,In-Service Counseling (Palace Front),12/21/2007,9/6/2011,ACG,ACG,Regular,AFR
+280917954,Male,White,Pottsboro,TX,75076,RG,Recruiter Generated,ELE,Local Event,12/21/2007,9/20/2011,ACG,ACG,Regular,AFR
+280919217,Male,White,St Louis,MO,63104,IS,ISR,02A,In-Service Counseling (Palace Front),12/21/2007,1/27/2011,ACG,ACG,ELead,AFR
+280920003,Female,Black or African American,Byron,GA,31008,RG,Recruiter Generated,GON,Get One Now Program,11/9/2007,4/6/2011,ACG,ACG,Regular,AFR
+281219171,Female,Black or African American,Abilene,TX,79605,RG,Recruiter Generated,APC,Palace Chase,12/21/2007,7/18/2011,ACG,ACG,Regular,AFR
+282844394,Male,White,Jacksonville,AR,72076,IS,ISR,02A,In-Service Counseling (Palace Front),12/28/2007,7/28/2011,ACG,ACG,Regular,AFR
+282847518,Male,White,Nolanville,TX,76559,IS,ISR,02A,In-Service Counseling (Palace Front),12/28/2007,10/29/2010,ACG,ACG,Regular,AFR
+284351029,Male,White,Boerne,TX,78006,AW,AFReserve.com,ELE,Local Event,12/23/2007,5/13/2011,ACG,ACG,Regular,AFR
+285005062,Male,White,Bury St Edmunds,,,PN,1-800#,ONS,Search Engine,12/21/2007,5/10/2011,ACG,ACG,Regular,AFR
+285005623,Female,White,Las Vegas,NV,89149,IS,ISR,02A,In-Service Counseling (Palace Front),1/4/2008,10/29/2010,ACG,ACG,Regular,AFR
+285006423,Female,Asian,Tacoma,WA,98409,IS,ISR,PSP,Past Placement,1/4/2008,5/21/2011,ACG,ACG,ELead,AFR
+286630483,Male,Black or African American,Cleveland Hts,OH,44121,RG,Recruiter Generated,GON,Get One Now Program,1/8/2008,2/25/2011,ACG,ACW,Regular,AFR
+287195364,Female,White,Mooreland,OK,73852,PN,1-800#,ONS,Search Engine,1/8/2008,8/11/2011,ACG,ACG,ELead,AFR
+287915946,Male,White,Lakewood,WA,98499,MC,Military.Com,04C,HQ Generated Lead (AFOC),1/9/2008,3/22/2011,ACG,ACG,Regular,AFR
+288542812,Male,White,Buffalo,NY,14222,RG,Recruiter Generated,GON,Get One Now Program,1/11/2008,5/6/2011,ACG,ACG,Regular,AFR
+288543028,Male,White,Indialantic,FL,32903,RG,Recruiter Generated,RFI,Influencer (Teacher/Parent/Friend),12/28/2007,10/4/2010,ACG,ACG,Regular,AFR
+289911457,Male,Black or African American,West Monroe,LA,71291,AG,Advisor Generated,03A,Referral (AFAD Recruiter),1/15/2008,6/8/2011,ACG,ACG,Regular,AFR
+290028215,Male,White,Marietta,GA,30064,RG,Recruiter Generated,GON,Get One Now Program,1/15/2008,4/12/2011,ACG,ACG,Regular,AFR
+290417171,Female,White,Casselberry,FL,32707,AF,Air Force Web,PSR,Reserve & National Guard,1/15/2008,11/12/2010,ACG,ACG,Regular,AFR
+290417662,Male,White,Titusville,PA,16354,AF,Air Force Web,04C,HQ Generated Lead (AFOC),1/15/2008,6/14/2011,ACG,ACG,Regular,AFR
+291621522,Male,White,Edgewood,WA,98372,IS,ISR,02A,In-Service Counseling (Palace Front),1/18/2008,11/19/2010,ACG,ACG,Regular,AFR
+291630289,Female,Black or African American,Dupont,WA,98327,AF,Air Force Web,04C,HQ Generated Lead (AFOC),1/17/2008,3/31/2011,ACG,ACG,Regular,AFR
+294633785,Male,White,Glenpool,OK,74033,IS,ISR,02A,In-Service Counseling (Palace Front),1/25/2008,5/20/2011,ACG,ACG,Regular,AFR
+294636291,Male,White,Orlando,FL,32819,IS,ISR,PSR,Reserve & National Guard,1/25/2008,3/7/2011,ACG,ACG,Regular,AFR
+294637189,Female,White,Goldsboro,NC,27534,RG,Recruiter Generated,RFI,Influencer (Teacher/Parent/Friend),1/25/2008,1/28/2011,ACG,ACG,Regular,AFR
+294637417,Male,White,Hickson,TN,37343,RG,Recruiter Generated,GON,Get One Now Program,1/25/2008,1/9/2011,ACG,ACG,Regular,AFR
+294746333,Male,White,Albuquerque,NM,87120,RG,Recruiter Generated,02A,In-Service Counseling (Palace Front),1/25/2008,2/25/2011,ACG,ACG,Regular,AFR
+294878527,Male,Black or African American,Chester,VA,23836,RG,Recruiter Generated,8,Recruiter Cold Contact,1/25/2008,6/30/2011,ACG,ACG,Regular,AFR
+295179459,Female,Black or African American,Byron,GA,31008,AG,Advisor Generated,RFI,Influencer (Teacher/Parent/Friend),1/25/2008,4/29/2011,ACG,ACG,Regular,AFR
+296150606,Female,White,Wichita,KS,67235,RG,Recruiter Generated,03D,Referral (Influencer),1/28/2008,3/18/2011,ACG,ACW,Regular,AFR
+297689028,Male,White,Las Vegas,NV,89183,AF,Air Force Web,04C,HQ Generated Lead (AFOC),1/30/2008,11/16/2010,ACG,ACG,Regular,AFR
+298136240,Male,White,Marion,IA,52302,AG,Advisor Generated,05I,Internet,1/31/2008,11/29/2010,ACG,ACG,Regular,AFR
+298498809,Male,White,Euless,TX,76039,IS,ISR,02A,In-Service Counseling (Palace Front),2/1/2008,5/24/2011,ACG,ACG,Regular,AFR
+298499491,Male,White,Hazelwood,MO,63042,R8,Reserve 1-800,05I,Internet,2/1/2008,12/30/2010,ACG,ACG,Regular,AFR
+300165326,Female,Black or African American,Hattiesburg,MS,39401,AF,Air Force Web,04C,HQ Generated Lead (AFOC),2/5/2008,9/16/2011,ACG,ACG,Regular,AFR
+302022400,Male,White,San Antonio,TX,78247,IS,ISR,02A,In-Service Counseling (Palace Front),2/8/2008,9/19/2011,ACG,ACG,Regular,AFR
+302025167,Female,White,Hill Afb,UT,84056,IS,ISR,02A,In-Service Counseling (Palace Front),2/8/2008,6/21/2011,ACG,ACG,Regular,AFR
+302028000,Female,White,Bossier City,LA,71112,IS,ISR,EAS,Air Show,2/8/2008,4/25/2011,ACG,ACG,Regular,AFR
+302028203,Female,White,Harrisville,RI,2830,AW,AFReserve.com,ONS,Search Engine,2/8/2008,11/30/2010,ACG,ACG,Regular,AFR
+302663814,Male,White,Sachse,TX,75048,AF,Air Force Web,04C,HQ Generated Lead (AFOC),2/8/2008,7/22/2011,ACG,ACG,Regular,AFR
+305734584,Male,White,Newfane,NY,14108,IS,ISR,02A,In-Service Counseling (Palace Front),2/15/2008,12/1/2010,ACG,ACG,Regular,AFR
+306491712,Male,White,Enfield,CT,6082,AF,Air Force Web,05I,Internet,2/15/2008,2/22/2011,ACG,ACG,Regular,AFR
+306773428,Male,White,Newberg,OR,97132,AF,Air Force Web,05I,Internet,2/18/2008,12/28/2010,ACG,ACG,Regular,AFR
+309567934,Male,White,Bel Aire,KS,67220,RG,Recruiter Generated,LIR,IRR Roster,2/22/2008,9/20/2011,ACG,ACG,Regular,AFR
+309574678,Male,Black or African American,Portsmouth,VA,23704,AF,Air Force Web,05I,Internet,2/21/2008,10/6/2010,ACG,ACG,Regular,AFR
+311177679,Male,White,Sunrise,FL,33351,AG,Advisor Generated,05H,Promotional Items,2/25/2008,2/14/2011,ACG,ACG,Regular,AFR
+313950433,Male,White,Spokane,WA,99224,AG,Advisor Generated,05I,Internet,2/28/2008,5/3/2011,ACG,ACG,Regular,AFR
+314341710,Male,White,Great Falls,MT,59405,AG,Advisor Generated,03D,Referral (Influencer),2/28/2008,3/17/2011,ACG,ACG,Regular,AFR
+314564740,Male,White,Hahira,GA,31632,RG,Recruiter Generated,GON,Get One Now Program,2/29/2008,1/31/2011,ACG,ACG,Regular,AFR
+314564956,Male,White,Science Hill,KY,42553,RG,Recruiter Generated,EIM,IRR Muster,2/29/2008,5/24/2011,ACG,ACG,Regular,AFR
+314569751,Male,White,Escondido,CA,92025,AG,Advisor Generated,05I,Internet,2/15/2008,5/26/2011,ACG,ACG,Regular,AFR
+315770209,Male,Asian,Ewa Beach,HI,96706,PN,1-800#,ONS,Search Engine,3/2/2008,5/20/2011,ACG,ACW,Regular,AFR
+315825093,Male,White,Horizon City,TX,79928,IR,IRR List,07A,RGM (IRR Roster),3/3/2008,10/1/2010,ACG,ACG,Regular,AFR
+316578488,Male,White,St Paul,MN,55105,AF,Air Force Web,05I,Internet,3/3/2008,11/18/2010,ACG,ACG,Regular,AFR
+317449068,Male,White,Provo,UT,84604,PN,1-800#,ONS,Search Engine,3/5/2008,5/27/2011,ACG,ACG,Regular,AFR
+318073232,Female,Black or African American,Missouri City,TX,77459,AF,Air Force Web,05I,Internet,3/5/2008,1/31/2011,ACG,ACG,Regular,AFR
+318833067,Male,White,Lincoln,NE,68521,IS,ISR,02A,In-Service Counseling (Palace Front),3/7/2008,12/6/2010,ACG,ACG,Regular,AFR
+318833570,Male,White,Bristow,VA,20136,IS,ISR,02A,In-Service Counseling (Palace Front),3/7/2008,4/28/2011,ACG,ACG,Regular,AFR
+318837858,Male,White,Gainesville,TX,76240,AF,Air Force Web,05I,Internet,2/19/2008,5/31/2011,ACG,ACG,Regular,AFR
+318838975,Female,White,Hamilton,NJ,8690,AF,Air Force Web,04C,HQ Generated Lead (AFOC),3/29/2007,2/15/2011,ACG,ACG,Regular,AFR
+319579243,Female,White,Benicia,CA,94510,AF,Air Force Web,05I,Internet,3/9/2008,10/8/2010,ACG,ACG,Regular,AFR
+320256634,Female,White,Tabernacle,NJ,8088,RG,Recruiter Generated,9,Display,3/10/2008,5/7/2011,ACG,ACG,Regular,AFR
+321895241,Female,Black or African American,Fayetteville,NC,28303,MC,Military.Com,RFA,ADAF Recruiter,3/12/2008,3/24/2011,ACD,ACW,Regular,AFR
+322815526,Female,White,Wichita Falls,TX,76310,IS,ISR,02A,In-Service Counseling (Palace Front),3/14/2008,6/4/2011,ACG,ACG,Regular,AFR
+322818881,Male,White,Palmdale,CA,93551,IS,ISR,02A,In-Service Counseling (Palace Front),3/14/2008,2/9/2011,ACG,ACG,Regular,AFR
+322820286,Male,White,Dayton,OH,45431,IS,ISR,02A,In-Service Counseling (Palace Front),3/14/2008,4/5/2011,ACG,ACG,Regular,AFR
+322823547,Male,White,Hewitt,TX,76643,AF,Air Force Web,05I,Internet,3/13/2008,7/29/2011,ACG,ACG,Regular,AFR
+326880911,Female,White,Huber Heights,OH,45424,IS,ISR,ONS,Search Engine,3/21/2008,3/2/2011,ACG,ACG,Regular,AFR
+326884675,Female,Black or African American,Montgomery,AL,36116,IS,ISR,02A,In-Service Counseling (Palace Front),3/21/2008,9/16/2011,ACG,ACG,Regular,AFR
+326885783,Female,White,Arlington,VA,22209,AW,AFReserve.com,RFI,Influencer (Teacher/Parent/Friend),2/15/2008,2/15/2011,ACG,ACG,Regular,AFR
+329284035,Male,White,Easton,MD,21601,RW,Reserve Web,05I,Internet,1/7/2005,6/17/2011,ACG,ACG,Regular,AFR
+331111036,Male,White,Columbia,SC,29209,PN,1-800#,ONS,Search Engine,3/28/2008,1/4/2011,ACG,ACG,Regular,AFR
+331111758,Male,White,Wichita,KS,67207,RW,Reserve Web,05I,Internet,3/28/2008,12/30/2010,ACG,ACG,Regular,AFR
+331112447,Female,White,Atlanta,GA,30316,IS,ISR,02A,In-Service Counseling (Palace Front),3/28/2008,11/29/2010,ACG,ACG,Regular,AFR
+331113446,Female,White,Sumter,SC,29150,RG,Recruiter Generated,RFI,Influencer (Teacher/Parent/Friend),3/28/2008,7/25/2011,ACG,ACG,Regular,AFR
+331114424,Male,White,Abilene,TX,79602,IS,ISR,APC,Palace Chase,3/28/2008,3/18/2011,ACG,ACG,Regular,AFR
+334190214,Male,Black or African American,Radcliff,KY,40160,MC,Military.Com,05I,Internet,4/1/2008,10/31/2010,ACG,ACG,Regular,AFR
+334414302,Male,Black or African American,Cleveland,OH,44105,RG,Recruiter Generated,GON,Get One Now Program,4/2/2008,10/29/2010,ACG,ACG,Regular,AFR
+335815235,Male,White,Moore,OK,73160,RG,Recruiter Generated,GON,Get One Now Program,4/4/2008,10/15/2010,ACG,ACG,Regular,AFR
+335821072,Female,White,Issaquah,WA,98029,MC,Military.Com,05I,Internet,4/3/2008,10/11/2010,ACG,ACG,Regular,AFR
+337922821,Male,White,Kissimmee,FL,34743,RG,Recruiter Generated,8,Recruiter Cold Contact,4/8/2008,12/10/2010,ACG,ACG,Regular,AFR
+338567833,Female,White,Denver,CO,80249,RG,Recruiter Generated,11,Perpetuation,4/9/2008,11/18/2010,ACG,ACG,Regular,AFR
+339629041,Female,White,Tucson,AZ,85730,IS,ISR,02A,In-Service Counseling (Palace Front),4/11/2008,3/9/2011,ACG,ACG,Regular,AFR
+340242274,Male,White,College Park,MD,20740,PN,1-800#,ONS,Search Engine,4/11/2008,7/22/2011,ACG,ACG,ELead,AFR
+343516771,Male,White,Waldorf,MD,20762,IS,ISR,02A,In-Service Counseling (Palace Front),4/18/2008,11/2/2010,ACG,ACG,Regular,AFR
+343516830,Male,White,Watertown,WI,53094,PN,1-800#,RFI,Influencer (Teacher/Parent/Friend),2/10/2008,6/1/2011,ACG,ACG,ELead,AFR
+343516854,Female,White,Jarrell,TX,76537,IS,ISR,02A,In-Service Counseling (Palace Front),4/18/2008,3/30/2011,ACG,ACG,ELead,AFR
+343520129,Male,White,Del Rio,TX,78840,AG,Advisor Generated,ONS,Search Engine,4/18/2008,1/15/2011,ACG,ACG,Regular,AFR
+344200603,Male,Asian,San Antonio,TX,78258,AF,Air Force Web,05I,Internet,3/26/2008,11/17/2010,ACG,ACG,Regular,AFR
+345741912,Male,White,Raymore,MO,64083,RG,Recruiter Generated,8,Recruiter Cold Contact,4/22/2008,2/11/2011,ACG,ACG,Regular,AFR
+347240594,Female,Asian,Tacoma,WA,98407,PN,1-800#,ONS,Search Engine,4/24/2008,2/27/2011,ACG,ACG,ELead,AFR
+347460797,Female,White,Sumter,SC,29154,IS,ISR,02A,In-Service Counseling (Palace Front),4/25/2008,7/5/2011,ACG,ACG,Regular,AFR
+347462167,Female,White,Deatsville,AL,36022,IS,ISR,02A,In-Service Counseling (Palace Front),4/18/2008,5/23/2011,ACG,ACG,Regular,AFR
+349055663,Female,White,Richfield,MN,55423,RG,Recruiter Generated,02B,In-Service Counseling (Palace Chase),4/28/2008,12/31/2010,ACG,ACG,Regular,AFR
+349230780,Female,White,Aurora,CO,80013,RG,Recruiter Generated,11,Perpetuation,4/28/2008,4/29/2011,ACG,ACG,Regular,AFR
+350109351,Female,Black or African American,Montgomery,AL,36117,AG,Advisor Generated,05I,Internet,4/29/2008,5/25/2011,ACG,ACG,Regular,AFR
+351692904,Female,White,Fort Walton Beach,FL,32542,IS,ISR,02A,In-Service Counseling (Palace Front),5/2/2008,11/8/2010,ACG,ACG,Regular,AFR
+351693439,Male,White,Norfolk,VA,23517,IS,ISR,02A,In-Service Counseling (Palace Front),5/2/2008,5/11/2011,ACG,ACG,Regular,AFR
+352395557,Male,Asian,Redlands,CA,92373,RG,Recruiter Generated,12,School Visit,5/4/2008,1/3/2011,ACG,ACG,Regular,AFR
+352739343,Male,Black or African American,Lugoff,SC,29078,AG,Advisor Generated,05L,AFRC 800 Number,5/5/2008,12/16/2010,ACG,ACG,Regular,AFR
+353080807,Male,"""American Indian/Alaska Native, Asian,Black or African American ,White""",Apo,AP,96367,AF,Air Force Web,RFI,Influencer (Teacher/Parent/Friend),3/14/2008,4/19/2011,ACG,ACG,Regular,AFR
+353081125,Male,White,Pineville,LA,71360,PN,1-800#,ONS,Search Engine,4/30/2008,3/25/2011,ACG,ACG,Regular,AFR
+355348431,Male,White,Lafayette,LA,70508,AG,Advisor Generated,05I,Internet,5/8/2008,12/1/2010,ACG,ACG,Regular,AFR
+355521834,Male,Black or African American,Kenmore,NY,14217,RG,Recruiter Generated,RFI,Influencer (Teacher/Parent/Friend),5/9/2008,5/23/2011,ACG,ACG,Regular,AFR
+359044958,Male,White,Victorville,CA,92392,RG,Recruiter Generated,02A,In-Service Counseling (Palace Front),5/15/2008,3/3/2011,ACG,ACG,Regular,AFR
+359387593,Female,Black or African American,Silver Spring,MD,20904,PN,1-800#,ONS,Search Engine,5/16/2008,4/29/2011,ACG,ACG,Regular,AFR
+361688042,Male,White,League City,TX,77573,AW,AFReserve.com,RFI,Influencer (Teacher/Parent/Friend),2/26/2010,3/7/2011,ACG,ACG,Regular,AFR
+361688806,Male,Black or African American,North Bergen,NJ,7047,AF,Air Force Web,05I,Internet,5/20/2008,3/26/2011,ACG,ACW,ELead,AFR
+362547585,Male,White,Kansas City,MO,64137,AF,Air Force Web,05I,Internet,5/21/2008,11/16/2010,ACG,ACG,Regular,AFR
+362756994,Female,White,Jber,AK,99506,RG,Recruiter Generated,ONS,Search Engine,5/22/2008,5/13/2011,ACG,ACG,Regular,AFR
+363226031,Male,White,Frederick,MD,21704,RG,Recruiter Generated,RFI,Influencer (Teacher/Parent/Friend),5/23/2008,7/29/2011,ACG,ACG,Regular,AFR
+363227316,Male,White,Little Rock,AR,72202,PN,1-800#,ONS,Search Engine,5/23/2008,8/10/2011,ACG,ACG,ELead,AFR
+366540179,Male,White,Indianapolis,IN,46254,IS,ISR,EIM,IRR Muster,5/30/2008,7/29/2011,ACG,ACG,Regular,AFR
+366541588,Male,White,Vacaville,CA,95687,RG,Recruiter Generated,GON,Get One Now Program,5/30/2008,3/10/2011,ACG,ACG,Regular,AFR
+366543813,Male,Black or African American,Orlando,FL,32811,NW,Next Wave,05I,Internet,5/29/2008,10/28/2010,ACG,ACG,Regular,AFR
+367600782,Male,White,Gilmer,TX,75645,AF,Air Force Web,05I,Internet,5/31/2008,8/5/2011,ACG,ACG,Regular,AFR
+367656983,Male,Black or African American,Pensacola,FL,32526,NW,Next Wave,05I,Internet,6/1/2008,2/28/2011,ACG,ACG,Regular,AFR
+368537281,Female,Black or African American,Warner Robins,GA,31093,RG,Recruiter Generated,RFI,Influencer (Teacher/Parent/Friend),2/15/2008,3/25/2011,ACG,ACG,Regular,AFR
+371002220,Male,White,Alamogordo,NM,88310,IS,ISR,02A,In-Service Counseling (Palace Front),4/18/2008,5/17/2011,ACG,ACG,Regular,AFR
+371714637,Female,White,Siler City,NC,27344,CC,Reserve Call Center,05L,AFRC 800 Number,6/7/2008,10/4/2010,ACD,ACW,Regular,AFR
+371717497,Male,Asian,Tacoma,WA,98408,AF,Air Force Web,05I,Internet,6/7/2008,6/3/2011,ACG,ACG,ELead,AFR
+372476422,Female,White,Seminole,FL,33776,RG,Recruiter Generated,GON,Get One Now Program,6/9/2008,12/17/2010,ACG,ACG,Regular,AFR
+372779045,Male,White,Abilene,TX,79605,AF,Air Force Web,APC,Palace Chase,6/9/2008,3/16/2011,ACG,ACG,Regular,AFR
+372779567,Female,White,Vacaville,CA,95687,AF,Air Force Web,05I,Internet,6/9/2008,5/27/2011,ACG,ACG,Regular,AFR
+374254506,Male,White,Stockton,CA,95212,MC,Military.Com,05I,Internet,6/11/2008,11/30/2010,ACG,ACG,Regular,AFR
+375134387,Male,Black or African American,Dover,DE,19904,IS,ISR,02A,In-Service Counseling (Palace Front),6/13/2008,12/3/2010,ACG,ACG,Regular,AFR
+375134865,Male,White,Waukomis,OK,73773,IS,ISR,02A,In-Service Counseling (Palace Front),6/13/2008,12/17/2010,ACG,ACG,Regular,AFR
+375137594,Female,White,Alexandria,VA,22311,IS,ISR,02A,In-Service Counseling (Palace Front),6/6/2008,2/11/2011,ACG,ACG,Regular,AFR
+378987383,Male,White,Southhaven,MS,38672,RG,Recruiter Generated,RFP,Perpetuation,6/19/2008,11/15/2010,ACG,ACG,Regular,AFR
+379299195,Male,White,Schenectady,NY,12304,IS,ISR,02A,In-Service Counseling (Palace Front),6/20/2008,11/4/2010,ACG,ACG,Regular,AFR
+379582274,Male,"""American Indian/Alaska Native, White""",Las Vegas,NV,89081,AG,Advisor Generated,05I,Internet,6/20/2008,4/8/2011,ACG,ACG,Regular,AFR
+382438095,Male,White,Pittsburgh,PA,15216,RG,Recruiter Generated,GON,Get One Now Program,6/25/2008,11/23/2010,ACG,ACG,Regular,AFR
+383281554,Female,White,Bellevue,NE,68123,IS,ISR,02A,In-Service Counseling (Palace Front),6/27/2008,12/12/2010,ACG,ACG,Regular,AFR
+383284191,Male,White,Navarre,FL,32566,RG,Recruiter Generated,GON,Get One Now Program,6/27/2008,10/26/2010,ACG,ACG,Regular,AFR
+383286137,Male,White,Herndon,VA,20170,AF,Air Force Web,APC,Palace Chase,6/26/2008,1/18/2011,ACG,ACG,Regular,AFR
+383286912,Male,Black or African American,West Palm Beach,FL,33409,AF,Air Force Web,05I,Internet,6/26/2008,8/23/2011,ACG,ACG,Regular,AFR
+386143547,Female,White,Surprise,AZ,85388,RG,Recruiter Generated,02A,In-Service Counseling (Palace Front),7/2/2008,12/7/2010,ACG,ACG,Regular,AFR
+386205187,Male,White,South Euclid,OH,44121,RG,Recruiter Generated,03D,Referral (Influencer),7/2/2008,2/14/2011,ACG,ACG,Regular,AFR
+386842970,Male,White,Clermont,FL,34711,IS,ISR,02A,In-Service Counseling (Palace Front),7/4/2008,11/9/2010,ACG,ACG,Regular,AFR
+386845402,Female,White,Fairchild Afb,WA,99011,IS,ISR,02A,In-Service Counseling (Palace Front),7/4/2008,4/25/2011,ACG,ACG,Regular,AFR
+386845868,Female,White,Las Vegas,NV,89115,IS,ISR,02A,In-Service Counseling (Palace Front),7/4/2008,12/30/2010,ACG,ACG,Regular,AFR
+387091741,Male,White,Miami,FL,33130,CC,Reserve Call Center,05L,AFRC 800 Number,7/4/2008,10/8/2010,ACG,ACG,Regular,AFR
+387113259,Male,White,Orlando,FL,32835,AF,Air Force Web,05I,Internet,7/5/2008,12/10/2010,ACG,ACG,Regular,AFR
+387274677,Male,White,Lutz,FL,33558,RG,Recruiter Generated,05I,Internet,7/7/2008,3/16/2011,ACG,ACW,Regular,AFR
+387964065,Male,White,Fort Lauderdale,FL,33304,AF,Air Force Web,05I,Internet,7/7/2008,9/15/2011,ACG,ACG,ELead,AFR
+389579543,Male,White,North Attleboro,MA,2760,AF,Air Force Web,04C,HQ Generated Lead (AFOC),1/22/2007,11/19/2010,ACG,ACG,Regular,AFR
+391688302,Female,Black or African American,Carrollton,GA,30117,AG,Advisor Generated,05I,Internet,7/14/2008,5/4/2011,ACG,ACG,ELead,AFR
+392255331,Male,Black or African American,Mansfield,TX,76063,RG,Recruiter Generated,03D,Referral (Influencer),7/15/2008,4/13/2011,ACG,ACG,Regular,AFR
+393288426,Male,White,Wauchula,FL,33873,RG,Recruiter Generated,GON,Get One Now Program,7/15/2008,4/27/2011,ACG,ACG,Regular,AFR
+394250228,Female,Black or African American,Kokomo,IN,46902,RG,Recruiter Generated,03C,Referral (ARPC),7/17/2008,9/29/2011,ACG,ACG,Regular,AFR
+394684968,Female,White,Oklahoma City,OK,73135,IS,ISR,02A,In-Service Counseling (Palace Front),7/4/2008,7/28/2011,ACG,ACG,Regular,AFR
+395370487,Male,White,Zanesville,OH,43701,PN,1-800#,ONS,Search Engine,7/19/2008,8/15/2011,ACG,ACG,ELead,AFR
+395370700,Male,Black or African American,Philadelphia,PA,19111,PN,1-800#,ONS,Search Engine,7/18/2008,7/15/2011,ACG,ACG,Regular,AFR
+395370718,Female,White,Houston,TX,77090,CC,Reserve Call Center,05L,AFRC 800 Number,7/19/2008,3/31/2011,ACG,ACG,Regular,AFR
+396079056,Male,Black or African American,Buffalo,NY,14204,RG,Recruiter Generated,05I,Internet,7/21/2008,1/28/2011,ACG,ACG,Regular,AFR
+396125589,Male,Black or African American,Biloxi,MS,39531,RG,Recruiter Generated,03D,Referral (Influencer),7/21/2008,7/14/2011,ACG,ACG,Regular,AFR
+396231635,Male,White,Kenosha,WI,53144,AF,Air Force Web,05I,Internet,7/21/2008,12/15/2010,ACG,ACG,Regular,AFR
+397159819,Male,White,Falls Church,VA,22041,RG,Recruiter Generated,RFI,Influencer (Teacher/Parent/Friend),7/23/2008,11/18/2010,ACG,ACG,Regular,AFR
+397498752,Female,White,Avondale,AZ,85392,AG,Advisor Generated,05I,Internet,7/23/2008,12/2/2010,ACG,ACG,Regular,AFR
+397643330,Male,White,Moreno Valley,CA,92555,AG,Advisor Generated,05I,Internet,7/23/2008,9/7/2011,ACG,ACG,Regular,AFR
+398692550,Female,White,St Petersburg,FL,33705,RG,Recruiter Generated,PSP,Past Placement,3/28/2008,8/5/2011,ACG,ACG,ELead,AFR
+399559052,Male,Black or African American,Zebulon,NC,27597,MC,Military.Com,05I,Internet,7/26/2008,8/29/2011,ACG,ACG,Regular,AFR
+402136552,Male,White,San Tan Valley,AZ,85140,AG,Advisor Generated,05I,Internet,7/30/2008,3/16/2011,ACG,ACG,Regular,AFR
+403063596,Female,Asian,Fpo,AP,96306,IS,ISR,02A,In-Service Counseling (Palace Front),8/1/2008,12/14/2010,ACG,ACG,Regular,AFR
+403066304,Male,White,Summerville,SC,29485,RG,Recruiter Generated,EIM,IRR Muster,6/20/2008,9/14/2011,ACG,ACG,Regular,AFR
+403302727,Male,White,Ashburn,VA,20158,RG,Recruiter Generated,RFA,ADAF Recruiter,8/1/2008,11/8/2010,ACG,ACG,Regular,AFR
+406394432,Male,White,Boise,ID,83716,IS,ISR,02A,In-Service Counseling (Palace Front),8/8/2008,8/31/2011,ACG,ACG,Regular,AFR
+406395400,Male,White,Lakeland,GA,31635,RG,Recruiter Generated,GON,Get One Now Program,7/4/2008,6/10/2011,ACG,ACG,Regular,AFR
+406395996,Male,White,Providence,RI,2908,IS,ISR,02A,In-Service Counseling (Palace Front),8/8/2008,10/12/2010,ACG,ACG,Regular,AFR
+406399194,Female,White,Annapolis,MD,21401,AF,Air Force Web,05I,Internet,8/7/2008,8/31/2011,ACG,ACG,Regular,AFR
+406840020,Female,Black or African American,Buffalo,NY,14204,AG,Advisor Generated,03D,Referral (Influencer),8/8/2008,3/11/2011,ACG,ACW,ELead,AFR
+406961413,Male,White,Denver,CO,80205,AF,Air Force Web,05I,Internet,8/8/2008,5/1/2011,ACG,ACG,ELead,AFR
+407016101,Male,White,Boca Raton,FL,33431,AF,Air Force Web,04C,HQ Generated Lead (AFOC),8/28/2005,4/29/2011,ACG,ACG,Regular,AFR
+407049967,Male,White,North Las Vegas,NV,89031,AF,Air Force Web,05I,Internet,8/10/2008,7/29/2011,ACG,ACG,ELead,AFR
+408503611,Male,White,Allenhurst,GA,31301,AG,Advisor Generated,05I,Internet,8/12/2008,3/12/2011,ACG,ACG,Regular,AFR
+408980372,Male,White,San Juan,TX,78589,AG,Advisor Generated,05I,Internet,8/13/2008,11/30/2010,ACG,ACG,Regular,AFR
+410334385,Male,White,Crestview,FL,32539,RG,Recruiter Generated,11,Perpetuation,8/15/2008,2/18/2011,ACG,ACW,Regular,AFR
+412145848,Male,Black or African American,Cottonport,LA,71327,PN,1-800#,ONS,Search Engine,8/19/2008,7/25/2011,ACG,ACG,Regular,AFR
+412794967,Male,White,San Bonito,TX,78586,RG,Recruiter Generated,03D,Referral (Influencer),8/20/2008,7/18/2011,ACG,ACW,Regular,AFR
+414116831,Male,Black or African American,Oklahoma City,OK,73120,IS,ISR,02A,In-Service Counseling (Palace Front),7/18/2008,11/20/2010,ACG,ACG,Regular,AFR
+416893304,Female,Black or African American,New Market,AL,35761,RG,Recruiter Generated,8,Recruiter Cold Contact,8/27/2008,11/17/2010,ACG,ACG,Regular,AFR
+417144654,Male,Asian,Fairfield,CA,94533,RG,Recruiter Generated,APF,Palace Front,8/27/2008,6/8/2011,ACG,ACG,Regular,AFR
+419575028,Male,White,Richmond,KY,40475,PN,1-800#,ONS,Search Engine,8/30/2008,10/14/2010,ACG,ACG,Regular,AFR
+419639638,Male,White,Santa Maria,CA,93458,AW,AFReserve.com,RFI,Influencer (Teacher/Parent/Friend),4/10/2010,2/23/2011,ACG,ACG,Regular,AFR
+421006677,Male,White,Dover,DE,19901,AF,Air Force Web,05I,Internet,9/3/2008,8/2/2011,ACG,ACG,Regular,AFR
+421122761,Male,White,Chesapeake,VA,23320,RG,Recruiter Generated,03D,Referral (Influencer),9/4/2008,7/25/2011,ACG,ACG,Regular,AFR
+421992274,Male,White,El Paso,TX,79912,IS,ISR,02A,In-Service Counseling (Palace Front),9/5/2008,6/17/2011,ACG,ACG,Regular,AFR
+422577659,Male,White,Sunrise,FL,33323,AW,AFReserve.com,PSM,Military Times (Army/Navy/Supplement),9/5/2008,1/27/2011,ACG,ACG,Regular,AFR
+424786520,Male,Black or African American,Tulsa,OK,74106,RG,Recruiter Generated,11,Perpetuation,9/10/2008,2/28/2011,ACG,ACG,Regular,AFR
+425662213,Male,White,North Las Vegas,NV,89085,IS,ISR,02A,In-Service Counseling (Palace Front),9/12/2008,3/3/2011,ACG,ACG,Regular,AFR
+426165205,Male,White,Wichita,KS,67226,RG,Recruiter Generated,03D,Referral (Influencer),9/13/2008,1/12/2011,ACG,ACG,Regular,AFR
+427959675,Male,White,Lynnwood,CA,90262,PN,1-800#,ONP,Past Placement,9/17/2008,8/10/2011,ACW,ACW,Regular,AFR
+428346254,Male,"""American Indian/Alaska Native, White""",Columbus,OH,43209,IS,ISR,02A,In-Service Counseling (Palace Front),9/19/2008,11/19/2010,ACG,ACG,Regular,AFR
+428350003,Male,White,Havelock,NC,28532,RG,Recruiter Generated,RFP,Perpetuation,9/19/2008,7/25/2011,ACG,ACG,Regular,AFR
+431493165,Male,White,Clearfield,UT,84015,IS,ISR,02A,In-Service Counseling (Palace Front),9/26/2008,5/31/2011,ACG,ACG,Regular,AFR
+431493235,Female,White,Thurmont,MD,21788,IS,ISR,02A,In-Service Counseling (Palace Front),9/26/2008,4/25/2011,ACG,ACG,Regular,AFR
+431567677,Male,White,Milton,FL,32583,AG,Advisor Generated,05I,Internet,9/26/2008,12/20/2010,ACG,ACG,Regular,AFR
+433089117,Male,White,San Tan Valley,AZ,85140,AG,Advisor Generated,05J,Telephone Directory (paid ad),9/29/2008,3/2/2011,ACG,ACG,Regular,AFR
+436071407,Male,White,Alamogordo,NM,88310,RG,Recruiter Generated,02B,In-Service Counseling (Palace Chase),10/2/2008,10/19/2010,ACG,ACG,Regular,AFR
+436082115,Female,White,Riverview,FL,33578,AG,Advisor Generated,05L,AFRC 800 Number,10/2/2008,12/30/2010,ACG,ACG,Regular,AFR
+436593922,Male,White,Plantation,FL,33324,IS,ISR,02A,In-Service Counseling (Palace Front),6/27/2008,2/16/2011,ACG,ACG,Regular,AFR
+439107403,Male,White,North Easton,MA,2356,AG,Advisor Generated,05I,Internet,10/7/2008,11/30/2010,ACG,ACG,Regular,AFR
+439673958,Male,White,Milwaukee,WI,53220,AG,Advisor Generated,05I,Internet,10/7/2008,10/13/2010,ACD,ACD,Regular,AFR
+441713317,Male,White,Wichita,KS,67221,IS,ISR,02A,In-Service Counseling (Palace Front),10/10/2008,10/13/2010,ACG,ACG,Regular,AFR
+441713567,Male,White,Whiteman Afb,MO,65305,IS,ISR,02A,In-Service Counseling (Palace Front),10/10/2008,10/28/2010,ACG,ACG,Regular,AFR
+441716068,Male,White,Wasilla,AK,99654,RW,Reserve Web,05I,Internet,10/9/2008,7/20/2011,ACG,ACG,Regular,AFR
+443780312,Male,White,Mary Esther,FL,32569,RG,Recruiter Generated,02A,In-Service Counseling (Palace Front),10/14/2008,12/23/2010,ACG,ACG,Regular,AFR
+445799458,Female,White,Riverview,FL,33578,AF,Air Force Web,05I,Internet,10/15/2008,4/19/2011,ACG,ACG,Regular,AFR
+446650055,Male,White,Mcguire Afb,NJ,8641,IS,ISR,02A,In-Service Counseling (Palace Front),10/17/2008,6/2/2011,ACG,ACG,Regular,AFR
+446651247,Female,Black or African American,Warner Robins,GA,31088,RG,Recruiter Generated,RFI,Influencer (Teacher/Parent/Friend),10/17/2008,6/23/2011,ACG,ACG,Regular,AFR
+446652414,Male,White,Moore,OK,73160,AF,Air Force Web,RFP,Perpetuation,10/16/2008,2/27/2011,ACD,ACW,Regular,AFR
+448227588,Male,White,Tampa,FL,33625,RG,Recruiter Generated,RFI,Influencer (Teacher/Parent/Friend),10/28/2008,9/15/2011,ACG,ACG,Regular,AFR
+448710939,Male,White,Ogden,UT,84405,AG,Advisor Generated,05I,Internet,10/29/2008,9/13/2011,ACW,ACW,Regular,AFR
+450204655,Female,Black or African American,Las Vegas,NV,89030,IS,ISR,02A,In-Service Counseling (Palace Front),10/31/2008,1/31/2011,ACG,ACG,Regular,AFR
+450206125,Male,White,Jacksonville,AR,72076,IS,ISR,02A,In-Service Counseling (Palace Front),10/31/2008,11/29/2010,ACG,ACG,Regular,AFR
+450208557,Male,White,Huber Heights,OH,45424,IS,ISR,02A,In-Service Counseling (Palace Front),10/31/2008,4/5/2011,ACG,ACG,Regular,AFR
+450635643,Male,White,Pittsburgh,PA,15239,AG,Advisor Generated,05I,Internet,10/31/2008,6/30/2011,ACG,ACG,Regular,AFR
+451590850,Male,Native Hawaiian or Other Pacific Islander,West Haven,CT,6516,PN,1-800#,RFA,ADAF Recruiter,1/18/2010,11/30/2010,ACG,ACG,ELead,AFR
+452697879,Male,White,Latrobe,PA,15650,AF,Air Force Web,04C,HQ Generated Lead (AFOC),10/3/2005,12/30/2010,ACG,ACG,Regular,AFR
+453089199,Male,White,Cloquett,MN,55720,AG,Advisor Generated,05I,Internet,11/4/2008,10/27/2010,ACG,ACG,Regular,AFR
+453658906,Male,White,Gilbert,LA,71336,RG,Recruiter Generated,PSR,Reserve & National Guard,11/4/2008,12/8/2010,ACG,ACG,Regular,AFR
+453705893,Male,White,Curtis Bay,MD,21226,RG,Recruiter Generated,03A,Referral (AFAD Recruiter),11/5/2008,4/28/2011,ACG,ACG,Regular,AFR
+455890052,Male,White,Mount Laurel,NJ,8054,IS,ISR,02A,In-Service Counseling (Palace Front),10/3/2008,6/10/2011,ACG,ACG,Regular,AFR
+455895108,Female,Black or African American,Dallas,TX,75217,MC,Military.Com,05I,Internet,11/6/2008,4/15/2011,ACG,ACW,Regular,AFR
+456758232,Female,White,Ramsey,MN,55303,RG,Recruiter Generated,05I,Internet,11/7/2008,5/25/2011,ACG,ACG,Regular,AFR
+457414185,Female,Black or African American,Miramar,FL,33023,CC,Reserve Call Center,05L,AFRC 800 Number,11/8/2008,2/3/2011,ACG,ACG,Regular,AFR
+458169481,Male,White,San Antonio,TX,78251,RG,Recruiter Generated,05L,AFRC 800 Number,11/10/2008,1/21/2011,ACG,ACG,Regular,AFR
+459128687,Male,Black or African American,Hattiesburg,MS,39401,RG,Recruiter Generated,9,Display,11/12/2008,12/9/2010,ACG,ACG,Regular,AFR
+459304604,Male,Asian,Virgnia Beach,VA,23453,RG,Recruiter Generated,05K,Literature Rack,11/12/2008,11/19/2010,ACW,ACW,Regular,AFR
+459863454,Male,White,Highlands Ranch,CO,80129,AG,Advisor Generated,05I,Internet,11/13/2008,5/4/2011,ACG,ACG,Regular,AFR
+460837407,Female,White,Newton,NJ,7860,IS,ISR,02A,In-Service Counseling (Palace Front),11/7/2008,6/23/2011,ACG,ACG,ELead,AFR
+460842980,Female,White,Lincoln,CA,95648,AF,Air Force Web,05I,Internet,11/13/2008,9/25/2011,ACG,ACG,Regular,AFR
+463737443,Male,White,Colorado Springs,CO,80919,AG,Advisor Generated,05I,Internet,11/18/2008,11/29/2010,ACG,ACW,Regular,AFR
+465120772,Male,White,Newport,NC,28570,AF,Air Force Web,GON,Get One Now Program,4/12/2006,3/29/2011,ACG,ACG,Regular,AFR
+465653675,Male,White,Spring,TX,77379,RG,Recruiter Generated,03A,Referral (AFAD Recruiter),11/20/2008,7/27/2011,ACG,ACG,Regular,AFR
+465978254,Male,White,Fayetville,AR,72701,AG,Advisor Generated,05I,Internet,11/20/2008,12/13/2010,ACG,ACG,ELead,AFR
+466198641,Male,Black or African American,Converse,TX,78109,IS,ISR,RFI,Influencer (Teacher/Parent/Friend),11/21/2008,4/26/2011,ACG,ACG,Regular,AFR
+466199222,Female,White,Anaheim,CA,92806,IS,ISR,02A,In-Service Counseling (Palace Front),11/21/2008,2/7/2011,ACG,ACG,Regular,AFR
+466203308,Male,Black or African American,Little Rock,AR,72205,IS,ISR,02A,In-Service Counseling (Palace Front),11/21/2008,2/22/2011,ACG,ACG,Regular,AFR
+467171123,Male,White,Newalla,OK,74857,NM,ASVAB List,RFI,Influencer (Teacher/Parent/Friend),11/22/2008,11/17/2010,ACG,ACG,Regular,AFR
+468128212,Male,White,Churchton,MD,20733,RG,Recruiter Generated,03D,Referral (Influencer),11/24/2008,4/27/2011,ACG,ACG,Regular,AFR
+468451888,Male,Native Hawaiian or Other Pacific Islander,Fairfield,CA,94533,AF,Air Force Web,05I,Internet,11/24/2008,1/17/2011,ACG,ACG,Regular,AFR
+469531978,Female,Black or African American,Wilmington,NC,28405,MC,Military.Com,05I,Internet,11/25/2008,3/31/2011,ACG,ACG,Regular,AFR
+470290208,Male,White,Durham,NC,27712,RG,Recruiter Generated,02B,In-Service Counseling (Palace Chase),11/26/2008,11/30/2010,ACG,ACG,Regular,AFR
+470427672,Male,Asian,San Diego,CA,92113,AG,Advisor Generated,03D,Referral (Influencer),11/26/2008,3/30/2011,ACG,ACG,Regular,AFR
+472099080,Female,White,Mansfield,OH,44907,RG,Recruiter Generated,05I,Internet,12/2/2008,6/30/2011,ACG,ACG,Regular,AFR
+474160038,Female,White,Navarre,FL,32566,RG,Recruiter Generated,GON,Get One Now Program,12/4/2008,8/22/2011,ACG,ACG,Regular,AFR
+474937672,Male,White,Grand Forks,ND,58204,PN,1-800#,RFI,Influencer (Teacher/Parent/Friend),9/26/2008,11/29/2010,ACG,ACG,Regular,AFR
+474938350,Male,White,Somerset,WI,54025,IS,ISR,02A,In-Service Counseling (Palace Front),12/5/2008,10/29/2010,ACG,ACG,Regular,AFR
+475619390,Female,Black or African American,Jacksonville,FL,32211,AG,Advisor Generated,03D,Referral (Influencer),12/5/2008,9/19/2011,ACW,ACW,ELead,AFR
+476762423,Male,White,Fort Walton Beach,FL,32548,RG,Recruiter Generated,03D,Referral (Influencer),12/8/2008,11/1/2010,ACG,ACW,Regular,AFR
+477214768,Male,White,Auburn,WA,98092,RG,Recruiter Generated,8,Recruiter Cold Contact,12/8/2008,5/21/2011,ACG,ACG,Regular,AFR
+477251434,Male,"""Asian,White""",Chino Hills,CA,91709,AF,Air Force Web,05I,Internet,12/8/2008,4/8/2011,ACG,ACG,ELead,AFR
+478310199,Male,White,Lantana,TX,76226,RG,Recruiter Generated,RGL,Cold Call,12/10/2008,10/3/2010,ACG,ACG,Regular,AFR
+480152878,Male,White,San Angelo,TX,76901,PN,1-800#,ONS,Search Engine,12/12/2008,11/29/2010,ACG,ACG,ELead,AFR
+480154029,Male,White,Cincinnati,OH,45211,RG,Recruiter Generated,EIM,IRR Muster,10/24/2008,6/9/2011,ACG,ACG,Regular,AFR
+480154120,Male,Black or African American,Clearfield,UT,84015,IS,ISR,02A,In-Service Counseling (Palace Front),12/12/2008,12/23/2010,ACG,ACG,Regular,AFR
+481806689,Male,White,Corpus Christi,TX,78414,RG,Recruiter Generated,GON,Get One Now Program,12/15/2008,11/15/2010,ACG,ACG,Regular,AFR
+482310663,Female,Black or African American,North Charleston,SC,29418,AF,Air Force Web,GON,Get One Now Program,12/15/2008,3/3/2011,ACG,ACG,Regular,AFR
+486851047,Male,Native Hawaiian or Other Pacific Islander,Fairchild Afb,WA,99011,IS,ISR,02A,In-Service Counseling (Palace Front),12/20/2008,4/29/2011,ACG,ACG,Regular,AFR
+486852843,Male,White,St Petersburg,FL,33711,RG,Recruiter Generated,EPE,Past Event,12/20/2008,7/20/2011,ACG,ACG,Regular,AFR
+486853514,Male,White,Claremont,CA,91711,IS,ISR,02A,In-Service Counseling (Palace Front),12/20/2008,2/8/2011,ACG,ACG,Regular,AFR
+486854783,Female,White,Lodi,CA,95240,IS,ISR,APC,Palace Chase,12/20/2008,5/3/2011,ACG,ACG,Regular,AFR
+487132408,Male,Black or African American,Atlanta,GA,30331,AG,Advisor Generated,05I,Internet,12/22/2008,12/22/2010,ACG,ACW,Regular,AFR
+490090035,Female,Black or African American,Raeford,NC,28376,MC,Military.Com,05I,Internet,12/29/2008,12/13/2010,ACD,ACW,Regular,AFR
+491999498,Male,White,La Mirada,CA,90638,AF,Air Force Web,05I,Internet,1/4/2009,4/20/2011,ACG,ACG,Regular,AFR
+492985285,Male,Asian,Vallejo,CA,94591,AF,Air Force Web,04C,HQ Generated Lead (AFOC),6/8/2007,6/7/2011,ACG,ACG,Regular,AFR
+492985393,Male,Black or African American,Littlerock,AR,72204,AF,Air Force Web,05I,Internet,1/5/2009,10/30/2010,ACG,ACG,Regular,AFR
+492987295,Male,White,New York,NY,10019,MC,Military.Com,05I,Internet,1/5/2009,9/27/2011,ACG,ACW,Regular,AFR
+494878011,Male,White,Redlands,CA,92373,RG,Recruiter Generated,1,Reserve Member Referral,1/7/2009,8/19/2011,ACG,ACG,Regular,AFR
+496055161,Male,White,Waldoboro,ME,4572,AG,Advisor Generated,03D,Referral (Influencer),1/9/2009,3/30/2011,ACG,ACW,Regular,AFR
+496672997,Male,White,Chandler,AZ,85249,IS,ISR,02A,In-Service Counseling (Palace Front),12/20/2008,6/1/2011,ACG,ACG,Regular,AFR
+496673590,Male,Asian,Lompoc,CA,93437,IS,ISR,02A,In-Service Counseling (Palace Front),12/5/2008,3/31/2011,ACG,ACG,Regular,AFR
+496674447,Male,White,Clinton,UT,84015,IS,ISR,02A,In-Service Counseling (Palace Front),1/10/2009,11/12/2010,ACG,ACG,Regular,AFR
+496675846,Male,White,Santa Maria,CA,93455,IS,ISR,02A,In-Service Counseling (Palace Front),1/10/2009,12/2/2010,ACG,ACG,Regular,AFR
+496677218,Male,White,Temecula,CA,92591,RW,Reserve Web,05I,Internet,7/25/2008,6/8/2011,ACG,ACG,Regular,AFR
+497770104,Male,Black or African American,Copley,OH,44321,RG,Recruiter Generated,8,Recruiter Cold Contact,1/12/2009,1/6/2011,ACG,ACW,Regular,AFR
+498131190,Male,White,Natchez,MS,39120,AF,Air Force Web,05I,Internet,1/12/2009,8/4/2011,ACG,ACG,Regular,AFR
+500100124,Female,Black or African American,Vallejo,CA,94591,RG,Recruiter Generated,03D,Referral (Influencer),1/14/2009,12/5/2010,ACG,ACG,Regular,AFR
+501886985,Female,Native Hawaiian or Other Pacific Islander,Ft Bragg,NC,28307,IS,ISR,02A,In-Service Counseling (Palace Front),1/16/2009,1/31/2011,ACG,ACG,Regular,AFR
+501889220,Male,White,Fayetteville,NC,28311,IS,ISR,02A,In-Service Counseling (Palace Front),1/16/2009,4/30/2011,ACG,ACG,ELead,AFR
+501893266,Male,White,Manor,TX,78653,PN,1-800#,ONS,Search Engine,1/16/2009,1/31/2011,ACG,ACG,ELead,AFR
+501894558,Male,White,St Charles,MO,63304,IS,ISR,02A,In-Service Counseling (Palace Front),1/16/2009,10/1/2010,ACG,ACG,Regular,AFR
+501896579,Male,Asian,Whiteman Afb,MO,65305,IS,ISR,02A,In-Service Counseling (Palace Front),1/16/2009,3/14/2011,ACG,ACG,Regular,AFR
+502914044,Male,White,Inianapolis,IN,46237,AF,Air Force Web,RFI,Influencer (Teacher/Parent/Friend),1/18/2009,12/27/2010,ACG,ACG,ELead,AFR
+503328666,Female,Black or African American,Fayetteville,NC,28306,AG,Advisor Generated,05I,Internet,1/20/2009,8/31/2011,ACG,ACG,Regular,AFR
+504219481,Male,White,Corpus Christi,TX,78412,AF,Air Force Web,05I,Internet,1/20/2009,12/18/2010,ACG,ACG,Regular,AFR
+506571076,Female,Black or African American,Apo Ap,AP,96326,IS,ISR,02A,In-Service Counseling (Palace Front),12/5/2008,10/5/2010,ACG,ACG,Regular,AFR
+506571788,Female,White,Cibolo,TX,78150,IS,ISR,RFI,Influencer (Teacher/Parent/Friend),1/23/2009,11/17/2010,ACG,ACG,Regular,AFR
+506757551,Male,White,Lonoke,AR,72086,RG,Recruiter Generated,02A,In-Service Counseling (Palace Front),1/23/2009,2/12/2011,ACG,ACG,Regular,AFR
+508057165,Male,Asian,Cocoa,FL,32927,RG,Recruiter Generated,03B,Referral (Other Service Recruiter),1/26/2009,5/19/2011,ACG,ACG,Regular,AFR
+509302071,Male,White,Weehawken,NJ,7086,RG,Recruiter Generated,05L,AFRC 800 Number,1/27/2009,12/16/2010,ACG,ACW,Regular,AFR
+509490863,Male,White,Parker,CO,80134,RG,Recruiter Generated,RFP,Perpetuation,1/27/2009,11/1/2010,ACG,ACG,Regular,AFR
+510066759,Male,White,Wake Village,TX,75501,MC,Military.Com,05I,Internet,1/27/2009,1/26/2011,ACG,ACG,Regular,AFR
+510494231,Male,White,Fort Walton Beach,FL,32547,AG,Advisor Generated,05I,Internet,1/28/2009,3/18/2011,ACG,ACW,Regular,AFR
+511949287,Female,Black or African American,Taylors,SC,29687,RG,Recruiter Generated,03D,Referral (Influencer),1/29/2009,8/23/2011,ACW,ACW,Regular,AFR
+512263880,Male,White,Wasilla,AK,99654,RG,Recruiter Generated,RGM,Mailout,1/30/2009,6/1/2011,ACG,ACG,Regular,AFR
+512266341,Male,White,Tucson,AZ,85706,IS,ISR,02A,In-Service Counseling (Palace Front),1/30/2009,7/22/2011,ACG,ACG,Regular,AFR
+513137086,Female,White,Deltona,FL,32725,RW,Reserve Web,05I,Internet,1/30/2009,10/13/2010,ACG,ACG,Regular,AFR
+513179267,Female,Black or African American,Lakeland,FL,33803,RG,Recruiter Generated,RFI,Influencer (Teacher/Parent/Friend),1/30/2009,7/28/2011,ACW,ACW,Regular,AFR
+513742030,Male,White,Akron,OH,44305,RG,Recruiter Generated,GON,Get One Now Program,1/31/2009,11/9/2010,ACG,ACG,Regular,AFR
+514851169,Female,White,Brighton,MA,2135,AG,Advisor Generated,05I,Internet,2/2/2009,5/25/2011,ACG,ACG,Regular,AFR
+515083428,Female,Black or African American,Marrietta,GA,30067,AG,Advisor Generated,05I,Internet,2/3/2009,5/16/2011,ACG,ACG,Regular,AFR
+515831170,Male,White,Alamogordo,NM,88310,RG,Recruiter Generated,02B,In-Service Counseling (Palace Chase),2/3/2009,11/24/2010,ACG,ACG,Regular,AFR
+516011213,Male,White,Quincy,MA,2170,AG,Advisor Generated,05I,Internet,2/3/2009,7/15/2011,ACG,ACG,Regular,AFR
+516383208,Male,Black or African American,Montgomery,AL,36106,RG,Recruiter Generated,8,Recruiter Cold Contact,2/4/2009,4/30/2011,ACG,ACG,Regular,AFR
+516640991,Female,Black or African American,Lancaster,PA,17603,RG,Recruiter Generated,05J,Telephone Directory (paid ad),2/4/2009,10/13/2010,ACG,ACG,Regular,AFR
+517135945,Female,White,Philadelphia,PA,19154,AG,Advisor Generated,05I,Internet,2/4/2009,10/15/2010,ACG,ACG,Regular,AFR
+517233438,Female,White,San Angelo,TX,76903,MC,Military.Com,05I,Internet,2/4/2009,8/25/2011,ACG,ACW,Regular,AFR
+517291058,Male,White,Gulf Breeze,FL,32563,RG,Recruiter Generated,1,Reserve Member Referral,2/5/2009,9/16/2011,ACG,ACG,Regular,AFR
+517923885,Male,White,Cohoes,NY,12047,RG,Recruiter Generated,03D,Referral (Influencer),2/5/2009,1/28/2011,ACG,ACW,Regular,AFR
+518395969,Female,Black or African American,Holloman Afb,NM,88330,IS,ISR,02A,In-Service Counseling (Palace Front),2/6/2009,4/13/2011,ACG,ACG,Regular,AFR
+518398540,Male,White,Alexandria,VA,20304,IS,ISR,02A,In-Service Counseling (Palace Front),2/6/2009,10/15/2010,ACG,ACG,Regular,AFR
+521069969,Female,White,Chicopee,MA,1013,RG,Recruiter Generated,03D,Referral (Influencer),2/10/2009,2/10/2011,ACG,ACG,Regular,AFR
+522070724,Male,White,Oklahoma City,OK,73119,GO,Get One,1,Reserve Member Referral,12/2/2008,10/3/2010,ACW,ACW,Regular,AFR
+522079781,Male,White,Auburn,AL,36830,AG,Advisor Generated,1,Reserve Member Referral,2/6/2009,2/16/2011,ACG,ACG,Regular,AFR
+522080291,Male,White,Homestead,FL,33035,GO,Get One,1,Reserve Member Referral,2/9/2009,5/14/2011,ACG,ACG,Regular,AFR
+523347107,Male,White,Abilene,TX,79605,RG,Recruiter Generated,02B,In-Service Counseling (Palace Chase),2/12/2009,8/10/2011,ACG,ACG,Regular,AFR
+524329894,Male,Native Hawaiian or Other Pacific Islander,Denton,TX,76210,IS,ISR,02A,In-Service Counseling (Palace Front),2/13/2009,10/29/2010,ACG,ACG,Regular,AFR
+524569977,Male,Black or African American,Fayetteville,NC,28304,RG,Recruiter Generated,8,Recruiter Cold Contact,2/13/2009,7/13/2011,ACD,ACW,Regular,AFR
+525837787,Male,Black or African American,Ravenna,OH,44266,RG,Recruiter Generated,8,Recruiter Cold Contact,2/16/2009,12/8/2010,ACG,ACG,Regular,AFR
+525841174,Female,White,Conneaut,OH,44030,RW,Reserve Web,05I,Internet,2/16/2009,10/3/2010,ACG,ACG,Regular,AFR
+525919658,Female,White,Victoria,TX,77905,AW,AFReserve.com,RFI,Influencer (Teacher/Parent/Friend),2/16/2009,10/12/2010,ACG,ACG,Regular,AFR
+527066883,Female,White,North Las Vegas,NV,89031,AG,Advisor Generated,05I,Internet,2/17/2009,4/18/2011,ACG,ACG,Regular,AFR
+530138030,Male,"""Asian,White""",Vine Grove,KY,40175,IS,ISR,02A,In-Service Counseling (Palace Front),2/20/2009,6/9/2011,ACG,ACG,Regular,AFR
+530138647,Female,Black or African American,Barksdale Afb,LA,71110,IS,ISR,PPA,ART,2/20/2009,4/14/2011,ACG,ACG,Regular,AFR
+530141361,Female,White,Holly Springs,NC,27540,IS,ISR,AIA,ISR Assign from IRR,2/20/2009,12/8/2010,ACG,ACG,Regular,AFR
+530142418,Male,White,Arlington,TX,76012,IS,ISR,02A,In-Service Counseling (Palace Front),2/20/2009,4/15/2011,ACG,ACG,Regular,AFR
+532081404,Male,White,Rolling Meadows,IL,60008,RG,Recruiter Generated,RGM,Mailout,2/23/2009,3/29/2011,ACG,ACW,Regular,AFR
+536257592,Male,White,Merritt Island,FL,32953,IS,ISR,GON,Get One Now Program,2/27/2009,9/29/2011,ACG,ACG,Regular,AFR
+536258873,Male,Black or African American,Lompoc,CA,93437,IS,ISR,02A,In-Service Counseling (Palace Front),2/27/2009,10/26/2010,ACG,ACG,Regular,AFR
+536259895,Male,White,Midland,TX,79701,IS,ISR,02A,In-Service Counseling (Palace Front),2/20/2009,2/16/2011,ACG,ACG,Regular,AFR
+538448996,Male,White,Pawtucket,RI,2861,RG,Recruiter Generated,05I,Internet,3/2/2009,1/26/2011,ACG,ACW,Regular,AFR
+539025339,Male,White,Laquillo,PR,773,RG,Recruiter Generated,8,Recruiter Cold Contact,3/3/2009,4/28/2011,ACG,ACG,Regular,AFR
+539043435,Female,White,Holyoke,MA,1040,RG,Recruiter Generated,8,Recruiter Cold Contact,3/3/2009,10/6/2010,ACG,ACG,Regular,AFR
+539080087,Female,Black or African American,College Park,GA,30349,PN,1-800#,ONS,Search Engine,3/3/2009,7/15/2011,ACG,ACG,ELead,AFR
+540608691,Male,White,Des Moines,WA,98198,RG,Recruiter Generated,11,Perpetuation,3/4/2009,11/1/2010,ACG,ACG,Regular,AFR
+540843516,Male,White,Tucson,AZ,85745,RG,Recruiter Generated,07C,RGM (High School List),3/4/2009,7/14/2011,ACG,ACG,Regular,AFR
+541797266,Male,White,Layton,UT,84041,RG,Recruiter Generated,02B,In-Service Counseling (Palace Chase),3/5/2009,7/20/2011,ACG,ACG,Regular,AFR
+542021390,Female,Black or African American,Virginia Beach,VA,23456,IS,ISR,02A,In-Service Counseling (Palace Front),3/6/2009,8/31/2011,ACG,ACG,Regular,AFR
+542234883,Male,White,Cochran,GA,31014,RG,Recruiter Generated,RFI,Influencer (Teacher/Parent/Friend),3/6/2009,1/14/2011,ACG,ACG,Regular,AFR
+544953597,Male,White,San Antonio,TX,78240,RG,Recruiter Generated,11,Perpetuation,3/10/2009,4/7/2011,ACG,ACG,Regular,AFR
+544977813,Male,Asian,St Augustine,FL,32095,RG,Recruiter Generated,04C,HQ Generated Lead (AFOC),3/10/2009,1/20/2011,ACG,ACG,Regular,AFR
+547725841,Male,American Indian/Alaska Native,Rockford,TN,37853,RG,Recruiter Generated,RFI,Influencer (Teacher/Parent/Friend),3/12/2009,2/22/2011,ACG,ACG,Regular,AFR
+547950625,Male,White,Dover,DE,19901,IS,ISR,02A,In-Service Counseling (Palace Front),3/13/2009,7/29/2011,ACG,ACG,Regular,AFR
+547950690,Female,White,Beavercreek,OH,45431,IS,ISR,02A,In-Service Counseling (Palace Front),3/6/2009,1/20/2011,ACG,ACG,Regular,AFR
+547954145,Female,White,Shreveport,LA,71104,RG,Recruiter Generated,RFI,Influencer (Teacher/Parent/Friend),3/13/2009,1/11/2011,ACG,ACG,Regular,AFR
+547954859,Male,White,Delray Beach,FL,33446,IS,ISR,02A,In-Service Counseling (Palace Front),3/13/2009,1/31/2011,ACG,ACG,Regular,AFR
+547958239,Female,White,Fayetteville,NC,28304,MC,Military.Com,05I,Internet,3/12/2009,6/23/2011,ACW,ACW,Regular,AFR
+548768660,Male,White,Granby,CO,80446,RG,Recruiter Generated,05L,AFRC 800 Number,3/13/2009,6/14/2011,ACG,ACG,Regular,AFR
+549514819,Female,Black or African American,Columbus,OH,43205,RG,Recruiter Generated,03A,Referral (AFAD Recruiter),3/16/2009,8/18/2011,ACW,ACW,Regular,AFR
+549967222,Male,White,Plaquemines,LA,70764,RG,Recruiter Generated,GON,Get One Now Program,3/17/2009,12/29/2010,ACG,ACG,Regular,AFR
+552686395,Male,Black or African American,Corpus Christi,TX,78412,RG,Recruiter Generated,12,School Visit,3/18/2009,4/13/2011,ACG,ACG,Regular,AFR
+553065962,Male,White,Goodyear,AZ,85395,RG,Recruiter Generated,03D,Referral (Influencer),3/18/2009,12/30/2010,ACG,ACG,Regular,AFR
+555079981,Male,White,Pensacola,FL,32514,RG,Recruiter Generated,GON,Get One Now Program,3/19/2009,3/11/2011,ACG,ACG,Regular,AFR
+556123172,Male,White,Lubbock,TX,79411,IS,ISR,EIM,IRR Muster,3/20/2009,8/25/2011,ACG,ACG,Regular,AFR
+556125151,Female,White,Monument,CO,80132,IS,ISR,02A,In-Service Counseling (Palace Front),2/20/2009,10/26/2010,ACG,ACG,Regular,AFR
+556377222,Female,Black or African American,Prattville,AL,36066,AG,Advisor Generated,05I,Internet,3/20/2009,7/21/2011,ACG,ACG,Regular,AFR
+556829411,Male,White,Elkhorn,NE,68022,RG,Recruiter Generated,03C,Referral (ARPC),3/20/2009,1/14/2011,ACG,ACG,Regular,AFR
+558414022,Male,White,Gainesville,FL,32608,RG,Recruiter Generated,12,School Visit,3/23/2009,7/18/2011,ACG,ACG,Regular,AFR
+559672551,Male,White,Lancaster,NY,14086,AG,Advisor Generated,05I,Internet,3/24/2009,1/20/2011,ACG,ACG,Regular,AFR
+560495041,Male,White,Raymore,MO,64083,RG,Recruiter Generated,13,COI Event,3/25/2009,11/24/2010,ACG,ACG,Regular,AFR
+562499824,Male,White,Alexandria,VA,22312,IS,ISR,02A,In-Service Counseling (Palace Front),2/6/2009,12/2/2010,ACG,ACG,Regular,AFR
+563747877,Female,White,Kalispell,MT,59901,RG,Recruiter Generated,04B,HQ Generated Lead (Mailout),3/28/2009,12/28/2010,ACG,ACG,Regular,AFR
+563894898,Male,White,San Jose,CA,95124,AF,Air Force Web,05I,Internet,3/28/2009,12/17/2010,ACG,ACG,Regular,AFR
+565650620,Male,Black or African American,Bellwood,IL,60104,RG,Recruiter Generated,RFI,Influencer (Teacher/Parent/Friend),3/31/2009,12/15/2010,ACG,ACG,Regular,AFR
+565782766,Male,White,Keithville,LA,71047,RG,Recruiter Generated,11,Perpetuation,3/31/2009,11/16/2010,ACG,ACG,Regular,AFR
+569100740,Female,Asian,Gibson,LA,70356,PN,1-800#,ONS,Search Engine,4/3/2009,12/6/2010,ACG,ACG,ELead,AFR
+569403853,Male,Black or African American,Herndon,VA,20171,AG,Advisor Generated,05I,Internet,4/3/2009,4/29/2011,ACG,ACG,Regular,AFR
+569811611,Male,Black or African American,Philadelphia,PA,19111,AG,Advisor Generated,05D,Magazine,4/3/2009,12/30/2010,ACG,ACW,Regular,AFR
+572597705,Male,White,Springfield,MO,65802,RG,Recruiter Generated,03D,Referral (Influencer),4/8/2009,1/7/2011,ACG,ACG,Regular,AFR
+573094951,Male,White,Spofford,NH,3462,AG,Advisor Generated,05I,Internet,4/8/2009,12/9/2010,ACG,ACW,Regular,AFR
+573255336,Male,White,Clinton,UT,84015,CC,Reserve Call Center,05L,AFRC 800 Number,4/8/2009,11/4/2010,ACG,ACG,Regular,AFR
+574290583,Male,White,Sprindale,AR,72762,IS,ISR,02A,In-Service Counseling (Palace Front),4/3/2009,2/28/2011,ACG,ACG,Regular,AFR
+574291165,Female,Asian,Falls Church,VA,22043,PN,1-800#,ONS,Search Engine,4/10/2009,11/18/2010,ACG,ACG,Regular,AFR
+574292944,Male,White,North Las Vegas,NV,89168,IS,ISR,02A,In-Service Counseling (Palace Front),4/10/2009,11/29/2010,ACG,ACG,Regular,AFR
+575580305,Male,White,Eufaula,OK,74432,RG,Recruiter Generated,11,Perpetuation,4/13/2009,7/27/2011,ACG,ACG,Regular,AFR
+576540095,Male,White,Chula Vista,CA,91910,AF,Air Force Web,05I,Internet,4/11/2009,12/30/2010,ACG,ACG,Regular,AFR
+576540535,Male,White,Des Moines,WA,98198,AF,Air Force Web,05I,Internet,4/11/2009,6/30/2011,ACG,ACG,ELead,AFR
+577117252,Male,White,Little River,SC,29566,AW,AFReserve.com,ONS,Search Engine,4/14/2009,10/1/2010,ACG,ACG,Regular,AFR
+577444324,Male,White,Susuin City,CA,94533,RG,Recruiter Generated,GON,Get One Now Program,4/14/2009,9/30/2011,ACG,ACG,Regular,AFR
+578883221,Female,Native Hawaiian or Other Pacfic Islander White,Fountain,CO,80817,AF,Air Force Web,05I,Internet,4/15/2009,10/13/2010,ACG,ACG,Regular,AFR
+578885171,Male,White,New York,NY,10016,PN,1-800#,ONS,Search Engine,4/15/2009,4/22/2011,ACG,ACW,ELead,AFR
+579303716,Female,White,Chicopee,MA,1020,RG,Recruiter Generated,RFI,Influencer (Teacher/Parent/Friend),4/16/2009,2/28/2011,ACD,ACW,Regular,AFR
+579942002,Male,White,Hardwick,NJ,7825,RG,Recruiter Generated,03D,Referral (Influencer),4/16/2009,1/26/2011,ACG,ACG,Regular,AFR
+579970319,Female,Black or African American,Fuquay Varina,NC,9464,IS,ISR,02A,In-Service Counseling (Palace Front),4/17/2009,6/20/2011,ACG,ACG,Regular,AFR
+579971909,Female,Black or African American,Newport News,VA,23602,AW,AFReserve.com,ONS,Search Engine,3/27/2009,6/30/2011,ACG,ACG,Regular,AFR
+579974378,Female,Black or African American,Franklin,WV,26807,IS,ISR,02A,In-Service Counseling (Palace Front),4/17/2009,4/13/2011,ACG,ACG,Regular,AFR
+580497920,Female,White,Aliso Viejo,CA,92656,AG,Advisor Generated,03D,Referral (Influencer),4/17/2009,7/14/2011,ACG,ACG,Regular,AFR
+581215400,Female,White,Hanscom Afb,MA,1731,RG,Recruiter Generated,02A,In-Service Counseling (Palace Front),4/20/2009,4/28/2011,ACG,ACG,Regular,AFR
+581299041,Female,White,Stoughton,MA,2072,AG,Advisor Generated,05I,Internet,4/20/2009,3/30/2011,ACG,ACG,ELead,AFR
+582276777,Male,Black or African American,Philadelphia,PA,19135,RG,Recruiter Generated,ONS,Search Engine,4/20/2009,7/8/2011,ACG,ACW,Regular,AFR
+582917172,Female,White,Fort Worth,TX,76108,RG,Recruiter Generated,03D,Referral (Influencer),4/21/2009,7/29/2011,ACG,ACG,Regular,AFR
+583453675,Male,White,Pittsboro,NC,27312,MC,Military.Com,05I,Internet,4/21/2009,5/20/2011,ACG,ACG,Regular,AFR
+583455085,Male,White,Las Vegas,NV,89130,MC,Military.Com,05I,Internet,4/21/2009,3/23/2011,ACG,ACW,Regular,AFR
+583821927,Female,Black or African American,Newark,DE,19713,IR,IRR List,07A,RGM (IRR Roster),10/12/2007,4/22/2011,ACG,ACG,Regular,AFR
+584170253,Female,"""Black or African American, White""",Las Vegas,NV,89104,AG,Advisor Generated,03C,Referral (ARPC),4/22/2009,5/30/2011,ACG,ACG,ELead,AFR
+584496974,Male,White,Garland,TX,75043,AG,Advisor Generated,03D,Referral (Influencer),4/22/2009,10/29/2010,ACG,ACG,Regular,AFR
+584602978,Male,White,Sacramento,CA,95827,AW,AFReserve.com,ONS,Search Engine,4/20/2010,6/20/2011,ACG,ACG,Regular,AFR
+584952181,Male,White,Mckeeseport,PA,15132,AG,Advisor Generated,05I,Internet,4/23/2009,8/19/2011,ACW,ACW,Regular,AFR
+585027788,Female,"""American Indian/Alaska Native, White""",Sylmar,CA,91342,IR,IRR List,07A,RGM (IRR Roster),1/14/2009,12/21/2010,ACG,ACG,Regular,AFR
+585220881,Male,White,Reading,MA,1867,AG,Advisor Generated,03D,Referral (Influencer),4/23/2009,10/29/2010,ACG,ACG,Regular,AFR
+586693508,Male,White,Henderson,NV,89074,RW,Reserve Web,05I,Internet,4/24/2009,11/30/2010,ACG,ACG,Regular,AFR
+586792492,Male,White,Sun Valley,CA,91352,AG,Advisor Generated,03D,Referral (Influencer),4/25/2009,2/3/2011,ACG,ACG,Regular,AFR
+587692968,Male,White,Shalimar,FL,32579,AG,Advisor Generated,05I,Internet,4/27/2009,10/1/2010,ACG,ACG,Regular,AFR
+587774436,Female,White,Dayton,OH,45404,IR,IRR List,07A,RGM (IRR Roster),1/14/2009,12/27/2010,ACG,ACG,Regular,AFR
+587822563,Male,White,San Antonio,TX,78245,RG,Recruiter Generated,12,School Visit,4/27/2009,10/8/2010,ACG,ACG,Regular,AFR
+590305158,Male,"""American Indian/Alaska Native,Black or African American ,White""",Dover,DE,19901,RG,Recruiter Generated,02B,In-Service Counseling (Palace Chase),4/29/2009,8/30/2011,ACG,ACG,Regular,AFR
+591645424,Female,Black or African American,Virginia Beach,VA,23467,IR,IRR List,07A,RGM (IRR Roster),1/14/2009,6/24/2011,ACG,ACG,Regular,AFR
+592584267,Male,White,Apo,AE,9464,IS,ISR,02A,In-Service Counseling (Palace Front),5/1/2009,11/4/2010,ACG,ACG,Regular,AFR
+593060173,Male,White,Brooklyn,NY,11206,RG,Recruiter Generated,1,Reserve Member Referral,5/1/2009,4/7/2011,ACG,ACG,Regular,AFR
+594515075,Female,White,Longmont,CO,80504,RG,Recruiter Generated,06B,Placement Program (College ROTC),5/4/2009,8/12/2011,ACG,ACG,Regular,AFR
+595012564,Male,White,Lyons,GA,30436,RG,Recruiter Generated,10B,Air Show (Jet Car),5/4/2009,12/22/2010,ACG,ACG,Regular,AFR
+595173040,Female,White,Philadelphia,PA,19152,AG,Advisor Generated,05I,Internet,5/4/2009,10/6/2010,ACG,ACG,Regular,AFR
+595444545,Male,White,Kinston,NC,28504,RW,Reserve Web,05I,Internet,5/5/2009,12/3/2010,ACG,ACG,Regular,AFR
+596673099,Male,White,Bear,DE,19701,RG,Recruiter Generated,1,Reserve Member Referral,5/6/2009,11/5/2010,ACG,ACG,Regular,AFR
+596703552,Female,White,Amesbury,MA,1913,RG,Recruiter Generated,03A,Referral (AFAD Recruiter),5/6/2009,1/6/2011,ACG,ACG,Regular,AFR
+597192760,Male,White,La Verne,CA,91750,RG,Recruiter Generated,8,Recruiter Cold Contact,5/6/2009,3/25/2011,ACG,ACG,Regular,AFR
+597433979,Male,Black or African American,Los Angeles,CA,90044,RG,Recruiter Generated,8,Recruiter Cold Contact,5/6/2009,4/12/2011,ACG,ACG,Regular,AFR
+597571101,Male,White,Pawnee,OK,74058,AG,Advisor Generated,05I,Internet,5/6/2009,8/18/2011,ACG,ACG,ELead,AFR
+598659729,Male,White,Ft Worth,TX,76137,RG,Recruiter Generated,12,School Visit,5/7/2009,10/1/2010,ACG,ACW,Regular,AFR
+598789793,Male,Black or African American,Richmond,VA,23832,RW,Reserve Web,05I,Internet,5/7/2009,5/31/2011,ACG,ACG,Regular,AFR
+599158313,Male,Black or African American,Fayetteville,AR,72704,IS,ISR,02A,In-Service Counseling (Palace Front),5/8/2009,5/4/2011,ACG,ACG,ELead,AFR
+599162236,Male,White,Mize,MS,39116,MC,Military.Com,05I,Internet,5/7/2009,12/22/2010,ACW,ACW,ELead,AFR
+600139618,Male,White,Beaverton,OR,97007,AG,Advisor Generated,05I,Internet,5/8/2009,1/28/2011,ACG,ACG,Regular,AFR
+600346620,Male,White,Leeds,MA,1053,CC,Reserve Call Center,05L,AFRC 800 Number,5/8/2009,3/16/2011,ACG,ACG,Regular,AFR
+600721668,Male,White,Tampa,FL,33624,RG,Recruiter Generated,03A,Referral (AFAD Recruiter),5/11/2009,3/23/2011,ACG,ACG,Regular,AFR
+601735490,Male,Black or African American,Colorado Springs,CO,80911,RW,Reserve Web,05I,Internet,5/11/2009,12/30/2010,ACG,ACG,ELead,AFR
+601792289,Male,White,Coppell,TX,75019,AG,Advisor Generated,05I,Internet,5/11/2009,5/13/2011,ACG,ACG,Regular,AFR
+602314848,Male,White,Centralia,MO,65240,PN,1-800#,ONS,Search Engine,5/12/2009,10/6/2010,ACG,ACG,Regular,AFR
+604876953,Male,White,West Winfield,NY,13491,CC,Reserve Call Center,05L,AFRC 800 Number,5/13/2009,2/18/2011,ACG,ACG,Regular,AFR
+604877014,Female,White,Fayetteville,NC,28314,AW,AFReserve.com,RFI,Influencer (Teacher/Parent/Friend),5/13/2009,3/1/2011,ACD,ACW,Regular,AFR
+605767658,Male,White,Ellensburg,WA,98926,RG,Recruiter Generated,02B,In-Service Counseling (Palace Chase),5/14/2009,12/24/2010,ACG,ACG,Regular,AFR
+605811592,Male,White,Tulsa,OK,74133,RG,Recruiter Generated,03A,Referral (AFAD Recruiter),5/14/2009,6/8/2011,ACG,ACG,Regular,AFR
+606154190,Male,White,Grand Forks,ND,58201,IS,ISR,02A,In-Service Counseling (Palace Front),5/15/2009,7/20/2011,ACG,ACG,Regular,AFR
+606154586,Male,Black or African American,Gulf Breeze,FL,32563,IS,ISR,GON,Get One Now Program,5/15/2009,9/23/2011,ACG,ACG,Regular,AFR
+606155341,Male,White,Maplewood,MN,55119,IS,ISR,RFI,Influencer (Teacher/Parent/Friend),5/8/2009,11/30/2010,ACG,ACG,Regular,AFR
+606159181,Male,White,Bremerton,WA,98337,MC,Military.Com,05I,Internet,5/14/2009,3/16/2011,ACG,ACG,Regular,AFR
+606159901,Female,Black or African American,Elizabeth City,NC,27909,MC,Military.Com,05I,Internet,5/14/2009,5/25/2011,ACG,ACG,ELead,AFR
+606176202,Female,White,Conway Springs,KS,67031,RG,Recruiter Generated,EIM,IRR Muster,5/15/2009,10/17/2010,ACG,ACG,Regular,AFR
+607600346,Male,Black or African American,Monroe,LA,71201,AN,Armed Forces Network,RFI,Influencer (Teacher/Parent/Friend),5/16/2009,12/15/2010,ACG,ACG,Regular,AFR
+608033425,Male,White,Arlington,VA,22203,RW,Reserve Web,05I,Internet,5/18/2009,7/28/2011,ACG,ACG,ELead,AFR
+608125383,Male,Native Hawaiian or Other Pacific Islander,Las Vegas,NV,89113,RG,Recruiter Generated,03D,Referral (Influencer),5/18/2009,5/16/2011,ACG,ACG,Regular,AFR
+608381383,Male,White,Oklahoma City,OK,73130,RG,Recruiter Generated,02B,In-Service Counseling (Palace Chase),5/18/2009,10/4/2010,ACG,ACG,Regular,AFR
+610122067,Male,White,Lewisville,TX,75067,IR,IRR List,07A,RGM (IRR Roster),5/19/2009,12/21/2010,ACG,ACG,Regular,AFR
+613993629,Female,White,Grand Junction,CO,81501,RG,Recruiter Generated,RFI,Influencer (Teacher/Parent/Friend),5/21/2009,6/8/2011,ACG,ACG,Regular,AFR
+614421543,Female,White,Holly Ridge,NC,28445,IS,ISR,02A,In-Service Counseling (Palace Front),4/17/2009,10/29/2010,ACG,ACG,Regular,AFR
+614422831,Male,White,Hickam Afb,HI,96853,IS,ISR,02A,In-Service Counseling (Palace Front),5/22/2009,11/15/2010,ACG,ACG,Regular,AFR
+615098599,Male,White,Homestead,FL,33032,RG,Recruiter Generated,RGL,Cold Call,5/22/2009,9/26/2011,ACG,ACW,Regular,AFR
+615231248,Male,White,Biloxi,MS,39532,MC,Military.Com,05I,Internet,5/23/2009,12/2/2010,ACG,ACG,Regular,AFR
+615231438,Female,White,West Sacramento,CA,95691,PN,1-800#,GON,Get One Now Program,5/23/2009,2/4/2011,ACG,ACG,Regular,AFR
+615285247,Male,White,Olmsted Falls,OH,44138,CC,Reserve Call Center,05L,AFRC 800 Number,5/24/2009,8/18/2011,ACG,ACG,Regular,AFR
+615286927,Male,White,Erie,PA,16510,MC,Military.Com,05I,Internet,5/24/2009,8/18/2011,ACG,ACW,Regular,AFR
+617101191,Female,White,Roseville,CA,95678,MC,Military.Com,05I,Internet,5/26/2009,11/1/2010,ACG,ACG,Regular,AFR
+617102188,Male,Asian,San Diego,CA,92108,PN,1-800#,ONS,Search Engine,5/26/2009,5/21/2011,ACG,ACG,ELead,AFR
+618893215,Male,White,Alexis,NC,28006,AG,Advisor Generated,05I,Internet,5/28/2009,10/29/2010,ACG,ACG,Regular,AFR
+619830914,Male,Black or African American,Baltimore,MD,21212,IS,ISR,02A,In-Service Counseling (Palace Front),5/1/2009,8/31/2011,ACG,ACG,Regular,AFR
+619978948,Male,Black or African American,Schertz,TX,78154,AG,Advisor Generated,05I,Internet,5/29/2009,3/30/2011,ACG,ACG,Regular,AFR
+620297419,Male,White,Demotte,IN,46310,RW,Reserve Web,05I,Internet,5/29/2009,5/31/2011,ACG,ACG,Regular,AFR
+622104096,Male,White,Cheektowaga,NY,14227,RG,Recruiter Generated,13,COI Event,6/2/2009,4/13/2011,ACG,ACG,Regular,AFR
+622837158,Male,Black or African American,Sandersville,GA,31082,AG,Advisor Generated,03A,Referral (AFAD Recruiter),6/2/2009,1/28/2011,ACG,ACG,Regular,AFR
+623101656,Male,Black or African American,Sanford,NC,27332,MC,Military.Com,05I,Internet,6/2/2009,3/24/2011,ACG,ACG,Regular,AFR
+623102777,Male,White,Concord,CA,94520,AN,Armed Forces Network,RFA,ADAF Recruiter,6/1/2009,3/21/2011,ACG,ACW,Regular,AFR
+623966199,Female,White,Austin,AR,72007,RG,Recruiter Generated,05G,"Outdoor (Billboard, Park Bench, etc)",6/3/2009,6/28/2011,ACG,ACG,Regular,AFR
+624583435,Male,White,Las Vegas,NV,89131,RG,Recruiter Generated,03D,Referral (Influencer),6/4/2009,3/30/2011,ACG,ACG,Regular,AFR
+624947423,Male,White,Valrico,FL,33594,RG,Recruiter Generated,03D,Referral (Influencer),6/4/2009,7/14/2011,ACG,ACG,Regular,AFR
+625403725,Female,Black or African American,Upper Marlboro,MD,20774,PN,1-800#,ONS,Search Engine,6/5/2009,4/25/2011,ACG,ACG,ELead,AFR
+625405576,Female,Black or African American,Jacksonville,NC,28540,IS,ISR,02A,In-Service Counseling (Palace Front),5/29/2009,11/30/2010,ACG,ACG,Regular,AFR
+625405718,Male,White,Altus,OK,73523,IS,ISR,02A,In-Service Counseling (Palace Front),12/12/2008,7/30/2011,ACG,ACG,Regular,AFR
+625408524,Female,Black or African American,Austell,GA,30168,PN,1-800#,RFI,Influencer (Teacher/Parent/Friend),6/4/2009,4/8/2011,ACG,ACG,ELead,AFR
+626160895,Female,"""Black or African American, White""",San Jacinto,CA,92583,NM,ASVAB List,04D,HQ Generated Lead (ASVAB),3/17/2007,5/31/2011,ACG,ACG,Regular,AFR
+627030226,Female,White,San Antonio,TX,78254,AF,Air Force Web,05I,Internet,6/7/2009,5/27/2011,ACG,ACG,Regular,AFR
+627032036,Female,White,Coraopolis,PA,15108,MC,Military.Com,05I,Internet,6/7/2009,11/23/2010,ACG,ACG,Regular,AFR
+627546492,Male,White,Saratoga Springs,NY,12866,AG,Advisor Generated,05I,Internet,6/8/2009,8/22/2011,ACG,ACG,Regular,AFR
+628361467,Male,White,Antioch,CA,94509,MC,Military.Com,GON,Get One Now Program,6/8/2009,9/10/2011,ACG,ACW,Regular,AFR
+628391175,Male,White,Dover,DE,19901,RG,Recruiter Generated,11,Perpetuation,6/9/2009,5/12/2011,ACG,ACG,Regular,AFR
+628895207,Male,White,Midwest City,OK,73110,RG,Recruiter Generated,02B,In-Service Counseling (Palace Chase),6/9/2009,5/1/2011,ACG,ACG,Regular,AFR
+630399122,Female,White,Orlando,FL,32837,IR,IRR List,07A,RGM (IRR Roster),4/13/2005,10/1/2010,ACG,ACG,Regular,AFR
+631900863,Male,White,Lompoc,CA,93437,PN,1-800#,ONS,Search Engine,6/11/2009,1/27/2011,ACG,ACG,Regular,AFR
+632448568,Male,White,Oklahoma City,OK,73150,IS,ISR,02A,In-Service Counseling (Palace Front),6/12/2009,10/25/2010,ACG,ACG,Regular,AFR
+632449421,Male,White,Midwest City,OK,73110,IS,ISR,GON,Get One Now Program,5/1/2009,6/29/2011,ACG,ACG,Regular,AFR
+632451258,Male,White,Mesa,AZ,85207,IS,ISR,02A,In-Service Counseling (Palace Front),6/5/2009,6/17/2011,ACG,ACG,Regular,AFR
+632451684,Male,White,Roseville,CA,94747,IS,ISR,02A,In-Service Counseling (Palace Front),6/12/2009,12/29/2010,ACG,ACG,Regular,AFR
+633396597,Male,White,Olvehurst,CA,95961,PN,1-800#,ONS,Search Engine,6/12/2009,3/4/2011,ACG,ACG,Regular,AFR
+633600385,Male,Black or African American,Baltimore,MD,21215,AF,Air Force Web,05I,Internet,6/13/2009,11/2/2010,ACG,ACG,Regular,AFR
+633675263,Male,White,Naples,FL,34113,AF,Air Force Web,05I,Internet,6/14/2009,3/25/2011,ACG,ACG,Regular,AFR
+633678303,Female,American Indian/Alaska Native,Sylmar,CA,91342,PN,1-800#,05I,Internet,6/14/2009,4/26/2011,ACG,ACG,ELead,AFR
+633920948,Male,White,Provo,UT,84604,RG,Recruiter Generated,03D,Referral (Influencer),6/15/2009,1/7/2011,ACG,ACG,Regular,AFR
+634865471,Male,White,San Antonio,TX,78228,RG,Recruiter Generated,RFI,Influencer (Teacher/Parent/Friend),6/15/2009,4/7/2011,ACG,ACG,Regular,AFR
+634915370,Male,Black or African American,Raleigh,NC,27613,RW,Reserve Web,05I,Internet,6/15/2009,5/27/2011,ACG,ACG,Regular,AFR
+635747349,Male,White,Spokane,WA,99203,RG,Recruiter Generated,02B,In-Service Counseling (Palace Chase),6/16/2009,10/4/2010,ACG,ACG,Regular,AFR
+635828845,Male,Black or African American,Winona,MS,38967,AW,AFReserve.com,RFI,Influencer (Teacher/Parent/Friend),6/16/2009,10/15/2010,ACG,ACG,Regular,AFR
+636278440,Male,Black or African American,Baton Rouge,LA,70816,MC,Military.Com,05I,Internet,6/16/2009,8/31/2011,ACG,ACG,ELead,AFR
+636280060,Female,Black or African American,Wilson,NC,27896,MC,Military.Com,05I,Internet,6/16/2009,5/17/2011,ACG,ACG,Regular,AFR
+638646395,Male,White,Sierra Vista,AZ,85650,RG,Recruiter Generated,LIR,IRR Roster,6/19/2009,9/14/2011,ACG,ACG,Regular,AFR
+638646991,Male,White,Alexandria,VA,22309,AW,AFReserve.com,PSP,Past Placement,5/9/2010,10/6/2010,ACG,ACG,Regular,AFR
+638648971,Male,Black or African American,Winterville,NC,28590,NW,Next Wave,05I,Internet,6/2/2008,6/30/2011,ACG,ACW,Regular,AFR
+639517348,Female,White,Colorado Springs,CO,80910,RG,Recruiter Generated,03A,Referral (AFAD Recruiter),6/19/2009,7/8/2011,ACG,ACG,Regular,AFR
+639602728,Male,White,Litchfield Park,AZ,85340,RG,Recruiter Generated,05G,"Outdoor (Billboard, Park Bench, etc)",6/19/2009,9/14/2011,ACG,ACG,Regular,AFR
+639944328,Male,White,Lincoln,RI,2865,MC,Military.Com,05I,Internet,6/19/2009,4/10/2011,ACG,ACG,Regular,AFR
+639944768,Male,Black or African American,Ridgeland,SC,29936,MC,Military.Com,05I,Internet,6/10/2009,11/22/2010,ACG,ACG,Regular,AFR
+642692647,Female,White,Springfield,VA,22152,RG,Recruiter Generated,03D,Referral (Influencer),6/23/2009,11/30/2010,ACG,ACG,Regular,AFR
+643456386,Male,Asian,Cantilly,VA,20152,AG,Advisor Generated,05I,Internet,6/24/2009,7/20/2011,ACG,ACG,Regular,AFR
+645312201,Female,White,San Antonio,TX,78154,RG,Recruiter Generated,03A,Referral (AFAD Recruiter),6/25/2009,6/30/2011,ACG,ACG,Regular,AFR
+645741440,Male,Black or African American,Modesto,CA,95357,IS,ISR,RGL,Cold Call,6/26/2009,3/2/2011,ACG,ACG,Regular,AFR
+645743814,Male,"""Asian,White""",Phoenix,AZ,85037,IS,ISR,02A,In-Service Counseling (Palace Front),6/26/2009,5/27/2011,ACG,ACG,ELead,AFR
+645743956,Female,Native Hawaiian or Other Pacific Islander,Bolling A F  B,DC,20032,IS,ISR,02A,In-Service Counseling (Palace Front),6/19/2009,3/18/2011,ACG,ACG,Regular,AFR
+645848472,Male,White,Camden,DE,19934,RG,Recruiter Generated,03D,Referral (Influencer),6/26/2009,8/19/2011,ACG,ACW,Regular,AFR
+647222968,Male,White,Stillwater,NY,12170,AF,Air Force Web,05I,Internet,6/27/2009,8/31/2011,ACW,ACW,Regular,AFR
+649095842,Male,White,Windsor,CA,95492,PN,1-800#,RGM,Mailout,1/16/2009,5/19/2011,ACG,ACG,Regular,AFR
+649097392,Female,Black or African American,Eastpoint,GA,30344,PN,1-800#,RFI,Influencer (Teacher/Parent/Friend),6/28/2009,10/8/2010,ACD,ACD,Regular,AFR
+649576209,Female,Black or African American,Shreveport,LA,71106,RG,Recruiter Generated,11,Perpetuation,6/30/2009,10/27/2010,ACG,ACG,Regular,AFR
+650185035,Female,White,Dover,DE,19901,RG,Recruiter Generated,03D,Referral (Influencer),6/30/2009,10/1/2010,ACG,ACG,Regular,AFR
+651503431,Male,White,Los Gatos,CA,95032,RG,Recruiter Generated,GON,Get One Now Program,7/1/2009,6/28/2011,ACG,ACW,Regular,AFR
+653339704,Female,White,Winchester,CA,92596,AG,Advisor Generated,05I,Internet,7/2/2009,12/28/2010,ACG,ACG,Regular,AFR
+653908376,Male,White,Roseville,CA,95678,PN,1-800#,ONS,Search Engine,7/5/2009,3/18/2011,ACG,ACG,Regular,AFR
