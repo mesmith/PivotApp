@@ -135,25 +135,23 @@ const transforms = function(){
   // and these are joined by an implicit 'and'.
   //
   const applyWhereClause = function(data, where, datapointCol){
-    if( !isEmpty(where) ){
-      return data.filter(function(datum){
-        return Object.keys(where).map(function(col){
-          return {column: col, value: where[col]};
-        }).every(function(x){
-          return x.value.some(function(allowedValue){
-            if( x.column==datapointCol ){
-              return allowedValue==
-                  datapoint.getBinningFn(datapointCol)(datum, 
-                      datapointCol);
-            } else {
-              return allowedValue==datum[x.column];
-            }
-          });
-        })
-      });
-    } else {
-      return data;
-    }
+    return isEmpty(where)
+      ? data
+      : data.filter(datum => {
+          return Object.keys(where).map(col => {
+            return {column: col, value: where[col]};
+          }).every(x => {
+            return x.value.some(allowedValue => {
+              if( x.column === datapointCol ){
+                return allowedValue === 
+                    datapoint.getBinningFn(datapointCol)(datum, 
+                        datapointCol);
+              } else {
+                return allowedValue === datum[x.column];
+              }
+            });
+          })
+        });
   }
 
   // Return TRUE if obj is empty
@@ -209,11 +207,11 @@ const transforms = function(){
     // calling object cloners unless we have to.
     //
     const keys = v2.pivoted ? Object.keys(v2.pivoted): [];
-    return keys.filter(function(x){
-      return !v1.hasOwnProperty(x);
-    }).reduce(function(v3, v4){
-      return {...v3, ...{[v4]: 1}};
-    }, v1);
+    return keys
+      .filter(i => !v1.hasOwnProperty(i))
+      .reduce((i, j) => {
+        return {...i, ...{[j]: 1}};
+      }, v1);
   }
 
   // Return the transformed data as an object of the form
