@@ -639,9 +639,13 @@ class PivotApp extends React.Component {
   render() {
     const datasetLabel = metadata.getDatasetLabel();
     const key = 'PivotApp';
+    const loaderTextStyle = {
+      fontWeight: 'bold',
+      color: 'white'
+    };
     const emptyComponent = (
       <div key={key} className={"pivot-all pivot-div"}>
-        <Loader fullPage loading={true} />
+        <Loader fullPage loading={true} textStyle={loaderTextStyle}/>
       </div>
     );
 
@@ -703,7 +707,7 @@ class PivotApp extends React.Component {
 
     return (
       <div key={key} className={"pivot-all pivot-div"}>
-        <Loader fullPage loading={loading} />
+        <Loader fullPage loading={loading} textStyle={loaderTextStyle} />
         <div className={"pivot-header pivot-div"}>
           <div className={"title pivot-div"}>
             <h1>{actualTitle}</h1>
