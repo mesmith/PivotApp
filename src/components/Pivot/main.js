@@ -18,7 +18,6 @@ if (module.hot) {
 // display the Loading icon.
 //
 window.onload = function(){
-console.error('window.onload: initial render');
 
   // This will display the Loading icon
   //
