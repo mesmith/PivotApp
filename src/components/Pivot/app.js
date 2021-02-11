@@ -587,6 +587,10 @@ class PivotApp extends React.Component {
   // Fetch initial (potentially async) data for the component here
   // (as is best practice).
   //
+  // If initData is not null, it represents a raw dataset that
+  // the parent component sends to us.  Without it, we'll fetch
+  // data using the dataset name.
+  //
   componentDidMount(){
     const { needData, dataset, categoricalValues, currentState,
         initData, onPushStateDispatch } = this.props;
@@ -604,8 +608,8 @@ class PivotApp extends React.Component {
         ? currentState.graphtype
         : controls.getGraphtypeDefault();
       const animationCol = currentState ? currentState.animate : null;
-      startup.startup(currentState, newDataset, filter, datapointCol, initData,
-          graphtype, animationCol)
+      startup.startup(currentState, newDataset, filter, datapointCol,
+          graphtype, animationCol, initData)
         .then(res => {
           
           // Avoid pushing the data into redux state; we want to avoid

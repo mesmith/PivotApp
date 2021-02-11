@@ -24,8 +24,8 @@ const getReusedDatasetState = currentState => (categoricalValues, data) => {
 
 // After initial DOM loading, initialize or restart the dataset.
 //
-const startup = (currentState, newDataset, filter, datapointCol, initData,
-    graphtype, animationCol) => {
+const startup = (currentState, newDataset, filter, datapointCol,
+    graphtype, animationCol, initData) => {
   const currentDataset = currentState ? currentState.dataset : null;
 
   const getDatasetState = newDataset === currentDataset
