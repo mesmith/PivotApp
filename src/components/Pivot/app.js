@@ -678,7 +678,7 @@ const mapStateToProps = function(state) {
       return { dataset: currentState.dataset };
     } else {
       const { history, current } = pivot;
-      return { currentState, history, current,
+      return { history, current,
           key: dataset,
           dataset,
           needData: false
