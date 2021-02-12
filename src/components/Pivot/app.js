@@ -280,9 +280,11 @@ class PivotApp extends React.Component {
   //
   reduxStateToLocalState(nextProps) {
     const { onMergeStateDispatch } = this.props;
-    const { currentState, needData } = nextProps;
+    const { needData } = nextProps;
+    const oldCurrentState = utils.getCurrentState(this.props);
+    const currentState = utils.getCurrentState(nextProps);
     const { categoricalValues, pivotedData, processedData } = currentState;
-    const oldDatapointCol = getDatapointCol(this.props.currentState);
+    const oldDatapointCol = getDatapointCol(oldCurrentState);
     const datapointCol = getDatapointCol(currentState);
     const self = this;
 
@@ -451,7 +453,7 @@ class PivotApp extends React.Component {
   //
   onNewDatasetRead(nextProps, dataset, categoricalValues,
       pivotedData, processedData) {
-    const oldReduxState = nextProps.currentState;
+    const oldReduxState = utils.getCurrentState(nextProps);
 
     // OK, this is pretty confusing.  We must calculate two datapoints:
     // one for the original dataset, and another one for the synthetic one
@@ -517,8 +519,9 @@ class PivotApp extends React.Component {
   // data using the dataset name.
   //
   componentDidMount(){
-    const { needData, dataset, currentState,
-        initData, onPushStateDispatch } = this.props;
+    const { needData, dataset, initData, onPushStateDispatch } = this.props;
+    const currentState = utils.getCurrentState(this.props);
+
     const newDataset = dataset ? dataset : metadata.getActualDataset();
 
     // needData should only be set if we must fetch data.
@@ -606,8 +609,9 @@ class PivotApp extends React.Component {
     const controls = { animate, datapoint, graphtype, xAxis, 
         yAxis, radiusAxis, colorAxis };
 
-    const { currentState, current, history, showDataset,
-        title, subtitle } = this.props;
+    const { current, history, showDataset, title, subtitle } = this.props;
+
+    const currentState = utils.getCurrentState(this.props);
 
     const { categoricalValues, processedData, summaryData, loadComparisonData }
         = currentState;
@@ -669,7 +673,7 @@ const mapStateToProps = function(state) {
   const currentState = utils.getCurrentState(pivot);
 
   if (currentState) {
-    const { data, dataset } = currentState;
+    const { dataset } = currentState;
     if (currentState.last === 'change_dataset') {
       return { dataset: currentState.dataset };
     } else {
