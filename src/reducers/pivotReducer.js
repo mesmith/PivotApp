@@ -10,12 +10,28 @@ const getNewState = function(state, newState){
   return { history: history.concat(newState), current: state.current+1 };
 }
 
+// Given current state, merge newState into it
+//
+const getMergedState = function(state, newState){
+  const current = state.current;
+  const currentState = state.history[current];
+  const mergedState = {...currentState, ...newState};
+  const history = Object.assign([], state.history, {[current]: mergedState});
+  return { history, current };
+}
+
 export default function(state = initialState, action) {
   switch( action.type ){
     case actionTypes.pivot_PushState:
     {
       const newState = {...action.state, last: 'init'};
       return getNewState(state, newState);
+    }
+
+    case actionTypes.pivot_MergeState:
+    {
+      const newState = {...action.state, last: 'init'};
+      return getMergedState(state, newState);
     }
 
     case actionTypes.pivot_ChangeDataset:

@@ -14,6 +14,12 @@ export const pushState = function (state) {
   }
 }
 
+export const mergeState = function (state) {
+  return function(dispatch) {
+    dispatch({ type: actionTypes.pivot_MergeState, state });
+  }
+}
+
 // Called when the user changes a control (e.g. X Axis)
 //
 export const changeControl = function (name, value) {
@@ -72,6 +78,7 @@ export const changeLoad = function (loadTable) {
 export default {
   getPivotRequest,
   pushState,
+  mergeState,
   changeControl,
   changeFilter,
   changeDataset,

@@ -79,58 +79,37 @@ const getInitDatapointCol = function() {
   return colForDataset || dfltDatapointCol;
 }
 
-// Return the local state from an initial CSV or Mongo query.
-//
-// This is a sync operation--it doesn't actually do a Mongo query.
-//
-const getInitLocalState = function(dataset, currentState, 
-    datapointCol, categoricalValues, pivotedData, processedData) {
-  if (!dataset) return {};
-  if (utils.isCSV(dataset) || utils.isJSON(dataset)) {
-    return getCsvLocalState(currentState, datapointCol,
-        categoricalValues, pivotedData, processedData);
-  } else {
-    return getMongoLocalState(currentState, datapointCol,
-        categoricalValues, pivotedData, processedData);
-  }
-}
-
 // Called when pivoted and processed CSV data is available.
 // 
 // Returns an object to be pushed into local state.
 //
-const getCsvLocalState = function(currentState, dfltDatapointCol,
-    categoricalValues, pivotedData, processedData) {
-  const loadTable = currentState.loadTable;
-
-  const filter = currentState.filter || {};
-  const datapointCol = dfltDatapointCol || currentState.datapoint;
+const getLocalState = function(currentState, dfltDatapointCol,
+    categoricalValues, pivotedData) {
   const graphtype = currentState.graphtype || controls.getGraphtypeDefault();
-  const datasetChoices = getDatasetChoices();
+  const datapointCol = dfltDatapointCol || currentState.datapoint;
+  const loadTable = currentState.loadTable;
+  const filter = currentState.filter || {};
 
   // Must get filters from pre-processed pivoted data.
   //
   const facetList = facets.getReactFacets(pivotedData,
       filter, datapointCol, categoricalValues);
-  const summaryData = transforms.getSummaryData(processedData);
-  const loadComparisonData = transforms.getLoadComparisonData(processedData);
 
+  const datasetChoices = getDatasetChoices();
   const controlState = getControlState(currentState, graphtype, 
       categoricalValues, datapointCol);
-  const axes = getAxesFromReduxState(currentState, controlState);
+  const initAxes = controls.getInitControlState(categoricalValues, datapointCol, 'bubble');
+  const currentAxisState = {...initAxes, ...currentState};
+  const axes = getAxesFromReduxState(currentAxisState, controlState);
 
   return {
     dataset: {...datasetControls, list: datasetChoices},
     graphtype: controls.getGraphtypeControls(graphtype, datapointCol),
 
     ...controlState,
+    axes,
 
     facet: { list: facetList, filter, datapointCol },
-    tooltipPivots: categoricalValues,
-    processedData,
-    axes,
-    summaryData, // currently untested for CSV
-    loadComparisonData, // currently untested for CSV
     loadTable
   }
 }
@@ -150,47 +129,6 @@ const getControlState = function(currentState, graphtype, categoricalValues,
     };
     return {...i, ...obj};
   }, {});
-}
-
-// Do a simple initialization.  Needed because the initial call
-// to get Mongo data is async, and render() needs to run with
-// something.
-//
-// Returns an object to be pushed into local state.
-//
-const getMongoLocalState = function(currentState, dfltDatapointCol,
-    categoricalValues, pivotedData, processedData) {
-  const graphtype = currentState.graphtype || controls.getGraphtypeDefault();
-  const datapointCol = dfltDatapointCol || currentState.datapoint;
-  const loadTable = currentState.loadTable;
-  const filter = currentState.filter || {};
-
-  // Must get filters from pre-processed pivoted data.
-  //
-  const facetList = facets.getReactFacets(pivotedData, filter, datapointCol,
-      categoricalValues);
-  const summaryData = transforms.getSummaryData(processedData);
-  const loadComparisonData = transforms.getLoadComparisonData(processedData);
-
-  const datasetChoices = getDatasetChoices();
-  const controlState = getControlState(currentState, graphtype, 
-      categoricalValues, datapointCol);
-  const axes = getAxesFromReduxState(currentState, controlState);
-
-  return {
-    dataset: {...datasetControls, list: datasetChoices},
-    graphtype: controls.getGraphtypeControls(graphtype, datapointCol),
-
-    ...controlState,
-
-    facet: { list: facetList, filter, datapointCol },
-    tooltipPivots: categoricalValues,
-    processedData,
-    axes,
-    summaryData,
-    loadComparisonData,
-    loadTable
-  };
 }
 
 // Return the choices for the dataset, given the current redux store and
@@ -237,7 +175,7 @@ const getAllControlDisabled = function(graphtype){
 }
 
 // Similar to the above, but returns local state asynchronously,
-// from a Mongo query.
+// from a Mongo query.  Also returns the pivoted and processed data.
 //
 const getMongoLocalStateAsync = function(currentState, categoricalValues){
   const dataset = metadata.getActualDataset();
@@ -260,14 +198,13 @@ const getMongoLocalStateAsync = function(currentState, categoricalValues){
   //
   const handle = 
       ((currentState, categoricalValues, loadTable, filter, datapointCol) => xform => {
-    const processedData = dataread.process(xform.pivotedData, loadTable);
+    const pivotedData = xform.pivotedData;
+    const processedData = dataread.process(pivotedData, loadTable);
 
     // Must get filters from pre-processed pivoted data.
     //
     const facetList = facets.getReactFacets(xform.pivotedData, filter, datapointCol,
         categoricalValues);
-    const summaryData = transforms.getSummaryData(processedData);
-    const loadComparisonData = transforms.getLoadComparisonData(processedData);
 
     // Calculating the graphtype disabled state requires that we look at
     // the currently displayed Aggregate By datapoint, *not* the predetermined
@@ -275,18 +212,15 @@ const getMongoLocalStateAsync = function(currentState, categoricalValues){
     //
     const datapointForGraphtype = currentState.datapoint;
     const axes = getAxesFromReduxState(currentState, controlState);
-    return {
+    const localState = {
       dataset: {...datasetControls, list: datasetChoices},
       graphtype: controls.getGraphtypeControls(graphtype, datapointForGraphtype),
       ...controlState,
-      tooltipPivots: categoricalValues,
-      processedData,
       facet: { list: facetList, filter, datapointCol },
       axes,
-      summaryData,
-      loadComparisonData,
       loadTable
     }
+    return { localState, pivotedData, processedData };
   })(currentState, categoricalValues, loadTable, filter, datapointCol);
 
   return dataread.mongoGetTransformedData(graphtype, dataset, filter, datapointCol)
@@ -342,11 +276,14 @@ class PivotApp extends React.Component {
 
   // Called when the properties change, presumably because the Redux state changed.
   //
-  // Sets local state.
+  // Sets local state, and potentially sends a Redux event.
   //
   reduxStateToLocalState(nextProps) {
-    const { currentState } = nextProps;
-    const { categoricalValues } = currentState;
+    const { onMergeStateDispatch } = this.props;
+    const { currentState, needData } = nextProps;
+    const { categoricalValues, pivotedData, processedData } = currentState;
+    const oldDatapointCol = getDatapointCol(this.props.currentState);
+    const datapointCol = getDatapointCol(currentState);
     const self = this;
 
     // We'll go to the database when other things change (e.g.
@@ -355,61 +292,25 @@ class PivotApp extends React.Component {
     //
     const dataset = currentState.dataset || metadata.getInitDataset();
 
+    // Determine if the datapoint changed
     //
-    // Determine if the dataset changed, which typically happens
-    // on Undo (Next View) or Redo (Previous View).  If so, read in the new
-    // dataset, and then call the onNewDatasetRead() handler on
-    // the new data.
+    const datapointChanged = (oldDatapointCol && datapointCol &&
+        oldDatapointCol !== datapointCol);
+
     //
-    // Note that we use the "actual dataset", since the
-    // dataset may be synthetic (e.g. a time series based on an aggregation
-    // of time series by entity).
+    // Determine if the dataset changed.   If so, use the metadata
+    // for the new dataset.
     //
-    // Scenarios where this runs:  
-    //   Enter, change dataset, Previous.
-    //   Enter, change axis, change dataset, Previous.
-    //   Enter, change datapoint, change dataset, Previous.
-    //   Enter, change filter, change dataset, Previous.
-    //   Or any combination of the above.
+    // This only runs doing Undo and Redo, so the dataset's data
+    // is already available in props: there's no need to get it
+    // from the data source.
     //
     if (metadata.getDataset() !== dataset) {
       metadata.setMetadata(dataset);  // FIXME: mutable
 
-      const actualDataset = metadata.getActualDataset();
-      const filter = currentState.filter || metadata.getFilters();
-      const loadTable = currentState.loadTable;
-      const datapointCol = getDatapointCol(currentState);
-      const graphtype = currentState.graphtype || controls.getGraphtypeDefault();
-      const animationCol = currentState.animate;
-
-      // This is asynchronous when the dataset is mongo or CSV,
-      // and synchronous if the dataset is JSON.
-      //
-      const handle = ((nextProps, dataset) => res => {
-        const newLocalState = self.onNewDatasetRead(nextProps, dataset,
-            res.categoricalValues, res.pivotedData, res.processedData);
-        this.setState(newLocalState);
-      })(nextProps, dataset);
-
-      const dummyRes = {categoricalValues: {}, pivotedData: [], processedData: []};
-
-      dataread.readDataset(actualDataset, filter, loadTable, datapointCol,
-          graphtype, animationCol, null)
-        .then(handle)
-        .catch(() => handle(dummyRes));
-
-      // Doing this will cause the datapoint
-      // control to re-render with the new datapoint choice
-      // (if the user chose a new one), prior to reading the new data.
-      // Just a bit nicer.
-      //
-      const enabled = getAllEnabled(graphtype);
-      const choices = getAllControlChoices(graphtype, currentState,
-          categoricalValues, datapointCol);
-      const datapoint = {...controls.dfltControls.datapoint, 
-          disabled: !enabled.datapoint, list: choices.datapoint};
-
-      this.setState({datapoint, loading: true});
+      const newLocalState = self.onNewDatasetRead(nextProps, dataset,
+          categoricalValues, pivotedData, processedData);
+      this.setState(newLocalState);
       return;
     }
 
@@ -436,37 +337,66 @@ class PivotApp extends React.Component {
     }
 
     // CSV local state is returned synchronously;
-    // Mongo local state is returned via an async call
+    // Mongo local state is returned via an async call.
     //
-    if (utils.isCSV(dataset) || utils.isJSON(dataset)) {
-      const datapointCol = getDatapointCol(currentState);
-      const filter = currentState.filter || metadata.getFilters();
-      const loadTable = currentState.loadTable;
-      const animationCol = currentState.animate;
-      const graphtype = currentState.graphtype || controls.getGraphtypeDefault();
+    // This case happens on both Undo/Redo and in response
+    // to a datapoint selection change, so we must get new data.
+    //
+    if (datapointChanged) {
+      if (utils.isCSV(dataset) || utils.isJSON(dataset)) {
+        const filter = currentState.filter || metadata.getFilters();
+        const loadTable = currentState.loadTable;
+        const animationCol = currentState.animate;
+        const graphtype = currentState.graphtype || controls.getGraphtypeDefault();
 
-      const handle = ((currentState, datapointCol) => res => {
-        const newLocalState = getCsvLocalState(currentState, datapointCol,
-            res.categoricalValues, res.pivotedData, res.processedData);
-        this.setState({...newLocalState, loading: false});
-      })(currentState, datapointCol);
+        const handle = ((currentState, datapointCol) => res => {
+          const { pivotedData, processedData } = res;
+          const newLocalState = getLocalState(currentState, datapointCol,
+              categoricalValues, pivotedData);
+          self.setState({...newLocalState, loading: false});
 
-      const dummyRes = {categoricalValues: {}, pivotedData: [], processedData: []};
+          const summaryData = transforms.getSummaryData(processedData);
+          const loadComparisonData = transforms.getLoadComparisonData(processedData);
 
-      dataread.readDataset(dataset, filter, loadTable, datapointCol,
-          graphtype, animationCol, null)
-        .then(handle)
-        .catch(() => handle(dummyRes));
-      return;
+          onMergeStateDispatch({ categoricalValues, pivotedData, processedData,
+              summaryData, loadComparisonData });
+        })(currentState, datapointCol);
+
+        const dummyRes = {categoricalValues: {}, pivotedData: [], processedData: []};
+
+        dataread.readDataset(dataset, filter, loadTable, datapointCol,
+            graphtype, animationCol, null)
+          .then(handle)
+          .catch(() => handle(dummyRes));
+
+        self.setState({ loading: true });
+      } else {
+
+        // Get local state from async Mongo query.
+        //
+        getMongoLocalStateAsync(currentState, categoricalValues)
+          .then(res => {
+            const { localState, pivotedData, processedData } = res;
+            self.setState({...localState, loading: false});
+            const summaryData = transforms.getSummaryData(processedData);
+            const loadComparisonData = transforms.getLoadComparisonData(processedData);
+            onMergeStateDispatch({ categoricalValues, pivotedData, processedData,
+                summaryData, loadComparisonData });
+          })
+          .catch(error => self.setState({loading: false}));
+
+        this.setState({loading: true});
+      }
+    } else {
+
+      // If we got here, then the datapoint didn't change.  All we
+      // want to show is that any previous loading is finished.
+      //
+      const newLocalState = getLocalState(currentState, datapointCol,
+        categoricalValues, pivotedData);
+
+      this.setState({...newLocalState, loading: false});
     }
-
-    // Get local state from async Mongo query.
-    //
-    getMongoLocalStateAsync(currentState, categoricalValues)
-      .then(newLocalState => self.setState({...newLocalState, loading: false}))
-      .catch(error => self.setState({loading: false}));
-
-    this.setState({loading: true});
   }
 
   // Return the name of a "pure" axis if the difference 
@@ -477,7 +407,7 @@ class PivotApp extends React.Component {
   //
   getPureAxisChange(localState, newReduxState) {
     if (!localState || !localState.axes || !newReduxState) {
-      return null;
+            return null;
     }
     const localStateAxes = localState.axes;
 
@@ -555,16 +485,11 @@ class PivotApp extends React.Component {
 
     const filter = oldReduxState.filter || metadata.getFilters();
 
-    // Send the Change Query event.
-    //
     const withControls = {...oldReduxState, ...newControls};
-    const newReduxState = { ...withControls, filter, categoricalValues,
-        data: processedData,
+    const newReduxState = { ...withControls, filter, 
         dataset, datapointCol, originalDatapointCol };
 
     const loadTable = newReduxState.loadTable;
-    const summaryData = transforms.getSummaryData(processedData);
-    const loadComparisonData = transforms.getLoadComparisonData(processedData);
 
     // Note that we use originalDatapointCol here.  We want to
     // allow filtering based on the data in the original dataset.
@@ -572,13 +497,13 @@ class PivotApp extends React.Component {
     const facetList = facets.getReactFacets(pivotedData,
       filter, originalDatapointCol, categoricalValues);
 
-    const initState = getInitLocalState(dataset, newReduxState, 
-        datapointCol, categoricalValues, pivotedData, processedData);
+    const initState = dataset
+      ? getLocalState(newReduxState, datapointCol,
+                      categoricalValues, pivotedData)
+      : {};
     const finalState = {
         ...initState,
         loading: false,
-        summaryData,
-        loadComparisonData,
         facet: { list: facetList, filter, datapointCol }
     };
     return finalState;
@@ -592,7 +517,7 @@ class PivotApp extends React.Component {
   // data using the dataset name.
   //
   componentDidMount(){
-    const { needData, dataset, categoricalValues, currentState,
+    const { needData, dataset, currentState,
         initData, onPushStateDispatch } = this.props;
     const newDataset = dataset ? dataset : metadata.getActualDataset();
 
@@ -604,6 +529,7 @@ class PivotApp extends React.Component {
       metadata.setMetadata(newDataset); // FIXME: mutable
       const filter = metadata.getFilters();
       const datapointCol = datapoint.getDefaultDatapointCol();
+
       const graphtype = currentState && currentState.graphtype
         ? currentState.graphtype
         : controls.getGraphtypeDefault();
@@ -612,16 +538,14 @@ class PivotApp extends React.Component {
           graphtype, animationCol, initData)
         .then(res => {
           
-          // Avoid pushing the data into redux state; we want to avoid
-          // duplicates.
+          // Push the data into redux state.  It should never appear
+          // in local state.
           //
-          this.setState({ processedData: res.data });
-          const noData = Object.keys(res)
-            .filter(i => i !== 'data')
-            .reduce((i, j) => {
-              return {...i, ...{[j]: res[j]}};
-            }, {});
-          onPushStateDispatch(noData);
+          // This will cause componentDidMount() to be re-entered.
+          // The re-entry should be safe.
+          //
+          const { categoricalValues, pivotedData, processedData } = res;
+          onPushStateDispatch(res);
         });
     } else {
       this.reduxStateToLocalState(this.props);
@@ -657,7 +581,7 @@ class PivotApp extends React.Component {
     // We want to just show the Loading icon while the initial
     // data is being read in.
     //
-    if (!this.state || !this.props || this.props.needData) {
+    if (!this.state || !this.props) {
       return emptyComponent;
     }
 
@@ -668,20 +592,27 @@ class PivotApp extends React.Component {
     // But we also have to keep a version of the data in props, in order
     // to support undo/redo.
     //
-    const { loading, summaryData, loadComparisonData, processedData,
-        axes, dataset, datapoint, facet, graphtype,
-        animate, xAxis, yAxis, radiusAxis, colorAxis } = this.state;
+    // The local state contains the metadata for controls.  this.props
+    // contains the current state of the controls.
+    //
+    const { loading, facet,
+        dataset, animate, datapoint, graphtype, xAxis,
+        yAxis, radiusAxis, colorAxis} = this.state;
 
-    if (!processedData || !axes || !dataset || !datapoint || !facet ||
-        !graphtype || !xAxis || !yAxis || !radiusAxis || !colorAxis) {
+    if (!facet) {
       return emptyComponent;
     }
 
     const controls = { animate, datapoint, graphtype, xAxis, 
         yAxis, radiusAxis, colorAxis };
 
-    const { currentState, current, history, showDataset, title, subtitle }
-        = this.props;
+    const { currentState, current, history, showDataset,
+        title, subtitle } = this.props;
+
+    const { categoricalValues, processedData, summaryData, loadComparisonData }
+        = currentState;
+
+    const axes = getAxesFromReduxState(currentState, controls);
 
     // Note that we get the datapoint from the current state.  If this
     // is a simulated dataset, then the redux state will pull the data
@@ -690,8 +621,6 @@ class PivotApp extends React.Component {
     // Tricky.
     //
     const datapointCol = getReduxStateDatapoint(currentState);
-
-    const categoricalValues = currentState && currentState.categoricalValues || null;
 
     const datasetMonths = metadata.getDatasetMonths();
     const datasetSubtitle = metadata.getDatasetSubtitle();
@@ -740,7 +669,7 @@ const mapStateToProps = function(state) {
   const currentState = utils.getCurrentState(pivot);
 
   if (currentState) {
-    const { data, dataset, categoricalValues } = currentState;
+    const { data, dataset } = currentState;
     if (currentState.last === 'change_dataset') {
       return { dataset: currentState.dataset };
     } else {
@@ -748,7 +677,6 @@ const mapStateToProps = function(state) {
       return { currentState, history, current,
           key: dataset,
           dataset,
-          categoricalValues,
           needData: false
       };
     }
@@ -760,10 +688,13 @@ const mapStateToProps = function(state) {
 const mapDispatchToProps = function(dispatch, ownProps) {
   return {
 
-    // Dispatch Redux "Push State" message
+    // Dispatch Redux "Push State" and "Merge State" message
     //
     onPushStateDispatch: function(newReduxState) {
       actions.pushState(newReduxState)(dispatch);
+    },
+    onMergeStateDispatch: function(newReduxState) {
+      actions.mergeState(newReduxState)(dispatch);
     }
   };
 }

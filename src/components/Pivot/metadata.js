@@ -1093,8 +1093,8 @@ const metadata = function(){
     ais: aisSoloMetadata,
     mannis: aisSoloMetadata,
     // master: ticketSubjectMetadata,
-    // master: aisSoloMetadata,
-    master: airForceMetadata,
+    master: aisSoloMetadata,
+    // master: airForceMetadata,
     dtmo: ticketSubjectMetadata,
     orig: airForceMetadata
   };

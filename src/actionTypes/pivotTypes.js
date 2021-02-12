@@ -1,6 +1,7 @@
 export default {
   pivot_Request: 'pivot_Request',  // testing
   pivot_PushState: 'pivot_PushState',
+  pivot_MergeState: 'pivot_MergeState',
   pivot_ChangeControl: 'pivot_ChangeControl',
   pivot_ChangeFilter: 'pivot_ChangeFilter',
   pivot_ChangeDataset: 'pivot_ChangeDataset',

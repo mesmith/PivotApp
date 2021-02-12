@@ -106,7 +106,8 @@ const controls = function(){
   // The list is of the form [{col: COLUMN, alias: ALIAS}, ...]
   // and is sorted by alias.
   //
-  const getControlChoices = function(graphtype, control, categoricalValues, datapointCol){
+  const getControlChoices = function(graphtype, control, categoricalValues,
+      datapointCol){
     switch( control ){
       case 'graphtype':  // Note: This list is not sorted.
         return constants.graphtypeControls.list.map(i => {
