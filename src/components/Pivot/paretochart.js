@@ -16,6 +16,14 @@ class ParetoChart extends React.Component {
     const { d3config } = this.props;
 
     pareto.create(parent, d3config);
+
+    // This is needed in order to force componentDidUpdate to fire.
+    //
+    // Before I added this, the following sequence:
+    //   Start, set to Pareto, change dataset, Previous View
+    // would cause componentDidUpdate not to fire.
+    //
+    this.setState({ current: this.props.current });
   }
 
   // Called after ParetoChart's props or state changes.  If 'show' is true,
@@ -90,7 +98,7 @@ class ParetoChart extends React.Component {
 
   // Called before ParetoChart is destroyed
   //
-  componentWillUnMount(){
+  componentWillUnmount(){
     pareto.destroy();
   }
 
