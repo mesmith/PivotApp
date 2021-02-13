@@ -29,6 +29,7 @@ const getPreviousDataset = function(state) {
 }
 
 export default function(state = initialState, action) {
+console.log('reducer: action=' + action.type);
   switch( action.type ){
     case actionTypes.pivot_PushState:
     {
@@ -38,8 +39,7 @@ export default function(state = initialState, action) {
 
     case actionTypes.pivot_MergeState:
     {
-      const newState = {...action.state, last: 'init'};
-      return getMergedState(state, newState);
+      return getMergedState(state, action.state);
     }
 
     case actionTypes.pivot_ChangeDataset:
