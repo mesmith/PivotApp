@@ -17,7 +17,8 @@ const getNewDatasetState = (dataset, filter, datapointCol) =>
 }
 
 // Like the above, but don't initialize the control state or facet filters.
-// We do this when we get a new dataframe for the same dataset.
+// We do this when we get a new dataframe for the same dataset; e.g.
+// when the data is coming from a 3rd party.
 //
 const getReusedDatasetState = currentState => 
     (categoricalValues, pivotedData, processedData) => {

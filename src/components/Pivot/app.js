@@ -92,13 +92,14 @@ const getLocalState = function(currentState, dfltDatapointCol,
 
   // Must get filters from pre-processed pivoted data.
   //
-  const facetList = facets.getReactFacets(pivotedData,
-      filter, datapointCol, categoricalValues);
+  const facet = getFacetObject(pivotedData, filter, datapointCol, 
+      datapointCol, categoricalValues);
 
   const datasetChoices = getDatasetChoices();
   const controlState = getControlState(currentState, graphtype, 
       categoricalValues, datapointCol);
-  const initAxes = controls.getInitControlState(categoricalValues, datapointCol, 'bubble');
+  const initAxes = controls.getInitControlState(categoricalValues, datapointCol,
+      'bubble');
   const currentAxisState = {...initAxes, ...currentState};
   const axes = getAxesFromReduxState(currentAxisState, controlState);
 
@@ -109,9 +110,18 @@ const getLocalState = function(currentState, dfltDatapointCol,
     ...controlState,
     axes,
 
-    facet: { list: facetList, filter, datapointCol },
+    facet,
     loadTable
   }
+}
+
+// Return a facet object, used in Refine Results, etc.
+//
+const getFacetObject = function(pivotedData, filter, 
+    originalDatapointCol, datapointCol, categoricalValues) {
+  const facetList = facets.getReactFacets(pivotedData,
+      filter, originalDatapointCol, categoricalValues);
+  return { list: facetList, filter, datapointCol };
 }
 
 // Return the state of all Select controls
@@ -203,8 +213,8 @@ const getMongoLocalStateAsync = function(currentState, categoricalValues){
 
     // Must get filters from pre-processed pivoted data.
     //
-    const facetList = facets.getReactFacets(xform.pivotedData, filter, datapointCol,
-        categoricalValues);
+    const facet = getFacetObject(xform.pivotedData, filter,
+        datapointCol, datapointCol, categoricalValues);
 
     // Calculating the graphtype disabled state requires that we look at
     // the currently displayed Aggregate By datapoint, *not* the predetermined
@@ -216,7 +226,7 @@ const getMongoLocalStateAsync = function(currentState, categoricalValues){
       dataset: {...datasetControls, list: datasetChoices},
       graphtype: controls.getGraphtypeControls(graphtype, datapointForGraphtype),
       ...controlState,
-      facet: { list: facetList, filter, datapointCol },
+      facet,
       axes,
       loadTable
     }
@@ -286,6 +296,10 @@ class PivotApp extends React.Component {
     const { categoricalValues, pivotedData, processedData } = currentState;
     const oldDatapointCol = getDatapointCol(oldCurrentState);
     const datapointCol = getDatapointCol(currentState);
+
+    const oldFilter = oldCurrentState ? oldCurrentState.filter : null;
+    const filter = currentState ? currentState.filter : null;
+
     const self = this;
 
     // We'll go to the database when other things change (e.g.
@@ -296,8 +310,13 @@ class PivotApp extends React.Component {
 
     // Determine if the datapoint changed
     //
-    const datapointChanged = (oldDatapointCol && datapointCol &&
-        oldDatapointCol !== datapointCol);
+    const datapointChanged = oldDatapointCol && datapointCol &&
+        oldDatapointCol !== datapointCol;
+
+    // Determine if filter changed
+    //
+    const filterChanged = oldFilter && filter &&
+        JSON.stringify(oldFilter) !== JSON.stringify(filter);
 
     //
     // Determine if the dataset changed.   If so, use the metadata
@@ -316,35 +335,13 @@ class PivotApp extends React.Component {
       return;
     }
 
-    // If this is a "pure" axis change, just set the axis state.  This 
-    // will cause a re-render without re-reading the database.
-    //
-    const changedAxis = this.getPureAxisChange(this.state, currentState);
-    if (changedAxis !== null) {
-      const allAxisState = pureAxisNames.reduce((i, j) => {
-        return {...i, ...{[j]: self.state[j]}};
-      }, {});
-
-      const graphtype = currentState.graphtype || controls.getGraphtypeDefault();
-      const datapointCol = getReduxStateDatapoint(currentState);
-      const enabled = getAllEnabled(graphtype);
-      const choices = getAllControlChoices(graphtype, currentState,
-          categoricalValues, datapointCol);
-      const list = choices[changedAxis];
-      const disabled = !enabled[changedAxis];
-      const newAxisState = {...allAxisState[changedAxis], disabled, list};
-      const axes = getAxesFromReduxState(currentState, null);
-      this.setState({[changedAxis]: newAxisState, axes});
-      return;
-    }
-
     // CSV local state is returned synchronously;
     // Mongo local state is returned via an async call.
     //
     // This case happens on both Undo/Redo and in response
-    // to a datapoint selection change, so we must get new data.
+    // to a datapoint selection or filter change, so we must get new data.
     //
-    if (datapointChanged) {
+    if (filterChanged || datapointChanged) {
       if (utils.isCSV(dataset) || utils.isJSON(dataset)) {
         const filter = currentState.filter || metadata.getFilters();
         const loadTable = currentState.loadTable;
@@ -389,10 +386,32 @@ class PivotApp extends React.Component {
 
         this.setState({loading: true});
       }
+      return;
+    }
+
+    // If this is a "pure" axis change, just set the axis state.  This 
+    // will cause a re-render without re-reading the database.
+    //
+    const changedAxis = this.getPureAxisChange(this.state, currentState);
+    if (changedAxis !== null) {
+      const allAxisState = pureAxisNames.reduce((i, j) => {
+        return {...i, ...{[j]: self.state[j]}};
+      }, {});
+
+      const graphtype = currentState.graphtype || controls.getGraphtypeDefault();
+      const datapointCol = getReduxStateDatapoint(currentState);
+      const enabled = getAllEnabled(graphtype);
+      const choices = getAllControlChoices(graphtype, currentState,
+          categoricalValues, datapointCol);
+      const list = choices[changedAxis];
+      const disabled = !enabled[changedAxis];
+      const newAxisState = {...allAxisState[changedAxis], disabled, list};
+      const axes = getAxesFromReduxState(currentState, null);
+      this.setState({[changedAxis]: newAxisState, axes});
     } else {
 
-      // If we got here, then the datapoint didn't change.  All we
-      // want to show is that any previous loading is finished.
+      // If we got here, then all we want to show
+      // is that any previous loading is finished.
       //
       const newLocalState = getLocalState(currentState, datapointCol,
         categoricalValues, pivotedData);
@@ -409,17 +428,9 @@ class PivotApp extends React.Component {
   //
   getPureAxisChange(localState, newReduxState) {
     if (!localState || !localState.axes || !newReduxState) {
-            return null;
-    }
-    const localStateAxes = localState.axes;
-
-    // Check for filter change
-    // 
-    const changedFilter = 
-        JSON.stringify(localState.facet.filter) !== JSON.stringify(newReduxState.filter);
-    if (changedFilter) {
       return null;
     }
+    const localStateAxes = localState.axes;
 
     // Check for elements that are called axes, but that we don't
     // treat as such.
@@ -498,17 +509,14 @@ class PivotApp extends React.Component {
     //
     const facetList = facets.getReactFacets(pivotedData,
       filter, originalDatapointCol, categoricalValues);
+    const facet = getFacetObject(pivotedData, filter,
+        originalDatapointCol, datapointCol, categoricalValues);
 
     const initState = dataset
       ? getLocalState(newReduxState, datapointCol,
                       categoricalValues, pivotedData)
       : {};
-    const finalState = {
-        ...initState,
-        loading: false,
-        facet: { list: facetList, filter, datapointCol }
-    };
-    return finalState;
+    return { ...initState, loading: false, facet };
   }
 
   // Fetch initial (potentially async) data for the component here
