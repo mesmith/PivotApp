@@ -93,13 +93,11 @@ const getLocalState = function(currentState, dfltDatapointCol,
   const initAxes = controls.getInitControlState(categoricalValues, datapointCol,
       'bubble');
   const currentAxisState = {...initAxes, ...currentState};
-  const axes = getAxesFromReduxState(currentAxisState, controlState);
 
   return {
     dataset: {...datasetControls, list: datasetChoices},
     graphtype: controls.getGraphtypeControls(graphtype, datapointCol),
-    ...controlState,
-    axes
+    ...controlState
   }
 }
 
@@ -188,12 +186,10 @@ const getMongoLocalStateAsync = function(currentState, categoricalValues,
     // datapoint from the metadata (when using a synthetic dataset).
     //
     const datapointForGraphtype = currentState.datapoint;
-    const axes = getAxesFromReduxState(currentState, controlState);
     const localState = {
       dataset: {...datasetControls, list: datasetChoices},
       graphtype: controls.getGraphtypeControls(graphtype, datapointForGraphtype),
-      ...controlState,
-      axes
+      ...controlState
     }
     return { localState, pivotedData, processedData };
   })(currentState, categoricalValues, loadTable, filter, datapointCol);
@@ -474,14 +470,11 @@ class PivotApp extends React.Component {
     const newReduxState = { ...withControls, filter, 
         dataset, datapointCol };
 
-    const facet = startup.getFacetObject(pivotedData, filter,
-        datapointCol, categoricalValues);
-
     const initState = dataset
       ? getLocalState(newReduxState, datapointCol,
                       categoricalValues, pivotedData)
       : {};
-    return { ...initState, loading: false, facet };
+    return { ...initState, loading: false };
   }
 
   // Fetch initial (potentially async) data for the component here
@@ -579,12 +572,11 @@ class PivotApp extends React.Component {
     // The local state contains the metadata for controls.  this.props
     // contains the current state of the controls.  We call the latter 'axes'.
     //
-    const { loading,
-        dataset, animate, datapoint, graphtype, xAxis,
-        yAxis, radiusAxis, colorAxis} = this.state;
+    const { animate, colorAxis, datapoint, dataset, graphtype, loading, 
+        radiusAxis, xAxis, yAxis } = this.state;
 
-    const controls = { animate, datapoint, graphtype, xAxis, 
-        yAxis, radiusAxis, colorAxis };
+    const controls = { animate, colorAxis, datapoint, graphtype,
+        radiusAxis, xAxis, yAxis };
 
     const { current, history, showDataset, title, subtitle } = this.props;
 
