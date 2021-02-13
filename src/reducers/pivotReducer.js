@@ -40,8 +40,8 @@ export default function(state = initialState, action) {
       // instead, just record the new dataset name.  The component
       // will know to ask for the new dataset's data.
       //
-      const newState = {dataset: action.dataset, last: 'change_dataset'};
-      return getNewState(state, newState);
+      const newState = {last: 'change_dataset'};
+      return {...getNewState(state, newState), dataset: action.dataset};
     }
 
     case actionTypes.pivot_ChangeDatasetAndDatapoint:

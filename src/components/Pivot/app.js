@@ -588,15 +588,8 @@ class PivotApp extends React.Component {
       return emptyComponent;
     }
 
-    // Also note that we get the data to plot from local state, NOT
-    // from redux (props) state.  That's because render() runs after
-    // data transforms on the original dataset.
-    //
-    // But we also have to keep a version of the data in props, in order
-    // to support undo/redo.
-    //
     // The local state contains the metadata for controls.  this.props
-    // contains the current state of the controls.
+    // contains the current state of the controls.  We call the latter 'axes'.
     //
     const { loading, facet,
         dataset, animate, datapoint, graphtype, xAxis,
@@ -673,17 +666,10 @@ const mapStateToProps = function(state) {
   const currentState = utils.getCurrentState(pivot);
 
   if (currentState) {
-    const { dataset } = currentState;
-    if (currentState.last === 'change_dataset') {
-      return { dataset: currentState.dataset };
-    } else {
-      const { history, current } = pivot;
-      return { history, current,
-          key: dataset,
-          dataset,
-          needData: false
-      };
-    }
+    const { dataset } = pivot;
+    const needData = currentState.last === 'change_dataset';
+    const { history, current } = pivot;
+    return { history, current, dataset, key: dataset, needData };
   } else {
     return {}
   }
