@@ -16,7 +16,6 @@ import controls from './controls.js';
 import datapoint from './datapoint.js';
 import dataread from './dataread.js';
 import metadata from './metadata.js';
-import facets from './facets.js';
 import startup from './startup';
 import transforms from './transforms.js';
 import constants from './constants.js';
@@ -87,13 +86,6 @@ const getLocalState = function(currentState, dfltDatapointCol,
     categoricalValues, pivotedData) {
   const graphtype = currentState.graphtype || controls.getGraphtypeDefault();
   const datapointCol = dfltDatapointCol || currentState.datapoint;
-  const loadTable = currentState.loadTable;
-  const filter = currentState.filter || {};
-
-  // Must get filters from pre-processed pivoted data.
-  //
-  const facet = getFacetObject(pivotedData, filter, datapointCol, 
-      datapointCol, categoricalValues);
 
   const datasetChoices = getDatasetChoices();
   const controlState = getControlState(currentState, graphtype, 
@@ -106,22 +98,9 @@ const getLocalState = function(currentState, dfltDatapointCol,
   return {
     dataset: {...datasetControls, list: datasetChoices},
     graphtype: controls.getGraphtypeControls(graphtype, datapointCol),
-
     ...controlState,
-    axes,
-
-    facet,
-    loadTable
+    axes
   }
-}
-
-// Return a facet object, used in Refine Results, etc.
-//
-const getFacetObject = function(pivotedData, filter, 
-    originalDatapointCol, datapointCol, categoricalValues) {
-  const facetList = facets.getReactFacets(pivotedData,
-      filter, originalDatapointCol, categoricalValues);
-  return { list: facetList, filter, datapointCol };
 }
 
 // Return the state of all Select controls
@@ -187,20 +166,13 @@ const getAllControlDisabled = function(graphtype){
 // Similar to the above, but returns local state asynchronously,
 // from a Mongo query.  Also returns the pivoted and processed data.
 //
-const getMongoLocalStateAsync = function(currentState, categoricalValues){
+const getMongoLocalStateAsync = function(currentState, categoricalValues,
+    datapointCol, filter){
   const dataset = metadata.getActualDataset();
   const loadTable = currentState.loadTable;
   const datasetChoices = getDatasetChoices();
   const graphtype = currentState.graphtype || controls.getGraphtypeDefault();
 
-  // Tricky.  If this is a synthetic dataset (e.g. aisTimeMetadata),
-  // then we have to use a predetermined datapoint that's in the metadata.
-  // Otherwise, we use the one in the current state.
-  //
-  const colForDataset = metadata.getDatasetAttr('datapointCol');
-  const datapointCol = colForDataset || currentState.datapoint;
-
-  const filter = currentState.filter || {};
   const controlState = getControlState(currentState, graphtype, 
       categoricalValues, datapointCol);
 
@@ -210,11 +182,6 @@ const getMongoLocalStateAsync = function(currentState, categoricalValues){
       ((currentState, categoricalValues, loadTable, filter, datapointCol) => xform => {
     const pivotedData = xform.pivotedData;
     const processedData = dataread.process(pivotedData, loadTable);
-
-    // Must get filters from pre-processed pivoted data.
-    //
-    const facet = getFacetObject(xform.pivotedData, filter,
-        datapointCol, datapointCol, categoricalValues);
 
     // Calculating the graphtype disabled state requires that we look at
     // the currently displayed Aggregate By datapoint, *not* the predetermined
@@ -226,9 +193,7 @@ const getMongoLocalStateAsync = function(currentState, categoricalValues){
       dataset: {...datasetControls, list: datasetChoices},
       graphtype: controls.getGraphtypeControls(graphtype, datapointForGraphtype),
       ...controlState,
-      facet,
-      axes,
-      loadTable
+      axes
     }
     return { localState, pivotedData, processedData };
   })(currentState, categoricalValues, loadTable, filter, datapointCol);
@@ -356,8 +321,12 @@ class PivotApp extends React.Component {
 
           const summaryData = transforms.getSummaryData(processedData);
           const loadComparisonData = transforms.getLoadComparisonData(processedData);
+          const facet = startup.getFacetObject(pivotedData, filter,
+              datapointCol, categoricalValues);
 
-          onMergeStateDispatch({ categoricalValues, pivotedData, processedData,
+          onMergeStateDispatch({ 
+              facet, loadTable,
+              categoricalValues, pivotedData, processedData,
               summaryData, loadComparisonData });
         })(currentState, datapointCol);
 
@@ -373,13 +342,30 @@ class PivotApp extends React.Component {
 
         // Get local state from async Mongo query.
         //
-        getMongoLocalStateAsync(currentState, categoricalValues)
+        // Tricky.  If this is a synthetic dataset (e.g. aisTimeMetadata),
+        // then we have to use a predetermined datapoint that's in the metadata.
+        // Otherwise, we use the one in the current state.
+        //
+        const colForDataset = metadata.getDatasetAttr('datapointCol');
+        const datapointCol = colForDataset || currentState.datapoint;
+        const loadTable = currentState && currentState.loadTable
+          ? currentState.loadTable
+          : null;
+
+        const filter = currentState.filter || {};
+
+        getMongoLocalStateAsync(currentState, categoricalValues,
+            datapointCol, filter)
           .then(res => {
             const { localState, pivotedData, processedData } = res;
             self.setState({...localState, loading: false});
             const summaryData = transforms.getSummaryData(processedData);
             const loadComparisonData = transforms.getLoadComparisonData(processedData);
-            onMergeStateDispatch({ categoricalValues, pivotedData, processedData,
+            const facet = startup.getFacetObject(pivotedData, filter,
+                datapointCol, categoricalValues);
+            onMergeStateDispatch({ 
+                facet, loadTable,
+                categoricalValues, pivotedData, processedData,
                 summaryData, loadComparisonData });
           })
           .catch(error => self.setState({loading: false}));
@@ -466,21 +452,7 @@ class PivotApp extends React.Component {
       pivotedData, processedData) {
     const oldReduxState = utils.getCurrentState(nextProps);
 
-    // OK, this is pretty confusing.  We must calculate two datapoints:
-    // one for the original dataset, and another one for the synthetic one
-    // (if we are in fact using a synthesized dataset).
-    //
-    // We want to support filtering from the original
-    // dataset (since that's where we use the RESTful interface, and besides,
-    // it seems to feel right to do that).
-    //
-    // This also supports "regular" dataset transitioning, in which case
-    // oldReduxState.datapoint will be null, and thus the datapoint
-    // will be the default.
-    //
     const dfltDatapointCol = datapoint.getDefaultDatapointCol();
-    const originalDatapointCol = metadata.getDatasetAttr('datapointCol') ||
-        dfltDatapointCol;
     const datapointCol = oldReduxState.datapoint || dfltDatapointCol;
 
     // If the dataset has a default graphtype, set it here
@@ -500,17 +472,10 @@ class PivotApp extends React.Component {
 
     const withControls = {...oldReduxState, ...newControls};
     const newReduxState = { ...withControls, filter, 
-        dataset, datapointCol, originalDatapointCol };
+        dataset, datapointCol };
 
-    const loadTable = newReduxState.loadTable;
-
-    // Note that we use originalDatapointCol here.  We want to
-    // allow filtering based on the data in the original dataset.
-    //
-    const facetList = facets.getReactFacets(pivotedData,
-      filter, originalDatapointCol, categoricalValues);
-    const facet = getFacetObject(pivotedData, filter,
-        originalDatapointCol, datapointCol, categoricalValues);
+    const facet = startup.getFacetObject(pivotedData, filter,
+        datapointCol, categoricalValues);
 
     const initState = dataset
       ? getLocalState(newReduxState, datapointCol,
@@ -555,7 +520,6 @@ class PivotApp extends React.Component {
           // This will cause componentDidMount() to be re-entered.
           // The re-entry should be safe.
           //
-          const { categoricalValues, pivotedData, processedData } = res;
           onPushStateDispatch(res);
         });
     } else {
@@ -615,13 +579,9 @@ class PivotApp extends React.Component {
     // The local state contains the metadata for controls.  this.props
     // contains the current state of the controls.  We call the latter 'axes'.
     //
-    const { loading, facet,
+    const { loading,
         dataset, animate, datapoint, graphtype, xAxis,
         yAxis, radiusAxis, colorAxis} = this.state;
-
-    if (!facet) {
-      return emptyComponent;
-    }
 
     const controls = { animate, datapoint, graphtype, xAxis, 
         yAxis, radiusAxis, colorAxis };
@@ -630,8 +590,8 @@ class PivotApp extends React.Component {
 
     const currentState = utils.getCurrentState(this.props);
 
-    const { categoricalValues, processedData, summaryData, loadComparisonData }
-        = currentState;
+    const { facet, categoricalValues, processedData, summaryData,
+        loadComparisonData } = currentState;
 
     const axes = getAxesFromReduxState(currentState, controls);
 
