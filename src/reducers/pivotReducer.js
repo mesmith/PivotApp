@@ -20,6 +20,14 @@ const getMergedState = function(state, newState){
   return { history, current };
 }
 
+// Find the dataset name in the current state.  Used when changing datasets
+// so that the component knows if this is a "real" dataset transition
+//
+const getPreviousDataset = function(state) {
+  const currentState = state.history[state.current];
+  return currentState ? currentState.dataset : null;
+}
+
 export default function(state = initialState, action) {
   switch( action.type ){
     case actionTypes.pivot_PushState:
@@ -37,11 +45,12 @@ export default function(state = initialState, action) {
     case actionTypes.pivot_ChangeDataset:
     {
       // For this one, we don't push a new state onto history;
-      // instead, just record the new dataset name.  The component
-      // will know to ask for the new dataset's data.
+      // instead, just record the requested dataset name.  The component
+      // will know to ask for the requested dataset's data.
       //
-      const newState = {last: 'change_dataset'};
-      return {...getNewState(state, newState), dataset: action.dataset};
+      const from = getPreviousDataset(state);
+      const newState = {last: 'change_dataset', from, to: action.dataset};
+      return getNewState(state, newState);
     }
 
     case actionTypes.pivot_ChangeDatasetAndDatapoint:

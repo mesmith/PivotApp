@@ -519,10 +519,10 @@ class PivotApp extends React.Component {
   // data using the dataset name.
   //
   componentDidMount(){
-    const { needData, dataset, initData, onPushStateDispatch } = this.props;
+    const { needData, initDataset, initData, onPushStateDispatch } = this.props;
     const currentState = utils.getCurrentState(this.props);
 
-    const newDataset = dataset ? dataset : metadata.getActualDataset();
+    const newDataset = this.getDatasetName(currentState, initDataset);
 
     // needData should only be set if we must fetch data.
     // We do NOT have to fetch data when changing datasets if we
@@ -555,6 +555,22 @@ class PivotApp extends React.Component {
     }
   }
 
+  // Determine the name of the current dataset.
+  // 1.  If this is a change_dataset record, then currentState.to will be
+  //     its name.
+  // 2.  If we're just transitioning (undo/redo), then currentState.dataset
+  //     will be its name.
+  // 3.  If there is an initial dataset name, then use that.
+  // 4.  Otherwise, look up the default dataset from metadata.
+  //
+  getDatasetName(currentState, initDataset) {
+    return (currentState && currentState.to)
+      ? currentState.to
+      : (currentState && currentState.dataset)
+        ? currentState.dataset
+        : initDataset ? initDataset : metadata.getActualDataset();
+  }
+
   componentWillUnmount() {
     if (this && this.unsubscribe) {
       this.unsubscribe();
@@ -568,8 +584,6 @@ class PivotApp extends React.Component {
   }
 
   render() {
-console.log('render: props='); console.log(this.props);
-console.log('render: state='); console.log(this.state);
     const datasetLabel = metadata.getDatasetLabel();
     const key = 'PivotApp';
     const loaderTextStyle = {
@@ -668,10 +682,11 @@ const mapStateToProps = function(state) {
   const currentState = utils.getCurrentState(pivot);
 
   if (currentState) {
-    const { dataset } = pivot;
+    const { initDataset } = pivot;
     const needData = currentState.last === 'change_dataset';
+    const dataset = currentState.dataset || currentState.to || initDataset;
     const { history, current } = pivot;
-    return { history, current, dataset, key: dataset, needData };
+    return { history, current, initDataset, key: dataset, needData };
   } else {
     return {}
   }

@@ -24,6 +24,6 @@ window.onload = function(){
   const dataset = metadata.getActualDataset();
   ReactDOM.render( 
     <Provider store={store}>
-      <PivotApp dataset={dataset} needData={true} showDataset={true} />
+      <PivotApp initDataset={dataset} needData={true} showDataset={true} />
     </Provider>, document.getElementById('root'));
 }
