@@ -568,6 +568,8 @@ class PivotApp extends React.Component {
   }
 
   render() {
+console.log('render: props='); console.log(this.props);
+console.log('render: state='); console.log(this.state);
     const datasetLabel = metadata.getDatasetLabel();
     const key = 'PivotApp';
     const loaderTextStyle = {
