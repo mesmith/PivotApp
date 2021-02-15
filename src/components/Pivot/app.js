@@ -158,24 +158,6 @@ const getAllControlDisabled = function(graphtype){
   }, {});
 }
 
-// Similar to the above, but returns the pivoted and processed dat
-// from a Mongo query.
-//
-const getMongoAsync = function(dataset, filter, loadTable, datapointCol,
-    graphtype){
-
-  // Call this after the mongo query runs
-  //
-  const handle = xform => ({
-    pivotedData: xform.pivotedData,
-    processedData: dataread.process(xform.pivotedData, loadTable)
-  });
-
-  return dataread.mongoGetTransformedData(graphtype, dataset, filter, datapointCol)
-    .then(handle)
-    .catch(handle);
-}
-
 // This converts the currentState into an axes object.
 //
 // This also may change the axes values that don't
@@ -300,16 +282,14 @@ class PivotApp extends React.Component {
 
       const handleError = () => handle({pivotedData: [], processedData: []});
 
-      if (utils.isCSV(dataset) || utils.isJSON(dataset)) {
-        dataread.readDataset(dataset, filter, loadTable, datapointCol,
+      const cmd = (utils.isCSV(dataset) || utils.isJSON(dataset))
+        ? 'csv'
+        : 'increment';
+      dataread.readDataset(cmd, dataset, filter, loadTable, datapointCol,
             graphtype, currentState.animate, null)
           .then(handle)
           .catch(handleError);
-      } else {
-        getMongoAsync(dataset, filter, loadTable, datapointCol, graphtype)
-          .then(handle)
-          .catch(handleError);
-      }
+
       this.setState({loading: true});
     } else {
       this.setState({loading: false});

@@ -11,14 +11,17 @@ import axios from 'axios';
 
 const dataread = function() {
 
-  // Read a dataset.  Note that we use the "actual dataset", since the
-  // dataset may be synthetic (e.g. a time series based on an aggregation
-  // of time series by entity).
+  // Read a dataset.
+  //
+  // 'cmd' is either 'csv', 'all' or 'increment'.  If it's
+  // 'csv', do a csv read.  If it's 'all', it's a full Mongo read
+  // that returns categorical values.  If it's 'increment', it's
+  // a Mongo read that just returns pivoted data.
   //
   // If rawData is provided, use it directly.  This is used when
   // a 3rd party sends the component data.
   //
-  const readDataset = function(dataset, filter, loadTable, datapointCol,
+  const readDataset = function(cmd, dataset, filter, loadTable, datapointCol,
       graphtype, animationCol, rawData) {
 
     // If we're reading from mongodb, start a mongodb RESTful session.
@@ -32,13 +35,16 @@ const dataread = function() {
     } else if (rawData) {
       return rawDataToProcessed(filter, loadTable,
           datapointCol, graphtype, animationCol, rawData);
-    } else if (utils.isCSV(dataset) || utils.isJSON(dataset)) {
+    } else if (cmd === 'csv') {
       return readCSVOrJsonData(dataset)
         .then(getCategoricalValues)
         .then(csvRawToProcessed(filter, loadTable,
                                 datapointCol, graphtype, animationCol));
-    } else {
+    } else if (cmd === 'all') {
       return mongoReadDataset(dataset, datapointCol, filter)
+        .then(mongoPivotedToProcessed(loadTable));
+    } else {
+      return mongoGetTransformedData(dataset, datapointCol, filter, graphtype)
         .then(mongoPivotedToProcessed(loadTable));
     }
   }
@@ -428,8 +434,8 @@ const dataread = function() {
       .chain(withCalculatedFields);
   }
 
-  // Use mongodb services to retrieve data every time there
-  // is a state change.  Returns a Promise.
+  // Use mongodb services to retrieve data.
+  // Returns a Promise.
   //
   const mongoReadDataset = function(dataset, datapointCol, filter){
     if (datapointCol === null){
@@ -462,8 +468,8 @@ const dataread = function() {
   // Similar to the above, but used when the user changes the
   // aggregation column.
   //
-  const mongoGetTransformedData = function(graphtype, dataset, filter,
-      datapointCol){
+  const mongoGetTransformedData = function(dataset, datapointCol, filter,
+      graphtype){
 
     // Convert 'filter' into a REST query string
     //
@@ -502,9 +508,7 @@ const dataread = function() {
   }
 
   return {
-    readDataset,
-    mongoGetTransformedData,
-    process
+    readDataset
   };
 }();
 
