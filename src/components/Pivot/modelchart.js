@@ -275,6 +275,9 @@ class ModelChart extends React.Component {
   getRoles(data) {
     const fieldName = meta.role;
   
+    if (!Array.isArray(data)) {
+      return [];
+    }
     return Object.keys(data).filter(i => {
       const catVar = i.split(':')[0];
       const catVal = i.split(':')[1];

@@ -328,6 +328,10 @@ class PivotApp extends React.Component {
       startup.startup(currentState, newDataset, filter, datapointCol,
           graphtype, animationCol, initData)
         .then(res => {
+          const { processedData } = res;
+          const summaryData = transforms.getSummaryData(processedData);
+          const loadComparisonData = transforms.getLoadComparisonData(processedData);
+          const push = {...res, summaryData, loadComparisonData};
           
           // Push the data into redux state.  It should never appear
           // in local state.
@@ -335,7 +339,7 @@ class PivotApp extends React.Component {
           // This will cause componentDidMount() to be re-entered.
           // The re-entry should be safe.
           //
-          onPushStateDispatch(res);
+          onPushStateDispatch(push);
         });
     } else {
       this.handleReduxStateChange(this.props);

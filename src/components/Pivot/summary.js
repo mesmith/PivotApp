@@ -5,7 +5,10 @@ import metadata from './metadata';
 //
 class SummaryChart extends React.Component {
   render(){
-    const data = this.props.data;
+    const { data } = this.props;
+    if (!Array.isArray(data)) {
+      return null;
+    }
 
     const allowed = metadata.getColumnsWithAttrTrue('summary').reduce((i, j) => {
       return {...i, ...{[j]: true}};

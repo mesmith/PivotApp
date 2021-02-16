@@ -1092,6 +1092,7 @@ const metadata = function(){
   const custToMeta = {
     ais: aisSoloMetadata,
     mannis: aisSoloMetadata,
+    // master: callMetadata,
     // master: ticketSubjectMetadata,
     master: aisSoloMetadata,
     // master: airForceMetadata,

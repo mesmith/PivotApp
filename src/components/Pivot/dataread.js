@@ -43,7 +43,7 @@ const dataread = function() {
     } else if (cmd === 'all') {
       return mongoReadDataset(dataset, datapointCol, filter)
         .then(mongoPivotedToProcessed(loadTable));
-    } else {
+    } else { // cmd === 'increment'
       return mongoGetTransformedData(dataset, datapointCol, filter, graphtype)
         .then(mongoPivotedToProcessed(loadTable));
     }
