@@ -3,6 +3,7 @@ import dataread from './dataread.js';
 import facets from './facets.js';
 import datapoint from './datapoint.js';
 import metadata from './metadata.js';
+import utils from './utils.js';
 
 // Turns off eslint warnings:
 /* global d3 */
@@ -52,7 +53,8 @@ const startup = (currentState, newDataset, filter, datapointCol,
 
   const handleError = () => handle({}, [], []);
 
-  return dataread.readDataset('all', newDataset, filter, loadTable, datapointCol,
+  const cmd = utils.isCSV(newDataset) || utils.isJSON(newDataset) ? 'csv' : 'all';
+  return dataread.readDataset(cmd, newDataset, filter, loadTable, datapointCol,
       graphtype, animationCol, initData)
     .then(handleData)
     .catch(handleError);
